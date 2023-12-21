@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34316.72
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OAIAPI", "OAIAPI.csproj", "{BBE636B1-0A45-4FA9-9CDA-E399E0D1293C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OAIAPITest", "..\OAIAPITest\OAIAPITest.csproj", "{CF71EBFF-8355-4BE9-B0E7-B942DA6B2048}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BBE636B1-0A45-4FA9-9CDA-E399E0D1293C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBE636B1-0A45-4FA9-9CDA-E399E0D1293C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBE636B1-0A45-4FA9-9CDA-E399E0D1293C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBE636B1-0A45-4FA9-9CDA-E399E0D1293C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF71EBFF-8355-4BE9-B0E7-B942DA6B2048}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF71EBFF-8355-4BE9-B0E7-B942DA6B2048}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF71EBFF-8355-4BE9-B0E7-B942DA6B2048}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF71EBFF-8355-4BE9-B0E7-B942DA6B2048}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DB028337-578F-4A34-81EA-04941BA28F68}
+	EndGlobalSection
+EndGlobal
