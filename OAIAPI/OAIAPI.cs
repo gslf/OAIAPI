@@ -1,19 +1,22 @@
 ﻿using Promezio.OAIAPI.Capabilities.Chat;
 using Promezio.OAIAPI.Capabilities.Transcription;
 using Promezio.OAIAPI.Capabilities.Speech;
+using Promezio.OAIAPI.Utils;
 
 namespace Promezio.OAIAPI;
 public class OAIAPI {
     private string _apikey;
+    private Logger _logger;
 
     // Constructor
-    public OAIAPI(string apikey) {
+    public OAIAPI(string apikey, LogLevel logLevel = LogLevel.Warning) {
         _apikey = apikey;
+        _logger = new Logger(logLevel);
 
         // Init capabilities
-        Chat = new Chat(_apikey);
-        Transcription = new Transcription(_apikey);
-        Speech = new Speech(_apikey);
+        Chat = new Chat(_apikey, _logger);
+        Transcription = new Transcription(_apikey, _logger);
+        Speech = new Speech(_apikey, _logger);
     }
 
     // Capabilities

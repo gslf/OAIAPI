@@ -6,14 +6,16 @@ using Promezio.OAIAPI.Utils;
 namespace Promezio.OAIAPI.Capabilities.Speech;
 public class Speech: Capability {
     private string _apikey;
+    private Logger _logger;
     private string _model;
     private string _voice;
     private string _responseFormat;
     private decimal _speed;
 
 
-    public Speech(string apikey) : base() {
+    public Speech(string apikey, Logger logger) : base() {
         _apikey = apikey;
+        _logger = logger;
     }
 
     public void Init(string model = "tts-1", string voice = "alloy", string responseFormat = "mp3", decimal speed = 1m) {

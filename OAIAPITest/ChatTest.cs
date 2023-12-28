@@ -25,25 +25,26 @@ public class ChatTest : Test {
     }
 
     [TestMethod]
-    public async Task TestWrongInitParameters() {
-        OAIAPI api = new OAIAPI(_apikey);
-
+    public async Task TestWrongConfigParameters() {
+        Config config;
         // Test Out of Range exception
         Assert.ThrowsException<ArgumentOutOfRangeException>(() =>
-                api.Chat.Init("gpt-3.5-turbo", frequency_penalty: 100));
+                config = new Config("gpt-3.5-turbo", frequencyPenalty: 100));
         Assert.ThrowsException<ArgumentOutOfRangeException>(() =>
-                api.Chat.Init("gpt-3.5-turbo", top_logprobs: 100));
+                config = new Config("gpt-3.5-turbo", topLogprobs: 100));
         Assert.ThrowsException<ArgumentOutOfRangeException>(() =>
-                api.Chat.Init("gpt-3.5-turbo", presence_penalty: 100));
+                config = new Config("gpt-3.5-turbo", presencePenalty: 100));
         Assert.ThrowsException<ArgumentOutOfRangeException>(() =>
-                api.Chat.Init("gpt-3.5-turbo", response_format: new ResponseFormat { Type = "not-exist" }));
+                config = new Config("gpt-3.5-turbo", responseFormat: new ResponseFormat { Type = "not-exist" }));
         Assert.ThrowsException<ArgumentOutOfRangeException>(() =>
-                api.Chat.Init("gpt-3.5-turbo", temperature: 100));
+                config = new Config("gpt-3.5-turbo", temperature: 100));
         Assert.ThrowsException<ArgumentOutOfRangeException>(() =>
-                api.Chat.Init("gpt-3.5-turbo", top_p: 100));
+               config = new Config("gpt-3.5-turbo", topP: 100));
 
         // Test a model that not exist
-        api.Chat.Init("not-exist");
+        config = new Config("not-exist");
+        OAIAPI api = new OAIAPI(_apikey);
+        api.Chat.Init(config);
         ChatResponse? result = await api.Chat.Dispatch("HELLO");
         Assert.IsFalse(result?.Status);
     }
@@ -51,7 +52,8 @@ public class ChatTest : Test {
     [TestMethod]
     public async Task TestResponse() {
         OAIAPI api = new OAIAPI(_apikey);
-        api.Chat.Init("gpt-3.5-turbo");
+        Config config = new Config("gpt-3.5-turbo");
+        api.Chat.Init(config);
 
         // Check single message
         ChatResponse? result = await api.Chat.Dispatch("Hello, I'm Luke.");
@@ -66,7 +68,8 @@ public class ChatTest : Test {
     [TestMethod]
     public async Task TestJSONResponse() {
         OAIAPI api = new OAIAPI(_apikey);
-        api.Chat.Init("gpt-3.5-turbo-1106", response_format: new ResponseFormat { Type = ResponseFormatTypes.JSON});
+        Config config = new Config("gpt-3.5-turbo-1106", responseFormat: new ResponseFormat { Type = ResponseFormatTypes.JSON });
+        api.Chat.Init(config);
 
         ChatResponse? result = await api.Chat.Dispatch("Who won the world series in 2020? Output a JSON.");
         string? response = result?.GetMessage();
@@ -77,11 +80,15 @@ public class ChatTest : Test {
     [TestMethod]
     public async Task TestStreamResponse() {
         OAIAPI api = new OAIAPI(_apikey);
-        api.Chat.Init("gpt-3.5-turbo", stream: true);
+        Config config = new Config("gpt-3.5-turbo");
+        api.Chat.Init(config);
 
-        // TODO Write Stream Response test
-        ChatResponse? result = await api.Chat.Dispatch("");
+        int stream_count = 0;
+        await foreach (var res in api.Chat.DispatchStream("Hello, write numbers from 1 to 10.")) {
+            stream_count++;
+        }
 
+        Assert.IsTrue(stream_count > 1);
     }
 }
 

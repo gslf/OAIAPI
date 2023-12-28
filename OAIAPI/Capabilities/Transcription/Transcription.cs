@@ -12,14 +12,16 @@ namespace Promezio.OAIAPI.Capabilities.Transcription;
 public class Transcription: Capability {
 
     private string _apikey;
+    public Logger _logger;
     private decimal _temperature;
 
     /// <summary>
     /// Initializes a new instance of the Transcription class with the specified API key.
     /// </summary>
     /// <param name="apikey">The API key used for authentication with the service.</param>
-    public Transcription(string apikey) : base() {
+    public Transcription(string apikey, Logger logger) : base() {
         _apikey = apikey;
+        _logger = logger;
     }
 
     /// <summary>

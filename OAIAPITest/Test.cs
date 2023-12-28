@@ -8,7 +8,7 @@ public abstract class Test {
     protected Test() {
         // Retrieve Api Key from user secrets
         Configuration = new ConfigurationBuilder()
-            .AddUserSecrets<ChatTest>()
+            .AddUserSecrets<Test>()
             .Build();
 
         if (Configuration == null) {

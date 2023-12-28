@@ -21,8 +21,6 @@ public class SpeechTest : Test {
 
         // Check single message
         SpeechResponse? result = await api.Speech.Dispatch("Hello Learners!", "../../../TestResources/speech.mp3");
-
-        // TODO: This is only a demo, write more tests about file consistency
     }
 }
 
