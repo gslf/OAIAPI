@@ -1,6 +1,4 @@
 ﻿namespace Promezio.OAIAPI.Capabilities.Chat;
-#region MessageStructure
-
 
 /// <summary>
 /// Represents the role of the author of a specific message.
@@ -10,5 +8,5 @@ public struct Role {
     public const string USER = "user";
     public const string ASSISTANT = "assistant";
 }
-#endregion
+
 

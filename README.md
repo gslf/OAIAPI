@@ -17,7 +17,7 @@ You can read more about user secrete [here](https://learn.microsoft.com/en-us/as
 You can read more about OpenAI API Key [here](https://help.openai.com/en/articles/4936850-where-do-i-find-my-api-key).
 
 #### Available API
-- Chat Completion
+- Chat Completion ([DOCS](Docs/Chat.md))
 
 #### API integration in progress
 - Speech
