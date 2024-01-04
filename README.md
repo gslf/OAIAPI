@@ -23,7 +23,7 @@ git clone https://github.com/gslf/OAIAPI.git
 ### STEP 3: Reference the project
 **For Visual Studio users:** right-click on the References or Dependencies in your main project, select Add Reference..., and then choose the project you just added.
 
-**For Visual Studio Code and other editors users:** open yout prokect file and add a reference tag that look like this:
+**For Visual Studio Code and other editors users:** open yout project file and add a reference tag that look like this:
 ```xml
 <ItemGroup>
   <ProjectReference Include="..\path\to\cloned\project.csproj" />
@@ -45,7 +45,20 @@ You can read more about OpenAI API Key [here](https://help.openai.com/en/article
 
 ### STEP 4: Make Your First API Call
 ```csharp
-OAIAPI api = new OAIAPI(_apikey);
+// Retrieve the API Key
+ Configuration = new ConfigurationBuilder()
+    .AddUserSecrets<Test>()
+    .Build();
+
+if (Configuration == null) {
+    throw new NullReferenceException("User Secrets configuration not found."); 
+}
+
+string myapikey = Configuration["OpenAIApiKey"] ?? throw new InvalidOperationException("API Key not found");
+
+
+// Call the Chat API
+OAIAPI api = new OAIAPI(myapikey);
 Config config = new Config("gpt-3.5-turbo");
 api.Chat.Init(config);
 
