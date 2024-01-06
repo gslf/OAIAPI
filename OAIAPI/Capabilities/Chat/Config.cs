@@ -60,27 +60,27 @@ public class Config {
 
         // Parameters validation
         if (frequencyPenalty < -2 || frequencyPenalty > 2) {
-            throw new ArgumentOutOfRangeException(nameof(frequencyPenalty), "Frequency penalty must be between -2.0 and 2.0.");
+            throw new ArgumentOutOfRangeException(nameof(frequencyPenalty), "The parameter must be between -2.0 and 2.0.");
         }
 
         if (topLogprobs < 0 || topLogprobs > 5) {
-            throw new ArgumentOutOfRangeException(nameof(topLogprobs), "Top logprobs must be between 0 and 5.");
+            throw new ArgumentOutOfRangeException(nameof(topLogprobs), "The parameter must be between 0 and 5.");
         }
 
         if (presencePenalty < -2 || presencePenalty > 2) {
-            throw new ArgumentOutOfRangeException(nameof(presencePenalty), "Presence penalty must be between -2.0 and 2.0.");
+            throw new ArgumentOutOfRangeException(nameof(presencePenalty), "The parameter must be between -2.0 and 2.0.");
         }
 
         if (responseFormat != null && responseFormat?.Type != ResponseFormatTypes.JSON && responseFormat?.Type != ResponseFormatTypes.TEXT) {
-            throw new ArgumentOutOfRangeException(nameof(responseFormat), "Response Format type property must be a string from ResponseFormatTypes structure.");
+            throw new ArgumentOutOfRangeException(nameof(responseFormat), "The parameter type property must be a string from ResponseFormatTypes structure.");
         }
 
         if (temperature < 0 || temperature > 2) {
-            throw new ArgumentOutOfRangeException(nameof(temperature), "Temperature must be between 0 and 2.");
+            throw new ArgumentOutOfRangeException(nameof(temperature), "The parameter must be between 0 and 2.");
         }
 
         if (topP < 0 || topP > 1) {
-            throw new ArgumentOutOfRangeException(nameof(topP), "Top p must be between 0 and 1.");
+            throw new ArgumentOutOfRangeException(nameof(topP), "The parameter must be between 0 and 1.");
         }
 
         Model = model;

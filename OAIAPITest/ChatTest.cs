@@ -18,7 +18,6 @@ public class ChatTest : Test {
 
     [TestMethod]
     public async Task TestClassUninitialized() {
-        Console.WriteLine();
         OAIAPI api = new OAIAPI(_apikey);
         ChatResponse? result = await api.Chat.Dispatch("HELLO");
         Assert.IsFalse(result?.Status);

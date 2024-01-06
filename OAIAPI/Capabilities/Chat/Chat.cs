@@ -13,8 +13,6 @@ public class Chat: Capability {
     private const string END_STREAM = "data: [DONE]";
     private const string PRE_STREAM = "data: ";
 
-    private string _apikey;
-    private Logger _logger;
     private List<ChatMessage> _messages;
 
     // Request params
@@ -25,9 +23,7 @@ public class Chat: Capability {
     /// Create a new instance of the Chat class with the specified API key.
     /// </summary>
     /// <param name="apikey">The API key for authentication.</param>
-    public Chat(string apikey, Logger logger) : base() {
-        _apikey = apikey;
-        _logger = logger;
+    public Chat(string apikey, Logger logger) : base(apikey, logger) {
         _messages = new List<ChatMessage>();
     }
 

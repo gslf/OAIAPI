@@ -31,8 +31,8 @@ ChatResponse? result = await api.Chat.Dispatch("Hello from space: the final fron
 Console.WriteLine(result?.GetMessage());
 
 // Call the stream API
-await foreach (var res in api.Chat.DispatchStream("Hello, write numbers from 1 to 10.")) {
-    Console.WriteLine(res?.GetMessage());
+await foreach (var streamResult in api.Chat.DispatchStream("Hello, write numbers from 1 to 10.")) {
+    Console.WriteLine(streamResult?.GetMessage());
 }
 ```
 
