@@ -37,8 +37,11 @@ public class Files : Capability {
     /// <exception cref="JsonException">Thrown when parsing the API response fails.</exception>
     public async Task<FileObject> Upload(string fileURI, string filePurpose) {
 
+        _logger.Info("[File.Upload] New request.");
+
         // Validate filePurpose
         if (!FileObject.Purposes.ContainsValue(filePurpose)) {
+            _logger.Info($"[File.Upload] The parameter {nameof(filePurpose)} is invalid");
             throw new ArgumentException("The parameter is invalid", nameof(filePurpose));
         }
 
@@ -55,14 +58,19 @@ public class Files : Capability {
             HttpResponseMessage response = await client.PostAsync(Endpoints.FILES, content);
 
 
-            if (!response.IsSuccessStatusCode)
-                throw new HttpRequestException($"The HTTP request failed with status code: {response.StatusCode}.");
+            if (!response.IsSuccessStatusCode) {
+                string message = await response.Content.ReadAsStringAsync();
+                _logger.Error($"[File.Upload] The HTTP request failed with status code: {message}.");
+                throw new HttpRequestException($"The HTTP request failed with status code: {message}.");
+            }
 
             var responseContent = await response.Content.ReadAsStringAsync();
             FileObject? parsed_response = JsonSerializer.Deserialize<FileObject>(responseContent, _serializerOptions);
 
-            if (parsed_response == null)
+            if (parsed_response == null) {
+                _logger.Error("[File.Upload] Parsing the response did not produce a valid object.");
                 throw new JsonException("Parsing the response did not produce a valid object.");
+            }
 
             return parsed_response;
         }
@@ -77,11 +85,17 @@ public class Files : Capability {
     public async Task<FileObject[]?> List() {
 
         using (var client = new HttpClient()) {
+
+            _logger.Info("[Files.List] New Request.");
+
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", _apikey);
 
             var response = await client.GetAsync(Endpoints.FILES);
-            if (!response.IsSuccessStatusCode)
-                throw new HttpRequestException($"The HTTP request failed with status code: {response.StatusCode}.");
+            if (!response.IsSuccessStatusCode) {
+                string message = await response.Content.ReadAsStringAsync();
+                _logger.Error($"[Files.List] The HTTP request failed with status code: {message}.");
+                throw new HttpRequestException($"The HTTP request failed with status code: {message}.");
+            }
 
             var responseContent = await response.Content.ReadAsStringAsync();
             JsonDocument jsonDoc = JsonDocument.Parse(responseContent);
@@ -103,22 +117,32 @@ public class Files : Capability {
     /// <exception cref="JsonException">Thrown when parsing the API response fails.</exception>
     public async Task<FileObject> Retrieve(string fileID) {
         using (var client = new HttpClient()) {
+
+            _logger.Info("[Files.Retrieve] New request.");
+
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", _apikey);
 
             string fullEndpoint = $"{Endpoints.FILES}/{fileID}";
 
-            if (!Uri.IsWellFormedUriString(fullEndpoint, UriKind.Absolute))
+            if (!Uri.IsWellFormedUriString(fullEndpoint, UriKind.Absolute)) {
+                _logger.Error("[Files.Retrieve] The fileID format is invalid");
                 throw new ArgumentException("The fileID format is invalid");
+            }
 
             var response = await client.GetAsync(fullEndpoint);
-            if (!response.IsSuccessStatusCode)
-                throw new HttpRequestException($"The HTTP request failed with status code: {response.StatusCode}.");
+            if (!response.IsSuccessStatusCode) {
+                string message = await response.Content.ReadAsStringAsync();
+                _logger.Error($"[Files.Retrieve] The HTTP request failed with status code: {message}.");
+                throw new HttpRequestException($"The HTTP request failed with status code: {message}.");
+            }
 
             var responseContent = await response.Content.ReadAsStringAsync();
             FileObject? parsed_response = JsonSerializer.Deserialize<FileObject>(responseContent, _serializerOptions);
 
-            if (parsed_response == null)
+            if (parsed_response == null) {
+                _logger.Error("[Files.Retrieve] Parsing the response did not produce a valid object.");
                 throw new JsonException("Parsing the response did not produce a valid object.");
+            }
 
             return parsed_response;
         }
@@ -134,12 +158,17 @@ public class Files : Capability {
     /// <exception cref="HttpRequestException">Thrown when the HTTP request to the OpenAI API fails.</exception>
     public async Task<bool> Delete(string fileID) {
         using (var client = new HttpClient()) {
+
+            _logger.Info("[Files.Delete] New request");
+
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", _apikey);
 
             string fullEndpoint = $"{Endpoints.FILES}/{fileID}";
 
-            if (!Uri.IsWellFormedUriString(fullEndpoint, UriKind.Absolute))
+            if (!Uri.IsWellFormedUriString(fullEndpoint, UriKind.Absolute)) {
+                _logger.Error("[Files.Delete] The fileID format is invalid");
                 throw new ArgumentException("The fileID format is invalid");
+            }
 
             var response = await client.DeleteAsync(fullEndpoint);
             return response.IsSuccessStatusCode;
@@ -156,16 +185,23 @@ public class Files : Capability {
     /// <exception cref="HttpRequestException">Thrown when the HTTP request to the OpenAI API fails.</exception>
     public async Task<string> Content(string fileID) {
         using (var client = new HttpClient()) {
+
+            _logger.Info("[Files.Content] New request.");
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", _apikey);
 
             string fullEndpoint = $"{Endpoints.FILES}/{fileID}/content";
 
-            if (!Uri.IsWellFormedUriString(fullEndpoint, UriKind.Absolute))
+            if (!Uri.IsWellFormedUriString(fullEndpoint, UriKind.Absolute)) {
+                _logger.Error("[Files.Content] The fileID format is invalid");
                 throw new ArgumentException("The fileID format is invalid");
+            }
 
             var response = await client.GetAsync(fullEndpoint);
-            if (!response.IsSuccessStatusCode)
-                throw new HttpRequestException($"The HTTP request failed with status code: {response.StatusCode}.");
+            if (!response.IsSuccessStatusCode) {
+                string message = await response.Content.ReadAsStringAsync();
+                _logger.Error($"[Files.Content] The HTTP request failed with status code: {message}.");
+                throw new HttpRequestException($"The HTTP request failed with status code: {message}.");
+            }
 
             string responseContent = await response.Content.ReadAsStringAsync();
 

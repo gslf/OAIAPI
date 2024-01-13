@@ -93,7 +93,8 @@ public class Chat: Capability {
                 return parsed_response;
             } else {
                 _logger.Error("[Chat.Dispatch] An HTTP request failed");
-                return new ChatResponse { Status = false, Error = $"Error: {response.StatusCode}" };
+                string message = await response.Content.ReadAsStringAsync();
+                return new ChatResponse { Status = false, Error = $"Error: {message}" };
             }
         }
     }
