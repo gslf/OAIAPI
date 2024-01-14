@@ -71,7 +71,7 @@ public class Config {
             throw new ArgumentOutOfRangeException(nameof(presencePenalty), "The parameter must be between -2.0 and 2.0.");
         }
 
-        if (responseFormat != null && responseFormat?.Type != ResponseFormatTypes.JSON && responseFormat?.Type != ResponseFormatTypes.TEXT) {
+        if (responseFormat != null && ! ResponseFormatTypes.IsValid(responseFormat?.Type)) { 
             throw new ArgumentOutOfRangeException(nameof(responseFormat), "The parameter type property must be a string from ResponseFormatTypes structure.");
         }
 

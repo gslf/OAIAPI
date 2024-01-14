@@ -40,7 +40,7 @@ public class Files : Capability {
         _logger.Info("[File.Upload] New request.");
 
         // Validate filePurpose
-        if (!FileObject.Purposes.ContainsValue(filePurpose)) {
+        if (!Purposes.IsValid(filePurpose)) {
             _logger.Info($"[File.Upload] The parameter {nameof(filePurpose)} is invalid");
             throw new ArgumentException("The parameter is invalid", nameof(filePurpose));
         }

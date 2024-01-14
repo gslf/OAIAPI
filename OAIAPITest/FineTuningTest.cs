@@ -9,7 +9,7 @@ public class FineTuningTest : Test {
     [TestMethod]
     public async Task TestCreateCancel() {
         OAIAPI api = new OAIAPI(_apikey);
-        FileObject? uploadResult = await api.Files.Upload("../../../TestResources/SarcasticTuning.jsonl", FileObject.Purposes["FINE_TUNE"]);
+        FileObject? uploadResult = await api.Files.Upload("../../../TestResources/SarcasticTuning.jsonl", Purposes.FINE_TUNE);
         Assert.IsFalse(string.IsNullOrEmpty(uploadResult.Id));
 
         FineTuningObject? fineTuningResult = await api.FineTuning.Create(
@@ -44,7 +44,7 @@ public class FineTuningTest : Test {
     public async Task TestListJobs() {
         OAIAPI api = new OAIAPI(_apikey);
 
-        FileObject? uploadResult = await api.Files.Upload("../../../TestResources/SarcasticTuning.jsonl", FileObject.Purposes["FINE_TUNE"]);
+        FileObject? uploadResult = await api.Files.Upload("../../../TestResources/SarcasticTuning.jsonl", Purposes.FINE_TUNE);
         Assert.IsFalse(string.IsNullOrEmpty(uploadResult.Id));
         FineTuningObject? fineTuningResult = await api.FineTuning.Create(uploadResult.Id, Models.GPT_3_5_TURBO_1106);
 
@@ -61,7 +61,7 @@ public class FineTuningTest : Test {
     public async Task TestListEvents() {
         OAIAPI api = new OAIAPI(_apikey);
 
-        FileObject? uploadResult = await api.Files.Upload("../../../TestResources/SarcasticTuning.jsonl", FileObject.Purposes["FINE_TUNE"]);
+        FileObject? uploadResult = await api.Files.Upload("../../../TestResources/SarcasticTuning.jsonl", Purposes.FINE_TUNE);
         Assert.IsFalse(string.IsNullOrEmpty(uploadResult.Id));
 
         FineTuningObject? fineTuningResult = await api.FineTuning.Create(uploadResult.Id, Models.GPT_3_5_TURBO_1106);
@@ -80,7 +80,7 @@ public class FineTuningTest : Test {
     public async Task TestRetrieve() {
         OAIAPI api = new OAIAPI(_apikey);
 
-        FileObject? uploadResult = await api.Files.Upload("../../../TestResources/SarcasticTuning.jsonl", FileObject.Purposes["FINE_TUNE"]);
+        FileObject? uploadResult = await api.Files.Upload("../../../TestResources/SarcasticTuning.jsonl", Purposes.FINE_TUNE);
         Assert.IsFalse(string.IsNullOrEmpty(uploadResult.Id));
 
         FineTuningObject? fineTuningResult = await api.FineTuning.Create(uploadResult.Id, Models.GPT_3_5_TURBO_1106);

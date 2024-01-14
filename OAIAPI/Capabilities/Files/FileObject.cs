@@ -7,17 +7,6 @@
 public class FileObject {
 
     /// <summary>
-    /// A static dictionary defining the purposes of different file types within 
-    /// the system. Each purpose is associated with a string key.
-    /// </summary>
-    public static Dictionary<string,string> Purposes = new() {
-        { "FINE_TUNE", "fine-tune" },
-        { "FINE_TUNE_RESULTS", "fine-tune-results" },
-        { "ASSISTANTS", "assistants" },
-        { "ASSISTANTS_OUTPUT", "assistants_output" }
-    };
-
-    /// <summary>
     /// Gets or sets the unique identifier for the file.
     /// </summary>
     public string? Id { get; set; }

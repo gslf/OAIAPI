@@ -16,7 +16,7 @@ public class FilesTest : Test {
     [TestMethod]
     public async Task TestFileUploadDelete() {
         OAIAPI api = new OAIAPI(_apikey);
-        FileObject? uploadResult = await api.Files.Upload("../../../TestResources/SarcasticTuning.jsonl", FileObject.Purposes["FINE_TUNE"]);
+        FileObject? uploadResult = await api.Files.Upload("../../../TestResources/SarcasticTuning.jsonl", Purposes.FINE_TUNE);
         Assert.IsFalse(string.IsNullOrEmpty(uploadResult.Id));
 
         bool deleteResult = await api.Files.Delete(uploadResult.Id);
@@ -34,21 +34,21 @@ public class FilesTest : Test {
     [ExpectedException(typeof(FileNotFoundException))]
     public async Task TestFileUploadInexistentFile() {
         OAIAPI api = new OAIAPI(_apikey);
-        FileObject? result = await api.Files.Upload("NOT-EXIST", FileObject.Purposes["FINE_TUNE"]);
+        FileObject? result = await api.Files.Upload("NOT-EXIST", Purposes.FINE_TUNE);
     }
 
     [TestMethod]
     [ExpectedException(typeof(HttpRequestException))]
     public async Task TestFileUploadWrongFile() {
         OAIAPI api = new OAIAPI(_apikey);
-        FileObject? result = await api.Files.Upload("../../../TestResources/Config.json", FileObject.Purposes["FINE_TUNE"]);
+        FileObject? result = await api.Files.Upload("../../../TestResources/Config.json", Purposes.FINE_TUNE);
     }
 
     [TestMethod]
     public async Task TestFileListRetrieveContentDelete() {
         OAIAPI api = new OAIAPI(_apikey);
 
-        FileObject? uploadResult = await api.Files.Upload("../../../TestResources/SarcasticTuning.jsonl", FileObject.Purposes["FINE_TUNE"]);
+        FileObject? uploadResult = await api.Files.Upload("../../../TestResources/SarcasticTuning.jsonl", Purposes.FINE_TUNE);
         Assert.IsFalse(string.IsNullOrEmpty(uploadResult.Id));
 
         FileObject[]? listResults = await api.Files.List();
