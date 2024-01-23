@@ -15,7 +15,7 @@ public class FineTuningEvent {
     /// Gets or sets the timestamp indicating when the event was created, represented as an integer.
     /// This timestamp can be used to determine the chronological order of events and to timestamp specific operations or changes.
     /// </summary>
-    public int Created_at { get; set; }
+    public int? Created_at { get; set; }
 
     /// <summary>
     /// Gets or sets the level of the event, which could be indicative of its severity or type (e.g., 'Info', 'Warning', 'Error').

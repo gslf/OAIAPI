@@ -1,5 +1,4 @@
-﻿using Promezio.OAIAPI.Capabilities.FineTuning;
-using System.Reflection;
+﻿using System.Reflection;
 
 namespace Promezio.OAIAPI.Capabilities.Chat;
 
@@ -8,8 +7,8 @@ namespace Promezio.OAIAPI.Capabilities.Chat;
 /// </summary>
 public class Role {
     public static string SYSTEM { get; } = "system";
-    public static string USER { get; } =  "user";
-    public static string ASSISTANT { get; } =  "assistant";
+    public static string USER { get; } = "user";
+    public static string ASSISTANT { get; } = "assistant";
 
     /// <summary>
     /// Validates whether a given role name corresponds to any of the predefined role names in this class.

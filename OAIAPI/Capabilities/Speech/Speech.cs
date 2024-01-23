@@ -1,17 +1,17 @@
-﻿using System.Net.Http.Headers;
+﻿using Promezio.OAIAPI.Utils;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Text.Json;
-using Promezio.OAIAPI.Utils;
 
 namespace Promezio.OAIAPI.Capabilities.Speech;
-public class Speech: Capability {
+public class Speech : Capability {
     private string _model;
     private string _voice;
     private string _responseFormat;
     private decimal _speed;
 
 
-    public Speech(string apikey, Logger logger) : base(apikey, logger) {}
+    public Speech(string apikey, Logger logger) : base(apikey, logger) { }
 
     public void Init(string model = "tts-1", string voice = "alloy", string responseFormat = "mp3", decimal speed = 1m) {
         _model = model;
@@ -57,7 +57,7 @@ public class Speech: Capability {
             }
         }
     }
-    
+
 }
 
 /// <summary>

@@ -1,5 +1,4 @@
 ﻿using Promezio.OAIAPI.Capabilities.Speech;
-using Microsoft.Extensions.Configuration;
 
 namespace Promezio.OAIAPI.Test;
 

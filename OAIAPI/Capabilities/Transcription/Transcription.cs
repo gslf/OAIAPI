@@ -1,7 +1,7 @@
-﻿using System.Globalization;
+﻿using Promezio.OAIAPI.Utils;
+using System.Globalization;
 using System.Net.Http.Headers;
 using System.Text.Json;
-using Promezio.OAIAPI.Utils;
 
 namespace Promezio.OAIAPI.Capabilities.Transcription;
 
@@ -9,7 +9,7 @@ namespace Promezio.OAIAPI.Capabilities.Transcription;
 /// Represents a client for interacting with OpenAI audio API.
 /// </summary>
 
-public class Transcription: Capability {
+public class Transcription : Capability {
 
     private decimal _temperature;
 
@@ -36,7 +36,7 @@ public class Transcription: Capability {
     /// <param name="audioURL">The URL of the audio file to transcribe.</param>
     /// <returns>A Task representing the asynchronous operation, with a TranscriptionResponse.</returns>
     public async Task<TranscriptionResponse?> Dispatch(string audioURL) {
-           
+
         using (var client = new HttpClient()) {
             // Read audio file
             byte[] soundBytes = await File.ReadAllBytesAsync(audioURL);
@@ -54,9 +54,9 @@ public class Transcription: Capability {
                 var responseContent = await response.Content.ReadAsStringAsync();
                 TranscriptionResponse? parsed_response = JsonSerializer.Deserialize<TranscriptionResponse>(responseContent, _serializerOptions);
 
-                if (parsed_response != null) 
+                if (parsed_response != null)
                     parsed_response.Status = true;
-                    
+
                 return parsed_response;
             } else {
                 return new TranscriptionResponse { Status = false, Error = $"Error: {response.StatusCode}" };
@@ -78,7 +78,7 @@ public class TranscriptionResponse() {
     // Response status properties
     public bool Status { get; set; }
     public string? Error { get; set; }
-    public string? Text {  get; set; }
+    public string? Text { get; set; }
 }
 
 #endregion

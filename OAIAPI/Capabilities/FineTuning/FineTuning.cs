@@ -1,9 +1,7 @@
-﻿using Promezio.OAIAPI.Capabilities.Chat;
-using Promezio.OAIAPI.Utils;
+﻿using Promezio.OAIAPI.Utils;
 using System.Net.Http.Headers;
-using System.Text.Json;
 using System.Text;
-using Promezio.OAIAPI.Capabilities.Files;
+using System.Text.Json;
 
 namespace Promezio.OAIAPI.Capabilities.FineTuning;
 
@@ -11,7 +9,7 @@ namespace Promezio.OAIAPI.Capabilities.FineTuning;
 /// The FineTuning class provides methods to interact with the Fine Tuning capability of the OpenAI API.
 /// This capability allows for creating, listing, retrieving, and canceling fine-tuning jobs for machine learning models.
 /// </summary>
-public class FineTuning: Capability {
+public class FineTuning : Capability {
 
     /// <summary>
     /// Initializes a new instance of the FineTuning class with the provided API key and logger.
@@ -31,7 +29,7 @@ public class FineTuning: Capability {
     /// <param name="suffix">Optional. A suffix for the fine-tuning job.</param>
     /// <param name="validationFileID">Optional. The ID of the validation file.</param>
     /// <returns>A <see cref="FineTuningObject"/> representing the created fine-tuning job.</returns>
-    public async Task<FineTuningObject> Create(string trainingFileID, 
+    public async Task<FineTuningObject> Create(string trainingFileID,
                                             string modelName,
                                             decimal? batch_size = null,
                                             decimal? learning_rate_multiplier = null,
@@ -102,7 +100,7 @@ public class FineTuning: Capability {
                 _logger.Error($"[FineTuning.ListJobs] The HTTP request failed with status code: {message}.");
                 throw new HttpRequestException($"The HTTP request failed with status code: {message}.");
             }
-                
+
 
             var responseContent = await response.Content.ReadAsStringAsync();
             JsonDocument jsonDoc = JsonDocument.Parse(responseContent);

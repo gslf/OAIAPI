@@ -1,8 +1,6 @@
-﻿using Promezio.OAIAPI.Capabilities.FineTuning;
-using System.Reflection;
+﻿using System.Reflection;
 
 namespace Promezio.OAIAPI.Capabilities.Chat;
-#region RequestStructures
 
 public class ResponseFormatTypes {
     public static string JSON { get; } = "json_object";
@@ -32,5 +30,3 @@ public class ResponseFormatTypes {
         return false;
     }
 }
-#endregion
-

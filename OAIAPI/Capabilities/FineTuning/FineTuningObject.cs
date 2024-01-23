@@ -14,7 +14,7 @@ public class FineTuningObject {
     /// <summary>
     /// Gets or sets the timestamp indicating when the fine-tuning operation was created, represented as an integer.
     /// </summary>
-    public int Created_at { get; set; }
+    public int? Created_at { get; set; }
 
     /// <summary>
     /// Gets or sets any error that might have occurred during the fine-tuning process.

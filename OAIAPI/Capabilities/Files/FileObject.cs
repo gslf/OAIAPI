@@ -14,12 +14,12 @@ public class FileObject {
     /// <summary>
     /// Gets or sets the size of the file in bytes.
     /// </summary>
-    public int Bytes { get; set; }
+    public uint? Bytes { get; set; }
 
     /// <summary>
     /// Gets or sets the creation timestamp of the file.
     /// </summary>
-    public int Created_at {  get; set; }
+    public uint? Created_at { get; set; }
 
     /// <summary>
     /// Gets or sets the filename.

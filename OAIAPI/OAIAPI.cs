@@ -1,9 +1,9 @@
 ﻿using Promezio.OAIAPI.Capabilities.Chat;
-using Promezio.OAIAPI.Capabilities.Transcription;
-using Promezio.OAIAPI.Capabilities.Speech;
-using Promezio.OAIAPI.Utils;
 using Promezio.OAIAPI.Capabilities.Files;
 using Promezio.OAIAPI.Capabilities.FineTuning;
+using Promezio.OAIAPI.Capabilities.Speech;
+using Promezio.OAIAPI.Capabilities.Transcription;
+using Promezio.OAIAPI.Utils;
 
 namespace Promezio.OAIAPI;
 public class OAIAPI {

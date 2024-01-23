@@ -1,5 +1,5 @@
-﻿using System.Text.Json;
-using Promezio.OAIAPI.Utils;
+﻿using Promezio.OAIAPI.Utils;
+using System.Text.Json;
 
 namespace Promezio.OAIAPI.Capabilities;
 public abstract class Capability {

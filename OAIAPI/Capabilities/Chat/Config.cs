@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Promezio.OAIAPI.Capabilities.Chat;
+﻿namespace Promezio.OAIAPI.Capabilities.Chat;
 
 /// <summary>
 /// A Configuration class for the chat capability
 /// </summary>
 public class Config {
-    public string? Model {  get; set; }
+    public string? Model { get; set; }
     public int FrequencyPenalty { get; set; }
     public bool Logprobs { get; set; }
     public int? TopLogprobs { get; set; }
@@ -71,7 +65,7 @@ public class Config {
             throw new ArgumentOutOfRangeException(nameof(presencePenalty), "The parameter must be between -2.0 and 2.0.");
         }
 
-        if (responseFormat != null && ! ResponseFormatTypes.IsValid(responseFormat?.Type)) { 
+        if (responseFormat != null && !ResponseFormatTypes.IsValid(responseFormat?.Type)) {
             throw new ArgumentOutOfRangeException(nameof(responseFormat), "The parameter type property must be a string from ResponseFormatTypes structure.");
         }
 

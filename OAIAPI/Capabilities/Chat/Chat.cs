@@ -1,14 +1,14 @@
-﻿using System.Net.Http.Headers;
+﻿using Promezio.OAIAPI.Utils;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Text.Json;
-using Promezio.OAIAPI.Utils;
 
 namespace Promezio.OAIAPI.Capabilities.Chat;
 
 /// <summary>
 /// Represents a chat client for interacting with OpenAI completition chat model API.
 /// </summary>
-public class Chat: Capability {
+public class Chat : Capability {
 
     private const string END_STREAM = "data: [DONE]";
     private const string PRE_STREAM = "data: ";
@@ -71,7 +71,7 @@ public class Chat: Capability {
                 temperature = _config.Temperature,
                 top_p = _config.TopP,
                 user = _config.User
-        };
+            };
 
             var content = new StringContent(JsonSerializer.Serialize(requestBody), Encoding.UTF8, "application/json");
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", _apikey);
@@ -99,7 +99,7 @@ public class Chat: Capability {
         }
     }
 
-    public async IAsyncEnumerable<ChatStreamResponse?>  DispatchStream(string prompt) {
+    public async IAsyncEnumerable<ChatStreamResponse?> DispatchStream(string prompt) {
         if (_config?.Model == null) {
             _logger.Error("[Chat.DispatchStream] Function called without class initialization.");
             yield break;
@@ -166,7 +166,7 @@ public class Chat: Capability {
                         _logger.Warning("[Chat.DispatchStream] The stream reader read an empty line.");
                         continue;
                     }
-                    
+
                 }
             }
         }

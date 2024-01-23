@@ -12,7 +12,7 @@ public abstract class Test {
             .Build();
 
         if (Configuration == null) {
-            throw new NullReferenceException("Missing API Key, user secrets setup configuration instruction are in README.md"); 
+            throw new NullReferenceException("Missing API Key, user secrets setup configuration instruction are in README.md");
         }
 
         _apikey = Configuration["OpenAIApiKey"] ?? throw new InvalidOperationException("API Key not found");

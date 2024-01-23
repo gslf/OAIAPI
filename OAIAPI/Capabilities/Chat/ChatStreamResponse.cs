@@ -12,7 +12,7 @@
 
 public class ChatStreamResponse {
     public string? Id { get; set; }
-    public int Created { get; set; }
+    public int? Created { get; set; }
     public string? Model { get; set; }
 
     public string? System_fingerprint { get; set; }

@@ -1,6 +1,4 @@
-﻿using static System.Net.WebRequestMethods;
-
-namespace Promezio.OAIAPI.Utils;
+﻿namespace Promezio.OAIAPI.Utils;
 internal static class Endpoints {
     internal static string CHAT = "https://api.openai.com/v1/chat/completions";
     internal static string FILES = "https://api.openai.com/v1/files";

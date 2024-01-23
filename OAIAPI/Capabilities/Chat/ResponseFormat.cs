@@ -1,9 +1,5 @@
 ﻿namespace Promezio.OAIAPI.Capabilities.Chat;
-#region MessageStructure
-#endregion
 
-// ////////////////////////////////////////////
-#region RequestStructures
 
 public struct ResponseFormat {
     public string Type { get; set; }
@@ -12,5 +8,4 @@ public struct ResponseFormat {
         return new { type = Type };
     }
 }
-#endregion
 

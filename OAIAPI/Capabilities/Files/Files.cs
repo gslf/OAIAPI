@@ -1,8 +1,5 @@
-﻿using Promezio.OAIAPI.Capabilities.Transcription;
-using Promezio.OAIAPI.Utils;
-using System.Globalization;
+﻿using Promezio.OAIAPI.Utils;
 using System.Net.Http.Headers;
-using System.Security.Cryptography;
 using System.Text.Json;
 
 namespace Promezio.OAIAPI.Capabilities.Files;

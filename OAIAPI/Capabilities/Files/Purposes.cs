@@ -1,5 +1,4 @@
-﻿using Promezio.OAIAPI.Capabilities.FineTuning;
-using System.Reflection;
+﻿using System.Reflection;
 
 namespace Promezio.OAIAPI.Capabilities.Files;
 
