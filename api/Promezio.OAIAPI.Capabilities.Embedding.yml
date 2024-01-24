@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Promezio.OAIAPI.Capabilities.Embedding
+  commentId: N:Promezio.OAIAPI.Capabilities.Embedding
+  id: Promezio.OAIAPI.Capabilities.Embedding
+  children:
+  - Promezio.OAIAPI.Capabilities.Embedding.Embedding
+  langs:
+  - csharp
+  - vb
+  name: Promezio.OAIAPI.Capabilities.Embedding
+  nameWithType: Promezio.OAIAPI.Capabilities.Embedding
+  fullName: Promezio.OAIAPI.Capabilities.Embedding
+  type: Namespace
+  assemblies:
+  - OAIAPI
+references:
+- uid: Promezio.OAIAPI.Capabilities.Embedding.Embedding
+  commentId: T:Promezio.OAIAPI.Capabilities.Embedding.Embedding
+  href: Promezio.OAIAPI.Capabilities.Embedding.Embedding.html
+  name: Embedding
+  nameWithType: Embedding
+  fullName: Promezio.OAIAPI.Capabilities.Embedding.Embedding

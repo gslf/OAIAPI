@@ -1,0 +1,107 @@
+### YamlMime:ManagedReference
+items:
+- uid: Promezio.OAIAPI.Capabilities.FineTuning
+  commentId: N:Promezio.OAIAPI.Capabilities.FineTuning
+  id: Promezio.OAIAPI.Capabilities.FineTuning
+  children:
+  - Promezio.OAIAPI.Capabilities.FineTuning.DecimalFromStringConverter
+  - Promezio.OAIAPI.Capabilities.FineTuning.FineTuning
+  - Promezio.OAIAPI.Capabilities.FineTuning.FineTuningEvent
+  - Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject
+  - Promezio.OAIAPI.Capabilities.FineTuning.Hyperparameters
+  - Promezio.OAIAPI.Capabilities.FineTuning.Models
+  - Promezio.OAIAPI.Capabilities.FineTuning.TuningError
+  langs:
+  - csharp
+  - vb
+  name: Promezio.OAIAPI.Capabilities.FineTuning
+  nameWithType: Promezio.OAIAPI.Capabilities.FineTuning
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning
+  type: Namespace
+  assemblies:
+  - OAIAPI
+references:
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.FineTuning
+  commentId: T:Promezio.OAIAPI.Capabilities.FineTuning.FineTuning
+  parent: Promezio.OAIAPI.Capabilities.FineTuning
+  href: Promezio.OAIAPI.Capabilities.FineTuning.FineTuning.html
+  name: FineTuning
+  nameWithType: FineTuning
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.FineTuning
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningEvent
+  commentId: T:Promezio.OAIAPI.Capabilities.FineTuning.FineTuningEvent
+  href: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningEvent.html
+  name: FineTuningEvent
+  nameWithType: FineTuningEvent
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningEvent
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject
+  commentId: T:Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject
+  href: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.html
+  name: FineTuningObject
+  nameWithType: FineTuningObject
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.DecimalFromStringConverter
+  commentId: T:Promezio.OAIAPI.Capabilities.FineTuning.DecimalFromStringConverter
+  parent: Promezio.OAIAPI.Capabilities.FineTuning
+  href: Promezio.OAIAPI.Capabilities.FineTuning.DecimalFromStringConverter.html
+  name: DecimalFromStringConverter
+  nameWithType: DecimalFromStringConverter
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.DecimalFromStringConverter
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.Hyperparameters
+  commentId: T:Promezio.OAIAPI.Capabilities.FineTuning.Hyperparameters
+  parent: Promezio.OAIAPI.Capabilities.FineTuning
+  href: Promezio.OAIAPI.Capabilities.FineTuning.Hyperparameters.html
+  name: Hyperparameters
+  nameWithType: Hyperparameters
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.Hyperparameters
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.Models
+  commentId: T:Promezio.OAIAPI.Capabilities.FineTuning.Models
+  href: Promezio.OAIAPI.Capabilities.FineTuning.Models.html
+  name: Models
+  nameWithType: Models
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.Models
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.TuningError
+  commentId: T:Promezio.OAIAPI.Capabilities.FineTuning.TuningError
+  parent: Promezio.OAIAPI.Capabilities.FineTuning
+  href: Promezio.OAIAPI.Capabilities.FineTuning.TuningError.html
+  name: TuningError
+  nameWithType: TuningError
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.TuningError
+- uid: Promezio.OAIAPI.Capabilities.FineTuning
+  commentId: N:Promezio.OAIAPI.Capabilities.FineTuning
+  href: Promezio.html
+  name: Promezio.OAIAPI.Capabilities.FineTuning
+  nameWithType: Promezio.OAIAPI.Capabilities.FineTuning
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning
+  spec.csharp:
+  - uid: Promezio
+    name: Promezio
+    href: Promezio.html
+  - name: .
+  - uid: Promezio.OAIAPI
+    name: OAIAPI
+    href: Promezio.OAIAPI.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities
+    name: Capabilities
+    href: Promezio.OAIAPI.Capabilities.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities.FineTuning
+    name: FineTuning
+    href: Promezio.OAIAPI.Capabilities.FineTuning.html
+  spec.vb:
+  - uid: Promezio
+    name: Promezio
+    href: Promezio.html
+  - name: .
+  - uid: Promezio.OAIAPI
+    name: OAIAPI
+    href: Promezio.OAIAPI.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities
+    name: Capabilities
+    href: Promezio.OAIAPI.Capabilities.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities.FineTuning
+    name: FineTuning
+    href: Promezio.OAIAPI.Capabilities.FineTuning.html

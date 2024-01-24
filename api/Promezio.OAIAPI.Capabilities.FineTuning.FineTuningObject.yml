@@ -1,0 +1,950 @@
+### YamlMime:ManagedReference
+items:
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject
+  commentId: T:Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject
+  id: FineTuningObject
+  parent: Promezio.OAIAPI.Capabilities.FineTuning
+  children:
+  - Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Created_at
+  - Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Error
+  - Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Fine_tuned_model
+  - Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Finished_at
+  - Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Hyperparameters
+  - Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Id
+  - Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Object
+  - Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Organization_it
+  - Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Result_files
+  - Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Status
+  - Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Trained_tokens
+  - Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Training_file
+  - Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Validation_file
+  - Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.model
+  langs:
+  - csharp
+  - vb
+  name: FineTuningObject
+  nameWithType: FineTuningObject
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject
+  type: Class
+  source:
+    remote:
+      path: OAIAPI/Capabilities/FineTuning/FineTuningObject.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: FineTuningObject
+    path: OAIAPI/Capabilities/FineTuning/FineTuningObject.cs
+    startLine: 7
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.FineTuning
+  summary: >-
+    Represents a fine-tuning operation within the Promezio OAIAPI, capturing various details and states of the fine-tuning process.
+
+    This class serves as a central object to track and manage the status and parameters of a fine-tuning task.
+  example: []
+  syntax:
+    content: public class FineTuningObject
+    content.vb: Public Class FineTuningObject
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Id
+  commentId: P:Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Id
+  id: Id
+  parent: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: FineTuningObject.Id
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Id
+  type: Property
+  source:
+    remote:
+      path: OAIAPI/Capabilities/FineTuning/FineTuningObject.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: Id
+    path: OAIAPI/Capabilities/FineTuning/FineTuningObject.cs
+    startLine: 11
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.FineTuning
+  summary: Gets or sets the unique identifier of the fine-tuning operation.
+  example: []
+  syntax:
+    content: public string? Id { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Id As String
+  overload: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Id*
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Created_at
+  commentId: P:Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Created_at
+  id: Created_at
+  parent: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject
+  langs:
+  - csharp
+  - vb
+  name: Created_at
+  nameWithType: FineTuningObject.Created_at
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Created_at
+  type: Property
+  source:
+    remote:
+      path: OAIAPI/Capabilities/FineTuning/FineTuningObject.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: Created_at
+    path: OAIAPI/Capabilities/FineTuning/FineTuningObject.cs
+    startLine: 16
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.FineTuning
+  summary: Gets or sets the timestamp indicating when the fine-tuning operation was created, represented as an integer.
+  example: []
+  syntax:
+    content: public int? Created_at { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public Property Created_at As Integer?
+  overload: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Created_at*
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Error
+  commentId: P:Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Error
+  id: Error
+  parent: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject
+  langs:
+  - csharp
+  - vb
+  name: Error
+  nameWithType: FineTuningObject.Error
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Error
+  type: Property
+  source:
+    remote:
+      path: OAIAPI/Capabilities/FineTuning/FineTuningObject.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: Error
+    path: OAIAPI/Capabilities/FineTuning/FineTuningObject.cs
+    startLine: 21
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.FineTuning
+  summary: Gets or sets any error that might have occurred during the fine-tuning process.
+  example: []
+  syntax:
+    content: public TuningError? Error { get; set; }
+    parameters: []
+    return:
+      type: Promezio.OAIAPI.Capabilities.FineTuning.TuningError
+    content.vb: Public Property [Error] As TuningError
+  overload: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Error*
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Fine_tuned_model
+  commentId: P:Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Fine_tuned_model
+  id: Fine_tuned_model
+  parent: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject
+  langs:
+  - csharp
+  - vb
+  name: Fine_tuned_model
+  nameWithType: FineTuningObject.Fine_tuned_model
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Fine_tuned_model
+  type: Property
+  source:
+    remote:
+      path: OAIAPI/Capabilities/FineTuning/FineTuningObject.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: Fine_tuned_model
+    path: OAIAPI/Capabilities/FineTuning/FineTuningObject.cs
+    startLine: 26
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.FineTuning
+  summary: Gets or sets the identifier of the fine-tuned model generated by this operation.
+  example: []
+  syntax:
+    content: public string? Fine_tuned_model { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Fine_tuned_model As String
+  overload: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Fine_tuned_model*
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Finished_at
+  commentId: P:Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Finished_at
+  id: Finished_at
+  parent: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject
+  langs:
+  - csharp
+  - vb
+  name: Finished_at
+  nameWithType: FineTuningObject.Finished_at
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Finished_at
+  type: Property
+  source:
+    remote:
+      path: OAIAPI/Capabilities/FineTuning/FineTuningObject.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: Finished_at
+    path: OAIAPI/Capabilities/FineTuning/FineTuningObject.cs
+    startLine: 31
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.FineTuning
+  summary: Gets or sets the timestamp indicating when the fine-tuning operation was completed, nullable.
+  example: []
+  syntax:
+    content: public int? Finished_at { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public Property Finished_at As Integer?
+  overload: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Finished_at*
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Hyperparameters
+  commentId: P:Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Hyperparameters
+  id: Hyperparameters
+  parent: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject
+  langs:
+  - csharp
+  - vb
+  name: Hyperparameters
+  nameWithType: FineTuningObject.Hyperparameters
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Hyperparameters
+  type: Property
+  source:
+    remote:
+      path: OAIAPI/Capabilities/FineTuning/FineTuningObject.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: Hyperparameters
+    path: OAIAPI/Capabilities/FineTuning/FineTuningObject.cs
+    startLine: 36
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.FineTuning
+  summary: Gets or sets the hyperparameters used for the fine-tuning operation.
+  example: []
+  syntax:
+    content: public Hyperparameters? Hyperparameters { get; set; }
+    parameters: []
+    return:
+      type: Promezio.OAIAPI.Capabilities.FineTuning.Hyperparameters
+    content.vb: Public Property Hyperparameters As Hyperparameters
+  overload: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Hyperparameters*
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.model
+  commentId: P:Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.model
+  id: model
+  parent: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject
+  langs:
+  - csharp
+  - vb
+  name: model
+  nameWithType: FineTuningObject.model
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.model
+  type: Property
+  source:
+    remote:
+      path: OAIAPI/Capabilities/FineTuning/FineTuningObject.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: model
+    path: OAIAPI/Capabilities/FineTuning/FineTuningObject.cs
+    startLine: 41
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.FineTuning
+  summary: Gets or sets the base model used for fine-tuning.
+  example: []
+  syntax:
+    content: public string? model { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property model As String
+  overload: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.model*
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Object
+  commentId: P:Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Object
+  id: Object
+  parent: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject
+  langs:
+  - csharp
+  - vb
+  name: Object
+  nameWithType: FineTuningObject.Object
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Object
+  type: Property
+  source:
+    remote:
+      path: OAIAPI/Capabilities/FineTuning/FineTuningObject.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: Object
+    path: OAIAPI/Capabilities/FineTuning/FineTuningObject.cs
+    startLine: 46
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.FineTuning
+  summary: Gets or sets the type of object, typically used for internal tracking and identification.
+  example: []
+  syntax:
+    content: public string? Object { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property [Object] As String
+  overload: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Object*
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Organization_it
+  commentId: P:Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Organization_it
+  id: Organization_it
+  parent: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject
+  langs:
+  - csharp
+  - vb
+  name: Organization_it
+  nameWithType: FineTuningObject.Organization_it
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Organization_it
+  type: Property
+  source:
+    remote:
+      path: OAIAPI/Capabilities/FineTuning/FineTuningObject.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: Organization_it
+    path: OAIAPI/Capabilities/FineTuning/FineTuningObject.cs
+    startLine: 51
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.FineTuning
+  summary: Gets or sets the identifier of the organization initiating the fine-tuning operation.
+  example: []
+  syntax:
+    content: public string? Organization_it { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Organization_it As String
+  overload: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Organization_it*
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Result_files
+  commentId: P:Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Result_files
+  id: Result_files
+  parent: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject
+  langs:
+  - csharp
+  - vb
+  name: Result_files
+  nameWithType: FineTuningObject.Result_files
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Result_files
+  type: Property
+  source:
+    remote:
+      path: OAIAPI/Capabilities/FineTuning/FineTuningObject.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: Result_files
+    path: OAIAPI/Capabilities/FineTuning/FineTuningObject.cs
+    startLine: 56
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.FineTuning
+  summary: Gets or sets the array of result file paths or identifiers generated by the fine-tuning operation, nullable.
+  example: []
+  syntax:
+    content: public string[]? Result_files { get; set; }
+    parameters: []
+    return:
+      type: System.String[]
+    content.vb: Public Property Result_files As String()
+  overload: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Result_files*
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Status
+  commentId: P:Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Status
+  id: Status
+  parent: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject
+  langs:
+  - csharp
+  - vb
+  name: Status
+  nameWithType: FineTuningObject.Status
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Status
+  type: Property
+  source:
+    remote:
+      path: OAIAPI/Capabilities/FineTuning/FineTuningObject.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: Status
+    path: OAIAPI/Capabilities/FineTuning/FineTuningObject.cs
+    startLine: 61
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.FineTuning
+  summary: Gets or sets the current status of the fine-tuning operation (e.g., 'running', 'completed', 'failed').
+  example: []
+  syntax:
+    content: public string? Status { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Status As String
+  overload: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Status*
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Trained_tokens
+  commentId: P:Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Trained_tokens
+  id: Trained_tokens
+  parent: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject
+  langs:
+  - csharp
+  - vb
+  name: Trained_tokens
+  nameWithType: FineTuningObject.Trained_tokens
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Trained_tokens
+  type: Property
+  source:
+    remote:
+      path: OAIAPI/Capabilities/FineTuning/FineTuningObject.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: Trained_tokens
+    path: OAIAPI/Capabilities/FineTuning/FineTuningObject.cs
+    startLine: 66
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.FineTuning
+  summary: Gets or sets the number of tokens trained during the operation, nullable.
+  example: []
+  syntax:
+    content: public int? Trained_tokens { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public Property Trained_tokens As Integer?
+  overload: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Trained_tokens*
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Training_file
+  commentId: P:Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Training_file
+  id: Training_file
+  parent: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject
+  langs:
+  - csharp
+  - vb
+  name: Training_file
+  nameWithType: FineTuningObject.Training_file
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Training_file
+  type: Property
+  source:
+    remote:
+      path: OAIAPI/Capabilities/FineTuning/FineTuningObject.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: Training_file
+    path: OAIAPI/Capabilities/FineTuning/FineTuningObject.cs
+    startLine: 71
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.FineTuning
+  summary: Gets or sets the path or identifier of the training data file used in the fine-tuning operation.
+  example: []
+  syntax:
+    content: public string? Training_file { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Training_file As String
+  overload: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Training_file*
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Validation_file
+  commentId: P:Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Validation_file
+  id: Validation_file
+  parent: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject
+  langs:
+  - csharp
+  - vb
+  name: Validation_file
+  nameWithType: FineTuningObject.Validation_file
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Validation_file
+  type: Property
+  source:
+    remote:
+      path: OAIAPI/Capabilities/FineTuning/FineTuningObject.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: Validation_file
+    path: OAIAPI/Capabilities/FineTuning/FineTuningObject.cs
+    startLine: 76
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.FineTuning
+  summary: Gets or sets the path or identifier of the validation data file used in the fine-tuning operation.
+  example: []
+  syntax:
+    content: public string? Validation_file { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Validation_file As String
+  overload: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Validation_file*
+references:
+- uid: Promezio.OAIAPI.Capabilities.FineTuning
+  commentId: N:Promezio.OAIAPI.Capabilities.FineTuning
+  href: Promezio.html
+  name: Promezio.OAIAPI.Capabilities.FineTuning
+  nameWithType: Promezio.OAIAPI.Capabilities.FineTuning
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning
+  spec.csharp:
+  - uid: Promezio
+    name: Promezio
+    href: Promezio.html
+  - name: .
+  - uid: Promezio.OAIAPI
+    name: OAIAPI
+    href: Promezio.OAIAPI.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities
+    name: Capabilities
+    href: Promezio.OAIAPI.Capabilities.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities.FineTuning
+    name: FineTuning
+    href: Promezio.OAIAPI.Capabilities.FineTuning.html
+  spec.vb:
+  - uid: Promezio
+    name: Promezio
+    href: Promezio.html
+  - name: .
+  - uid: Promezio.OAIAPI
+    name: OAIAPI
+    href: Promezio.OAIAPI.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities
+    name: Capabilities
+    href: Promezio.OAIAPI.Capabilities.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities.FineTuning
+    name: FineTuning
+    href: Promezio.OAIAPI.Capabilities.FineTuning.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Id*
+  commentId: Overload:Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Id
+  href: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.html#Promezio_OAIAPI_Capabilities_FineTuning_FineTuningObject_Id
+  name: Id
+  nameWithType: FineTuningObject.Id
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Id
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Created_at*
+  commentId: Overload:Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Created_at
+  href: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.html#Promezio_OAIAPI_Capabilities_FineTuning_FineTuningObject_Created_at
+  name: Created_at
+  nameWithType: FineTuningObject.Created_at
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Created_at
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int?
+  nameWithType: int?
+  fullName: int?
+  nameWithType.vb: Integer?
+  fullName.vb: Integer?
+  name.vb: Integer?
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Error*
+  commentId: Overload:Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Error
+  href: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.html#Promezio_OAIAPI_Capabilities_FineTuning_FineTuningObject_Error
+  name: Error
+  nameWithType: FineTuningObject.Error
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Error
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.TuningError
+  commentId: T:Promezio.OAIAPI.Capabilities.FineTuning.TuningError
+  parent: Promezio.OAIAPI.Capabilities.FineTuning
+  href: Promezio.OAIAPI.Capabilities.FineTuning.TuningError.html
+  name: TuningError
+  nameWithType: TuningError
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.TuningError
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Fine_tuned_model*
+  commentId: Overload:Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Fine_tuned_model
+  href: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.html#Promezio_OAIAPI_Capabilities_FineTuning_FineTuningObject_Fine_tuned_model
+  name: Fine_tuned_model
+  nameWithType: FineTuningObject.Fine_tuned_model
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Fine_tuned_model
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Finished_at*
+  commentId: Overload:Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Finished_at
+  href: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.html#Promezio_OAIAPI_Capabilities_FineTuning_FineTuningObject_Finished_at
+  name: Finished_at
+  nameWithType: FineTuningObject.Finished_at
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Finished_at
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Hyperparameters*
+  commentId: Overload:Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Hyperparameters
+  href: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.html#Promezio_OAIAPI_Capabilities_FineTuning_FineTuningObject_Hyperparameters
+  name: Hyperparameters
+  nameWithType: FineTuningObject.Hyperparameters
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Hyperparameters
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.Hyperparameters
+  commentId: T:Promezio.OAIAPI.Capabilities.FineTuning.Hyperparameters
+  parent: Promezio.OAIAPI.Capabilities.FineTuning
+  href: Promezio.OAIAPI.Capabilities.FineTuning.Hyperparameters.html
+  name: Hyperparameters
+  nameWithType: Hyperparameters
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.Hyperparameters
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.model*
+  commentId: Overload:Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.model
+  href: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.html#Promezio_OAIAPI_Capabilities_FineTuning_FineTuningObject_model
+  name: model
+  nameWithType: FineTuningObject.model
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.model
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Object*
+  commentId: Overload:Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Object
+  href: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.html#Promezio_OAIAPI_Capabilities_FineTuning_FineTuningObject_Object
+  name: Object
+  nameWithType: FineTuningObject.Object
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Object
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Organization_it*
+  commentId: Overload:Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Organization_it
+  href: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.html#Promezio_OAIAPI_Capabilities_FineTuning_FineTuningObject_Organization_it
+  name: Organization_it
+  nameWithType: FineTuningObject.Organization_it
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Organization_it
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Result_files*
+  commentId: Overload:Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Result_files
+  href: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.html#Promezio_OAIAPI_Capabilities_FineTuning_FineTuningObject_Result_files
+  name: Result_files
+  nameWithType: FineTuningObject.Result_files
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Result_files
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Status*
+  commentId: Overload:Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Status
+  href: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.html#Promezio_OAIAPI_Capabilities_FineTuning_FineTuningObject_Status
+  name: Status
+  nameWithType: FineTuningObject.Status
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Status
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Trained_tokens*
+  commentId: Overload:Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Trained_tokens
+  href: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.html#Promezio_OAIAPI_Capabilities_FineTuning_FineTuningObject_Trained_tokens
+  name: Trained_tokens
+  nameWithType: FineTuningObject.Trained_tokens
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Trained_tokens
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Training_file*
+  commentId: Overload:Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Training_file
+  href: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.html#Promezio_OAIAPI_Capabilities_FineTuning_FineTuningObject_Training_file
+  name: Training_file
+  nameWithType: FineTuningObject.Training_file
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Training_file
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Validation_file*
+  commentId: Overload:Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Validation_file
+  href: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.html#Promezio_OAIAPI_Capabilities_FineTuning_FineTuningObject_Validation_file
+  name: Validation_file
+  nameWithType: FineTuningObject.Validation_file
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.Validation_file

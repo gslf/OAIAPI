@@ -1,0 +1,1040 @@
+### YamlMime:ManagedReference
+items:
+- uid: Promezio.OAIAPI.Capabilities.Chat.Config
+  commentId: T:Promezio.OAIAPI.Capabilities.Chat.Config
+  id: Config
+  parent: Promezio.OAIAPI.Capabilities.Chat
+  children:
+  - Promezio.OAIAPI.Capabilities.Chat.Config.#ctor(System.String,System.Int32,System.Boolean,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Int32,System.Decimal,System.Nullable{Promezio.OAIAPI.Capabilities.Chat.ResponseFormat},System.Nullable{System.Int32},System.Decimal,System.Decimal,System.String)
+  - Promezio.OAIAPI.Capabilities.Chat.Config.FrequencyPenalty
+  - Promezio.OAIAPI.Capabilities.Chat.Config.Logprobs
+  - Promezio.OAIAPI.Capabilities.Chat.Config.MaxTokens
+  - Promezio.OAIAPI.Capabilities.Chat.Config.Model
+  - Promezio.OAIAPI.Capabilities.Chat.Config.N
+  - Promezio.OAIAPI.Capabilities.Chat.Config.PresencePenalty
+  - Promezio.OAIAPI.Capabilities.Chat.Config.ResponseFormat
+  - Promezio.OAIAPI.Capabilities.Chat.Config.Seed
+  - Promezio.OAIAPI.Capabilities.Chat.Config.Stop
+  - Promezio.OAIAPI.Capabilities.Chat.Config.Stream
+  - Promezio.OAIAPI.Capabilities.Chat.Config.Temperature
+  - Promezio.OAIAPI.Capabilities.Chat.Config.TopLogprobs
+  - Promezio.OAIAPI.Capabilities.Chat.Config.TopP
+  - Promezio.OAIAPI.Capabilities.Chat.Config.User
+  langs:
+  - csharp
+  - vb
+  name: Config
+  nameWithType: Config
+  fullName: Promezio.OAIAPI.Capabilities.Chat.Config
+  type: Class
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Chat/Config.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: Config
+    path: OAIAPI/Capabilities/Chat/Config.cs
+    startLine: 5
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Chat
+  summary: A Configuration class for the chat capability
+  example: []
+  syntax:
+    content: public class Config
+    content.vb: Public Class Config
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Promezio.OAIAPI.Capabilities.Chat.Config.Model
+  commentId: P:Promezio.OAIAPI.Capabilities.Chat.Config.Model
+  id: Model
+  parent: Promezio.OAIAPI.Capabilities.Chat.Config
+  langs:
+  - csharp
+  - vb
+  name: Model
+  nameWithType: Config.Model
+  fullName: Promezio.OAIAPI.Capabilities.Chat.Config.Model
+  type: Property
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Chat/Config.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: Model
+    path: OAIAPI/Capabilities/Chat/Config.cs
+    startLine: 6
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Chat
+  syntax:
+    content: public string? Model { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Model As String
+  overload: Promezio.OAIAPI.Capabilities.Chat.Config.Model*
+- uid: Promezio.OAIAPI.Capabilities.Chat.Config.FrequencyPenalty
+  commentId: P:Promezio.OAIAPI.Capabilities.Chat.Config.FrequencyPenalty
+  id: FrequencyPenalty
+  parent: Promezio.OAIAPI.Capabilities.Chat.Config
+  langs:
+  - csharp
+  - vb
+  name: FrequencyPenalty
+  nameWithType: Config.FrequencyPenalty
+  fullName: Promezio.OAIAPI.Capabilities.Chat.Config.FrequencyPenalty
+  type: Property
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Chat/Config.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: FrequencyPenalty
+    path: OAIAPI/Capabilities/Chat/Config.cs
+    startLine: 7
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Chat
+  syntax:
+    content: public int FrequencyPenalty { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property FrequencyPenalty As Integer
+  overload: Promezio.OAIAPI.Capabilities.Chat.Config.FrequencyPenalty*
+- uid: Promezio.OAIAPI.Capabilities.Chat.Config.Logprobs
+  commentId: P:Promezio.OAIAPI.Capabilities.Chat.Config.Logprobs
+  id: Logprobs
+  parent: Promezio.OAIAPI.Capabilities.Chat.Config
+  langs:
+  - csharp
+  - vb
+  name: Logprobs
+  nameWithType: Config.Logprobs
+  fullName: Promezio.OAIAPI.Capabilities.Chat.Config.Logprobs
+  type: Property
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Chat/Config.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: Logprobs
+    path: OAIAPI/Capabilities/Chat/Config.cs
+    startLine: 8
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Chat
+  syntax:
+    content: public bool Logprobs { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property Logprobs As Boolean
+  overload: Promezio.OAIAPI.Capabilities.Chat.Config.Logprobs*
+- uid: Promezio.OAIAPI.Capabilities.Chat.Config.TopLogprobs
+  commentId: P:Promezio.OAIAPI.Capabilities.Chat.Config.TopLogprobs
+  id: TopLogprobs
+  parent: Promezio.OAIAPI.Capabilities.Chat.Config
+  langs:
+  - csharp
+  - vb
+  name: TopLogprobs
+  nameWithType: Config.TopLogprobs
+  fullName: Promezio.OAIAPI.Capabilities.Chat.Config.TopLogprobs
+  type: Property
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Chat/Config.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: TopLogprobs
+    path: OAIAPI/Capabilities/Chat/Config.cs
+    startLine: 9
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Chat
+  syntax:
+    content: public int? TopLogprobs { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public Property TopLogprobs As Integer?
+  overload: Promezio.OAIAPI.Capabilities.Chat.Config.TopLogprobs*
+- uid: Promezio.OAIAPI.Capabilities.Chat.Config.MaxTokens
+  commentId: P:Promezio.OAIAPI.Capabilities.Chat.Config.MaxTokens
+  id: MaxTokens
+  parent: Promezio.OAIAPI.Capabilities.Chat.Config
+  langs:
+  - csharp
+  - vb
+  name: MaxTokens
+  nameWithType: Config.MaxTokens
+  fullName: Promezio.OAIAPI.Capabilities.Chat.Config.MaxTokens
+  type: Property
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Chat/Config.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: MaxTokens
+    path: OAIAPI/Capabilities/Chat/Config.cs
+    startLine: 10
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Chat
+  syntax:
+    content: public int? MaxTokens { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public Property MaxTokens As Integer?
+  overload: Promezio.OAIAPI.Capabilities.Chat.Config.MaxTokens*
+- uid: Promezio.OAIAPI.Capabilities.Chat.Config.N
+  commentId: P:Promezio.OAIAPI.Capabilities.Chat.Config.N
+  id: N
+  parent: Promezio.OAIAPI.Capabilities.Chat.Config
+  langs:
+  - csharp
+  - vb
+  name: N
+  nameWithType: Config.N
+  fullName: Promezio.OAIAPI.Capabilities.Chat.Config.N
+  type: Property
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Chat/Config.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: N
+    path: OAIAPI/Capabilities/Chat/Config.cs
+    startLine: 11
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Chat
+  syntax:
+    content: public int N { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property N As Integer
+  overload: Promezio.OAIAPI.Capabilities.Chat.Config.N*
+- uid: Promezio.OAIAPI.Capabilities.Chat.Config.PresencePenalty
+  commentId: P:Promezio.OAIAPI.Capabilities.Chat.Config.PresencePenalty
+  id: PresencePenalty
+  parent: Promezio.OAIAPI.Capabilities.Chat.Config
+  langs:
+  - csharp
+  - vb
+  name: PresencePenalty
+  nameWithType: Config.PresencePenalty
+  fullName: Promezio.OAIAPI.Capabilities.Chat.Config.PresencePenalty
+  type: Property
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Chat/Config.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: PresencePenalty
+    path: OAIAPI/Capabilities/Chat/Config.cs
+    startLine: 12
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Chat
+  syntax:
+    content: public decimal PresencePenalty { get; set; }
+    parameters: []
+    return:
+      type: System.Decimal
+    content.vb: Public Property PresencePenalty As Decimal
+  overload: Promezio.OAIAPI.Capabilities.Chat.Config.PresencePenalty*
+- uid: Promezio.OAIAPI.Capabilities.Chat.Config.ResponseFormat
+  commentId: P:Promezio.OAIAPI.Capabilities.Chat.Config.ResponseFormat
+  id: ResponseFormat
+  parent: Promezio.OAIAPI.Capabilities.Chat.Config
+  langs:
+  - csharp
+  - vb
+  name: ResponseFormat
+  nameWithType: Config.ResponseFormat
+  fullName: Promezio.OAIAPI.Capabilities.Chat.Config.ResponseFormat
+  type: Property
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Chat/Config.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: ResponseFormat
+    path: OAIAPI/Capabilities/Chat/Config.cs
+    startLine: 13
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Chat
+  syntax:
+    content: public ResponseFormat? ResponseFormat { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{Promezio.OAIAPI.Capabilities.Chat.ResponseFormat}
+    content.vb: Public Property ResponseFormat As ResponseFormat?
+  overload: Promezio.OAIAPI.Capabilities.Chat.Config.ResponseFormat*
+- uid: Promezio.OAIAPI.Capabilities.Chat.Config.Seed
+  commentId: P:Promezio.OAIAPI.Capabilities.Chat.Config.Seed
+  id: Seed
+  parent: Promezio.OAIAPI.Capabilities.Chat.Config
+  langs:
+  - csharp
+  - vb
+  name: Seed
+  nameWithType: Config.Seed
+  fullName: Promezio.OAIAPI.Capabilities.Chat.Config.Seed
+  type: Property
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Chat/Config.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: Seed
+    path: OAIAPI/Capabilities/Chat/Config.cs
+    startLine: 14
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Chat
+  syntax:
+    content: public int? Seed { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public Property Seed As Integer?
+  overload: Promezio.OAIAPI.Capabilities.Chat.Config.Seed*
+- uid: Promezio.OAIAPI.Capabilities.Chat.Config.Stop
+  commentId: P:Promezio.OAIAPI.Capabilities.Chat.Config.Stop
+  id: Stop
+  parent: Promezio.OAIAPI.Capabilities.Chat.Config
+  langs:
+  - csharp
+  - vb
+  name: Stop
+  nameWithType: Config.Stop
+  fullName: Promezio.OAIAPI.Capabilities.Chat.Config.Stop
+  type: Property
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Chat/Config.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: Stop
+    path: OAIAPI/Capabilities/Chat/Config.cs
+    startLine: 15
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Chat
+  syntax:
+    content: public string[]? Stop { get; set; }
+    parameters: []
+    return:
+      type: System.String[]
+    content.vb: Public Property [Stop] As String()
+  overload: Promezio.OAIAPI.Capabilities.Chat.Config.Stop*
+- uid: Promezio.OAIAPI.Capabilities.Chat.Config.Stream
+  commentId: P:Promezio.OAIAPI.Capabilities.Chat.Config.Stream
+  id: Stream
+  parent: Promezio.OAIAPI.Capabilities.Chat.Config
+  langs:
+  - csharp
+  - vb
+  name: Stream
+  nameWithType: Config.Stream
+  fullName: Promezio.OAIAPI.Capabilities.Chat.Config.Stream
+  type: Property
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Chat/Config.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: Stream
+    path: OAIAPI/Capabilities/Chat/Config.cs
+    startLine: 16
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Chat
+  syntax:
+    content: public bool Stream { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property Stream As Boolean
+  overload: Promezio.OAIAPI.Capabilities.Chat.Config.Stream*
+- uid: Promezio.OAIAPI.Capabilities.Chat.Config.Temperature
+  commentId: P:Promezio.OAIAPI.Capabilities.Chat.Config.Temperature
+  id: Temperature
+  parent: Promezio.OAIAPI.Capabilities.Chat.Config
+  langs:
+  - csharp
+  - vb
+  name: Temperature
+  nameWithType: Config.Temperature
+  fullName: Promezio.OAIAPI.Capabilities.Chat.Config.Temperature
+  type: Property
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Chat/Config.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: Temperature
+    path: OAIAPI/Capabilities/Chat/Config.cs
+    startLine: 17
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Chat
+  syntax:
+    content: public decimal Temperature { get; set; }
+    parameters: []
+    return:
+      type: System.Decimal
+    content.vb: Public Property Temperature As Decimal
+  overload: Promezio.OAIAPI.Capabilities.Chat.Config.Temperature*
+- uid: Promezio.OAIAPI.Capabilities.Chat.Config.TopP
+  commentId: P:Promezio.OAIAPI.Capabilities.Chat.Config.TopP
+  id: TopP
+  parent: Promezio.OAIAPI.Capabilities.Chat.Config
+  langs:
+  - csharp
+  - vb
+  name: TopP
+  nameWithType: Config.TopP
+  fullName: Promezio.OAIAPI.Capabilities.Chat.Config.TopP
+  type: Property
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Chat/Config.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: TopP
+    path: OAIAPI/Capabilities/Chat/Config.cs
+    startLine: 18
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Chat
+  syntax:
+    content: public decimal TopP { get; set; }
+    parameters: []
+    return:
+      type: System.Decimal
+    content.vb: Public Property TopP As Decimal
+  overload: Promezio.OAIAPI.Capabilities.Chat.Config.TopP*
+- uid: Promezio.OAIAPI.Capabilities.Chat.Config.User
+  commentId: P:Promezio.OAIAPI.Capabilities.Chat.Config.User
+  id: User
+  parent: Promezio.OAIAPI.Capabilities.Chat.Config
+  langs:
+  - csharp
+  - vb
+  name: User
+  nameWithType: Config.User
+  fullName: Promezio.OAIAPI.Capabilities.Chat.Config.User
+  type: Property
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Chat/Config.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: User
+    path: OAIAPI/Capabilities/Chat/Config.cs
+    startLine: 19
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Chat
+  syntax:
+    content: public string? User { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property User As String
+  overload: Promezio.OAIAPI.Capabilities.Chat.Config.User*
+- uid: Promezio.OAIAPI.Capabilities.Chat.Config.#ctor(System.String,System.Int32,System.Boolean,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Int32,System.Decimal,System.Nullable{Promezio.OAIAPI.Capabilities.Chat.ResponseFormat},System.Nullable{System.Int32},System.Decimal,System.Decimal,System.String)
+  commentId: M:Promezio.OAIAPI.Capabilities.Chat.Config.#ctor(System.String,System.Int32,System.Boolean,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Int32,System.Decimal,System.Nullable{Promezio.OAIAPI.Capabilities.Chat.ResponseFormat},System.Nullable{System.Int32},System.Decimal,System.Decimal,System.String)
+  id: '#ctor(System.String,System.Int32,System.Boolean,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Int32,System.Decimal,System.Nullable{Promezio.OAIAPI.Capabilities.Chat.ResponseFormat},System.Nullable{System.Int32},System.Decimal,System.Decimal,System.String)'
+  parent: Promezio.OAIAPI.Capabilities.Chat.Config
+  langs:
+  - csharp
+  - vb
+  name: Config(string, int, bool, int?, int?, int, decimal, ResponseFormat?, int?, decimal, decimal, string?)
+  nameWithType: Config.Config(string, int, bool, int?, int?, int, decimal, ResponseFormat?, int?, decimal, decimal, string?)
+  fullName: Promezio.OAIAPI.Capabilities.Chat.Config.Config(string, int, bool, int?, int?, int, decimal, Promezio.OAIAPI.Capabilities.Chat.ResponseFormat?, int?, decimal, decimal, string?)
+  type: Constructor
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Chat/Config.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: .ctor
+    path: OAIAPI/Capabilities/Chat/Config.cs
+    startLine: 41
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Chat
+  summary: Initializes che configuration instance with specified parameters.
+  remarks: This method sets up the parameters for generating responses using a specific model. It includes various options to control the generation behavior, such as penalties, probabilities, and format of the response.
+  example: []
+  syntax:
+    content: public Config(string model, int frequencyPenalty = 0, bool logprobs = false, int? topLogprobs = null, int? maxTokens = null, int n = 1, decimal presencePenalty = 0, ResponseFormat? responseFormat = null, int? seed = null, decimal temperature = 1, decimal topP = 1, string? user = null)
+    parameters:
+    - id: model
+      type: System.String
+      description: The model identifier used for generating responses.
+    - id: frequencyPenalty
+      type: System.Int32
+    - id: logprobs
+      type: System.Boolean
+      description: Optional flag to include log probabilities in the response. Default is false.
+    - id: topLogprobs
+      type: System.Nullable{System.Int32}
+    - id: maxTokens
+      type: System.Nullable{System.Int32}
+    - id: n
+      type: System.Int32
+      description: Number of responses to generate. Default is 1.
+    - id: presencePenalty
+      type: System.Decimal
+    - id: responseFormat
+      type: System.Nullable{Promezio.OAIAPI.Capabilities.Chat.ResponseFormat}
+    - id: seed
+      type: System.Nullable{System.Int32}
+      description: Optional seed for random number generation. Default is null.
+    - id: temperature
+      type: System.Decimal
+      description: Controls randomness in response generation, ranging from 0 to 2. Default is 1.
+    - id: topP
+      type: System.Decimal
+    - id: user
+      type: System.String
+      description: Optional user identifier. Default is null.
+    content.vb: Public Sub New(model As String, frequencyPenalty As Integer = 0, logprobs As Boolean = False, topLogprobs As Integer? = Nothing, maxTokens As Integer? = Nothing, n As Integer = 1, presencePenalty As Decimal = 0, responseFormat As ResponseFormat? = Nothing, seed As Integer? = Nothing, temperature As Decimal = 1, topP As Decimal = 1, user As String = Nothing)
+  overload: Promezio.OAIAPI.Capabilities.Chat.Config.#ctor*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: Thrown when provided arguments are outside their allowed range.
+  nameWithType.vb: Config.New(String, Integer, Boolean, Integer?, Integer?, Integer, Decimal, ResponseFormat?, Integer?, Decimal, Decimal, String)
+  fullName.vb: Promezio.OAIAPI.Capabilities.Chat.Config.New(String, Integer, Boolean, Integer?, Integer?, Integer, Decimal, Promezio.OAIAPI.Capabilities.Chat.ResponseFormat?, Integer?, Decimal, Decimal, String)
+  name.vb: New(String, Integer, Boolean, Integer?, Integer?, Integer, Decimal, ResponseFormat?, Integer?, Decimal, Decimal, String)
+references:
+- uid: Promezio.OAIAPI.Capabilities.Chat
+  commentId: N:Promezio.OAIAPI.Capabilities.Chat
+  href: Promezio.html
+  name: Promezio.OAIAPI.Capabilities.Chat
+  nameWithType: Promezio.OAIAPI.Capabilities.Chat
+  fullName: Promezio.OAIAPI.Capabilities.Chat
+  spec.csharp:
+  - uid: Promezio
+    name: Promezio
+    href: Promezio.html
+  - name: .
+  - uid: Promezio.OAIAPI
+    name: OAIAPI
+    href: Promezio.OAIAPI.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities
+    name: Capabilities
+    href: Promezio.OAIAPI.Capabilities.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities.Chat
+    name: Chat
+    href: Promezio.OAIAPI.Capabilities.Chat.html
+  spec.vb:
+  - uid: Promezio
+    name: Promezio
+    href: Promezio.html
+  - name: .
+  - uid: Promezio.OAIAPI
+    name: OAIAPI
+    href: Promezio.OAIAPI.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities
+    name: Capabilities
+    href: Promezio.OAIAPI.Capabilities.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities.Chat
+    name: Chat
+    href: Promezio.OAIAPI.Capabilities.Chat.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Promezio.OAIAPI.Capabilities.Chat.Config.Model*
+  commentId: Overload:Promezio.OAIAPI.Capabilities.Chat.Config.Model
+  href: Promezio.OAIAPI.Capabilities.Chat.Config.html#Promezio_OAIAPI_Capabilities_Chat_Config_Model
+  name: Model
+  nameWithType: Config.Model
+  fullName: Promezio.OAIAPI.Capabilities.Chat.Config.Model
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Promezio.OAIAPI.Capabilities.Chat.Config.FrequencyPenalty*
+  commentId: Overload:Promezio.OAIAPI.Capabilities.Chat.Config.FrequencyPenalty
+  href: Promezio.OAIAPI.Capabilities.Chat.Config.html#Promezio_OAIAPI_Capabilities_Chat_Config_FrequencyPenalty
+  name: FrequencyPenalty
+  nameWithType: Config.FrequencyPenalty
+  fullName: Promezio.OAIAPI.Capabilities.Chat.Config.FrequencyPenalty
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Promezio.OAIAPI.Capabilities.Chat.Config.Logprobs*
+  commentId: Overload:Promezio.OAIAPI.Capabilities.Chat.Config.Logprobs
+  href: Promezio.OAIAPI.Capabilities.Chat.Config.html#Promezio_OAIAPI_Capabilities_Chat_Config_Logprobs
+  name: Logprobs
+  nameWithType: Config.Logprobs
+  fullName: Promezio.OAIAPI.Capabilities.Chat.Config.Logprobs
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Promezio.OAIAPI.Capabilities.Chat.Config.TopLogprobs*
+  commentId: Overload:Promezio.OAIAPI.Capabilities.Chat.Config.TopLogprobs
+  href: Promezio.OAIAPI.Capabilities.Chat.Config.html#Promezio_OAIAPI_Capabilities_Chat_Config_TopLogprobs
+  name: TopLogprobs
+  nameWithType: Config.TopLogprobs
+  fullName: Promezio.OAIAPI.Capabilities.Chat.Config.TopLogprobs
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int?
+  nameWithType: int?
+  fullName: int?
+  nameWithType.vb: Integer?
+  fullName.vb: Integer?
+  name.vb: Integer?
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Promezio.OAIAPI.Capabilities.Chat.Config.MaxTokens*
+  commentId: Overload:Promezio.OAIAPI.Capabilities.Chat.Config.MaxTokens
+  href: Promezio.OAIAPI.Capabilities.Chat.Config.html#Promezio_OAIAPI_Capabilities_Chat_Config_MaxTokens
+  name: MaxTokens
+  nameWithType: Config.MaxTokens
+  fullName: Promezio.OAIAPI.Capabilities.Chat.Config.MaxTokens
+- uid: Promezio.OAIAPI.Capabilities.Chat.Config.N*
+  commentId: Overload:Promezio.OAIAPI.Capabilities.Chat.Config.N
+  href: Promezio.OAIAPI.Capabilities.Chat.Config.html#Promezio_OAIAPI_Capabilities_Chat_Config_N
+  name: N
+  nameWithType: Config.N
+  fullName: Promezio.OAIAPI.Capabilities.Chat.Config.N
+- uid: Promezio.OAIAPI.Capabilities.Chat.Config.PresencePenalty*
+  commentId: Overload:Promezio.OAIAPI.Capabilities.Chat.Config.PresencePenalty
+  href: Promezio.OAIAPI.Capabilities.Chat.Config.html#Promezio_OAIAPI_Capabilities_Chat_Config_PresencePenalty
+  name: PresencePenalty
+  nameWithType: Config.PresencePenalty
+  fullName: Promezio.OAIAPI.Capabilities.Chat.Config.PresencePenalty
+- uid: System.Decimal
+  commentId: T:System.Decimal
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.decimal
+  name: decimal
+  nameWithType: decimal
+  fullName: decimal
+  nameWithType.vb: Decimal
+  fullName.vb: Decimal
+  name.vb: Decimal
+- uid: Promezio.OAIAPI.Capabilities.Chat.Config.ResponseFormat*
+  commentId: Overload:Promezio.OAIAPI.Capabilities.Chat.Config.ResponseFormat
+  href: Promezio.OAIAPI.Capabilities.Chat.Config.html#Promezio_OAIAPI_Capabilities_Chat_Config_ResponseFormat
+  name: ResponseFormat
+  nameWithType: Config.ResponseFormat
+  fullName: Promezio.OAIAPI.Capabilities.Chat.Config.ResponseFormat
+- uid: System.Nullable{Promezio.OAIAPI.Capabilities.Chat.ResponseFormat}
+  commentId: T:System.Nullable{Promezio.OAIAPI.Capabilities.Chat.ResponseFormat}
+  parent: System
+  definition: System.Nullable`1
+  href: Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.html
+  name: ResponseFormat?
+  nameWithType: ResponseFormat?
+  fullName: Promezio.OAIAPI.Capabilities.Chat.ResponseFormat?
+  spec.csharp:
+  - uid: Promezio.OAIAPI.Capabilities.Chat.ResponseFormat
+    name: ResponseFormat
+    href: Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.html
+  - name: '?'
+  spec.vb:
+  - uid: Promezio.OAIAPI.Capabilities.Chat.ResponseFormat
+    name: ResponseFormat
+    href: Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.html
+  - name: '?'
+- uid: Promezio.OAIAPI.Capabilities.Chat.Config.Seed*
+  commentId: Overload:Promezio.OAIAPI.Capabilities.Chat.Config.Seed
+  href: Promezio.OAIAPI.Capabilities.Chat.Config.html#Promezio_OAIAPI_Capabilities_Chat_Config_Seed
+  name: Seed
+  nameWithType: Config.Seed
+  fullName: Promezio.OAIAPI.Capabilities.Chat.Config.Seed
+- uid: Promezio.OAIAPI.Capabilities.Chat.Config.Stop*
+  commentId: Overload:Promezio.OAIAPI.Capabilities.Chat.Config.Stop
+  href: Promezio.OAIAPI.Capabilities.Chat.Config.html#Promezio_OAIAPI_Capabilities_Chat_Config_Stop
+  name: Stop
+  nameWithType: Config.Stop
+  fullName: Promezio.OAIAPI.Capabilities.Chat.Config.Stop
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: Promezio.OAIAPI.Capabilities.Chat.Config.Stream*
+  commentId: Overload:Promezio.OAIAPI.Capabilities.Chat.Config.Stream
+  href: Promezio.OAIAPI.Capabilities.Chat.Config.html#Promezio_OAIAPI_Capabilities_Chat_Config_Stream
+  name: Stream
+  nameWithType: Config.Stream
+  fullName: Promezio.OAIAPI.Capabilities.Chat.Config.Stream
+- uid: Promezio.OAIAPI.Capabilities.Chat.Config.Temperature*
+  commentId: Overload:Promezio.OAIAPI.Capabilities.Chat.Config.Temperature
+  href: Promezio.OAIAPI.Capabilities.Chat.Config.html#Promezio_OAIAPI_Capabilities_Chat_Config_Temperature
+  name: Temperature
+  nameWithType: Config.Temperature
+  fullName: Promezio.OAIAPI.Capabilities.Chat.Config.Temperature
+- uid: Promezio.OAIAPI.Capabilities.Chat.Config.TopP*
+  commentId: Overload:Promezio.OAIAPI.Capabilities.Chat.Config.TopP
+  href: Promezio.OAIAPI.Capabilities.Chat.Config.html#Promezio_OAIAPI_Capabilities_Chat_Config_TopP
+  name: TopP
+  nameWithType: Config.TopP
+  fullName: Promezio.OAIAPI.Capabilities.Chat.Config.TopP
+- uid: Promezio.OAIAPI.Capabilities.Chat.Config.User*
+  commentId: Overload:Promezio.OAIAPI.Capabilities.Chat.Config.User
+  href: Promezio.OAIAPI.Capabilities.Chat.Config.html#Promezio_OAIAPI_Capabilities_Chat_Config_User
+  name: User
+  nameWithType: Config.User
+  fullName: Promezio.OAIAPI.Capabilities.Chat.Config.User
+- uid: System.ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception
+  name: ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  fullName: System.ArgumentOutOfRangeException
+- uid: Promezio.OAIAPI.Capabilities.Chat.Config.#ctor*
+  commentId: Overload:Promezio.OAIAPI.Capabilities.Chat.Config.#ctor
+  href: Promezio.OAIAPI.Capabilities.Chat.Config.html#Promezio_OAIAPI_Capabilities_Chat_Config__ctor_System_String_System_Int32_System_Boolean_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Int32_System_Decimal_System_Nullable_Promezio_OAIAPI_Capabilities_Chat_ResponseFormat__System_Nullable_System_Int32__System_Decimal_System_Decimal_System_String_
+  name: Config
+  nameWithType: Config.Config
+  fullName: Promezio.OAIAPI.Capabilities.Chat.Config.Config
+  nameWithType.vb: Config.New
+  fullName.vb: Promezio.OAIAPI.Capabilities.Chat.Config.New
+  name.vb: New

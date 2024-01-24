@@ -1,0 +1,54 @@
+### YamlMime:ManagedReference
+items:
+- uid: Promezio.OAIAPI.Capabilities
+  commentId: N:Promezio.OAIAPI.Capabilities
+  id: Promezio.OAIAPI.Capabilities
+  children:
+  - Promezio.OAIAPI.Capabilities.Capability
+  langs:
+  - csharp
+  - vb
+  name: Promezio.OAIAPI.Capabilities
+  nameWithType: Promezio.OAIAPI.Capabilities
+  fullName: Promezio.OAIAPI.Capabilities
+  type: Namespace
+  assemblies:
+  - OAIAPI
+references:
+- uid: Promezio.OAIAPI.Capabilities.Capability
+  commentId: T:Promezio.OAIAPI.Capabilities.Capability
+  parent: Promezio.OAIAPI.Capabilities
+  href: Promezio.OAIAPI.Capabilities.Capability.html
+  name: Capability
+  nameWithType: Capability
+  fullName: Promezio.OAIAPI.Capabilities.Capability
+- uid: Promezio.OAIAPI.Capabilities
+  commentId: N:Promezio.OAIAPI.Capabilities
+  href: Promezio.html
+  name: Promezio.OAIAPI.Capabilities
+  nameWithType: Promezio.OAIAPI.Capabilities
+  fullName: Promezio.OAIAPI.Capabilities
+  spec.csharp:
+  - uid: Promezio
+    name: Promezio
+    href: Promezio.html
+  - name: .
+  - uid: Promezio.OAIAPI
+    name: OAIAPI
+    href: Promezio.OAIAPI.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities
+    name: Capabilities
+    href: Promezio.OAIAPI.Capabilities.html
+  spec.vb:
+  - uid: Promezio
+    name: Promezio
+    href: Promezio.html
+  - name: .
+  - uid: Promezio.OAIAPI
+    name: OAIAPI
+    href: Promezio.OAIAPI.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities
+    name: Capabilities
+    href: Promezio.OAIAPI.Capabilities.html

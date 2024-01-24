@@ -1,0 +1,76 @@
+### YamlMime:ManagedReference
+items:
+- uid: Promezio.OAIAPI.Capabilities.Files
+  commentId: N:Promezio.OAIAPI.Capabilities.Files
+  id: Promezio.OAIAPI.Capabilities.Files
+  children:
+  - Promezio.OAIAPI.Capabilities.Files.FileObject
+  - Promezio.OAIAPI.Capabilities.Files.Files
+  - Promezio.OAIAPI.Capabilities.Files.Purposes
+  langs:
+  - csharp
+  - vb
+  name: Promezio.OAIAPI.Capabilities.Files
+  nameWithType: Promezio.OAIAPI.Capabilities.Files
+  fullName: Promezio.OAIAPI.Capabilities.Files
+  type: Namespace
+  assemblies:
+  - OAIAPI
+references:
+- uid: Promezio.OAIAPI.Capabilities.Files.FileObject
+  commentId: T:Promezio.OAIAPI.Capabilities.Files.FileObject
+  href: Promezio.OAIAPI.Capabilities.Files.FileObject.html
+  name: FileObject
+  nameWithType: FileObject
+  fullName: Promezio.OAIAPI.Capabilities.Files.FileObject
+- uid: Promezio.OAIAPI.Capabilities.Files.Files
+  commentId: T:Promezio.OAIAPI.Capabilities.Files.Files
+  parent: Promezio.OAIAPI.Capabilities.Files
+  href: Promezio.OAIAPI.Capabilities.Files.Files.html
+  name: Files
+  nameWithType: Files
+  fullName: Promezio.OAIAPI.Capabilities.Files.Files
+- uid: Promezio.OAIAPI.Capabilities.Files.Purposes
+  commentId: T:Promezio.OAIAPI.Capabilities.Files.Purposes
+  href: Promezio.OAIAPI.Capabilities.Files.Purposes.html
+  name: Purposes
+  nameWithType: Purposes
+  fullName: Promezio.OAIAPI.Capabilities.Files.Purposes
+- uid: Promezio.OAIAPI.Capabilities.Files
+  commentId: N:Promezio.OAIAPI.Capabilities.Files
+  href: Promezio.html
+  name: Promezio.OAIAPI.Capabilities.Files
+  nameWithType: Promezio.OAIAPI.Capabilities.Files
+  fullName: Promezio.OAIAPI.Capabilities.Files
+  spec.csharp:
+  - uid: Promezio
+    name: Promezio
+    href: Promezio.html
+  - name: .
+  - uid: Promezio.OAIAPI
+    name: OAIAPI
+    href: Promezio.OAIAPI.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities
+    name: Capabilities
+    href: Promezio.OAIAPI.Capabilities.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities.Files
+    name: Files
+    href: Promezio.OAIAPI.Capabilities.Files.html
+  spec.vb:
+  - uid: Promezio
+    name: Promezio
+    href: Promezio.html
+  - name: .
+  - uid: Promezio.OAIAPI
+    name: OAIAPI
+    href: Promezio.OAIAPI.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities
+    name: Capabilities
+    href: Promezio.OAIAPI.Capabilities.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities.Files
+    name: Files
+    href: Promezio.OAIAPI.Capabilities.Files.html

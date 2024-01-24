@@ -1,0 +1,487 @@
+### YamlMime:ManagedReference
+items:
+- uid: Promezio.OAIAPI.Utils.LowerCaseNamingPolicy
+  commentId: T:Promezio.OAIAPI.Utils.LowerCaseNamingPolicy
+  id: LowerCaseNamingPolicy
+  parent: Promezio.OAIAPI.Utils
+  children:
+  - Promezio.OAIAPI.Utils.LowerCaseNamingPolicy.ConvertName(System.String)
+  langs:
+  - csharp
+  - vb
+  name: LowerCaseNamingPolicy
+  nameWithType: LowerCaseNamingPolicy
+  fullName: Promezio.OAIAPI.Utils.LowerCaseNamingPolicy
+  type: Class
+  source:
+    remote:
+      path: OAIAPI/Utils/LowerCaseNamingPolicy.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: LowerCaseNamingPolicy
+    path: OAIAPI/Utils/LowerCaseNamingPolicy.cs
+    startLine: 3
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Utils
+  syntax:
+    content: 'public class LowerCaseNamingPolicy : JsonNamingPolicy'
+    content.vb: Public Class LowerCaseNamingPolicy Inherits JsonNamingPolicy
+  inheritance:
+  - System.Object
+  - System.Text.Json.JsonNamingPolicy
+  inheritedMembers:
+  - System.Text.Json.JsonNamingPolicy.CamelCase
+  - System.Text.Json.JsonNamingPolicy.KebabCaseLower
+  - System.Text.Json.JsonNamingPolicy.KebabCaseUpper
+  - System.Text.Json.JsonNamingPolicy.SnakeCaseLower
+  - System.Text.Json.JsonNamingPolicy.SnakeCaseUpper
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Promezio.OAIAPI.Utils.LowerCaseNamingPolicy.ConvertName(System.String)
+  commentId: M:Promezio.OAIAPI.Utils.LowerCaseNamingPolicy.ConvertName(System.String)
+  id: ConvertName(System.String)
+  parent: Promezio.OAIAPI.Utils.LowerCaseNamingPolicy
+  langs:
+  - csharp
+  - vb
+  name: ConvertName(string)
+  nameWithType: LowerCaseNamingPolicy.ConvertName(string)
+  fullName: Promezio.OAIAPI.Utils.LowerCaseNamingPolicy.ConvertName(string)
+  type: Method
+  source:
+    remote:
+      path: OAIAPI/Utils/LowerCaseNamingPolicy.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: ConvertName
+    path: OAIAPI/Utils/LowerCaseNamingPolicy.cs
+    startLine: 4
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Utils
+  summary: When overridden in a derived class, converts the specified name according to the policy.
+  example: []
+  syntax:
+    content: public override string ConvertName(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name to convert.
+    return:
+      type: System.String
+      description: The converted name.
+    content.vb: Public Overrides Function ConvertName(name As String) As String
+  overridden: System.Text.Json.JsonNamingPolicy.ConvertName(System.String)
+  overload: Promezio.OAIAPI.Utils.LowerCaseNamingPolicy.ConvertName*
+  nameWithType.vb: LowerCaseNamingPolicy.ConvertName(String)
+  fullName.vb: Promezio.OAIAPI.Utils.LowerCaseNamingPolicy.ConvertName(String)
+  name.vb: ConvertName(String)
+references:
+- uid: Promezio.OAIAPI.Utils
+  commentId: N:Promezio.OAIAPI.Utils
+  href: Promezio.html
+  name: Promezio.OAIAPI.Utils
+  nameWithType: Promezio.OAIAPI.Utils
+  fullName: Promezio.OAIAPI.Utils
+  spec.csharp:
+  - uid: Promezio
+    name: Promezio
+    href: Promezio.html
+  - name: .
+  - uid: Promezio.OAIAPI
+    name: OAIAPI
+    href: Promezio.OAIAPI.html
+  - name: .
+  - uid: Promezio.OAIAPI.Utils
+    name: Utils
+    href: Promezio.OAIAPI.Utils.html
+  spec.vb:
+  - uid: Promezio
+    name: Promezio
+    href: Promezio.html
+  - name: .
+  - uid: Promezio.OAIAPI
+    name: OAIAPI
+    href: Promezio.OAIAPI.html
+  - name: .
+  - uid: Promezio.OAIAPI.Utils
+    name: Utils
+    href: Promezio.OAIAPI.Utils.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Text.Json.JsonNamingPolicy
+  commentId: T:System.Text.Json.JsonNamingPolicy
+  parent: System.Text.Json
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.text.json.jsonnamingpolicy
+  name: JsonNamingPolicy
+  nameWithType: JsonNamingPolicy
+  fullName: System.Text.Json.JsonNamingPolicy
+- uid: System.Text.Json.JsonNamingPolicy.CamelCase
+  commentId: P:System.Text.Json.JsonNamingPolicy.CamelCase
+  parent: System.Text.Json.JsonNamingPolicy
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.text.json.jsonnamingpolicy.camelcase
+  name: CamelCase
+  nameWithType: JsonNamingPolicy.CamelCase
+  fullName: System.Text.Json.JsonNamingPolicy.CamelCase
+- uid: System.Text.Json.JsonNamingPolicy.KebabCaseLower
+  commentId: P:System.Text.Json.JsonNamingPolicy.KebabCaseLower
+  parent: System.Text.Json.JsonNamingPolicy
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.text.json.jsonnamingpolicy.kebabcaselower
+  name: KebabCaseLower
+  nameWithType: JsonNamingPolicy.KebabCaseLower
+  fullName: System.Text.Json.JsonNamingPolicy.KebabCaseLower
+- uid: System.Text.Json.JsonNamingPolicy.KebabCaseUpper
+  commentId: P:System.Text.Json.JsonNamingPolicy.KebabCaseUpper
+  parent: System.Text.Json.JsonNamingPolicy
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.text.json.jsonnamingpolicy.kebabcaseupper
+  name: KebabCaseUpper
+  nameWithType: JsonNamingPolicy.KebabCaseUpper
+  fullName: System.Text.Json.JsonNamingPolicy.KebabCaseUpper
+- uid: System.Text.Json.JsonNamingPolicy.SnakeCaseLower
+  commentId: P:System.Text.Json.JsonNamingPolicy.SnakeCaseLower
+  parent: System.Text.Json.JsonNamingPolicy
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.text.json.jsonnamingpolicy.snakecaselower
+  name: SnakeCaseLower
+  nameWithType: JsonNamingPolicy.SnakeCaseLower
+  fullName: System.Text.Json.JsonNamingPolicy.SnakeCaseLower
+- uid: System.Text.Json.JsonNamingPolicy.SnakeCaseUpper
+  commentId: P:System.Text.Json.JsonNamingPolicy.SnakeCaseUpper
+  parent: System.Text.Json.JsonNamingPolicy
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.text.json.jsonnamingpolicy.snakecaseupper
+  name: SnakeCaseUpper
+  nameWithType: JsonNamingPolicy.SnakeCaseUpper
+  fullName: System.Text.Json.JsonNamingPolicy.SnakeCaseUpper
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Text.Json
+  commentId: N:System.Text.Json
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Text.Json
+  nameWithType: System.Text.Json
+  fullName: System.Text.Json
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text
+  - name: .
+  - uid: System.Text.Json
+    name: Json
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text.json
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text
+  - name: .
+  - uid: System.Text.Json
+    name: Json
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text.json
+- uid: System.Text.Json.JsonNamingPolicy.ConvertName(System.String)
+  commentId: M:System.Text.Json.JsonNamingPolicy.ConvertName(System.String)
+  parent: System.Text.Json.JsonNamingPolicy
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.text.json.jsonnamingpolicy.convertname
+  name: ConvertName(string)
+  nameWithType: JsonNamingPolicy.ConvertName(string)
+  fullName: System.Text.Json.JsonNamingPolicy.ConvertName(string)
+  nameWithType.vb: JsonNamingPolicy.ConvertName(String)
+  fullName.vb: System.Text.Json.JsonNamingPolicy.ConvertName(String)
+  name.vb: ConvertName(String)
+  spec.csharp:
+  - uid: System.Text.Json.JsonNamingPolicy.ConvertName(System.String)
+    name: ConvertName
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text.json.jsonnamingpolicy.convertname
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: System.Text.Json.JsonNamingPolicy.ConvertName(System.String)
+    name: ConvertName
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text.json.jsonnamingpolicy.convertname
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Promezio.OAIAPI.Utils.LowerCaseNamingPolicy.ConvertName*
+  commentId: Overload:Promezio.OAIAPI.Utils.LowerCaseNamingPolicy.ConvertName
+  href: Promezio.OAIAPI.Utils.LowerCaseNamingPolicy.html#Promezio_OAIAPI_Utils_LowerCaseNamingPolicy_ConvertName_System_String_
+  name: ConvertName
+  nameWithType: LowerCaseNamingPolicy.ConvertName
+  fullName: Promezio.OAIAPI.Utils.LowerCaseNamingPolicy.ConvertName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

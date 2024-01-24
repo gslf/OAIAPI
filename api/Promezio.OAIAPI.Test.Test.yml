@@ -1,0 +1,471 @@
+### YamlMime:ManagedReference
+items:
+- uid: Promezio.OAIAPI.Test.Test
+  commentId: T:Promezio.OAIAPI.Test.Test
+  id: Test
+  parent: Promezio.OAIAPI.Test
+  children:
+  - Promezio.OAIAPI.Test.Test.#ctor
+  - Promezio.OAIAPI.Test.Test.Configuration
+  - Promezio.OAIAPI.Test.Test._apikey
+  langs:
+  - csharp
+  - vb
+  name: Test
+  nameWithType: Test
+  fullName: Promezio.OAIAPI.Test.Test
+  type: Class
+  source:
+    remote:
+      path: OAIAPITest/Test.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: Test
+    path: OAIAPITest/Test.cs
+    startLine: 3
+  assemblies:
+  - OAIAPITest
+  namespace: Promezio.OAIAPI.Test
+  syntax:
+    content: public abstract class Test
+    content.vb: Public MustInherit Class Test
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Promezio.OAIAPI.Test.ChatTest
+  - Promezio.OAIAPI.Test.FilesTest
+  - Promezio.OAIAPI.Test.FineTuningTest
+  - Promezio.OAIAPI.Test.SpeechTest
+  - Promezio.OAIAPI.Test.TranscriptionTest
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Promezio.OAIAPI.Test.Test.Configuration
+  commentId: P:Promezio.OAIAPI.Test.Test.Configuration
+  id: Configuration
+  parent: Promezio.OAIAPI.Test.Test
+  langs:
+  - csharp
+  - vb
+  name: Configuration
+  nameWithType: Test.Configuration
+  fullName: Promezio.OAIAPI.Test.Test.Configuration
+  type: Property
+  source:
+    remote:
+      path: OAIAPITest/Test.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: Configuration
+    path: OAIAPITest/Test.cs
+    startLine: 4
+  assemblies:
+  - OAIAPITest
+  namespace: Promezio.OAIAPI.Test
+  syntax:
+    content: protected IConfiguration Configuration { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Extensions.Configuration.IConfiguration
+    content.vb: Protected Property Configuration As IConfiguration
+  overload: Promezio.OAIAPI.Test.Test.Configuration*
+- uid: Promezio.OAIAPI.Test.Test._apikey
+  commentId: F:Promezio.OAIAPI.Test.Test._apikey
+  id: _apikey
+  parent: Promezio.OAIAPI.Test.Test
+  langs:
+  - csharp
+  - vb
+  name: _apikey
+  nameWithType: Test._apikey
+  fullName: Promezio.OAIAPI.Test.Test._apikey
+  type: Field
+  source:
+    remote:
+      path: OAIAPITest/Test.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: _apikey
+    path: OAIAPITest/Test.cs
+    startLine: 5
+  assemblies:
+  - OAIAPITest
+  namespace: Promezio.OAIAPI.Test
+  syntax:
+    content: protected string _apikey
+    return:
+      type: System.String
+    content.vb: Protected _apikey As String
+- uid: Promezio.OAIAPI.Test.Test.#ctor
+  commentId: M:Promezio.OAIAPI.Test.Test.#ctor
+  id: '#ctor'
+  parent: Promezio.OAIAPI.Test.Test
+  langs:
+  - csharp
+  - vb
+  name: Test()
+  nameWithType: Test.Test()
+  fullName: Promezio.OAIAPI.Test.Test.Test()
+  type: Constructor
+  source:
+    remote:
+      path: OAIAPITest/Test.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: .ctor
+    path: OAIAPITest/Test.cs
+    startLine: 7
+  assemblies:
+  - OAIAPITest
+  namespace: Promezio.OAIAPI.Test
+  syntax:
+    content: protected Test()
+    content.vb: Protected Sub New()
+  overload: Promezio.OAIAPI.Test.Test.#ctor*
+  nameWithType.vb: Test.New()
+  fullName.vb: Promezio.OAIAPI.Test.Test.New()
+  name.vb: New()
+references:
+- uid: Promezio.OAIAPI.Test
+  commentId: N:Promezio.OAIAPI.Test
+  href: Promezio.html
+  name: Promezio.OAIAPI.Test
+  nameWithType: Promezio.OAIAPI.Test
+  fullName: Promezio.OAIAPI.Test
+  spec.csharp:
+  - uid: Promezio
+    name: Promezio
+    href: Promezio.html
+  - name: .
+  - uid: Promezio.OAIAPI
+    name: OAIAPI
+    href: Promezio.OAIAPI.html
+  - name: .
+  - uid: Promezio.OAIAPI.Test
+    name: Test
+    href: Promezio.OAIAPI.Test.html
+  spec.vb:
+  - uid: Promezio
+    name: Promezio
+    href: Promezio.html
+  - name: .
+  - uid: Promezio.OAIAPI
+    name: OAIAPI
+    href: Promezio.OAIAPI.html
+  - name: .
+  - uid: Promezio.OAIAPI.Test
+    name: Test
+    href: Promezio.OAIAPI.Test.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Promezio.OAIAPI.Test.Test.Configuration*
+  commentId: Overload:Promezio.OAIAPI.Test.Test.Configuration
+  href: Promezio.OAIAPI.Test.Test.html#Promezio_OAIAPI_Test_Test_Configuration
+  name: Configuration
+  nameWithType: Test.Configuration
+  fullName: Promezio.OAIAPI.Test.Test.Configuration
+- uid: Microsoft.Extensions.Configuration.IConfiguration
+  commentId: T:Microsoft.Extensions.Configuration.IConfiguration
+  parent: Microsoft.Extensions.Configuration
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration.iconfiguration
+  name: IConfiguration
+  nameWithType: IConfiguration
+  fullName: Microsoft.Extensions.Configuration.IConfiguration
+- uid: Microsoft.Extensions.Configuration
+  commentId: N:Microsoft.Extensions.Configuration
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Configuration
+  nameWithType: Microsoft.Extensions.Configuration
+  fullName: Microsoft.Extensions.Configuration
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Configuration
+    name: Configuration
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Configuration
+    name: Configuration
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Promezio.OAIAPI.Test.Test.#ctor*
+  commentId: Overload:Promezio.OAIAPI.Test.Test.#ctor
+  href: Promezio.OAIAPI.Test.Test.html#Promezio_OAIAPI_Test_Test__ctor
+  name: Test
+  nameWithType: Test.Test
+  fullName: Promezio.OAIAPI.Test.Test.Test
+  nameWithType.vb: Test.New
+  fullName.vb: Promezio.OAIAPI.Test.Test.New
+  name.vb: New

@@ -1,0 +1,203 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>OAIAPI - Chat Capability | OAIAPI </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="OAIAPI - Chat Capability | OAIAPI ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/gslf/OAIAPI/blob/main/Docs/Chat.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="OAIAPI">
+            OAIAPI
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="oaiapi---chat-capability">OAIAPI - Chat Capability</h1>
+
+<h2 id="namespace">Namespace</h2>
+<p><code>Promezio.OAIAPI.Capabilities.Chat</code></p>
+<h2 id="summary">Summary</h2>
+<p>The <code>Chat</code> class provides functionality to interact with the OpenAI completion chat model API. It encapsulates the process of sending messages and receiving responses from the chat model.</p>
+<h2 id="examples">Examples</h2>
+<pre><code class="lang-csharp">// Retrieve the API Key
+ Configuration = new ConfigurationBuilder()
+    .AddUserSecrets&lt;Test&gt;()
+    .Build();
+
+if (Configuration == null) {
+    throw new NullReferenceException(&quot;User Secrets configuration not found.&quot;); 
+}
+
+string myapikey = Configuration[&quot;OpenAIApiKey&quot;] ?? throw new InvalidOperationException(&quot;API Key not found&quot;);
+
+
+// Init OAIAPI Class
+OAIAPI api = new OAIAPI(myapikey);
+Config config = new Config(&quot;gpt-3.5-turbo&quot;, temperature: 2);
+api.Chat.Init(config);
+
+// Call the standard API
+ChatResponse? result = await api.Chat.Dispatch(&quot;Hello from space: the final frontier.&quot;);
+Console.WriteLine(result?.GetMessage());
+
+// Call the stream API
+await foreach (var streamResult in api.Chat.DispatchStream(&quot;Hello, write numbers from 1 to 10.&quot;)) {
+    Console.WriteLine(streamResult?.GetMessage());
+}
+</code></pre>
+<h2 id="configuration">Configuration</h2>
+<p>The <code>Config</code> class provides a consistent way to configure the settings for the chat capability.</p>
+<h3 id="properties">Properties</h3>
+<ul>
+<li><code>model</code> (string): The model identifier used for generating responses.</li>
+<li><code>frequencyPenalty</code> (int, optional): Frequency penalty to apply, ranging from -2.0 to 2.0. Default is 0.</li>
+<li><code>logprobs</code> (bool, optional): Flag to include log probabilities in the response. Default is false.</li>
+<li><code>topLogprobs</code> (int?, optional): Limit for the number of top log probabilities to return, must be between 0 and 5. Default is null.</li>
+<li><code>maxTokens</code> (int?, optional): Maximum number of tokens to generate. Default is null.</li>
+<li><code>n</code> (int): Number of responses to generate. Default is 1.</li>
+<li><code>presencePenalty</code> (decimal, optional): Presence penalty to apply, ranging from -2.0 to 2.0. Default is 0.</li>
+<li><code>responseFormat</code> (ResponseFormat?, optional): Format for the response (JSON or TEXT). Default is null.</li>
+<li><code>seed</code> (int?, optional): Seed for random number generation. Default is null.</li>
+<li><code>temperature</code> (decimal): Controls randomness in response generation, ranging from 0 to 2. Default is 1.</li>
+<li><code>topP</code> (decimal): Controls diversity of response, ranging from 0 to 1. Default is 1.</li>
+<li><code>user</code> (string?, optional): User identifier. Default is null.</li>
+</ul>
+<h3 id="constructor-exceptions">Constructor Exceptions</h3>
+<ul>
+<li><code>ArgumentOutOfRangeException</code>: Thrown when provided arguments are outside their allowed range.</li>
+</ul>
+<h2 id="parameters">Parameters</h2>
+<ul>
+<li><code>apikey</code>: The API key for authentication.</li>
+<li><code>logger</code>: The <code>Logger</code> instance used for logging operations. You can read more about the logger <a href="Logger.html">here</a>.</li>
+</ul>
+<h2 id="methods">Methods</h2>
+<h3 id="initconfig-config">Init(Config config)</h3>
+<p>Initializes the instance of the <code>Chat</code> class with the specified configuration.</p>
+<h4 id="parameters-1">Parameters</h4>
+<ul>
+<li><code>config</code>: The configuration object.</li>
+</ul>
+<h3 id="async-taskchatresponse-dispatchstring-prompt">async Task&lt;ChatResponse?&gt; Dispatch(string prompt)</h3>
+<p>Sends a message to the chat model and receives a response asynchronously.</p>
+<h4 id="parameters-2">Parameters</h4>
+<ul>
+<li><code>prompt</code>: The message to send to the model.</li>
+</ul>
+<h4 id="returns">Returns</h4>
+<p>A task representing the asynchronous operation, containing the chat response.</p>
+<h3 id="async-iasyncenumerablechatstreamresponse-dispatchstreamstring-prompt">async IAsyncEnumerable&lt;ChatStreamResponse?&gt; DispatchStream(string prompt)</h3>
+<p>Sends a message to the chat model and streams responses back asynchronously.</p>
+<h4 id="parameters-3">Parameters</h4>
+<ul>
+<li><code>prompt</code>: The message to send to the model.</li>
+</ul>
+<h4 id="returns-1">Returns</h4>
+<p>An asynchronous stream of <code>ChatStreamResponse</code>.</p>
+<h2 id="remarks">Remarks</h2>
+<ul>
+<li>The class maintains a list of messages sent and received to/from the chat model.</li>
+<li>Proper initialization with API key and configuration is necessary before sending requests.</li>
+<li>The class handles JSON serialization and deserialization of the requests and responses.</li>
+<li>Includes error handling and logging for various stages of request and response processing.</li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/gslf/OAIAPI/blob/main/Docs/Chat.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

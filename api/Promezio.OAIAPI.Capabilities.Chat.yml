@@ -1,0 +1,134 @@
+### YamlMime:ManagedReference
+items:
+- uid: Promezio.OAIAPI.Capabilities.Chat
+  commentId: N:Promezio.OAIAPI.Capabilities.Chat
+  id: Promezio.OAIAPI.Capabilities.Chat
+  children:
+  - Promezio.OAIAPI.Capabilities.Chat.Chat
+  - Promezio.OAIAPI.Capabilities.Chat.ChatMessage
+  - Promezio.OAIAPI.Capabilities.Chat.ChatResponse
+  - Promezio.OAIAPI.Capabilities.Chat.ChatStreamResponse
+  - Promezio.OAIAPI.Capabilities.Chat.Choice
+  - Promezio.OAIAPI.Capabilities.Chat.Config
+  - Promezio.OAIAPI.Capabilities.Chat.ResponseFormat
+  - Promezio.OAIAPI.Capabilities.Chat.ResponseFormatTypes
+  - Promezio.OAIAPI.Capabilities.Chat.Role
+  - Promezio.OAIAPI.Capabilities.Chat.StreamChoice
+  - Promezio.OAIAPI.Capabilities.Chat.Usage
+  langs:
+  - csharp
+  - vb
+  name: Promezio.OAIAPI.Capabilities.Chat
+  nameWithType: Promezio.OAIAPI.Capabilities.Chat
+  fullName: Promezio.OAIAPI.Capabilities.Chat
+  type: Namespace
+  assemblies:
+  - OAIAPI
+references:
+- uid: Promezio.OAIAPI.Capabilities.Chat.Chat
+  commentId: T:Promezio.OAIAPI.Capabilities.Chat.Chat
+  parent: Promezio.OAIAPI.Capabilities.Chat
+  href: Promezio.OAIAPI.Capabilities.Chat.Chat.html
+  name: Chat
+  nameWithType: Chat
+  fullName: Promezio.OAIAPI.Capabilities.Chat.Chat
+- uid: Promezio.OAIAPI.Capabilities.Chat.ChatMessage
+  commentId: T:Promezio.OAIAPI.Capabilities.Chat.ChatMessage
+  href: Promezio.OAIAPI.Capabilities.Chat.ChatMessage.html
+  name: ChatMessage
+  nameWithType: ChatMessage
+  fullName: Promezio.OAIAPI.Capabilities.Chat.ChatMessage
+- uid: Promezio.OAIAPI.Capabilities.Chat.ChatResponse
+  commentId: T:Promezio.OAIAPI.Capabilities.Chat.ChatResponse
+  href: Promezio.OAIAPI.Capabilities.Chat.ChatResponse.html
+  name: ChatResponse
+  nameWithType: ChatResponse
+  fullName: Promezio.OAIAPI.Capabilities.Chat.ChatResponse
+- uid: Promezio.OAIAPI.Capabilities.Chat.ChatStreamResponse
+  commentId: T:Promezio.OAIAPI.Capabilities.Chat.ChatStreamResponse
+  href: Promezio.OAIAPI.Capabilities.Chat.ChatStreamResponse.html
+  name: ChatStreamResponse
+  nameWithType: ChatStreamResponse
+  fullName: Promezio.OAIAPI.Capabilities.Chat.ChatStreamResponse
+- uid: Promezio.OAIAPI.Capabilities.Chat.Choice
+  commentId: T:Promezio.OAIAPI.Capabilities.Chat.Choice
+  href: Promezio.OAIAPI.Capabilities.Chat.Choice.html
+  name: Choice
+  nameWithType: Choice
+  fullName: Promezio.OAIAPI.Capabilities.Chat.Choice
+- uid: Promezio.OAIAPI.Capabilities.Chat.Config
+  commentId: T:Promezio.OAIAPI.Capabilities.Chat.Config
+  parent: Promezio.OAIAPI.Capabilities.Chat
+  href: Promezio.OAIAPI.Capabilities.Chat.Config.html
+  name: Config
+  nameWithType: Config
+  fullName: Promezio.OAIAPI.Capabilities.Chat.Config
+- uid: Promezio.OAIAPI.Capabilities.Chat.ResponseFormat
+  commentId: T:Promezio.OAIAPI.Capabilities.Chat.ResponseFormat
+  href: Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.html
+  name: ResponseFormat
+  nameWithType: ResponseFormat
+  fullName: Promezio.OAIAPI.Capabilities.Chat.ResponseFormat
+- uid: Promezio.OAIAPI.Capabilities.Chat.ResponseFormatTypes
+  commentId: T:Promezio.OAIAPI.Capabilities.Chat.ResponseFormatTypes
+  href: Promezio.OAIAPI.Capabilities.Chat.ResponseFormatTypes.html
+  name: ResponseFormatTypes
+  nameWithType: ResponseFormatTypes
+  fullName: Promezio.OAIAPI.Capabilities.Chat.ResponseFormatTypes
+- uid: Promezio.OAIAPI.Capabilities.Chat.Role
+  commentId: T:Promezio.OAIAPI.Capabilities.Chat.Role
+  href: Promezio.OAIAPI.Capabilities.Chat.Role.html
+  name: Role
+  nameWithType: Role
+  fullName: Promezio.OAIAPI.Capabilities.Chat.Role
+- uid: Promezio.OAIAPI.Capabilities.Chat.StreamChoice
+  commentId: T:Promezio.OAIAPI.Capabilities.Chat.StreamChoice
+  href: Promezio.OAIAPI.Capabilities.Chat.StreamChoice.html
+  name: StreamChoice
+  nameWithType: StreamChoice
+  fullName: Promezio.OAIAPI.Capabilities.Chat.StreamChoice
+- uid: Promezio.OAIAPI.Capabilities.Chat.Usage
+  commentId: T:Promezio.OAIAPI.Capabilities.Chat.Usage
+  parent: Promezio.OAIAPI.Capabilities.Chat
+  href: Promezio.OAIAPI.Capabilities.Chat.Usage.html
+  name: Usage
+  nameWithType: Usage
+  fullName: Promezio.OAIAPI.Capabilities.Chat.Usage
+- uid: Promezio.OAIAPI.Capabilities.Chat
+  commentId: N:Promezio.OAIAPI.Capabilities.Chat
+  href: Promezio.html
+  name: Promezio.OAIAPI.Capabilities.Chat
+  nameWithType: Promezio.OAIAPI.Capabilities.Chat
+  fullName: Promezio.OAIAPI.Capabilities.Chat
+  spec.csharp:
+  - uid: Promezio
+    name: Promezio
+    href: Promezio.html
+  - name: .
+  - uid: Promezio.OAIAPI
+    name: OAIAPI
+    href: Promezio.OAIAPI.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities
+    name: Capabilities
+    href: Promezio.OAIAPI.Capabilities.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities.Chat
+    name: Chat
+    href: Promezio.OAIAPI.Capabilities.Chat.html
+  spec.vb:
+  - uid: Promezio
+    name: Promezio
+    href: Promezio.html
+  - name: .
+  - uid: Promezio.OAIAPI
+    name: OAIAPI
+    href: Promezio.OAIAPI.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities
+    name: Capabilities
+    href: Promezio.OAIAPI.Capabilities.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities.Chat
+    name: Chat
+    href: Promezio.OAIAPI.Capabilities.Chat.html

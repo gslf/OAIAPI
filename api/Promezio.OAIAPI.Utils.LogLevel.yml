@@ -1,0 +1,176 @@
+### YamlMime:ManagedReference
+items:
+- uid: Promezio.OAIAPI.Utils.LogLevel
+  commentId: T:Promezio.OAIAPI.Utils.LogLevel
+  id: LogLevel
+  parent: Promezio.OAIAPI.Utils
+  children:
+  - Promezio.OAIAPI.Utils.LogLevel.Error
+  - Promezio.OAIAPI.Utils.LogLevel.Info
+  - Promezio.OAIAPI.Utils.LogLevel.None
+  - Promezio.OAIAPI.Utils.LogLevel.Warning
+  langs:
+  - csharp
+  - vb
+  name: LogLevel
+  nameWithType: LogLevel
+  fullName: Promezio.OAIAPI.Utils.LogLevel
+  type: Enum
+  source:
+    remote:
+      path: OAIAPI/Utils/Logger.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: LogLevel
+    path: OAIAPI/Utils/Logger.cs
+    startLine: 8
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Utils
+  summary: Defines the logging levels supported by the Logger class.
+  example: []
+  syntax:
+    content: public enum LogLevel
+    content.vb: Public Enum LogLevel
+- uid: Promezio.OAIAPI.Utils.LogLevel.None
+  commentId: F:Promezio.OAIAPI.Utils.LogLevel.None
+  id: None
+  parent: Promezio.OAIAPI.Utils.LogLevel
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: LogLevel.None
+  fullName: Promezio.OAIAPI.Utils.LogLevel.None
+  type: Field
+  source:
+    remote:
+      path: OAIAPI/Utils/Logger.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: None
+    path: OAIAPI/Utils/Logger.cs
+    startLine: 9
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Utils
+  syntax:
+    content: None = 0
+    return:
+      type: Promezio.OAIAPI.Utils.LogLevel
+- uid: Promezio.OAIAPI.Utils.LogLevel.Error
+  commentId: F:Promezio.OAIAPI.Utils.LogLevel.Error
+  id: Error
+  parent: Promezio.OAIAPI.Utils.LogLevel
+  langs:
+  - csharp
+  - vb
+  name: Error
+  nameWithType: LogLevel.Error
+  fullName: Promezio.OAIAPI.Utils.LogLevel.Error
+  type: Field
+  source:
+    remote:
+      path: OAIAPI/Utils/Logger.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: Error
+    path: OAIAPI/Utils/Logger.cs
+    startLine: 10
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Utils
+  syntax:
+    content: Error = 1
+    return:
+      type: Promezio.OAIAPI.Utils.LogLevel
+- uid: Promezio.OAIAPI.Utils.LogLevel.Warning
+  commentId: F:Promezio.OAIAPI.Utils.LogLevel.Warning
+  id: Warning
+  parent: Promezio.OAIAPI.Utils.LogLevel
+  langs:
+  - csharp
+  - vb
+  name: Warning
+  nameWithType: LogLevel.Warning
+  fullName: Promezio.OAIAPI.Utils.LogLevel.Warning
+  type: Field
+  source:
+    remote:
+      path: OAIAPI/Utils/Logger.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: Warning
+    path: OAIAPI/Utils/Logger.cs
+    startLine: 11
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Utils
+  syntax:
+    content: Warning = 2
+    return:
+      type: Promezio.OAIAPI.Utils.LogLevel
+- uid: Promezio.OAIAPI.Utils.LogLevel.Info
+  commentId: F:Promezio.OAIAPI.Utils.LogLevel.Info
+  id: Info
+  parent: Promezio.OAIAPI.Utils.LogLevel
+  langs:
+  - csharp
+  - vb
+  name: Info
+  nameWithType: LogLevel.Info
+  fullName: Promezio.OAIAPI.Utils.LogLevel.Info
+  type: Field
+  source:
+    remote:
+      path: OAIAPI/Utils/Logger.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: Info
+    path: OAIAPI/Utils/Logger.cs
+    startLine: 12
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Utils
+  syntax:
+    content: Info = 3
+    return:
+      type: Promezio.OAIAPI.Utils.LogLevel
+references:
+- uid: Promezio.OAIAPI.Utils
+  commentId: N:Promezio.OAIAPI.Utils
+  href: Promezio.html
+  name: Promezio.OAIAPI.Utils
+  nameWithType: Promezio.OAIAPI.Utils
+  fullName: Promezio.OAIAPI.Utils
+  spec.csharp:
+  - uid: Promezio
+    name: Promezio
+    href: Promezio.html
+  - name: .
+  - uid: Promezio.OAIAPI
+    name: OAIAPI
+    href: Promezio.OAIAPI.html
+  - name: .
+  - uid: Promezio.OAIAPI.Utils
+    name: Utils
+    href: Promezio.OAIAPI.Utils.html
+  spec.vb:
+  - uid: Promezio
+    name: Promezio
+    href: Promezio.html
+  - name: .
+  - uid: Promezio.OAIAPI
+    name: OAIAPI
+    href: Promezio.OAIAPI.html
+  - name: .
+  - uid: Promezio.OAIAPI.Utils
+    name: Utils
+    href: Promezio.OAIAPI.Utils.html
+- uid: Promezio.OAIAPI.Utils.LogLevel
+  commentId: T:Promezio.OAIAPI.Utils.LogLevel
+  parent: Promezio.OAIAPI.Utils
+  href: Promezio.OAIAPI.Utils.LogLevel.html
+  name: LogLevel
+  nameWithType: LogLevel
+  fullName: Promezio.OAIAPI.Utils.LogLevel

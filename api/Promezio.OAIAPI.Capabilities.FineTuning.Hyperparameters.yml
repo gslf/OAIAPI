@@ -1,0 +1,524 @@
+### YamlMime:ManagedReference
+items:
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.Hyperparameters
+  commentId: T:Promezio.OAIAPI.Capabilities.FineTuning.Hyperparameters
+  id: Hyperparameters
+  parent: Promezio.OAIAPI.Capabilities.FineTuning
+  children:
+  - Promezio.OAIAPI.Capabilities.FineTuning.Hyperparameters.Batch_size
+  - Promezio.OAIAPI.Capabilities.FineTuning.Hyperparameters.Learning_rate_multiplier
+  - Promezio.OAIAPI.Capabilities.FineTuning.Hyperparameters.N_epochs
+  langs:
+  - csharp
+  - vb
+  name: Hyperparameters
+  nameWithType: Hyperparameters
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.Hyperparameters
+  type: Class
+  source:
+    remote:
+      path: OAIAPI/Capabilities/FineTuning/Hyperparameters.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: Hyperparameters
+    path: OAIAPI/Capabilities/FineTuning/Hyperparameters.cs
+    startLine: 42
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.FineTuning
+  summary: Represents the hyperparameters for a fine-tuning process in the Promezio OAIAPI.
+  example: []
+  syntax:
+    content: public class Hyperparameters
+    content.vb: Public Class Hyperparameters
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.Hyperparameters.N_epochs
+  commentId: P:Promezio.OAIAPI.Capabilities.FineTuning.Hyperparameters.N_epochs
+  id: N_epochs
+  parent: Promezio.OAIAPI.Capabilities.FineTuning.Hyperparameters
+  langs:
+  - csharp
+  - vb
+  name: N_epochs
+  nameWithType: Hyperparameters.N_epochs
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.Hyperparameters.N_epochs
+  type: Property
+  source:
+    remote:
+      path: OAIAPI/Capabilities/FineTuning/Hyperparameters.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: N_epochs
+    path: OAIAPI/Capabilities/FineTuning/Hyperparameters.cs
+    startLine: 46
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.FineTuning
+  summary: The number of epochs to run during training, nullable. Uses <xref href="Promezio.OAIAPI.Capabilities.FineTuning.DecimalFromStringConverter" data-throw-if-not-resolved="false"></xref> for JSON conversion.
+  example: []
+  syntax:
+    content: >-
+      [JsonConverter(typeof(DecimalFromStringConverter))]
+
+      public decimal? N_epochs { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Decimal}
+    content.vb: >-
+      <JsonConverter(GetType(DecimalFromStringConverter))>
+
+      Public Property N_epochs As Decimal?
+  overload: Promezio.OAIAPI.Capabilities.FineTuning.Hyperparameters.N_epochs*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonConverterAttribute
+    ctor: System.Text.Json.Serialization.JsonConverterAttribute.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: Promezio.OAIAPI.Capabilities.FineTuning.DecimalFromStringConverter
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.Hyperparameters.Batch_size
+  commentId: P:Promezio.OAIAPI.Capabilities.FineTuning.Hyperparameters.Batch_size
+  id: Batch_size
+  parent: Promezio.OAIAPI.Capabilities.FineTuning.Hyperparameters
+  langs:
+  - csharp
+  - vb
+  name: Batch_size
+  nameWithType: Hyperparameters.Batch_size
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.Hyperparameters.Batch_size
+  type: Property
+  source:
+    remote:
+      path: OAIAPI/Capabilities/FineTuning/Hyperparameters.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: Batch_size
+    path: OAIAPI/Capabilities/FineTuning/Hyperparameters.cs
+    startLine: 52
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.FineTuning
+  summary: The size of each batch during training, nullable. Uses <xref href="Promezio.OAIAPI.Capabilities.FineTuning.DecimalFromStringConverter" data-throw-if-not-resolved="false"></xref> for JSON conversion.
+  example: []
+  syntax:
+    content: >-
+      [JsonConverter(typeof(DecimalFromStringConverter))]
+
+      public decimal? Batch_size { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Decimal}
+    content.vb: >-
+      <JsonConverter(GetType(DecimalFromStringConverter))>
+
+      Public Property Batch_size As Decimal?
+  overload: Promezio.OAIAPI.Capabilities.FineTuning.Hyperparameters.Batch_size*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonConverterAttribute
+    ctor: System.Text.Json.Serialization.JsonConverterAttribute.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: Promezio.OAIAPI.Capabilities.FineTuning.DecimalFromStringConverter
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.Hyperparameters.Learning_rate_multiplier
+  commentId: P:Promezio.OAIAPI.Capabilities.FineTuning.Hyperparameters.Learning_rate_multiplier
+  id: Learning_rate_multiplier
+  parent: Promezio.OAIAPI.Capabilities.FineTuning.Hyperparameters
+  langs:
+  - csharp
+  - vb
+  name: Learning_rate_multiplier
+  nameWithType: Hyperparameters.Learning_rate_multiplier
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.Hyperparameters.Learning_rate_multiplier
+  type: Property
+  source:
+    remote:
+      path: OAIAPI/Capabilities/FineTuning/Hyperparameters.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: Learning_rate_multiplier
+    path: OAIAPI/Capabilities/FineTuning/Hyperparameters.cs
+    startLine: 58
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.FineTuning
+  summary: The learning rate multiplier for training, nullable. Uses <xref href="Promezio.OAIAPI.Capabilities.FineTuning.DecimalFromStringConverter" data-throw-if-not-resolved="false"></xref> for JSON conversion.
+  example: []
+  syntax:
+    content: >-
+      [JsonConverter(typeof(DecimalFromStringConverter))]
+
+      public decimal? Learning_rate_multiplier { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Decimal}
+    content.vb: >-
+      <JsonConverter(GetType(DecimalFromStringConverter))>
+
+      Public Property Learning_rate_multiplier As Decimal?
+  overload: Promezio.OAIAPI.Capabilities.FineTuning.Hyperparameters.Learning_rate_multiplier*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonConverterAttribute
+    ctor: System.Text.Json.Serialization.JsonConverterAttribute.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: Promezio.OAIAPI.Capabilities.FineTuning.DecimalFromStringConverter
+references:
+- uid: Promezio.OAIAPI.Capabilities.FineTuning
+  commentId: N:Promezio.OAIAPI.Capabilities.FineTuning
+  href: Promezio.html
+  name: Promezio.OAIAPI.Capabilities.FineTuning
+  nameWithType: Promezio.OAIAPI.Capabilities.FineTuning
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning
+  spec.csharp:
+  - uid: Promezio
+    name: Promezio
+    href: Promezio.html
+  - name: .
+  - uid: Promezio.OAIAPI
+    name: OAIAPI
+    href: Promezio.OAIAPI.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities
+    name: Capabilities
+    href: Promezio.OAIAPI.Capabilities.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities.FineTuning
+    name: FineTuning
+    href: Promezio.OAIAPI.Capabilities.FineTuning.html
+  spec.vb:
+  - uid: Promezio
+    name: Promezio
+    href: Promezio.html
+  - name: .
+  - uid: Promezio.OAIAPI
+    name: OAIAPI
+    href: Promezio.OAIAPI.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities
+    name: Capabilities
+    href: Promezio.OAIAPI.Capabilities.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities.FineTuning
+    name: FineTuning
+    href: Promezio.OAIAPI.Capabilities.FineTuning.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.DecimalFromStringConverter
+  commentId: T:Promezio.OAIAPI.Capabilities.FineTuning.DecimalFromStringConverter
+  parent: Promezio.OAIAPI.Capabilities.FineTuning
+  href: Promezio.OAIAPI.Capabilities.FineTuning.DecimalFromStringConverter.html
+  name: DecimalFromStringConverter
+  nameWithType: DecimalFromStringConverter
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.DecimalFromStringConverter
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.Hyperparameters.N_epochs*
+  commentId: Overload:Promezio.OAIAPI.Capabilities.FineTuning.Hyperparameters.N_epochs
+  href: Promezio.OAIAPI.Capabilities.FineTuning.Hyperparameters.html#Promezio_OAIAPI_Capabilities_FineTuning_Hyperparameters_N_epochs
+  name: N_epochs
+  nameWithType: Hyperparameters.N_epochs
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.Hyperparameters.N_epochs
+- uid: System.Nullable{System.Decimal}
+  commentId: T:System.Nullable{System.Decimal}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.decimal
+  name: decimal?
+  nameWithType: decimal?
+  fullName: decimal?
+  nameWithType.vb: Decimal?
+  fullName.vb: Decimal?
+  name.vb: Decimal?
+  spec.csharp:
+  - uid: System.Decimal
+    name: decimal
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.decimal
+  - name: '?'
+  spec.vb:
+  - uid: System.Decimal
+    name: Decimal
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.decimal
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.Hyperparameters.Batch_size*
+  commentId: Overload:Promezio.OAIAPI.Capabilities.FineTuning.Hyperparameters.Batch_size
+  href: Promezio.OAIAPI.Capabilities.FineTuning.Hyperparameters.html#Promezio_OAIAPI_Capabilities_FineTuning_Hyperparameters_Batch_size
+  name: Batch_size
+  nameWithType: Hyperparameters.Batch_size
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.Hyperparameters.Batch_size
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.Hyperparameters.Learning_rate_multiplier*
+  commentId: Overload:Promezio.OAIAPI.Capabilities.FineTuning.Hyperparameters.Learning_rate_multiplier
+  href: Promezio.OAIAPI.Capabilities.FineTuning.Hyperparameters.html#Promezio_OAIAPI_Capabilities_FineTuning_Hyperparameters_Learning_rate_multiplier
+  name: Learning_rate_multiplier
+  nameWithType: Hyperparameters.Learning_rate_multiplier
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.Hyperparameters.Learning_rate_multiplier

@@ -1,0 +1,69 @@
+### YamlMime:ManagedReference
+items:
+- uid: Promezio.OAIAPI.Capabilities.Transcription
+  commentId: N:Promezio.OAIAPI.Capabilities.Transcription
+  id: Promezio.OAIAPI.Capabilities.Transcription
+  children:
+  - Promezio.OAIAPI.Capabilities.Transcription.Transcription
+  - Promezio.OAIAPI.Capabilities.Transcription.TranscriptionResponse
+  langs:
+  - csharp
+  - vb
+  name: Promezio.OAIAPI.Capabilities.Transcription
+  nameWithType: Promezio.OAIAPI.Capabilities.Transcription
+  fullName: Promezio.OAIAPI.Capabilities.Transcription
+  type: Namespace
+  assemblies:
+  - OAIAPI
+references:
+- uid: Promezio.OAIAPI.Capabilities.Transcription.Transcription
+  commentId: T:Promezio.OAIAPI.Capabilities.Transcription.Transcription
+  parent: Promezio.OAIAPI.Capabilities.Transcription
+  href: Promezio.OAIAPI.Capabilities.Transcription.Transcription.html
+  name: Transcription
+  nameWithType: Transcription
+  fullName: Promezio.OAIAPI.Capabilities.Transcription.Transcription
+- uid: Promezio.OAIAPI.Capabilities.Transcription.TranscriptionResponse
+  commentId: T:Promezio.OAIAPI.Capabilities.Transcription.TranscriptionResponse
+  href: Promezio.OAIAPI.Capabilities.Transcription.TranscriptionResponse.html
+  name: TranscriptionResponse
+  nameWithType: TranscriptionResponse
+  fullName: Promezio.OAIAPI.Capabilities.Transcription.TranscriptionResponse
+- uid: Promezio.OAIAPI.Capabilities.Transcription
+  commentId: N:Promezio.OAIAPI.Capabilities.Transcription
+  href: Promezio.html
+  name: Promezio.OAIAPI.Capabilities.Transcription
+  nameWithType: Promezio.OAIAPI.Capabilities.Transcription
+  fullName: Promezio.OAIAPI.Capabilities.Transcription
+  spec.csharp:
+  - uid: Promezio
+    name: Promezio
+    href: Promezio.html
+  - name: .
+  - uid: Promezio.OAIAPI
+    name: OAIAPI
+    href: Promezio.OAIAPI.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities
+    name: Capabilities
+    href: Promezio.OAIAPI.Capabilities.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities.Transcription
+    name: Transcription
+    href: Promezio.OAIAPI.Capabilities.Transcription.html
+  spec.vb:
+  - uid: Promezio
+    name: Promezio
+    href: Promezio.html
+  - name: .
+  - uid: Promezio.OAIAPI
+    name: OAIAPI
+    href: Promezio.OAIAPI.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities
+    name: Capabilities
+    href: Promezio.OAIAPI.Capabilities.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities.Transcription
+    name: Transcription
+    href: Promezio.OAIAPI.Capabilities.Transcription.html

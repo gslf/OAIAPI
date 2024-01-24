@@ -1,0 +1,416 @@
+### YamlMime:ManagedReference
+items:
+- uid: Promezio.OAIAPI.Capabilities.Speech.ResponseFormat
+  commentId: T:Promezio.OAIAPI.Capabilities.Speech.ResponseFormat
+  id: ResponseFormat
+  parent: Promezio.OAIAPI.Capabilities.Speech
+  children:
+  - Promezio.OAIAPI.Capabilities.Speech.ResponseFormat.AAC
+  - Promezio.OAIAPI.Capabilities.Speech.ResponseFormat.FLAC
+  - Promezio.OAIAPI.Capabilities.Speech.ResponseFormat.MP3
+  - Promezio.OAIAPI.Capabilities.Speech.ResponseFormat.OPUS
+  langs:
+  - csharp
+  - vb
+  name: ResponseFormat
+  nameWithType: ResponseFormat
+  fullName: Promezio.OAIAPI.Capabilities.Speech.ResponseFormat
+  type: Struct
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Speech/Speech.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: ResponseFormat
+    path: OAIAPI/Capabilities/Speech/Speech.cs
+    startLine: 76
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Speech
+  summary: Represents predefined response format constants for audio output.
+  example: []
+  syntax:
+    content: public struct ResponseFormat
+    content.vb: Public Structure ResponseFormat
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: Promezio.OAIAPI.Capabilities.Speech.ResponseFormat.MP3
+  commentId: F:Promezio.OAIAPI.Capabilities.Speech.ResponseFormat.MP3
+  id: MP3
+  parent: Promezio.OAIAPI.Capabilities.Speech.ResponseFormat
+  langs:
+  - csharp
+  - vb
+  name: MP3
+  nameWithType: ResponseFormat.MP3
+  fullName: Promezio.OAIAPI.Capabilities.Speech.ResponseFormat.MP3
+  type: Field
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Speech/Speech.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: MP3
+    path: OAIAPI/Capabilities/Speech/Speech.cs
+    startLine: 77
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Speech
+  syntax:
+    content: public const string MP3 = "mp3"
+    return:
+      type: System.String
+    content.vb: Public Const MP3 As String = "mp3"
+- uid: Promezio.OAIAPI.Capabilities.Speech.ResponseFormat.OPUS
+  commentId: F:Promezio.OAIAPI.Capabilities.Speech.ResponseFormat.OPUS
+  id: OPUS
+  parent: Promezio.OAIAPI.Capabilities.Speech.ResponseFormat
+  langs:
+  - csharp
+  - vb
+  name: OPUS
+  nameWithType: ResponseFormat.OPUS
+  fullName: Promezio.OAIAPI.Capabilities.Speech.ResponseFormat.OPUS
+  type: Field
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Speech/Speech.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: OPUS
+    path: OAIAPI/Capabilities/Speech/Speech.cs
+    startLine: 78
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Speech
+  syntax:
+    content: public const string OPUS = "opus"
+    return:
+      type: System.String
+    content.vb: Public Const OPUS As String = "opus"
+- uid: Promezio.OAIAPI.Capabilities.Speech.ResponseFormat.AAC
+  commentId: F:Promezio.OAIAPI.Capabilities.Speech.ResponseFormat.AAC
+  id: AAC
+  parent: Promezio.OAIAPI.Capabilities.Speech.ResponseFormat
+  langs:
+  - csharp
+  - vb
+  name: AAC
+  nameWithType: ResponseFormat.AAC
+  fullName: Promezio.OAIAPI.Capabilities.Speech.ResponseFormat.AAC
+  type: Field
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Speech/Speech.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: AAC
+    path: OAIAPI/Capabilities/Speech/Speech.cs
+    startLine: 79
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Speech
+  syntax:
+    content: public const string AAC = "aac"
+    return:
+      type: System.String
+    content.vb: Public Const AAC As String = "aac"
+- uid: Promezio.OAIAPI.Capabilities.Speech.ResponseFormat.FLAC
+  commentId: F:Promezio.OAIAPI.Capabilities.Speech.ResponseFormat.FLAC
+  id: FLAC
+  parent: Promezio.OAIAPI.Capabilities.Speech.ResponseFormat
+  langs:
+  - csharp
+  - vb
+  name: FLAC
+  nameWithType: ResponseFormat.FLAC
+  fullName: Promezio.OAIAPI.Capabilities.Speech.ResponseFormat.FLAC
+  type: Field
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Speech/Speech.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: FLAC
+    path: OAIAPI/Capabilities/Speech/Speech.cs
+    startLine: 80
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Speech
+  syntax:
+    content: public const string FLAC = "flac"
+    return:
+      type: System.String
+    content.vb: Public Const FLAC As String = "flac"
+references:
+- uid: Promezio.OAIAPI.Capabilities.Speech
+  commentId: N:Promezio.OAIAPI.Capabilities.Speech
+  href: Promezio.html
+  name: Promezio.OAIAPI.Capabilities.Speech
+  nameWithType: Promezio.OAIAPI.Capabilities.Speech
+  fullName: Promezio.OAIAPI.Capabilities.Speech
+  spec.csharp:
+  - uid: Promezio
+    name: Promezio
+    href: Promezio.html
+  - name: .
+  - uid: Promezio.OAIAPI
+    name: OAIAPI
+    href: Promezio.OAIAPI.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities
+    name: Capabilities
+    href: Promezio.OAIAPI.Capabilities.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities.Speech
+    name: Speech
+    href: Promezio.OAIAPI.Capabilities.Speech.html
+  spec.vb:
+  - uid: Promezio
+    name: Promezio
+    href: Promezio.html
+  - name: .
+  - uid: Promezio.OAIAPI
+    name: OAIAPI
+    href: Promezio.OAIAPI.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities
+    name: Capabilities
+    href: Promezio.OAIAPI.Capabilities.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities.Speech
+    name: Speech
+    href: Promezio.OAIAPI.Capabilities.Speech.html
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

@@ -1,0 +1,76 @@
+### YamlMime:ManagedReference
+items:
+- uid: Promezio.OAIAPI.Utils
+  commentId: N:Promezio.OAIAPI.Utils
+  id: Promezio.OAIAPI.Utils
+  children:
+  - Promezio.OAIAPI.Utils.JSONTools
+  - Promezio.OAIAPI.Utils.LogLevel
+  - Promezio.OAIAPI.Utils.Logger
+  - Promezio.OAIAPI.Utils.LowerCaseNamingPolicy
+  langs:
+  - csharp
+  - vb
+  name: Promezio.OAIAPI.Utils
+  nameWithType: Promezio.OAIAPI.Utils
+  fullName: Promezio.OAIAPI.Utils
+  type: Namespace
+  assemblies:
+  - OAIAPI
+references:
+- uid: Promezio.OAIAPI.Utils.JSONTools
+  commentId: T:Promezio.OAIAPI.Utils.JSONTools
+  href: Promezio.OAIAPI.Utils.JSONTools.html
+  name: JSONTools
+  nameWithType: JSONTools
+  fullName: Promezio.OAIAPI.Utils.JSONTools
+- uid: Promezio.OAIAPI.Utils.LogLevel
+  commentId: T:Promezio.OAIAPI.Utils.LogLevel
+  parent: Promezio.OAIAPI.Utils
+  href: Promezio.OAIAPI.Utils.LogLevel.html
+  name: LogLevel
+  nameWithType: LogLevel
+  fullName: Promezio.OAIAPI.Utils.LogLevel
+- uid: Promezio.OAIAPI.Utils.Logger
+  commentId: T:Promezio.OAIAPI.Utils.Logger
+  parent: Promezio.OAIAPI.Utils
+  href: Promezio.OAIAPI.Utils.Logger.html
+  name: Logger
+  nameWithType: Logger
+  fullName: Promezio.OAIAPI.Utils.Logger
+- uid: Promezio.OAIAPI.Utils.LowerCaseNamingPolicy
+  commentId: T:Promezio.OAIAPI.Utils.LowerCaseNamingPolicy
+  href: Promezio.OAIAPI.Utils.LowerCaseNamingPolicy.html
+  name: LowerCaseNamingPolicy
+  nameWithType: LowerCaseNamingPolicy
+  fullName: Promezio.OAIAPI.Utils.LowerCaseNamingPolicy
+- uid: Promezio.OAIAPI.Utils
+  commentId: N:Promezio.OAIAPI.Utils
+  href: Promezio.html
+  name: Promezio.OAIAPI.Utils
+  nameWithType: Promezio.OAIAPI.Utils
+  fullName: Promezio.OAIAPI.Utils
+  spec.csharp:
+  - uid: Promezio
+    name: Promezio
+    href: Promezio.html
+  - name: .
+  - uid: Promezio.OAIAPI
+    name: OAIAPI
+    href: Promezio.OAIAPI.html
+  - name: .
+  - uid: Promezio.OAIAPI.Utils
+    name: Utils
+    href: Promezio.OAIAPI.Utils.html
+  spec.vb:
+  - uid: Promezio
+    name: Promezio
+    href: Promezio.html
+  - name: .
+  - uid: Promezio.OAIAPI
+    name: OAIAPI
+    href: Promezio.OAIAPI.html
+  - name: .
+  - uid: Promezio.OAIAPI.Utils
+    name: Utils
+    href: Promezio.OAIAPI.Utils.html

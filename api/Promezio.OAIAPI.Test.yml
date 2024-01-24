@@ -1,0 +1,89 @@
+### YamlMime:ManagedReference
+items:
+- uid: Promezio.OAIAPI.Test
+  commentId: N:Promezio.OAIAPI.Test
+  id: Promezio.OAIAPI.Test
+  children:
+  - Promezio.OAIAPI.Test.ChatTest
+  - Promezio.OAIAPI.Test.FilesTest
+  - Promezio.OAIAPI.Test.FineTuningTest
+  - Promezio.OAIAPI.Test.SpeechTest
+  - Promezio.OAIAPI.Test.Test
+  - Promezio.OAIAPI.Test.TranscriptionTest
+  langs:
+  - csharp
+  - vb
+  name: Promezio.OAIAPI.Test
+  nameWithType: Promezio.OAIAPI.Test
+  fullName: Promezio.OAIAPI.Test
+  type: Namespace
+  assemblies:
+  - OAIAPITest
+references:
+- uid: Promezio.OAIAPI.Test.ChatTest
+  commentId: T:Promezio.OAIAPI.Test.ChatTest
+  href: Promezio.OAIAPI.Test.ChatTest.html
+  name: ChatTest
+  nameWithType: ChatTest
+  fullName: Promezio.OAIAPI.Test.ChatTest
+- uid: Promezio.OAIAPI.Test.FilesTest
+  commentId: T:Promezio.OAIAPI.Test.FilesTest
+  href: Promezio.OAIAPI.Test.FilesTest.html
+  name: FilesTest
+  nameWithType: FilesTest
+  fullName: Promezio.OAIAPI.Test.FilesTest
+- uid: Promezio.OAIAPI.Test.FineTuningTest
+  commentId: T:Promezio.OAIAPI.Test.FineTuningTest
+  href: Promezio.OAIAPI.Test.FineTuningTest.html
+  name: FineTuningTest
+  nameWithType: FineTuningTest
+  fullName: Promezio.OAIAPI.Test.FineTuningTest
+- uid: Promezio.OAIAPI.Test.SpeechTest
+  commentId: T:Promezio.OAIAPI.Test.SpeechTest
+  href: Promezio.OAIAPI.Test.SpeechTest.html
+  name: SpeechTest
+  nameWithType: SpeechTest
+  fullName: Promezio.OAIAPI.Test.SpeechTest
+- uid: Promezio.OAIAPI.Test.Test
+  commentId: T:Promezio.OAIAPI.Test.Test
+  parent: Promezio.OAIAPI.Test
+  href: Promezio.OAIAPI.Test.Test.html
+  name: Test
+  nameWithType: Test
+  fullName: Promezio.OAIAPI.Test.Test
+- uid: Promezio.OAIAPI.Test.TranscriptionTest
+  commentId: T:Promezio.OAIAPI.Test.TranscriptionTest
+  href: Promezio.OAIAPI.Test.TranscriptionTest.html
+  name: TranscriptionTest
+  nameWithType: TranscriptionTest
+  fullName: Promezio.OAIAPI.Test.TranscriptionTest
+- uid: Promezio.OAIAPI.Test
+  commentId: N:Promezio.OAIAPI.Test
+  href: Promezio.html
+  name: Promezio.OAIAPI.Test
+  nameWithType: Promezio.OAIAPI.Test
+  fullName: Promezio.OAIAPI.Test
+  spec.csharp:
+  - uid: Promezio
+    name: Promezio
+    href: Promezio.html
+  - name: .
+  - uid: Promezio.OAIAPI
+    name: OAIAPI
+    href: Promezio.OAIAPI.html
+  - name: .
+  - uid: Promezio.OAIAPI.Test
+    name: Test
+    href: Promezio.OAIAPI.Test.html
+  spec.vb:
+  - uid: Promezio
+    name: Promezio
+    href: Promezio.html
+  - name: .
+  - uid: Promezio.OAIAPI
+    name: OAIAPI
+    href: Promezio.OAIAPI.html
+  - name: .
+  - uid: Promezio.OAIAPI.Test
+    name: Test
+    href: Promezio.OAIAPI.Test.html

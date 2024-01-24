@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Promezio.OAIAPI
+  commentId: N:Promezio.OAIAPI
+  id: Promezio.OAIAPI
+  children:
+  - Promezio.OAIAPI.OAIAPI
+  langs:
+  - csharp
+  - vb
+  name: Promezio.OAIAPI
+  nameWithType: Promezio.OAIAPI
+  fullName: Promezio.OAIAPI
+  type: Namespace
+  assemblies:
+  - OAIAPI
+references:
+- uid: Promezio.OAIAPI.OAIAPI
+  commentId: T:Promezio.OAIAPI.OAIAPI
+  href: Promezio.OAIAPI.OAIAPI.html
+  name: OAIAPI
+  nameWithType: OAIAPI
+  fullName: Promezio.OAIAPI.OAIAPI

@@ -68,6 +68,8 @@ Console.WriteLine(result?.GetMessage());
 
 ## Available API
 - Chat Completion ([READ THE DOCS](Docs/Chat.md))
+- Files Management ([READ THE DOCS](Docs/Files.md))
+- Fine Tuning ([READ THE DOCS](Docs/FineTuning.md))
 
 ## API integration in progress
 - Fine Tuning

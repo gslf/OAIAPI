@@ -1,0 +1,638 @@
+{
+  "source_base_path": "C:/Users/gioel/source/repos/OAIAPI",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Docs/Chat.md",
+      "output": {
+        ".html": {
+          "relative_path": "Docs/Chat.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Docs/Files.md",
+      "output": {
+        ".html": {
+          "relative_path": "Docs/Files.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Docs/FineTuning.md",
+      "output": {
+        ".html": {
+          "relative_path": "Docs/FineTuning.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Docs/Logger.md",
+      "output": {
+        ".html": {
+          "relative_path": "Docs/Logger.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Docs/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "Docs/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Docs/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "Docs/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "Docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Docs/toc.html"
+        },
+        ".json": {
+          "relative_path": "Docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "README.md",
+      "output": {
+        ".html": {
+          "relative_path": "README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.Capability.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.Capability.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.Chat.Chat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.Chat.Chat.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.Chat.ChatMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.Chat.ChatMessage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.Chat.ChatResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.Chat.ChatResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.Chat.ChatStreamResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.Chat.ChatStreamResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.Chat.Choice.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.Chat.Choice.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.Chat.Config.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.Chat.Config.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.Chat.ResponseFormatTypes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.Chat.ResponseFormatTypes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.Chat.Role.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.Chat.Role.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.Chat.StreamChoice.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.Chat.StreamChoice.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.Chat.Usage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.Chat.Usage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.Chat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.Chat.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.Embedding.Embedding.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.Embedding.Embedding.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.Embedding.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.Embedding.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.Files.FileObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.Files.FileObject.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.Files.Files.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.Files.Files.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.Files.Purposes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.Files.Purposes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.Files.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.Files.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.FineTuning.DecimalFromStringConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.FineTuning.DecimalFromStringConverter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.FineTuning.FineTuning.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.FineTuning.FineTuning.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.FineTuning.FineTuningEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.FineTuning.FineTuningEvent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.FineTuning.Hyperparameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.FineTuning.Hyperparameters.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.FineTuning.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.FineTuning.Models.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.FineTuning.TuningError.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.FineTuning.TuningError.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.FineTuning.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.FineTuning.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.Speech.ResponseFormat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.Speech.ResponseFormat.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.Speech.Speech.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.Speech.Speech.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.Speech.SpeechResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.Speech.SpeechResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.Speech.Voice.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.Speech.Voice.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.Speech.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.Speech.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.Transcription.Transcription.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.Transcription.Transcription.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.Transcription.TranscriptionResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.Transcription.TranscriptionResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.Transcription.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.Transcription.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.OAIAPI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.OAIAPI.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Test.ChatTest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Test.ChatTest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Test.FilesTest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Test.FilesTest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Test.FineTuningTest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Test.FineTuningTest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Test.SpeechTest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Test.SpeechTest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Test.Test.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Test.Test.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Test.TranscriptionTest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Test.TranscriptionTest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Test.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Test.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Utils.JSONTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Utils.JSONTools.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Utils.LogLevel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Utils.LogLevel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Utils.Logger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Utils.Logger.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Utils.LowerCaseNamingPolicy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Utils.LowerCaseNamingPolicy.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Utils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Utils.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

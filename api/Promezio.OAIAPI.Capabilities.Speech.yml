@@ -1,0 +1,83 @@
+### YamlMime:ManagedReference
+items:
+- uid: Promezio.OAIAPI.Capabilities.Speech
+  commentId: N:Promezio.OAIAPI.Capabilities.Speech
+  id: Promezio.OAIAPI.Capabilities.Speech
+  children:
+  - Promezio.OAIAPI.Capabilities.Speech.ResponseFormat
+  - Promezio.OAIAPI.Capabilities.Speech.Speech
+  - Promezio.OAIAPI.Capabilities.Speech.SpeechResponse
+  - Promezio.OAIAPI.Capabilities.Speech.Voice
+  langs:
+  - csharp
+  - vb
+  name: Promezio.OAIAPI.Capabilities.Speech
+  nameWithType: Promezio.OAIAPI.Capabilities.Speech
+  fullName: Promezio.OAIAPI.Capabilities.Speech
+  type: Namespace
+  assemblies:
+  - OAIAPI
+references:
+- uid: Promezio.OAIAPI.Capabilities.Speech.Speech
+  commentId: T:Promezio.OAIAPI.Capabilities.Speech.Speech
+  parent: Promezio.OAIAPI.Capabilities.Speech
+  href: Promezio.OAIAPI.Capabilities.Speech.Speech.html
+  name: Speech
+  nameWithType: Speech
+  fullName: Promezio.OAIAPI.Capabilities.Speech.Speech
+- uid: Promezio.OAIAPI.Capabilities.Speech.Voice
+  commentId: T:Promezio.OAIAPI.Capabilities.Speech.Voice
+  href: Promezio.OAIAPI.Capabilities.Speech.Voice.html
+  name: Voice
+  nameWithType: Voice
+  fullName: Promezio.OAIAPI.Capabilities.Speech.Voice
+- uid: Promezio.OAIAPI.Capabilities.Speech.ResponseFormat
+  commentId: T:Promezio.OAIAPI.Capabilities.Speech.ResponseFormat
+  href: Promezio.OAIAPI.Capabilities.Speech.ResponseFormat.html
+  name: ResponseFormat
+  nameWithType: ResponseFormat
+  fullName: Promezio.OAIAPI.Capabilities.Speech.ResponseFormat
+- uid: Promezio.OAIAPI.Capabilities.Speech.SpeechResponse
+  commentId: T:Promezio.OAIAPI.Capabilities.Speech.SpeechResponse
+  href: Promezio.OAIAPI.Capabilities.Speech.SpeechResponse.html
+  name: SpeechResponse
+  nameWithType: SpeechResponse
+  fullName: Promezio.OAIAPI.Capabilities.Speech.SpeechResponse
+- uid: Promezio.OAIAPI.Capabilities.Speech
+  commentId: N:Promezio.OAIAPI.Capabilities.Speech
+  href: Promezio.html
+  name: Promezio.OAIAPI.Capabilities.Speech
+  nameWithType: Promezio.OAIAPI.Capabilities.Speech
+  fullName: Promezio.OAIAPI.Capabilities.Speech
+  spec.csharp:
+  - uid: Promezio
+    name: Promezio
+    href: Promezio.html
+  - name: .
+  - uid: Promezio.OAIAPI
+    name: OAIAPI
+    href: Promezio.OAIAPI.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities
+    name: Capabilities
+    href: Promezio.OAIAPI.Capabilities.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities.Speech
+    name: Speech
+    href: Promezio.OAIAPI.Capabilities.Speech.html
+  spec.vb:
+  - uid: Promezio
+    name: Promezio
+    href: Promezio.html
+  - name: .
+  - uid: Promezio.OAIAPI
+    name: OAIAPI
+    href: Promezio.OAIAPI.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities
+    name: Capabilities
+    href: Promezio.OAIAPI.Capabilities.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities.Speech
+    name: Speech
+    href: Promezio.OAIAPI.Capabilities.Speech.html

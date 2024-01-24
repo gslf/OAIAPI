@@ -1,0 +1,113 @@
+### YamlMime:TableOfContent
+items:
+- uid: Promezio.OAIAPI
+  name: Promezio.OAIAPI
+  items:
+  - uid: Promezio.OAIAPI.OAIAPI
+    name: OAIAPI
+- uid: Promezio.OAIAPI.Capabilities
+  name: Promezio.OAIAPI.Capabilities
+  items:
+  - uid: Promezio.OAIAPI.Capabilities.Capability
+    name: Capability
+- uid: Promezio.OAIAPI.Capabilities.Chat
+  name: Promezio.OAIAPI.Capabilities.Chat
+  items:
+  - uid: Promezio.OAIAPI.Capabilities.Chat.Chat
+    name: Chat
+  - uid: Promezio.OAIAPI.Capabilities.Chat.ChatMessage
+    name: ChatMessage
+  - uid: Promezio.OAIAPI.Capabilities.Chat.ChatResponse
+    name: ChatResponse
+  - uid: Promezio.OAIAPI.Capabilities.Chat.ChatStreamResponse
+    name: ChatStreamResponse
+  - uid: Promezio.OAIAPI.Capabilities.Chat.Choice
+    name: Choice
+  - uid: Promezio.OAIAPI.Capabilities.Chat.Config
+    name: Config
+  - uid: Promezio.OAIAPI.Capabilities.Chat.ResponseFormat
+    name: ResponseFormat
+  - uid: Promezio.OAIAPI.Capabilities.Chat.ResponseFormatTypes
+    name: ResponseFormatTypes
+  - uid: Promezio.OAIAPI.Capabilities.Chat.Role
+    name: Role
+  - uid: Promezio.OAIAPI.Capabilities.Chat.StreamChoice
+    name: StreamChoice
+  - uid: Promezio.OAIAPI.Capabilities.Chat.Usage
+    name: Usage
+- uid: Promezio.OAIAPI.Capabilities.Embedding
+  name: Promezio.OAIAPI.Capabilities.Embedding
+  items:
+  - uid: Promezio.OAIAPI.Capabilities.Embedding.Embedding
+    name: Embedding
+- uid: Promezio.OAIAPI.Capabilities.Files
+  name: Promezio.OAIAPI.Capabilities.Files
+  items:
+  - uid: Promezio.OAIAPI.Capabilities.Files.FileObject
+    name: FileObject
+  - uid: Promezio.OAIAPI.Capabilities.Files.Files
+    name: Files
+  - uid: Promezio.OAIAPI.Capabilities.Files.Purposes
+    name: Purposes
+- uid: Promezio.OAIAPI.Capabilities.FineTuning
+  name: Promezio.OAIAPI.Capabilities.FineTuning
+  items:
+  - uid: Promezio.OAIAPI.Capabilities.FineTuning.DecimalFromStringConverter
+    name: DecimalFromStringConverter
+  - uid: Promezio.OAIAPI.Capabilities.FineTuning.FineTuning
+    name: FineTuning
+  - uid: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningEvent
+    name: FineTuningEvent
+  - uid: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject
+    name: FineTuningObject
+  - uid: Promezio.OAIAPI.Capabilities.FineTuning.Hyperparameters
+    name: Hyperparameters
+  - uid: Promezio.OAIAPI.Capabilities.FineTuning.Models
+    name: Models
+  - uid: Promezio.OAIAPI.Capabilities.FineTuning.TuningError
+    name: TuningError
+- uid: Promezio.OAIAPI.Capabilities.Speech
+  name: Promezio.OAIAPI.Capabilities.Speech
+  items:
+  - uid: Promezio.OAIAPI.Capabilities.Speech.ResponseFormat
+    name: ResponseFormat
+  - uid: Promezio.OAIAPI.Capabilities.Speech.Speech
+    name: Speech
+  - uid: Promezio.OAIAPI.Capabilities.Speech.SpeechResponse
+    name: SpeechResponse
+  - uid: Promezio.OAIAPI.Capabilities.Speech.Voice
+    name: Voice
+- uid: Promezio.OAIAPI.Capabilities.Transcription
+  name: Promezio.OAIAPI.Capabilities.Transcription
+  items:
+  - uid: Promezio.OAIAPI.Capabilities.Transcription.Transcription
+    name: Transcription
+  - uid: Promezio.OAIAPI.Capabilities.Transcription.TranscriptionResponse
+    name: TranscriptionResponse
+- uid: Promezio.OAIAPI.Test
+  name: Promezio.OAIAPI.Test
+  items:
+  - uid: Promezio.OAIAPI.Test.ChatTest
+    name: ChatTest
+  - uid: Promezio.OAIAPI.Test.FilesTest
+    name: FilesTest
+  - uid: Promezio.OAIAPI.Test.FineTuningTest
+    name: FineTuningTest
+  - uid: Promezio.OAIAPI.Test.SpeechTest
+    name: SpeechTest
+  - uid: Promezio.OAIAPI.Test.Test
+    name: Test
+  - uid: Promezio.OAIAPI.Test.TranscriptionTest
+    name: TranscriptionTest
+- uid: Promezio.OAIAPI.Utils
+  name: Promezio.OAIAPI.Utils
+  items:
+  - uid: Promezio.OAIAPI.Utils.JSONTools
+    name: JSONTools
+  - uid: Promezio.OAIAPI.Utils.LogLevel
+    name: LogLevel
+  - uid: Promezio.OAIAPI.Utils.Logger
+    name: Logger
+  - uid: Promezio.OAIAPI.Utils.LowerCaseNamingPolicy
+    name: LowerCaseNamingPolicy
+memberLayout: SamePage
