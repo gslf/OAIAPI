@@ -1,2 +1,2 @@
 
-{"items":[{"name":"DocsMD","href":"DocsMD/introduction.html","tocHref":"DocsMD/toc.html","topicHref":"DocsMD/introduction.html"},{"name":"API","href":"api/Promezio.OAIAPI.html","tocHref":"api/toc.html","topicHref":"api/Promezio.OAIAPI.html","topicUid":"Promezio.OAIAPI"}],"pdf":true}
+{"items":[{"name":"Getting Started","href":"GettingStarted/"},{"name":"API","href":"api/Promezio.OAIAPI.html","tocHref":"api/toc.html","topicHref":"api/Promezio.OAIAPI.html","topicUid":"Promezio.OAIAPI"}],"pdf":true}

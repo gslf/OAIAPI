@@ -11,49 +11,6 @@
       }
     },
     {
-      "type": "Conceptual",
-      "source_relative_path": "DocsMD/getting-started.md",
-      "output": {
-        ".html": {
-          "relative_path": "DocsMD/getting-started.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "DocsMD/introduction.md",
-      "output": {
-        ".html": {
-          "relative_path": "DocsMD/introduction.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "DocsMD/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "DocsMD/toc.html"
-        },
-        ".json": {
-          "relative_path": "DocsMD/toc.json"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "README.md",
-      "output": {
-        ".html": {
-          "relative_path": "README.html"
-        }
-      },
-      "version": ""
-    },
-    {
       "type": "ManagedReference",
       "source_relative_path": "api/Promezio.OAIAPI.Capabilities.Capability.yml",
       "output": {
