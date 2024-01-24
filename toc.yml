@@ -1,4 +1,4 @@
-- name: Getting Started
-  href: GettingStarted/
+- name: Examples
+  href: Examples/
 - name: API
   href: api/

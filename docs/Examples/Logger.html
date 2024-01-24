@@ -2,21 +2,21 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>OAIAPI - Fine Tuning Capability | OAIAPI </title>
+      <title>OAIAPI Utils - Logger | OAIAPI </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="OAIAPI - Fine Tuning Capability | OAIAPI ">
+      <meta name="title" content="OAIAPI Utils - Logger | OAIAPI ">
       
       
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
       <meta name="docfx:navrel" content="../toc.html">
-      <meta name="docfx:tocrel" content="toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
       
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/gslf/OAIAPI/blob/main/Docs/Files.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/gslf/OAIAPI/blob/main/Examples/Logger.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -85,26 +85,78 @@
         </div>
 
         <article data-uid="">
-<h1 id="oaiapi---fine-tuning-capability">OAIAPI - Fine Tuning Capability</h1>
+<h1 id="oaiapi-utils---logger">OAIAPI Utils - Logger</h1>
 
 <h2 id="namespace">Namespace</h2>
-<p><code>Promezio.OAIAPI.Capabilities.FineTuning</code></p>
+<p><code>Promezio.OAIAPI.Utils</code></p>
 <h2 id="summary">Summary</h2>
-<p>The FineTuning class provides methods to interact with the Fine Tuning capability of the OpenAI API, facilitating the creation, listing, retrieval, and cancellation of fine-tuning jobs for machine learning models.</p>
-<h2 id="examples">Examples</h2>
-<h3 id="properties">Properties</h3>
-<h2 id="constructor-parameters">Constructor Parameters</h2>
+<p>The <code>Logger</code> class provides a robust logging mechanism, utilizing <code>TraceSource</code> for logging messages at different severity levels such as Error, Warning, and Info. It enables control over which messages are logged based on a specified logging level.</p>
+<h2 id="enumerations">Enumerations</h2>
+<h3 id="loglevel">LogLevel</h3>
+<p>Defines the logging levels supported by the Logger class.</p>
 <ul>
-<li><code>apikey</code>: The API key for authentication.</li>
-<li><code>logger</code>: The <code>Logger</code> instance used for logging operations. You can read more about the logger <a href="Logger.html">here</a>.</li>
+<li><code>None</code> (0): No logging.</li>
+<li><code>Error</code> (1): Logs error messages.</li>
+<li><code>Warning</code> (2): Logs warning messages.</li>
+<li><code>Info</code> (3): Logs informational messages.</li>
+</ul>
+<h2 id="constructor">Constructor</h2>
+<h3 id="loggerloglevel-level">Logger(LogLevel level)</h3>
+<p>Initializes a new instance of the <code>Logger</code> class with the specified logging level.</p>
+<h4 id="parameters">Parameters</h4>
+<ul>
+<li><code>level</code> (<code>LogLevel</code>): The logging level threshold. Only messages at this level or higher will be logged.</li>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li><code>Level</code> (<code>LogLevel</code>): Gets or sets the logging level.</li>
 </ul>
 <h2 id="methods">Methods</h2>
+<h3 id="void-errorstring-message">void Error(string message)</h3>
+<p>Logs an error message.</p>
+<h4 id="parameters-1">Parameters</h4>
+<ul>
+<li><code>message</code> (string): The error message to log.</li>
+</ul>
+<h3 id="void-warningstring-message">void Warning(string message)</h3>
+<p>Logs a warning message.</p>
+<h4 id="parameters-2">Parameters</h4>
+<ul>
+<li><code>message</code> (string): The warning message to log.</li>
+</ul>
+<h3 id="void-infostring-message">void Info(string message)</h3>
+<p>Logs an informational message.</p>
+<h4 id="parameters-3">Parameters</h4>
+<ul>
+<li><code>message</code> (string): The informational message to log.</li>
+</ul>
+<h3 id="void-close">void Close()</h3>
+<p>Closes the <code>TraceSource</code> and releases all resources.</p>
 <h2 id="remarks">Remarks</h2>
+<ul>
+<li>The logger uses <code>TraceSource</code> to provide a flexible and extensible way to log messages.</li>
+<li>It supports logging to different outputs such as text files and the console.</li>
+<li>The logger's behavior can be customized through listeners and trace options.</li>
+<li>The <code>LogLevel</code> can be dynamically set to control the verbosity of the log output.</li>
+<li>Properly closing the logger is important to ensure that all logged messages are flushed to their outputs.</li>
+</ul>
+<h2 id="example-usage">Example Usage</h2>
+<pre><code class="lang-csharp">// Creating a logger instance with Info level logging
+var logger = new Logger(LogLevel.Info);
+
+// Logging messages
+logger.Info(&quot;Informational message&quot;);
+logger.Warning(&quot;Warning message&quot;);
+logger.Error(&quot;Error message&quot;);
+
+// Closing the logger
+logger.Close();
+</code></pre>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/gslf/OAIAPI/blob/main/Docs/Files.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/gslf/OAIAPI/blob/main/Examples/Logger.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

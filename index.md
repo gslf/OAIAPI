@@ -5,13 +5,6 @@ Unofficial OpenAI API interface in C#
 
 Welcome to OAIAPI, the go-to C# library for interacting with OpenAI's API in a smooth and efficient way. Designed with simplicity and extendability in mind, this unofficial interface can be the right choice in many kind of projects.
 
-## Key Features
-- **Ease of Use**: I've designed OAIAPI with simplicity in mind. You can integrate OpenAI's capabilities into your C# projects effortlessly.
-- **No External Dependencies**: To keep things straightforward, this library runs perfectly without any third-party libraries.
-- **Extensibility**: I built OAIAPI to be flexible. You're welcome to add new features or modify existing ones to fit your specific needs.
-- **Well-Documented**: Clarity is key. I've ensured every part of the code is well-commented, making it easy to navigate and understand.
-
-
 ## Getting Started
 Getting started with OAIAPI is a breeze.
 
@@ -66,25 +59,11 @@ ChatResponse? result = await api.Chat.Dispatch("Hello from space: the final fron
 Console.WriteLine(result?.GetMessage());
 ```
 
-## Available API
-- Chat Completion ([READ THE DOCS](Docs/Chat.md))
-- Files Management ([READ THE DOCS](Docs/Files.md))
-- Fine Tuning ([READ THE DOCS](Docs/FineTuning.md))
 
-## API integration in progress
-- Fine Tuning
-- Speech
-- Transcription
-
-
-## Contributing
-Your input is valuable! Feel free to fork the repository, make improvements, and submit a pull request. Let's make OAIAPI even better, together.
-
-## License
-OAIAPI is released under [MIT licence](LICENSE).
 
 ---
 
-[Gioele SL Fierro](https://gslf.it)
+##### [Gioele SL Fierro](https://gslf.it)
 
-OAIAPI is an unofficial interface and is not endorsed by or affiliated with OpenAI. The project is sponsored by [Promezio](https://promezio.it).
+OAIAPI is an unofficial interface and is not endorsed by or affiliated with OpenAI. 
+The project is sponsored by [Promezio](https://promezio.it).

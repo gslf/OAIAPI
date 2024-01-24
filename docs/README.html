@@ -90,59 +90,12 @@
 <p>Unofficial OpenAI API interface in C#</p>
 <hr>
 <p>Welcome to OAIAPI, the go-to C# library for interacting with OpenAI's API in a smooth and efficient way. Designed with simplicity and extendability in mind, this unofficial interface can be the right choice in many kind of projects.</p>
-<h2 id="key-features">Key Features</h2>
-<ul>
-<li><strong>Ease of Use</strong>: I've designed OAIAPI with simplicity in mind. You can integrate OpenAI's capabilities into your C# projects effortlessly.</li>
-<li><strong>No External Dependencies</strong>: To keep things straightforward, this library runs perfectly without any third-party libraries.</li>
-<li><strong>Extensibility</strong>: I built OAIAPI to be flexible. You're welcome to add new features or modify existing ones to fit your specific needs.</li>
-<li><strong>Well-Documented</strong>: Clarity is key. I've ensured every part of the code is well-commented, making it easy to navigate and understand.</li>
-</ul>
-<h2 id="getting-started">Getting Started</h2>
-<p>Getting started with OAIAPI is a breeze.</p>
-<h3 id="step-1-clone-the-repository">STEP 1: Clone the repository</h3>
-<pre><code class="lang-powershell">git clone https://github.com/gslf/OAIAPI.git
-</code></pre>
-<h3 id="step-3-reference-the-project">STEP 3: Reference the project</h3>
-<p><strong>For Visual Studio users:</strong> right-click on the References or Dependencies in your main project, select Add Reference..., and then choose the project you just added.</p>
-<p><strong>For Visual Studio Code and other editors users:</strong> open yout project file and add a reference tag that look like this:</p>
-<pre><code class="lang-xml">&lt;ItemGroup&gt;
-  &lt;ProjectReference Include=&quot;..\path\to\cloned\project.csproj&quot; /&gt;
-&lt;/ItemGroup&gt;
-</code></pre>
-<h3 id="step-3-manage-the-api-key">STEP 3: Manage the API key</h3>
-<p>In this project the API key is managed via user secret.
-To add your API key to the project use this commands inside the project folder.</p>
-<pre><code class="lang-powershell">dotnet user-secrets init
-dotnet user-secrets set &quot;apikey&quot; &quot;YOUR-OPEN-AI-API-KEY&quot;
-</code></pre>
-<p>You can read more about user secret <a href="https://learn.microsoft.com/en-us/aspnet/core/security/app-secrets?view=aspnetcore-8.0&amp;tabs=windows">here</a>.</p>
-<p>You can read more about OpenAI API Key <a href="https://help.openai.com/en/articles/4936850-where-do-i-find-my-api-key">here</a>.</p>
-<h3 id="step-4-make-your-first-api-call">STEP 4: Make Your First API Call</h3>
-<pre><code class="lang-csharp">// Retrieve the API Key
- Configuration = new ConfigurationBuilder()
-    .AddUserSecrets&lt;Test&gt;()
-    .Build();
-
-if (Configuration == null) {
-    throw new NullReferenceException(&quot;User Secrets configuration not found.&quot;); 
-}
-
-string myapikey = Configuration[&quot;OpenAIApiKey&quot;] ?? throw new InvalidOperationException(&quot;API Key not found&quot;);
-
-
-// Call the Chat API
-OAIAPI api = new OAIAPI(myapikey);
-Config config = new Config(&quot;gpt-3.5-turbo&quot;);
-api.Chat.Init(config);
-
-ChatResponse? result = await api.Chat.Dispatch(&quot;Hello from space: the final frontier.&quot;);
-Console.WriteLine(result?.GetMessage());
-</code></pre>
+<h2 id="read-the-docs">(<a href="Docs/Chat.md">READ THE DOCS</a>)</h2>
 <h2 id="available-api">Available API</h2>
 <ul>
-<li>Chat Completion (<a href="Docs/Chat.md">READ THE DOCS</a>)</li>
-<li>Files Management (<a href="Docs/Files.md">READ THE DOCS</a>)</li>
-<li>Fine Tuning (<a href="Docs/FineTuning.md">READ THE DOCS</a>)</li>
+<li>Chat Completion</li>
+<li>Files Management</li>
+<li>Fine Tuning</li>
 </ul>
 <h2 id="api-integration-in-progress">API integration in progress</h2>
 <ul>

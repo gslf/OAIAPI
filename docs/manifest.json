@@ -11,6 +11,36 @@
       }
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "Examples/Chat.md",
+      "output": {
+        ".html": {
+          "relative_path": "Examples/Chat.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Examples/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "Examples/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "README.md",
+      "output": {
+        ".html": {
+          "relative_path": "README.html"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "ManagedReference",
       "source_relative_path": "api/Promezio.OAIAPI.Capabilities.Capability.yml",
       "output": {
