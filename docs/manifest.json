@@ -12,73 +12,33 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Docs/Chat.md",
+      "source_relative_path": "DocsMD/getting-started.md",
       "output": {
         ".html": {
-          "relative_path": "Docs/Chat.html"
+          "relative_path": "DocsMD/getting-started.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Docs/Files.md",
+      "source_relative_path": "DocsMD/introduction.md",
       "output": {
         ".html": {
-          "relative_path": "Docs/Files.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "Docs/FineTuning.md",
-      "output": {
-        ".html": {
-          "relative_path": "Docs/FineTuning.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "Docs/Logger.md",
-      "output": {
-        ".html": {
-          "relative_path": "Docs/Logger.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "Docs/getting-started.md",
-      "output": {
-        ".html": {
-          "relative_path": "Docs/getting-started.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "Docs/introduction.md",
-      "output": {
-        ".html": {
-          "relative_path": "Docs/introduction.html"
+          "relative_path": "DocsMD/introduction.html"
         }
       },
       "version": ""
     },
     {
       "type": "Toc",
-      "source_relative_path": "Docs/toc.yml",
+      "source_relative_path": "DocsMD/toc.yml",
       "output": {
         ".html": {
-          "relative_path": "Docs/toc.html"
+          "relative_path": "DocsMD/toc.html"
         },
         ".json": {
-          "relative_path": "Docs/toc.json"
+          "relative_path": "DocsMD/toc.json"
         }
       },
       "version": ""
