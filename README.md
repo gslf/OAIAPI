@@ -20,7 +20,7 @@ Welcome to OAIAPI, the go-to C# library for a smooth interaction with OpenAI's A
 Your input is valuable! Feel free to fork the repository, make improvements, and submit a pull request. Let's make OAIAPI even better, together.
 
 ## License
-OAIAPI is released under [MIT licence](LICENSE.md).
+OAIAPI is released under [MIT licence](LICENSE).
 
 ---
 

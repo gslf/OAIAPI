@@ -22,6 +22,26 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "Examples/Files.md",
+      "output": {
+        ".html": {
+          "relative_path": "Examples/Files.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Examples/FineTuning.md",
+      "output": {
+        ".html": {
+          "relative_path": "Examples/FineTuning.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "Examples/index.md",
       "output": {
         ".html": {

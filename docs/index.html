@@ -87,22 +87,22 @@
         <article data-uid="">
 <h1 id="oaiapi">OAIAPI</h1>
 
-<p>Unofficial OpenAI API interface in C#</p>
+<h3 id="unofficial-openai-api-interface-in-c">Unofficial OpenAI API interface in C#</h3>
+<p>Welcome to OAIAPI, the go-to C# library for a smooth interaction with OpenAI's API.</p>
 <hr>
-<p>Welcome to OAIAPI, the go-to C# library for interacting with OpenAI's API in a smooth and efficient way. Designed with simplicity and extendability in mind, this unofficial interface can be the right choice in many kind of projects.</p>
 <h2 id="getting-started">Getting Started</h2>
 <p>Getting started with OAIAPI is a breeze.</p>
-<h3 id="step-1-clone-the-repository">STEP 1: Clone the repository</h3>
+<h4 id="step-1-clone-the-repository">STEP 1: Clone the repository</h4>
 <pre><code class="lang-powershell">git clone https://github.com/gslf/OAIAPI.git
 </code></pre>
-<h3 id="step-3-reference-the-project">STEP 3: Reference the project</h3>
+<h4 id="step-2-reference-the-project">STEP 2: Reference the project</h4>
 <p><strong>For Visual Studio users:</strong> right-click on the References or Dependencies in your main project, select Add Reference..., and then choose the project you just added.</p>
-<p><strong>For Visual Studio Code and other editors users:</strong> open yout project file and add a reference tag that look like this:</p>
+<p><strong>For Visual Studio Code and other editors users:</strong> open your project file and add a reference tag that look like this:</p>
 <pre><code class="lang-xml">&lt;ItemGroup&gt;
   &lt;ProjectReference Include=&quot;..\path\to\cloned\project.csproj&quot; /&gt;
 &lt;/ItemGroup&gt;
 </code></pre>
-<h3 id="step-3-manage-the-api-key">STEP 3: Manage the API key</h3>
+<h4 id="step-3-manage-the-api-key">STEP 3: Manage the API key</h4>
 <p>In this project the API key is managed via user secret.
 To add your API key to the project use this commands inside the project folder.</p>
 <pre><code class="lang-powershell">dotnet user-secrets init
@@ -110,7 +110,7 @@ dotnet user-secrets set &quot;apikey&quot; &quot;YOUR-OPEN-AI-API-KEY&quot;
 </code></pre>
 <p>You can read more about user secret <a href="https://learn.microsoft.com/en-us/aspnet/core/security/app-secrets?view=aspnetcore-8.0&amp;tabs=windows">here</a>.</p>
 <p>You can read more about OpenAI API Key <a href="https://help.openai.com/en/articles/4936850-where-do-i-find-my-api-key">here</a>.</p>
-<h3 id="step-4-make-your-first-api-call">STEP 4: Make Your First API Call</h3>
+<h4 id="step-4-make-your-first-api-call">STEP 4: Make Your First API Call</h4>
 <pre><code class="lang-csharp">// Retrieve the API Key
  Configuration = new ConfigurationBuilder()
     .AddUserSecrets&lt;Test&gt;()

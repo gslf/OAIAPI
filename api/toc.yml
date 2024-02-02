@@ -84,21 +84,6 @@ items:
     name: Transcription
   - uid: Promezio.OAIAPI.Capabilities.Transcription.TranscriptionResponse
     name: TranscriptionResponse
-- uid: Promezio.OAIAPI.Test
-  name: Promezio.OAIAPI.Test
-  items:
-  - uid: Promezio.OAIAPI.Test.ChatTest
-    name: ChatTest
-  - uid: Promezio.OAIAPI.Test.FilesTest
-    name: FilesTest
-  - uid: Promezio.OAIAPI.Test.FineTuningTest
-    name: FineTuningTest
-  - uid: Promezio.OAIAPI.Test.SpeechTest
-    name: SpeechTest
-  - uid: Promezio.OAIAPI.Test.Test
-    name: Test
-  - uid: Promezio.OAIAPI.Test.TranscriptionTest
-    name: TranscriptionTest
 - uid: Promezio.OAIAPI.Utils
   name: Promezio.OAIAPI.Utils
   items:

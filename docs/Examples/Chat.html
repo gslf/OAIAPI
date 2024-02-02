@@ -106,7 +106,20 @@ string myapikey = Configuration[&quot;OpenAIApiKey&quot;] ?? throw new InvalidOp
 
 // Init OAIAPI Class
 OAIAPI api = new OAIAPI(myapikey);
-Config config = new Config(&quot;gpt-3.5-turbo&quot;, temperature: 2);
+Config config = new Config(
+    &quot;gpt-3.5-turbo&quot;, 
+    frequencyPenalty: 0, // Optional
+    logprobs: true,  // Optional
+    topLogprobs: 5,  // Optional
+    maxTokens: 1000,  // Optional
+    n: 1,  // Optional
+    presencePenalty: 0m,  // Optional
+    responseFormat: new ResponseFormat { Type = ResponseFormatTypes.JSON },  // Optional
+    seed: 123456789,  // Optional
+    temperature: 1m,  // Optional
+    topP: 1m,  // Optional
+    user: &quot;test&quot;);  // Optional
+
 api.Chat.Init(config);
 
 // Call the standard API
@@ -118,62 +131,7 @@ await foreach (var streamResult in api.Chat.DispatchStream(&quot;Hello, write nu
     Console.WriteLine(streamResult?.GetMessage());
 }
 </code></pre>
-<h2 id="configuration">Configuration</h2>
-<p>The <code>Config</code> class provides a consistent way to configure the settings for the chat capability.</p>
-<h3 id="properties">Properties</h3>
-<ul>
-<li><code>model</code> (string): The model identifier used for generating responses.</li>
-<li><code>frequencyPenalty</code> (int, optional): Frequency penalty to apply, ranging from -2.0 to 2.0. Default is 0.</li>
-<li><code>logprobs</code> (bool, optional): Flag to include log probabilities in the response. Default is false.</li>
-<li><code>topLogprobs</code> (int?, optional): Limit for the number of top log probabilities to return, must be between 0 and 5. Default is null.</li>
-<li><code>maxTokens</code> (int?, optional): Maximum number of tokens to generate. Default is null.</li>
-<li><code>n</code> (int): Number of responses to generate. Default is 1.</li>
-<li><code>presencePenalty</code> (decimal, optional): Presence penalty to apply, ranging from -2.0 to 2.0. Default is 0.</li>
-<li><code>responseFormat</code> (ResponseFormat?, optional): Format for the response (JSON or TEXT). Default is null.</li>
-<li><code>seed</code> (int?, optional): Seed for random number generation. Default is null.</li>
-<li><code>temperature</code> (decimal): Controls randomness in response generation, ranging from 0 to 2. Default is 1.</li>
-<li><code>topP</code> (decimal): Controls diversity of response, ranging from 0 to 1. Default is 1.</li>
-<li><code>user</code> (string?, optional): User identifier. Default is null.</li>
-</ul>
-<h3 id="constructor-exceptions">Constructor Exceptions</h3>
-<ul>
-<li><code>ArgumentOutOfRangeException</code>: Thrown when provided arguments are outside their allowed range.</li>
-</ul>
-<h2 id="parameters">Parameters</h2>
-<ul>
-<li><code>apikey</code>: The API key for authentication.</li>
-<li><code>logger</code>: The <code>Logger</code> instance used for logging operations. You can read more about the logger <a href="Logger.md">here</a>.</li>
-</ul>
-<h2 id="methods">Methods</h2>
-<h3 id="initconfig-config">Init(Config config)</h3>
-<p>Initializes the instance of the <code>Chat</code> class with the specified configuration.</p>
-<h4 id="parameters-1">Parameters</h4>
-<ul>
-<li><code>config</code>: The configuration object.</li>
-</ul>
-<h3 id="async-taskchatresponse-dispatchstring-prompt">async Task&lt;ChatResponse?&gt; Dispatch(string prompt)</h3>
-<p>Sends a message to the chat model and receives a response asynchronously.</p>
-<h4 id="parameters-2">Parameters</h4>
-<ul>
-<li><code>prompt</code>: The message to send to the model.</li>
-</ul>
-<h4 id="returns">Returns</h4>
-<p>A task representing the asynchronous operation, containing the chat response.</p>
-<h3 id="async-iasyncenumerablechatstreamresponse-dispatchstreamstring-prompt">async IAsyncEnumerable&lt;ChatStreamResponse?&gt; DispatchStream(string prompt)</h3>
-<p>Sends a message to the chat model and streams responses back asynchronously.</p>
-<h4 id="parameters-3">Parameters</h4>
-<ul>
-<li><code>prompt</code>: The message to send to the model.</li>
-</ul>
-<h4 id="returns-1">Returns</h4>
-<p>An asynchronous stream of <code>ChatStreamResponse</code>.</p>
-<h2 id="remarks">Remarks</h2>
-<ul>
-<li>The class maintains a list of messages sent and received to/from the chat model.</li>
-<li>Proper initialization with API key and configuration is necessary before sending requests.</li>
-<li>The class handles JSON serialization and deserialization of the requests and responses.</li>
-<li>Includes error handling and logging for various stages of request and response processing.</li>
-</ul>
+<h2 id="configuration-parameters"><a href="/api/Promezio.OAIAPI.Capabilities.Chat.Config.html#parameters">Configuration Parameters</a></h2>
 
 </article>
 

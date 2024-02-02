@@ -1,29 +1,28 @@
 # OAIAPI
-Unofficial OpenAI API interface in C# 
+### Unofficial OpenAI API interface in C# 
+Welcome to OAIAPI, the go-to C# library for a smooth interaction with OpenAI's API. 
 
 ---
-
-Welcome to OAIAPI, the go-to C# library for interacting with OpenAI's API in a smooth and efficient way. Designed with simplicity and extendability in mind, this unofficial interface can be the right choice in many kind of projects.
 
 ## Getting Started
 Getting started with OAIAPI is a breeze.
 
-### STEP 1: Clone the repository
+#### STEP 1: Clone the repository
 ```powershell
 git clone https://github.com/gslf/OAIAPI.git
 ```
 
-### STEP 3: Reference the project
+#### STEP 2: Reference the project
 **For Visual Studio users:** right-click on the References or Dependencies in your main project, select Add Reference..., and then choose the project you just added.
 
-**For Visual Studio Code and other editors users:** open yout project file and add a reference tag that look like this:
+**For Visual Studio Code and other editors users:** open your project file and add a reference tag that look like this:
 ```xml
 <ItemGroup>
   <ProjectReference Include="..\path\to\cloned\project.csproj" />
 </ItemGroup>
 ```
 
-### STEP 3: Manage the API key
+#### STEP 3: Manage the API key
 In this project the API key is managed via user secret.
 To add your API key to the project use this commands inside the project folder.
 
@@ -36,7 +35,7 @@ You can read more about user secret [here](https://learn.microsoft.com/en-us/asp
 
 You can read more about OpenAI API Key [here](https://help.openai.com/en/articles/4936850-where-do-i-find-my-api-key).
 
-### STEP 4: Make Your First API Call
+#### STEP 4: Make Your First API Call
 ```csharp
 // Retrieve the API Key
  Configuration = new ConfigurationBuilder()

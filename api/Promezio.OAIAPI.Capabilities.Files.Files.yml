@@ -710,7 +710,6 @@ references:
     href: Promezio.OAIAPI.Utils.html
 - uid: System.ArgumentException
   commentId: T:System.ArgumentException
-  parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.argumentexception
   name: ArgumentException
@@ -718,7 +717,6 @@ references:
   fullName: System.ArgumentException
 - uid: System.Net.Http.HttpRequestException
   commentId: T:System.Net.Http.HttpRequestException
-  parent: System.Net.Http
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.net.http.httprequestexception
   name: HttpRequestException
@@ -770,43 +768,6 @@ references:
     name: FileObject
     href: Promezio.OAIAPI.Capabilities.Files.FileObject.html
   - name: )
-- uid: System.Net.Http
-  commentId: N:System.Net.Http
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system
-  name: System.Net.Http
-  nameWithType: System.Net.Http
-  fullName: System.Net.Http
-  spec.csharp:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Net
-    name: Net
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.net
-  - name: .
-  - uid: System.Net.Http
-    name: Http
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.net.http
-  spec.vb:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Net
-    name: Net
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.net
-  - name: .
-  - uid: System.Net.Http
-    name: Http
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.net.http
 - uid: System.Threading.Tasks.Task`1
   commentId: T:System.Threading.Tasks.Task`1
   isExternal: true
