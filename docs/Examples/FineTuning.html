@@ -87,6 +87,79 @@
         <article data-uid="">
 <h1 id="oaiapi---fine-tuning-capability">OAIAPI - Fine Tuning Capability</h1>
 
+<h2 id="namespace">Namespace</h2>
+<p><code>Promezio.OAIAPI.Capabilities.FineTuning</code></p>
+<h2 id="summary">Summary</h2>
+<p>The <code>FineTuning</code> class provides functionality to create and manage a fine tuning job with OpenAI models.</p>
+<h2 id="examples">Examples</h2>
+<h4 id="fine-tuning-methods">Fine tuning methods</h4>
+<pre><code class="lang-csharp">// Retrieve the API Key
+ Configuration = new ConfigurationBuilder()
+    .AddUserSecrets&lt;Test&gt;()
+    .Build();
+
+if (Configuration == null) {
+    throw new NullReferenceException(&quot;User Secrets configuration not found.&quot;); 
+}
+
+string myapikey = Configuration[&quot;OpenAIApiKey&quot;] ?? throw new InvalidOperationException(&quot;API Key not found&quot;);
+
+
+// Init OAIAPI Class
+OAIAPI api = new OAIAPI(myapikey);
+
+// Create a fine tuning job
+FineTuningObject? fineTuningResult = await api.FineTuning.Create(
+            &quot;theTrainigFileID&quot;,
+            Models.GPT_3_5_TURBO_1106,
+            batch_size: 5, //optional
+            learning_rate_multiplier: 2, //optional
+            n_epochs: 10, //optional
+            suffix: &quot;test&quot;, //optional
+            validationFileID: &quot;theValidationFileID&quot;);
+
+// Cancel a fine tuning job
+FineTuningObject? fineTuningCancelResult = await api.FineTuning.Cancel(&quot;theFineTuningID&quot;);
+
+// List all fine tuning jobs
+FineTuningObject[]? fineTuningList = await api.FineTuning.ListJobs();
+
+// Retrieve a fine tunning job
+FineTuningObject? fineTuningRetrieveResult = await api.FineTuning.Retrieve(fineTuningResult.Id);
+
+// Retrieve all events of a fine tuning job
+FineTuningEvent[]? fineTuningEvents = await api.FineTuning.ListEvents(fineTuningResult.Id);
+</code></pre>
+<h4 id="upload--tune">Upload &amp; tune</h4>
+<pre><code class="lang-csharp">// Retrieve the API Key
+ Configuration = new ConfigurationBuilder()
+    .AddUserSecrets&lt;Test&gt;()
+    .Build();
+
+if (Configuration == null) {
+    throw new NullReferenceException(&quot;User Secrets configuration not found.&quot;); 
+}
+
+string myapikey = Configuration[&quot;OpenAIApiKey&quot;] ?? throw new InvalidOperationException(&quot;API Key not found&quot;);
+
+
+// Init OAIAPI Class
+OAIAPI api = new OAIAPI(myapikey);
+
+// Upload a file
+FileObject? uploadResult = await api.Files.Upload(&quot;/path/to/tuningFile.jsonl&quot;, Purposes.FINE_TUNE);
+
+if( ! string.IsNullOrEmpty(uploadResult.Id) ){
+
+    // Create a fine tuning job
+    FineTuningObject? fineTuningResult = await api.FineTuning.Create(
+                uploadResult.Id,
+                Models.GPT_3_5_TURBO_1106);
+}
+</code></pre>
+<h2 id="links">Links</h2>
+<h4 id="finetuningobject-documentation"><a href="/api/Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject.html">FineTuningObject documentation</a></h4>
+<h4 id="create-job-parameters-documentation"><a href="/api/Promezio.OAIAPI.Capabilities.FineTuning.FineTuning.html#parameters-2">Create job parameters documentation</a></h4>
 
 </article>
 

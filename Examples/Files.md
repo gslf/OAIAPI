@@ -41,5 +41,6 @@ bool deleteResult = await api.Files.Delete("theFileID");
 
 ```
 
-#### [FileOject documentation](/api/Promezio.OAIAPI.Capabilities.Files.FileObject.html)
+## Documentation Links
+#### [FileObject documentation](/api/Promezio.OAIAPI.Capabilities.Files.FileObject.html)
 #### [Purposes documentation](/api/Promezio.OAIAPI.Capabilities.Files.Purposes.html)
