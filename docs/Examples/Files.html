@@ -87,6 +87,44 @@
         <article data-uid="">
 <h1 id="oaiapi---files-management-capability">OAIAPI - Files Management Capability</h1>
 
+<h2 id="namespace">Namespace</h2>
+<p><code>Promezio.OAIAPI.Capabilities.Files</code></p>
+<h2 id="summary">Summary</h2>
+<p>The <code>Files</code> class provides functionality to send, delete and list files on OpenAI server.</p>
+<h2 id="examples">Examples</h2>
+<pre><code class="lang-csharp">// Retrieve the API Key
+ Configuration = new ConfigurationBuilder()
+    .AddUserSecrets&lt;Test&gt;()
+    .Build();
+
+if (Configuration == null) {
+    throw new NullReferenceException(&quot;User Secrets configuration not found.&quot;); 
+}
+
+string myapikey = Configuration[&quot;OpenAIApiKey&quot;] ?? throw new InvalidOperationException(&quot;API Key not found&quot;);
+
+
+// Init OAIAPI Class
+OAIAPI api = new OAIAPI(myapikey);
+
+// File upload
+FileObject? uploadResult = await api.Files.Upload(&quot;path/file.jsonl&quot;, Purposes.FINE_TUNE);
+
+// List available files
+FileObject[]? listResults = await api.Files.List();
+
+// Retrieve information about a file
+FileObject? retrieveResult = await api.Files.Retrieve(&quot;theFileID&quot;);
+
+// Retrieve the file content
+string? contentResult = await api.Files.Content(&quot;theFileID&quot;);
+
+// File removal
+bool deleteResult = await api.Files.Delete(&quot;theFileID&quot;);
+
+</code></pre>
+<h4 id="fileoject-documentation"><a href="/api/Promezio.OAIAPI.Capabilities.Files.FileObject.html">FileOject documentation</a></h4>
+<h4 id="purposes-documentation"><a href="/api/Promezio.OAIAPI.Capabilities.Files.Purposes.html">Purposes documentation</a></h4>
 
 </article>
 

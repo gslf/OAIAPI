@@ -49,4 +49,4 @@ await foreach (var streamResult in api.Chat.DispatchStream("Hello, write numbers
 }
 ```
 
-### [Configuration Parameters](/api/Promezio.OAIAPI.Capabilities.Chat.Config.html#parameters)
+#### [Configuration parameters documentation](/api/Promezio.OAIAPI.Capabilities.Chat.Config.html#parameters)
