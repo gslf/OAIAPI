@@ -26,5 +26,5 @@ OAIAPI is released under [MIT licence](LICENSE.md).
 
 [Gioele SL Fierro](https://gslf.it)
 
-OAIAPI is an unofficial interface and is not endorsed by or affiliated with OpenAI. \n
+OAIAPI is an unofficial interface and is not endorsed by or affiliated with OpenAI. <br/>
 The project is sponsored by [Promezio](https://promezio.it).
