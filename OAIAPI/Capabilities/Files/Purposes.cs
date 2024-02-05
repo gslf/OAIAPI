@@ -12,7 +12,7 @@ public class Purposes {
     /// Validates whether a given purpose name corresponds to any of the predefined purpose names in this class.
     /// </summary>
     /// <param name="purpose">The name of the purpose to validate.</param>
-    /// <returns>True if the purpos name exists in the predefined purposes; otherwise, false.</returns>
+    /// <returns>True if the purpose name exists in the predefined purposes; otherwise, false.</returns>
     public static bool IsValid(string purpose) {
         Type selfType = typeof(Purposes);
         PropertyInfo[] selfProperties = selfType.GetProperties();

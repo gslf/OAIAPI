@@ -1,4 +1,6 @@
-﻿namespace Promezio.OAIAPI.Capabilities.Chat;
+﻿using Promezio.OAIAPI.Capabilities.CommonModels;
+
+namespace Promezio.OAIAPI.Capabilities.Chat;
 
 /// <summary>
 /// Represents the OpenAI API response for a chat completition request.

@@ -1,4 +1,5 @@
 ﻿using Promezio.OAIAPI.Capabilities.Chat;
+using Promezio.OAIAPI.Capabilities.Embedding;
 using Promezio.OAIAPI.Capabilities.Files;
 using Promezio.OAIAPI.Capabilities.FineTuning;
 using Promezio.OAIAPI.Capabilities.Speech;
@@ -19,6 +20,8 @@ public class OAIAPI {
         Chat = new Chat(_apikey, _logger);
         Files = new Files(_apikey, _logger);
         FineTuning = new FineTuning(_apikey, _logger);
+        Embeddings = new Embeddings(_apikey, _logger);
+
         Transcription = new Transcription(_apikey, _logger);
         Speech = new Speech(_apikey, _logger);
     }
@@ -27,6 +30,10 @@ public class OAIAPI {
     public Chat Chat { get; private set; }
     public Files Files { get; private set; }
     public FineTuning FineTuning { get; private set; }
+    public Embeddings Embeddings { get; private set; }
+
+
+
     public Transcription Transcription { get; private set; }
     public Speech Speech { get; private set; }
 

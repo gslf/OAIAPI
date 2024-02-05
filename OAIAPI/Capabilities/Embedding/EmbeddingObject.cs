@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace OAIAPI.Capabilities.Embedding;
-internal class EmbeddingObject {
+﻿namespace Promezio.OAIAPI.Capabilities.Embedding;
+public class EmbeddingObject {
+    public int? Index { get; set; }
+    public float[]? Embedding { get; set; }
+    public string? Object { get; set; }
 }
