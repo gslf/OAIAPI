@@ -11,6 +11,7 @@ Welcome to OAIAPI, the go-to C# library for a smooth interaction with OpenAI's A
 - Chat Completion 
 - Files Management 
 - Fine Tuning 
+- Embeddings
 
 ## API integration in progress
 - Speech

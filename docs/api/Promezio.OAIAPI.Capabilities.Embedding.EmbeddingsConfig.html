@@ -8,7 +8,7 @@
       <meta name="title" content="Class EmbeddingsConfig
  | OAIAPI ">
       
-      
+      <meta name="description" content="Represents the configuration options for creating embeddings.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -92,7 +92,7 @@
 
   <h1 id="Promezio_OAIAPI_Capabilities_Embedding_EmbeddingsConfig" data-uid="Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig" class="text-break">
     Class EmbeddingsConfig
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gslf/OAIAPI/blob/main/OAIAPI/Capabilities/Embedding/EmbeddingsConfig.cs/#L4"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gslf/OAIAPI/blob/main/OAIAPI/Capabilities/Embedding/EmbeddingsConfig.cs/#L8"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -100,7 +100,8 @@
   <dl><dt>Assembly</dt><dd>OAIAPI.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Represents the configuration options for creating embeddings.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -159,10 +160,11 @@
 
   <h3 id="Promezio_OAIAPI_Capabilities_Embedding_EmbeddingsConfig__ctor_Promezio_OAIAPI_Capabilities_Embedding_AvailableEmbeddingsModels_System_String_System_Nullable_System_Int32__System_String_" data-uid="Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig.#ctor(Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels,System.String,System.Nullable{System.Int32},System.String)">
   EmbeddingsConfig(AvailableEmbeddingsModels, string, int?, string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gslf/OAIAPI/blob/main/OAIAPI/Capabilities/Embedding/EmbeddingsConfig.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gslf/OAIAPI/blob/main/OAIAPI/Capabilities/Embedding/EmbeddingsConfig.cs/#L35"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig.html">EmbeddingsConfig</a> class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -172,13 +174,17 @@
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>model</code> <a class="xref" href="Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels.html">AvailableEmbeddingsModels</a></dt>
-    <dd></dd>
+    <dd><p>The <a class="xref" href="Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels.html">AvailableEmbeddingsModels</a> to use.</p>
+</dd>
     <dt><code>encodingFormat</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>The format of the output embeddings. Defaults to &quot;float&quot;.</p>
+</dd>
     <dt><code>dimensions</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
-    <dd></dd>
+    <dd><p>The desired dimensionality of the embedding vectors (only supported for models &quot;text-embedding-3&quot; and later). Defaults to null.</p>
+</dd>
     <dt><code>user</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>An optional user identifier associated with the request.</p>
+</dd>
   </dl>
 
 
@@ -189,6 +195,12 @@
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>Thrown if the specified number of dimensions is not supported for the chosen embedding model.</p>
+</dd>
+  </dl>
 
 
 
@@ -200,10 +212,11 @@
 
   <h3 id="Promezio_OAIAPI_Capabilities_Embedding_EmbeddingsConfig_Dimensions" data-uid="Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig.Dimensions">
   Dimensions
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gslf/OAIAPI/blob/main/OAIAPI/Capabilities/Embedding/EmbeddingsConfig.cs/#L8"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gslf/OAIAPI/blob/main/OAIAPI/Capabilities/Embedding/EmbeddingsConfig.cs/#L20"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The desired dimensionality of the embedding vectors. Only supported for models &quot;text-embedding-3&quot; and later.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -217,7 +230,7 @@
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
-    <dd></dd>
+    <dd>Represents the configuration options for creating embeddings.</dd>
   </dl>
 
 
@@ -231,10 +244,11 @@
 
   <h3 id="Promezio_OAIAPI_Capabilities_Embedding_EmbeddingsConfig_EncodingFormat" data-uid="Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig.EncodingFormat">
   EncodingFormat
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gslf/OAIAPI/blob/main/OAIAPI/Capabilities/Embedding/EmbeddingsConfig.cs/#L7"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gslf/OAIAPI/blob/main/OAIAPI/Capabilities/Embedding/EmbeddingsConfig.cs/#L16"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The format of the output embeddings. Defaults to &quot;float&quot;.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -248,7 +262,7 @@
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd>Represents the configuration options for creating embeddings.</dd>
   </dl>
 
 
@@ -262,10 +276,11 @@
 
   <h3 id="Promezio_OAIAPI_Capabilities_Embedding_EmbeddingsConfig_Model" data-uid="Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig.Model">
   Model
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gslf/OAIAPI/blob/main/OAIAPI/Capabilities/Embedding/EmbeddingsConfig.cs/#L6"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gslf/OAIAPI/blob/main/OAIAPI/Capabilities/Embedding/EmbeddingsConfig.cs/#L12"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The embedding model to use.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -279,7 +294,7 @@
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
     <dt><a class="xref" href="Promezio.OAIAPI.Capabilities.Embedding.EmbeddingModel.html">EmbeddingModel</a></dt>
-    <dd></dd>
+    <dd>Represents the configuration options for creating embeddings.</dd>
   </dl>
 
 
@@ -293,10 +308,11 @@
 
   <h3 id="Promezio_OAIAPI_Capabilities_Embedding_EmbeddingsConfig_User" data-uid="Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig.User">
   User
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gslf/OAIAPI/blob/main/OAIAPI/Capabilities/Embedding/EmbeddingsConfig.cs/#L9"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gslf/OAIAPI/blob/main/OAIAPI/Capabilities/Embedding/EmbeddingsConfig.cs/#L24"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>An optional user identifier associated with the request.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -310,7 +326,7 @@
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd>Represents the configuration options for creating embeddings.</dd>
   </dl>
 
 
@@ -324,7 +340,7 @@
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/gslf/OAIAPI/blob/main/OAIAPI/Capabilities/Embedding/EmbeddingsConfig.cs/#L4" class="edit-link">Edit this page</a>
+          <a href="https://github.com/gslf/OAIAPI/blob/main/OAIAPI/Capabilities/Embedding/EmbeddingsConfig.cs/#L8" class="edit-link">Edit this page</a>
         </div>
 
 

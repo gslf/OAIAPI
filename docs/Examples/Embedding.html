@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>OAIPI Examples | OAIAPI </title>
+      <title>OAIAPI - Embeddings Capability | OAIAPI </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="OAIPI Examples | OAIAPI ">
+      <meta name="title" content="OAIAPI - Embeddings Capability | OAIAPI ">
       
       
       <link rel="icon" href="../favicon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/gslf/OAIAPI/blob/main/Examples/index.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/gslf/OAIAPI/blob/main/Examples/Embedding.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -85,17 +85,51 @@
         </div>
 
         <article data-uid="">
-<h1 id="oaipi-examples">OAIPI Examples</h1>
+<h1 id="oaiapi---embeddings-capability">OAIAPI - Embeddings Capability</h1>
 
-<h3 id="chat-completion"><a href="Chat.html">Chat Completion</a></h3>
-<h3 id="files-management"><a href="Files.html">Files Management</a></h3>
-<h3 id="fine-tuning"><a href="FineTuning.html">Fine Tuning</a></h3>
-<h3 id="embedding"><a href="Embedding.html">Embedding</a></h3>
+<h2 id="namespace">Namespace</h2>
+<p><code>Promezio.OAIAPI.Capabilities.Embedding</code></p>
+<h2 id="summary">Summary</h2>
+<p>This class enables developers to interact with the &quot;Embeddings&quot; capability of the Promezio OAI API. This capability generates numerical representations, called embeddings, for given text inputs. These embeddings capture the semantic meaning of the text and can be used in various applications like machine learning and natural language processing.</p>
+<p>The Embeddings class provides a single method, Create, which takes two arguments:</p>
+<ul>
+<li>input: An array of text strings for which embeddings will be generated. Each string should be less than 2048 characters long.</li>
+<li>config: An EmbeddingsConfig object specifying options for the embedding generation, such as the desired model, encoding format, and user information (optional).</li>
+</ul>
+<p>The Create method performs the following actions:</p>
+<ol>
+<li>Validates input: It checks if the input array length exceeds the limit and throws an ArgumentException if it does.</li>
+<li>Prepares HTTP request: It builds a JSON payload containing the input, configuration, and API key. It then sets up an HTTP client and configures the request headers for authentication.</li>
+<li>Sends request and handles response: It sends a POST request to the API endpoint and validates the response status code. If successful, it parses the JSON response into an EmbeddingResponse object containing the generated embeddings. If unsuccessful, it throws an HttpRequestException.</li>
+<li>Logs information: It logs messages throughout the process for debugging and monitoring purposes.</li>
+</ol>
+<p>Overall, the Embeddings class offers a convenient way to leverage the Promezio OAI API for text embedding generation. It handles authentication, request construction, response parsing, and error handling, allowing developers to focus on integrating embeddings into their applications.</p>
+<h2 id="examples">Examples</h2>
+<pre><code class="lang-csharp">// Retrieve the API Key
+ Configuration = new ConfigurationBuilder()
+    .AddUserSecrets&lt;Test&gt;()
+    .Build();
+
+if (Configuration == null) {
+    throw new NullReferenceException(&quot;User Secrets configuration not found.&quot;); 
+}
+
+string myapikey = Configuration[&quot;OpenAIApiKey&quot;] ?? throw new InvalidOperationException(&quot;API Key not found&quot;);
+
+
+// Init OAIAPI Class
+OAIAPI api = new OAIAPI(myapikey);
+
+// Obtain embeddings
+EmbeddingsConfig config = new EmbeddingsConfig(AvailableEmbeddingsModels.EMBEDDING_ADA);
+EmbeddingResponse? response = await api.Embeddings.Create([&quot;Test Sentence1&quot;, &quot;Test Sentence2&quot;], config);
+
+</code></pre>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/gslf/OAIAPI/blob/main/Examples/index.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/gslf/OAIAPI/blob/main/Examples/Embedding.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

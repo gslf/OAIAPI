@@ -21,10 +21,12 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: Embeddings
     path: OAIAPI/Capabilities/Embedding/Embeddings.cs
-    startLine: 7
+    startLine: 11
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.Embedding
+  summary: Represents the embeddings capability of the Promezio OAI API.
+  example: []
   syntax:
     content: 'public class Embeddings : Capability'
     content.vb: Public Class Embeddings Inherits Capability
@@ -60,17 +62,21 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: .ctor
     path: OAIAPI/Capabilities/Embedding/Embeddings.cs
-    startLine: 9
+    startLine: 18
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.Embedding
+  summary: Initializes a new instance of the <xref href="Promezio.OAIAPI.Capabilities.Embedding.Embeddings" data-throw-if-not-resolved="false"></xref> class.
+  example: []
   syntax:
     content: public Embeddings(string apikey, Logger logger)
     parameters:
     - id: apikey
       type: System.String
+      description: The API key to use for authentication.
     - id: logger
       type: Promezio.OAIAPI.Utils.Logger
+      description: The logger to use for logging messages.
     content.vb: Public Sub New(apikey As String, logger As Logger)
   overload: Promezio.OAIAPI.Capabilities.Embedding.Embeddings.#ctor*
   nameWithType.vb: Embeddings.New(String, Logger)
@@ -94,21 +100,33 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: Create
     path: OAIAPI/Capabilities/Embedding/Embeddings.cs
-    startLine: 11
+    startLine: 28
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.Embedding
+  summary: Creates embeddings for a given set of input texts.
+  example: []
   syntax:
     content: public Task<EmbeddingResponse?> Create(string[] input, EmbeddingsConfig config)
     parameters:
     - id: input
       type: System.String[]
+      description: An array of text strings to create embeddings for.
     - id: config
       type: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig
+      description: The configuration options for the embedding creation.
     return:
       type: System.Threading.Tasks.Task{Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse}
+      description: An instance of <xref href="Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse" data-throw-if-not-resolved="false"></xref> containing the resulting embeddings, or null if the request failed.
     content.vb: Public Function Create(input As String(), config As EmbeddingsConfig) As Task(Of EmbeddingResponse)
   overload: Promezio.OAIAPI.Capabilities.Embedding.Embeddings.Create*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown if the length of the `input` array exceeds 2048 characters.
+  - type: System.Net.Http.HttpRequestException
+    commentId: T:System.Net.Http.HttpRequestException
+    description: Thrown if the HTTP request to the server fails.
   nameWithType.vb: Embeddings.Create(String(), EmbeddingsConfig)
   fullName.vb: Promezio.OAIAPI.Capabilities.Embedding.Embeddings.Create(String(), Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig)
   name.vb: Create(String(), EmbeddingsConfig)
@@ -446,6 +464,13 @@ references:
   - uid: Promezio.OAIAPI.Capabilities
     name: Capabilities
     href: Promezio.OAIAPI.Capabilities.html
+- uid: Promezio.OAIAPI.Capabilities.Embedding.Embeddings
+  commentId: T:Promezio.OAIAPI.Capabilities.Embedding.Embeddings
+  parent: Promezio.OAIAPI.Capabilities.Embedding
+  href: Promezio.OAIAPI.Capabilities.Embedding.Embeddings.html
+  name: Embeddings
+  nameWithType: Embeddings
+  fullName: Promezio.OAIAPI.Capabilities.Embedding.Embeddings
 - uid: Promezio.OAIAPI.Capabilities.Embedding.Embeddings.#ctor*
   commentId: Overload:Promezio.OAIAPI.Capabilities.Embedding.Embeddings.#ctor
   href: Promezio.OAIAPI.Capabilities.Embedding.Embeddings.html#Promezio_OAIAPI_Capabilities_Embedding_Embeddings__ctor_System_String_Promezio_OAIAPI_Utils_Logger_
@@ -503,6 +528,26 @@ references:
   - uid: Promezio.OAIAPI.Utils
     name: Utils
     href: Promezio.OAIAPI.Utils.html
+- uid: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse
+  commentId: T:Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse
+  href: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse.html
+  name: EmbeddingResponse
+  nameWithType: EmbeddingResponse
+  fullName: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: System.Net.Http.HttpRequestException
+  commentId: T:System.Net.Http.HttpRequestException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.net.http.httprequestexception
+  name: HttpRequestException
+  nameWithType: HttpRequestException
+  fullName: System.Net.Http.HttpRequestException
 - uid: Promezio.OAIAPI.Capabilities.Embedding.Embeddings.Create*
   commentId: Overload:Promezio.OAIAPI.Capabilities.Embedding.Embeddings.Create
   href: Promezio.OAIAPI.Capabilities.Embedding.Embeddings.html#Promezio_OAIAPI_Capabilities_Embedding_Embeddings_Create_System_String___Promezio_OAIAPI_Capabilities_Embedding_EmbeddingsConfig_

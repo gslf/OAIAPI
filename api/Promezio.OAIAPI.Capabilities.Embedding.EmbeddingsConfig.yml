@@ -24,10 +24,12 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: EmbeddingsConfig
     path: OAIAPI/Capabilities/Embedding/EmbeddingsConfig.cs
-    startLine: 3
+    startLine: 7
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.Embedding
+  summary: Represents the configuration options for creating embeddings.
+  example: []
   syntax:
     content: public class EmbeddingsConfig
     content.vb: Public Class EmbeddingsConfig
@@ -59,10 +61,12 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: Model
     path: OAIAPI/Capabilities/Embedding/EmbeddingsConfig.cs
-    startLine: 5
+    startLine: 11
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.Embedding
+  summary: The embedding model to use.
+  example: []
   syntax:
     content: public EmbeddingModel Model { get; }
     parameters: []
@@ -88,10 +92,12 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: EncodingFormat
     path: OAIAPI/Capabilities/Embedding/EmbeddingsConfig.cs
-    startLine: 6
+    startLine: 15
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.Embedding
+  summary: The format of the output embeddings. Defaults to "float".
+  example: []
   syntax:
     content: public string EncodingFormat { get; }
     parameters: []
@@ -117,10 +123,12 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: Dimensions
     path: OAIAPI/Capabilities/Embedding/EmbeddingsConfig.cs
-    startLine: 7
+    startLine: 19
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.Embedding
+  summary: The desired dimensionality of the embedding vectors. Only supported for models "text-embedding-3" and later.
+  example: []
   syntax:
     content: public int? Dimensions { get; }
     parameters: []
@@ -146,10 +154,12 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: User
     path: OAIAPI/Capabilities/Embedding/EmbeddingsConfig.cs
-    startLine: 8
+    startLine: 23
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.Embedding
+  summary: An optional user identifier associated with the request.
+  example: []
   syntax:
     content: public string? User { get; }
     parameters: []
@@ -175,23 +185,33 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: .ctor
     path: OAIAPI/Capabilities/Embedding/EmbeddingsConfig.cs
-    startLine: 10
+    startLine: 34
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.Embedding
+  summary: Initializes a new instance of the <xref href="Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig" data-throw-if-not-resolved="false"></xref> class.
+  example: []
   syntax:
     content: public EmbeddingsConfig(AvailableEmbeddingsModels model, string encodingFormat = "float", int? dimensions = null, string? user = null)
     parameters:
     - id: model
       type: Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels
+      description: The <xref href="Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels" data-throw-if-not-resolved="false"></xref> to use.
     - id: encodingFormat
       type: System.String
+      description: The format of the output embeddings. Defaults to "float".
     - id: dimensions
       type: System.Nullable{System.Int32}
+      description: The desired dimensionality of the embedding vectors (only supported for models "text-embedding-3" and later). Defaults to null.
     - id: user
       type: System.String
+      description: An optional user identifier associated with the request.
     content.vb: Public Sub New(model As AvailableEmbeddingsModels, encodingFormat As String = "float", dimensions As Integer? = Nothing, user As String = Nothing)
   overload: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig.#ctor*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown if the specified number of dimensions is not supported for the chosen embedding model.
   nameWithType.vb: EmbeddingsConfig.New(AvailableEmbeddingsModels, String, Integer?, String)
   fullName.vb: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig.New(Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels, String, Integer?, String)
   name.vb: New(AvailableEmbeddingsModels, String, Integer?, String)
@@ -564,6 +584,27 @@ references:
   name: User
   nameWithType: EmbeddingsConfig.User
   fullName: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig.User
+- uid: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig
+  commentId: T:Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig
+  parent: Promezio.OAIAPI.Capabilities.Embedding
+  href: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig.html
+  name: EmbeddingsConfig
+  nameWithType: EmbeddingsConfig
+  fullName: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig
+- uid: Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels
+  commentId: T:Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels
+  parent: Promezio.OAIAPI.Capabilities.Embedding
+  href: Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels.html
+  name: AvailableEmbeddingsModels
+  nameWithType: AvailableEmbeddingsModels
+  fullName: Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
 - uid: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig.#ctor*
   commentId: Overload:Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig.#ctor
   href: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig.html#Promezio_OAIAPI_Capabilities_Embedding_EmbeddingsConfig__ctor_Promezio_OAIAPI_Capabilities_Embedding_AvailableEmbeddingsModels_System_String_System_Nullable_System_Int32__System_String_
@@ -573,10 +614,3 @@ references:
   nameWithType.vb: EmbeddingsConfig.New
   fullName.vb: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig.New
   name.vb: New
-- uid: Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels
-  commentId: T:Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels
-  parent: Promezio.OAIAPI.Capabilities.Embedding
-  href: Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels.html
-  name: AvailableEmbeddingsModels
-  nameWithType: AvailableEmbeddingsModels
-  fullName: Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels

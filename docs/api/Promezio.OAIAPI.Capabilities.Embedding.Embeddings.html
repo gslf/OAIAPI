@@ -8,7 +8,7 @@
       <meta name="title" content="Class Embeddings
  | OAIAPI ">
       
-      
+      <meta name="description" content="Represents the embeddings capability of the Promezio OAI API.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -92,7 +92,7 @@
 
   <h1 id="Promezio_OAIAPI_Capabilities_Embedding_Embeddings" data-uid="Promezio.OAIAPI.Capabilities.Embedding.Embeddings" class="text-break">
     Class Embeddings
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gslf/OAIAPI/blob/main/OAIAPI/Capabilities/Embedding/Embeddings.cs/#L8"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gslf/OAIAPI/blob/main/OAIAPI/Capabilities/Embedding/Embeddings.cs/#L12"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -100,7 +100,8 @@
   <dl><dt>Assembly</dt><dd>OAIAPI.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Represents the embeddings capability of the Promezio OAI API.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -169,10 +170,11 @@
 
   <h3 id="Promezio_OAIAPI_Capabilities_Embedding_Embeddings__ctor_System_String_Promezio_OAIAPI_Utils_Logger_" data-uid="Promezio.OAIAPI.Capabilities.Embedding.Embeddings.#ctor(System.String,Promezio.OAIAPI.Utils.Logger)">
   Embeddings(string, Logger)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gslf/OAIAPI/blob/main/OAIAPI/Capabilities/Embedding/Embeddings.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gslf/OAIAPI/blob/main/OAIAPI/Capabilities/Embedding/Embeddings.cs/#L19"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Promezio.OAIAPI.Capabilities.Embedding.Embeddings.html">Embeddings</a> class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -182,9 +184,11 @@
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>apikey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>The API key to use for authentication.</p>
+</dd>
     <dt><code>logger</code> <a class="xref" href="Promezio.OAIAPI.Utils.Logger.html">Logger</a></dt>
-    <dd></dd>
+    <dd><p>The logger to use for logging messages.</p>
+</dd>
   </dl>
 
 
@@ -206,10 +210,11 @@
 
   <h3 id="Promezio_OAIAPI_Capabilities_Embedding_Embeddings_Create_System_String___Promezio_OAIAPI_Capabilities_Embedding_EmbeddingsConfig_" data-uid="Promezio.OAIAPI.Capabilities.Embedding.Embeddings.Create(System.String[],Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig)">
   Create(string[], EmbeddingsConfig)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gslf/OAIAPI/blob/main/OAIAPI/Capabilities/Embedding/Embeddings.cs/#L12"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gslf/OAIAPI/blob/main/OAIAPI/Capabilities/Embedding/Embeddings.cs/#L29"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates embeddings for a given set of input texts.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -219,15 +224,18 @@
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>input</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
-    <dd></dd>
+    <dd><p>An array of text strings to create embeddings for.</p>
+</dd>
     <dt><code>config</code> <a class="xref" href="Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig.html">EmbeddingsConfig</a></dt>
-    <dd></dd>
+    <dd><p>The configuration options for the embedding creation.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse.html">EmbeddingResponse</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>An instance of <a class="xref" href="Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse.html">EmbeddingResponse</a> containing the resulting embeddings, or null if the request failed.</p>
+</dd>
   </dl>
 
 
@@ -237,6 +245,15 @@
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>Thrown if the length of the <code>input</code> array exceeds 2048 characters.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httprequestexception">HttpRequestException</a></dt>
+    <dd><p>Thrown if the HTTP request to the server fails.</p>
+</dd>
+  </dl>
 
 
 
@@ -244,7 +261,7 @@
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/gslf/OAIAPI/blob/main/OAIAPI/Capabilities/Embedding/Embeddings.cs/#L8" class="edit-link">Edit this page</a>
+          <a href="https://github.com/gslf/OAIAPI/blob/main/OAIAPI/Capabilities/Embedding/Embeddings.cs/#L12" class="edit-link">Edit this page</a>
         </div>
 
 

@@ -21,10 +21,12 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: EmbeddingModel
     path: OAIAPI/Capabilities/Embedding/EmbeddingModels.cs
-    startLine: 7
+    startLine: 14
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.Embedding
+  summary: Represents a model that can be used to generate embeddings.
+  example: []
   syntax:
     content: public class EmbeddingModel
     content.vb: Public Class EmbeddingModel
@@ -55,15 +57,18 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: .ctor
     path: OAIAPI/Capabilities/Embedding/EmbeddingModels.cs
-    startLine: 10
+    startLine: 24
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.Embedding
+  summary: Initializes a new instance of the <xref href="Promezio.OAIAPI.Capabilities.Embedding.EmbeddingModel" data-throw-if-not-resolved="false"></xref> class.
+  example: []
   syntax:
     content: public EmbeddingModel(AvailableEmbeddingsModels model)
     parameters:
     - id: model
       type: Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels
+      description: The <xref href="Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels" data-throw-if-not-resolved="false"></xref> to use.
     content.vb: Public Sub New(model As AvailableEmbeddingsModels)
   overload: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingModel.#ctor*
   nameWithType.vb: EmbeddingModel.New(AvailableEmbeddingsModels)
@@ -87,17 +92,17 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: ToString
     path: OAIAPI/Capabilities/Embedding/EmbeddingModels.cs
-    startLine: 14
+    startLine: 32
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.Embedding
-  summary: Returns a string that represents the current object.
+  summary: Returns a string representation of the model, suitable for use in API requests.
   example: []
   syntax:
     content: public override string ToString()
     return:
       type: System.String
-      description: A string that represents the current object.
+      description: The string representation of the model.
     content.vb: Public Overrides Function ToString() As String
   overridden: System.Object.ToString
   overload: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingModel.ToString*
@@ -353,6 +358,20 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingModel
+  commentId: T:Promezio.OAIAPI.Capabilities.Embedding.EmbeddingModel
+  parent: Promezio.OAIAPI.Capabilities.Embedding
+  href: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingModel.html
+  name: EmbeddingModel
+  nameWithType: EmbeddingModel
+  fullName: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingModel
+- uid: Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels
+  commentId: T:Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels
+  parent: Promezio.OAIAPI.Capabilities.Embedding
+  href: Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels.html
+  name: AvailableEmbeddingsModels
+  nameWithType: AvailableEmbeddingsModels
+  fullName: Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels
 - uid: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingModel.#ctor*
   commentId: Overload:Promezio.OAIAPI.Capabilities.Embedding.EmbeddingModel.#ctor
   href: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingModel.html#Promezio_OAIAPI_Capabilities_Embedding_EmbeddingModel__ctor_Promezio_OAIAPI_Capabilities_Embedding_AvailableEmbeddingsModels_
@@ -362,13 +381,6 @@ references:
   nameWithType.vb: EmbeddingModel.New
   fullName.vb: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingModel.New
   name.vb: New
-- uid: Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels
-  commentId: T:Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels
-  parent: Promezio.OAIAPI.Capabilities.Embedding
-  href: Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels.html
-  name: AvailableEmbeddingsModels
-  nameWithType: AvailableEmbeddingsModels
-  fullName: Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels
 - uid: System.Object.ToString
   commentId: M:System.Object.ToString
   parent: System.Object

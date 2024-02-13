@@ -22,10 +22,12 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: EmbeddingResponse
     path: OAIAPI/Capabilities/Embedding/EmbeddingResponse.cs
-    startLine: 4
+    startLine: 8
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.Embedding
+  summary: Represents the response object returned by the `Embeddings.Create` method.
+  example: []
   syntax:
     content: public class EmbeddingResponse
     content.vb: Public Class EmbeddingResponse
@@ -57,10 +59,15 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: Data
     path: OAIAPI/Capabilities/Embedding/EmbeddingResponse.cs
-    startLine: 5
+    startLine: 13
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.Embedding
+  summary: >-
+    An array of embedding objects, each containing the embedding for a corresponding input text.
+
+    Can be null if the request failed.
+  example: []
   syntax:
     content: public EmbeddingObject[]? Data { get; set; }
     parameters: []
@@ -86,10 +93,12 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: Model
     path: OAIAPI/Capabilities/Embedding/EmbeddingResponse.cs
-    startLine: 6
+    startLine: 17
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.Embedding
+  summary: The embedding model used to generate the embeddings (matches the model specified in the request).
+  example: []
   syntax:
     content: public string? Model { get; set; }
     parameters: []
@@ -115,10 +124,12 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: Usage
     path: OAIAPI/Capabilities/Embedding/EmbeddingResponse.cs
-    startLine: 7
+    startLine: 21
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.Embedding
+  summary: Information about the usage limits and costs associated with the request.
+  example: []
   syntax:
     content: public Usage? Usage { get; set; }
     parameters: []

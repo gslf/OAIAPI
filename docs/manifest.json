@@ -22,6 +22,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "Examples/Embedding.md",
+      "output": {
+        ".html": {
+          "relative_path": "Examples/Embedding.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "Examples/Files.md",
       "output": {
         ".html": {

@@ -107,27 +107,26 @@ string myapikey = Configuration[&quot;OpenAIApiKey&quot;] ?? throw new InvalidOp
 // Init OAIAPI Class
 OAIAPI api = new OAIAPI(myapikey);
 Config config = new Config(
-    &quot;gpt-3.5-turbo&quot;, 
+    new ChatModel(), 
     frequencyPenalty: 0, // Optional
     logprobs: true,  // Optional
     topLogprobs: 5,  // Optional
     maxTokens: 1000,  // Optional
     n: 1,  // Optional
     presencePenalty: 0m,  // Optional
-    responseFormat: new ResponseFormat { Type = ResponseFormatTypes.JSON },  // Optional
+    responseFormat: new ResponseFormat(AvailableResponseFormat.TEXT),  // Optional
     seed: 123456789,  // Optional
     temperature: 1m,  // Optional
     topP: 1m,  // Optional
     user: &quot;test&quot;);  // Optional
 
-api.Chat.Init(config);
 
 // Call the standard API
-ChatResponse? result = await api.Chat.Dispatch(&quot;Hello from space: the final frontier.&quot;);
+ChatResponse? result = await api.Chat.Dispatch(&quot;Hello from space: the final frontier.&quot;, config);
 Console.WriteLine(result?.GetMessage());
 
 // Call the stream API
-await foreach (var streamResult in api.Chat.DispatchStream(&quot;Hello, write numbers from 1 to 10.&quot;)) {
+await foreach (var streamResult in api.Chat.DispatchStream(&quot;Hello, write numbers from 1 to 10.&quot;, config)) {
     Console.WriteLine(streamResult?.GetMessage());
 }
 </code></pre>

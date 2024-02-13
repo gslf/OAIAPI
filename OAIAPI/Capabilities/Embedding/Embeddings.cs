@@ -5,10 +5,27 @@ using System.Text.Json;
 using System.Text;
 
 namespace Promezio.OAIAPI.Capabilities.Embedding;
+
+/// <summary>
+/// Represents the embeddings capability of the Promezio OAI API.
+/// </summary>
 public class Embeddings : Capability{
 
+    /// <summary>
+    /// Initializes a new instance of the <see cref="Embeddings"/> class.
+    /// </summary>
+    /// <param name="apikey">The API key to use for authentication.</param>
+    /// <param name="logger">The logger to use for logging messages.</param>
     public Embeddings(string apikey, Logger logger) : base(apikey, logger) { }
 
+    /// <summary>
+    /// Creates embeddings for a given set of input texts.
+    /// </summary>
+    /// <param name="input">An array of text strings to create embeddings for.</param>
+    /// <param name="config">The configuration options for the embedding creation.</param>
+    /// <returns>An instance of <see cref="EmbeddingResponse"/> containing the resulting embeddings, or null if the request failed.</returns>
+    /// <exception cref="ArgumentException">Thrown if the length of the `input` array exceeds 2048 characters.</exception>
+    /// <exception cref="HttpRequestException">Thrown if the HTTP request to the server fails.</exception>
     public async Task<EmbeddingResponse?> Create(string[] input, EmbeddingsConfig config) {
 
         _logger.Info("[Embeddings.Create] New request");

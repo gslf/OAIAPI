@@ -125,10 +125,9 @@ string myapikey = Configuration[&quot;OpenAIApiKey&quot;] ?? throw new InvalidOp
 
 // Call the Chat API
 OAIAPI api = new OAIAPI(myapikey);
-Config config = new Config(&quot;gpt-3.5-turbo&quot;);
-api.Chat.Init(config);
+Config config = new Config(new ChatModel());
 
-ChatResponse? result = await api.Chat.Dispatch(&quot;Hello from space: the final frontier.&quot;);
+ChatResponse? result = await api.Chat.Dispatch(&quot;Hello from space: the final frontier.&quot;, config);
 Console.WriteLine(result?.GetMessage());
 </code></pre>
 <hr>

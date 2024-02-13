@@ -22,10 +22,12 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: AvailableEmbeddingsModels
     path: OAIAPI/Capabilities/Embedding/EmbeddingModels.cs
-    startLine: 1
+    startLine: 5
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.Embedding
+  summary: Enumerates the possible embedding models available in the OpenAI API
+  example: []
   syntax:
     content: public enum AvailableEmbeddingsModels
     content.vb: Public Enum AvailableEmbeddingsModels
@@ -47,7 +49,7 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: EMBEDDING_ADA
     path: OAIAPI/Capabilities/Embedding/EmbeddingModels.cs
-    startLine: 2
+    startLine: 6
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.Embedding
@@ -73,7 +75,7 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: EMBEDDING_V3_LARGE
     path: OAIAPI/Capabilities/Embedding/EmbeddingModels.cs
-    startLine: 3
+    startLine: 7
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.Embedding
@@ -99,7 +101,7 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: EMBEDDING_V3_SMALL
     path: OAIAPI/Capabilities/Embedding/EmbeddingModels.cs
-    startLine: 4
+    startLine: 8
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.Embedding

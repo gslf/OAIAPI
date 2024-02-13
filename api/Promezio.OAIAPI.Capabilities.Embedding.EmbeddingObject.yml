@@ -22,10 +22,12 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: EmbeddingObject
     path: OAIAPI/Capabilities/Embedding/EmbeddingObject.cs
-    startLine: 1
+    startLine: 5
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.Embedding
+  summary: Represents a single embedding returned by the Promezio OAI API.
+  example: []
   syntax:
     content: public class EmbeddingObject
     content.vb: Public Class EmbeddingObject
@@ -57,10 +59,12 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: Index
     path: OAIAPI/Capabilities/Embedding/EmbeddingObject.cs
-    startLine: 2
+    startLine: 9
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.Embedding
+  summary: The index of the corresponding input text (matches the order in the request). Can be null.
+  example: []
   syntax:
     content: public int? Index { get; set; }
     parameters: []
@@ -86,10 +90,12 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: Embedding
     path: OAIAPI/Capabilities/Embedding/EmbeddingObject.cs
-    startLine: 3
+    startLine: 13
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.Embedding
+  summary: An array of floating-point numbers representing the numerical embedding vector. Can be null.
+  example: []
   syntax:
     content: public float[]? Embedding { get; set; }
     parameters: []
@@ -115,10 +121,12 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: Object
     path: OAIAPI/Capabilities/Embedding/EmbeddingObject.cs
-    startLine: 4
+    startLine: 17
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.Embedding
+  summary: An optional object identifier associated with the input text. Can be null.
+  example: []
   syntax:
     content: public string? Object { get; set; }
     parameters: []
