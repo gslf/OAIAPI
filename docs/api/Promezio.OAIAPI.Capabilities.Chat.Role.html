@@ -8,7 +8,7 @@
       <meta name="title" content="Class Role
  | OAIAPI ">
       
-      <meta name="description" content="Represents the role of the author of a specific message.">
+      <meta name="description" content="Represents the role associated with a message in the OpenAI chat API response.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -92,7 +92,7 @@
 
   <h1 id="Promezio_OAIAPI_Capabilities_Chat_Role" data-uid="Promezio.OAIAPI.Capabilities.Chat.Role" class="text-break">
     Class Role
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gslf/OAIAPI/blob/main/OAIAPI/Capabilities/Chat/Role.cs/#L8"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gslf/OAIAPI/blob/main/OAIAPI/Capabilities/Chat/Role.cs/#L17"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -100,7 +100,7 @@
   <dl><dt>Assembly</dt><dd>OAIAPI.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Represents the role of the author of a specific message.</p>
+  <div class="markdown summary"><p>Represents the role associated with a message in the OpenAI chat API response.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -142,9 +142,6 @@
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
     </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
-    </div>
   </dd></dl>
 
 
@@ -152,95 +149,36 @@
 
 
 
-  <h2 class="section" id="properties">Properties
+  <h2 class="section" id="constructors">Constructors
 </h2>
 
 
-  <a id="Promezio_OAIAPI_Capabilities_Chat_Role_ASSISTANT_" data-uid="Promezio.OAIAPI.Capabilities.Chat.Role.ASSISTANT*"></a>
+  <a id="Promezio_OAIAPI_Capabilities_Chat_Role__ctor_" data-uid="Promezio.OAIAPI.Capabilities.Chat.Role.#ctor*"></a>
 
-  <h3 id="Promezio_OAIAPI_Capabilities_Chat_Role_ASSISTANT" data-uid="Promezio.OAIAPI.Capabilities.Chat.Role.ASSISTANT">
-  ASSISTANT
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gslf/OAIAPI/blob/main/OAIAPI/Capabilities/Chat/Role.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Promezio_OAIAPI_Capabilities_Chat_Role__ctor_Promezio_OAIAPI_Capabilities_Chat_AvailableRoles_" data-uid="Promezio.OAIAPI.Capabilities.Chat.Role.#ctor(Promezio.OAIAPI.Capabilities.Chat.AvailableRoles)">
+  Role(AvailableRoles)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gslf/OAIAPI/blob/main/OAIAPI/Capabilities/Chat/Role.cs/#L28"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the Role class with the specified role.
+Defaults to USER role.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string ASSISTANT { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Role(AvailableRoles role = AvailableRoles.USER)</code></pre>
   </div>
 
-
-
-
-
-  <h4 class="section">Property Value</h4>
+  <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd>Represents the role of the author of a specific message.</dd>
+    <dt><code>role</code> <a class="xref" href="Promezio.OAIAPI.Capabilities.Chat.AvailableRoles.html">AvailableRoles</a></dt>
+    <dd><p>The role associated with the message.</p>
+</dd>
   </dl>
 
 
 
 
-
-
-
-
-  <a id="Promezio_OAIAPI_Capabilities_Chat_Role_SYSTEM_" data-uid="Promezio.OAIAPI.Capabilities.Chat.Role.SYSTEM*"></a>
-
-  <h3 id="Promezio_OAIAPI_Capabilities_Chat_Role_SYSTEM" data-uid="Promezio.OAIAPI.Capabilities.Chat.Role.SYSTEM">
-  SYSTEM
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gslf/OAIAPI/blob/main/OAIAPI/Capabilities/Chat/Role.cs/#L9"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string SYSTEM { get; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd>Represents the role of the author of a specific message.</dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="Promezio_OAIAPI_Capabilities_Chat_Role_USER_" data-uid="Promezio.OAIAPI.Capabilities.Chat.Role.USER*"></a>
-
-  <h3 id="Promezio_OAIAPI_Capabilities_Chat_Role_USER" data-uid="Promezio.OAIAPI.Capabilities.Chat.Role.USER">
-  USER
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gslf/OAIAPI/blob/main/OAIAPI/Capabilities/Chat/Role.cs/#L10"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string USER { get; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd>Represents the role of the author of a specific message.</dd>
-  </dl>
 
 
 
@@ -253,32 +191,26 @@
 </h2>
 
 
-  <a id="Promezio_OAIAPI_Capabilities_Chat_Role_IsValid_" data-uid="Promezio.OAIAPI.Capabilities.Chat.Role.IsValid*"></a>
+  <a id="Promezio_OAIAPI_Capabilities_Chat_Role_ToString_" data-uid="Promezio.OAIAPI.Capabilities.Chat.Role.ToString*"></a>
 
-  <h3 id="Promezio_OAIAPI_Capabilities_Chat_Role_IsValid_System_String_" data-uid="Promezio.OAIAPI.Capabilities.Chat.Role.IsValid(System.String)">
-  IsValid(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gslf/OAIAPI/blob/main/OAIAPI/Capabilities/Chat/Role.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Promezio_OAIAPI_Capabilities_Chat_Role_ToString" data-uid="Promezio.OAIAPI.Capabilities.Chat.Role.ToString">
+  ToString()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gslf/OAIAPI/blob/main/OAIAPI/Capabilities/Chat/Role.cs/#L36"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Validates whether a given role name corresponds to any of the predefined role names in this class.</p>
+  <div class="markdown level1 summary"><p>Returns a string representation of the role.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool IsValid(string role)</code></pre>
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
   </div>
 
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>role</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The name of the role to validate.</p>
-</dd>
-  </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p>True if the role name exists in the predefined roles; otherwise, false.</p>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A string indicating either &quot;system&quot;, &quot;user&quot;, or &quot;assistant&quot; based on the chosen role.</p>
 </dd>
   </dl>
 
@@ -296,7 +228,7 @@
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/gslf/OAIAPI/blob/main/OAIAPI/Capabilities/Chat/Role.cs/#L8" class="edit-link">Edit this page</a>
+          <a href="https://github.com/gslf/OAIAPI/blob/main/OAIAPI/Capabilities/Chat/Role.cs/#L17" class="edit-link">Edit this page</a>
         </div>
 
 

@@ -22,11 +22,14 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: StreamChoice
     path: OAIAPI/Capabilities/Chat/StreamChoice.cs
-    startLine: 5
+    startLine: 6
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.Chat
-  summary: Represents a choice within a stream, encapsulating information about the selection index, a potential chat message update, and the reason for concluding the stream.
+  summary: >-
+    Represents a choice within a stream, encapsulating information about the selection index, 
+
+    a potential chat message update, and the reason for concluding the stream.
   example: []
   syntax:
     content: public class StreamChoice
@@ -59,10 +62,12 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: Index
     path: OAIAPI/Capabilities/Chat/StreamChoice.cs
-    startLine: 6
+    startLine: 10
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.Chat
+  summary: The numerical index of this update within the stream, where 0 is the most recent change.
+  example: []
   syntax:
     content: public int Index { get; set; }
     parameters: []
@@ -88,10 +93,12 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: Delta
     path: OAIAPI/Capabilities/Chat/StreamChoice.cs
-    startLine: 8
+    startLine: 14
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.Chat
+  summary: The updated text content for the chat message, if available.
+  example: []
   syntax:
     content: public ChatMessage? Delta { get; set; }
     parameters: []
@@ -117,10 +124,12 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: Finish_reason
     path: OAIAPI/Capabilities/Chat/StreamChoice.cs
-    startLine: 10
+    startLine: 18
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.Chat
+  summary: The reason why the stream was concluded with this update, such as "stop" for reaching the completion limit or "length" for reaching the desired text length.
+  example: []
   syntax:
     content: public string? Finish_reason { get; set; }
     parameters: []

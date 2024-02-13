@@ -7,6 +7,7 @@ items:
   children:
   - Promezio.OAIAPI.OAIAPI.#ctor(System.String,Promezio.OAIAPI.Utils.LogLevel)
   - Promezio.OAIAPI.OAIAPI.Chat
+  - Promezio.OAIAPI.OAIAPI.Embeddings
   - Promezio.OAIAPI.OAIAPI.Files
   - Promezio.OAIAPI.OAIAPI.FineTuning
   - Promezio.OAIAPI.OAIAPI.Speech
@@ -25,7 +26,7 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: OAIAPI
     path: OAIAPI/OAIAPI.cs
-    startLine: 8
+    startLine: 9
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI
@@ -60,7 +61,7 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: .ctor
     path: OAIAPI/OAIAPI.cs
-    startLine: 13
+    startLine: 14
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI
@@ -94,7 +95,7 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: Chat
     path: OAIAPI/OAIAPI.cs
-    startLine: 26
+    startLine: 29
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI
@@ -123,7 +124,7 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: Files
     path: OAIAPI/OAIAPI.cs
-    startLine: 27
+    startLine: 30
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI
@@ -152,7 +153,7 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: FineTuning
     path: OAIAPI/OAIAPI.cs
-    startLine: 28
+    startLine: 31
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI
@@ -163,6 +164,35 @@ items:
       type: Promezio.OAIAPI.Capabilities.FineTuning.FineTuning
     content.vb: Public Property FineTuning As FineTuning
   overload: Promezio.OAIAPI.OAIAPI.FineTuning*
+- uid: Promezio.OAIAPI.OAIAPI.Embeddings
+  commentId: P:Promezio.OAIAPI.OAIAPI.Embeddings
+  id: Embeddings
+  parent: Promezio.OAIAPI.OAIAPI
+  langs:
+  - csharp
+  - vb
+  name: Embeddings
+  nameWithType: OAIAPI.Embeddings
+  fullName: Promezio.OAIAPI.OAIAPI.Embeddings
+  type: Property
+  source:
+    remote:
+      path: OAIAPI/OAIAPI.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: Embeddings
+    path: OAIAPI/OAIAPI.cs
+    startLine: 32
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI
+  syntax:
+    content: public Embeddings Embeddings { get; }
+    parameters: []
+    return:
+      type: Promezio.OAIAPI.Capabilities.Embedding.Embeddings
+    content.vb: Public Property Embeddings As Embeddings
+  overload: Promezio.OAIAPI.OAIAPI.Embeddings*
 - uid: Promezio.OAIAPI.OAIAPI.Transcription
   commentId: P:Promezio.OAIAPI.OAIAPI.Transcription
   id: Transcription
@@ -181,7 +211,7 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: Transcription
     path: OAIAPI/OAIAPI.cs
-    startLine: 29
+    startLine: 36
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI
@@ -210,7 +240,7 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: Speech
     path: OAIAPI/OAIAPI.cs
-    startLine: 30
+    startLine: 37
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI
@@ -691,6 +721,57 @@ references:
   - uid: Promezio.OAIAPI.Capabilities.FineTuning
     name: FineTuning
     href: Promezio.OAIAPI.Capabilities.FineTuning.html
+- uid: Promezio.OAIAPI.OAIAPI.Embeddings*
+  commentId: Overload:Promezio.OAIAPI.OAIAPI.Embeddings
+  href: Promezio.OAIAPI.OAIAPI.html#Promezio_OAIAPI_OAIAPI_Embeddings
+  name: Embeddings
+  nameWithType: OAIAPI.Embeddings
+  fullName: Promezio.OAIAPI.OAIAPI.Embeddings
+- uid: Promezio.OAIAPI.Capabilities.Embedding.Embeddings
+  commentId: T:Promezio.OAIAPI.Capabilities.Embedding.Embeddings
+  parent: Promezio.OAIAPI.Capabilities.Embedding
+  href: Promezio.OAIAPI.Capabilities.Embedding.Embeddings.html
+  name: Embeddings
+  nameWithType: Embeddings
+  fullName: Promezio.OAIAPI.Capabilities.Embedding.Embeddings
+- uid: Promezio.OAIAPI.Capabilities.Embedding
+  commentId: N:Promezio.OAIAPI.Capabilities.Embedding
+  href: Promezio.html
+  name: Promezio.OAIAPI.Capabilities.Embedding
+  nameWithType: Promezio.OAIAPI.Capabilities.Embedding
+  fullName: Promezio.OAIAPI.Capabilities.Embedding
+  spec.csharp:
+  - uid: Promezio
+    name: Promezio
+    href: Promezio.html
+  - name: .
+  - uid: Promezio.OAIAPI
+    name: OAIAPI
+    href: Promezio.OAIAPI.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities
+    name: Capabilities
+    href: Promezio.OAIAPI.Capabilities.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities.Embedding
+    name: Embedding
+    href: Promezio.OAIAPI.Capabilities.Embedding.html
+  spec.vb:
+  - uid: Promezio
+    name: Promezio
+    href: Promezio.html
+  - name: .
+  - uid: Promezio.OAIAPI
+    name: OAIAPI
+    href: Promezio.OAIAPI.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities
+    name: Capabilities
+    href: Promezio.OAIAPI.Capabilities.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities.Embedding
+    name: Embedding
+    href: Promezio.OAIAPI.Capabilities.Embedding.html
 - uid: Promezio.OAIAPI.OAIAPI.Transcription*
   commentId: Overload:Promezio.OAIAPI.OAIAPI.Transcription
   href: Promezio.OAIAPI.OAIAPI.html#Promezio_OAIAPI_OAIAPI_Transcription

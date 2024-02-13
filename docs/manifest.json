@@ -72,6 +72,36 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.Chat.AvailableResponseFormat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.Chat.AvailableResponseFormat.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.Chat.AvailableRoles.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.Chat.AvailableRoles.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Promezio.OAIAPI.Capabilities.Chat.Chat.yml",
       "output": {
         ".html": {
@@ -86,6 +116,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Promezio.OAIAPI.Capabilities.Chat.ChatMessage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.Chat.ChatModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.Chat.ChatModel.html"
         }
       },
       "version": ""
@@ -192,10 +232,90 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.CommonModels.Usage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.CommonModels.Usage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.CommonModels.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.CommonModels.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Promezio.OAIAPI.Capabilities.Embedding.Embedding.yml",
       "output": {
         ".html": {
           "relative_path": "api/Promezio.OAIAPI.Capabilities.Embedding.Embedding.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.Embedding.EmbeddingModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.Embedding.EmbeddingModel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.Embedding.EmbeddingObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.Embedding.EmbeddingObject.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.Embedding.Embeddings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.Embedding.Embeddings.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig.html"
         }
       },
       "version": ""

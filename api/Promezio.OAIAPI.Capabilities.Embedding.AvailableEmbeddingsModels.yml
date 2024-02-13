@@ -1,0 +1,155 @@
+### YamlMime:ManagedReference
+items:
+- uid: Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels
+  commentId: T:Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels
+  id: AvailableEmbeddingsModels
+  parent: Promezio.OAIAPI.Capabilities.Embedding
+  children:
+  - Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels.EMBEDDING_ADA
+  - Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels.EMBEDDING_V3_LARGE
+  - Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels.EMBEDDING_V3_SMALL
+  langs:
+  - csharp
+  - vb
+  name: AvailableEmbeddingsModels
+  nameWithType: AvailableEmbeddingsModels
+  fullName: Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels
+  type: Enum
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Embedding/EmbeddingModels.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: AvailableEmbeddingsModels
+    path: OAIAPI/Capabilities/Embedding/EmbeddingModels.cs
+    startLine: 1
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Embedding
+  syntax:
+    content: public enum AvailableEmbeddingsModels
+    content.vb: Public Enum AvailableEmbeddingsModels
+- uid: Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels.EMBEDDING_ADA
+  commentId: F:Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels.EMBEDDING_ADA
+  id: EMBEDDING_ADA
+  parent: Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels
+  langs:
+  - csharp
+  - vb
+  name: EMBEDDING_ADA
+  nameWithType: AvailableEmbeddingsModels.EMBEDDING_ADA
+  fullName: Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels.EMBEDDING_ADA
+  type: Field
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Embedding/EmbeddingModels.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: EMBEDDING_ADA
+    path: OAIAPI/Capabilities/Embedding/EmbeddingModels.cs
+    startLine: 2
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Embedding
+  syntax:
+    content: EMBEDDING_ADA = 0
+    return:
+      type: Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels
+- uid: Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels.EMBEDDING_V3_LARGE
+  commentId: F:Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels.EMBEDDING_V3_LARGE
+  id: EMBEDDING_V3_LARGE
+  parent: Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels
+  langs:
+  - csharp
+  - vb
+  name: EMBEDDING_V3_LARGE
+  nameWithType: AvailableEmbeddingsModels.EMBEDDING_V3_LARGE
+  fullName: Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels.EMBEDDING_V3_LARGE
+  type: Field
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Embedding/EmbeddingModels.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: EMBEDDING_V3_LARGE
+    path: OAIAPI/Capabilities/Embedding/EmbeddingModels.cs
+    startLine: 3
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Embedding
+  syntax:
+    content: EMBEDDING_V3_LARGE = 1
+    return:
+      type: Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels
+- uid: Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels.EMBEDDING_V3_SMALL
+  commentId: F:Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels.EMBEDDING_V3_SMALL
+  id: EMBEDDING_V3_SMALL
+  parent: Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels
+  langs:
+  - csharp
+  - vb
+  name: EMBEDDING_V3_SMALL
+  nameWithType: AvailableEmbeddingsModels.EMBEDDING_V3_SMALL
+  fullName: Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels.EMBEDDING_V3_SMALL
+  type: Field
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Embedding/EmbeddingModels.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: EMBEDDING_V3_SMALL
+    path: OAIAPI/Capabilities/Embedding/EmbeddingModels.cs
+    startLine: 4
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Embedding
+  syntax:
+    content: EMBEDDING_V3_SMALL = 2
+    return:
+      type: Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels
+references:
+- uid: Promezio.OAIAPI.Capabilities.Embedding
+  commentId: N:Promezio.OAIAPI.Capabilities.Embedding
+  href: Promezio.html
+  name: Promezio.OAIAPI.Capabilities.Embedding
+  nameWithType: Promezio.OAIAPI.Capabilities.Embedding
+  fullName: Promezio.OAIAPI.Capabilities.Embedding
+  spec.csharp:
+  - uid: Promezio
+    name: Promezio
+    href: Promezio.html
+  - name: .
+  - uid: Promezio.OAIAPI
+    name: OAIAPI
+    href: Promezio.OAIAPI.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities
+    name: Capabilities
+    href: Promezio.OAIAPI.Capabilities.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities.Embedding
+    name: Embedding
+    href: Promezio.OAIAPI.Capabilities.Embedding.html
+  spec.vb:
+  - uid: Promezio
+    name: Promezio
+    href: Promezio.html
+  - name: .
+  - uid: Promezio.OAIAPI
+    name: OAIAPI
+    href: Promezio.OAIAPI.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities
+    name: Capabilities
+    href: Promezio.OAIAPI.Capabilities.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities.Embedding
+    name: Embedding
+    href: Promezio.OAIAPI.Capabilities.Embedding.html
+- uid: Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels
+  commentId: T:Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels
+  parent: Promezio.OAIAPI.Capabilities.Embedding
+  href: Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels.html
+  name: AvailableEmbeddingsModels
+  nameWithType: AvailableEmbeddingsModels
+  fullName: Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels

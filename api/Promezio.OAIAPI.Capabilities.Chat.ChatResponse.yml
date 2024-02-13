@@ -7,11 +7,9 @@ items:
   children:
   - Promezio.OAIAPI.Capabilities.Chat.ChatResponse.Choices
   - Promezio.OAIAPI.Capabilities.Chat.ChatResponse.Created
-  - Promezio.OAIAPI.Capabilities.Chat.ChatResponse.Error
   - Promezio.OAIAPI.Capabilities.Chat.ChatResponse.GetMessage
   - Promezio.OAIAPI.Capabilities.Chat.ChatResponse.Id
   - Promezio.OAIAPI.Capabilities.Chat.ChatResponse.Model
-  - Promezio.OAIAPI.Capabilities.Chat.ChatResponse.Status
   - Promezio.OAIAPI.Capabilities.Chat.ChatResponse.System_fingerprint
   - Promezio.OAIAPI.Capabilities.Chat.ChatResponse.Usage
   langs:
@@ -28,11 +26,11 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: ChatResponse
     path: OAIAPI/Capabilities/Chat/ChatResponse.cs
-    startLine: 5
+    startLine: 8
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.Chat
-  summary: Represents the OpenAI API response for a chat completition request.
+  summary: Represents the response object received from the OpenAI API after sending a chat completion request.
   example: []
   syntax:
     content: public class ChatResponse
@@ -47,64 +45,6 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: Promezio.OAIAPI.Capabilities.Chat.ChatResponse.Status
-  commentId: P:Promezio.OAIAPI.Capabilities.Chat.ChatResponse.Status
-  id: Status
-  parent: Promezio.OAIAPI.Capabilities.Chat.ChatResponse
-  langs:
-  - csharp
-  - vb
-  name: Status
-  nameWithType: ChatResponse.Status
-  fullName: Promezio.OAIAPI.Capabilities.Chat.ChatResponse.Status
-  type: Property
-  source:
-    remote:
-      path: OAIAPI/Capabilities/Chat/ChatResponse.cs
-      branch: main
-      repo: https://github.com/gslf/OAIAPI.git
-    id: Status
-    path: OAIAPI/Capabilities/Chat/ChatResponse.cs
-    startLine: 7
-  assemblies:
-  - OAIAPI
-  namespace: Promezio.OAIAPI.Capabilities.Chat
-  syntax:
-    content: public bool Status { get; set; }
-    parameters: []
-    return:
-      type: System.Boolean
-    content.vb: Public Property Status As Boolean
-  overload: Promezio.OAIAPI.Capabilities.Chat.ChatResponse.Status*
-- uid: Promezio.OAIAPI.Capabilities.Chat.ChatResponse.Error
-  commentId: P:Promezio.OAIAPI.Capabilities.Chat.ChatResponse.Error
-  id: Error
-  parent: Promezio.OAIAPI.Capabilities.Chat.ChatResponse
-  langs:
-  - csharp
-  - vb
-  name: Error
-  nameWithType: ChatResponse.Error
-  fullName: Promezio.OAIAPI.Capabilities.Chat.ChatResponse.Error
-  type: Property
-  source:
-    remote:
-      path: OAIAPI/Capabilities/Chat/ChatResponse.cs
-      branch: main
-      repo: https://github.com/gslf/OAIAPI.git
-    id: Error
-    path: OAIAPI/Capabilities/Chat/ChatResponse.cs
-    startLine: 8
-  assemblies:
-  - OAIAPI
-  namespace: Promezio.OAIAPI.Capabilities.Chat
-  syntax:
-    content: public string? Error { get; set; }
-    parameters: []
-    return:
-      type: System.String
-    content.vb: Public Property [Error] As String
-  overload: Promezio.OAIAPI.Capabilities.Chat.ChatResponse.Error*
 - uid: Promezio.OAIAPI.Capabilities.Chat.ChatResponse.Id
   commentId: P:Promezio.OAIAPI.Capabilities.Chat.ChatResponse.Id
   id: Id
@@ -123,10 +63,12 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: Id
     path: OAIAPI/Capabilities/Chat/ChatResponse.cs
-    startLine: 13
+    startLine: 16
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.Chat
+  summary: A unique identifier for the response.
+  example: []
   syntax:
     content: public string? Id { get; set; }
     parameters: []
@@ -152,10 +94,12 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: Created
     path: OAIAPI/Capabilities/Chat/ChatResponse.cs
-    startLine: 14
+    startLine: 21
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.Chat
+  summary: Unix timestamp indicating when the response was created.
+  example: []
   syntax:
     content: public int? Created { get; set; }
     parameters: []
@@ -181,10 +125,12 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: Model
     path: OAIAPI/Capabilities/Chat/ChatResponse.cs
-    startLine: 15
+    startLine: 26
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.Chat
+  summary: The OpenAI chat model used to generate the response.
+  example: []
   syntax:
     content: public string? Model { get; set; }
     parameters: []
@@ -210,10 +156,12 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: System_fingerprint
     path: OAIAPI/Capabilities/Chat/ChatResponse.cs
-    startLine: 16
+    startLine: 31
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.Chat
+  summary: A security fingerprint associated with the response.
+  example: []
   syntax:
     content: public string? System_fingerprint { get; set; }
     parameters: []
@@ -239,10 +187,15 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: Choices
     path: OAIAPI/Capabilities/Chat/ChatResponse.cs
-    startLine: 17
+    startLine: 37
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.Chat
+  summary: >-
+    An array of possible completions, with the first element considered the "best" response.
+
+    Each element contains a `Message` object with the generated text content.
+  example: []
   syntax:
     content: public Choice[]? Choices { get; set; }
     parameters: []
@@ -268,15 +221,17 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: Usage
     path: OAIAPI/Capabilities/Chat/ChatResponse.cs
-    startLine: 18
+    startLine: 42
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.Chat
+  summary: An object containing usage information related to the request.
+  example: []
   syntax:
     content: public Usage? Usage { get; set; }
     parameters: []
     return:
-      type: Promezio.OAIAPI.Capabilities.Chat.Usage
+      type: Promezio.OAIAPI.Capabilities.CommonModels.Usage
     content.vb: Public Property Usage As Usage
   overload: Promezio.OAIAPI.Capabilities.Chat.ChatResponse.Usage*
 - uid: Promezio.OAIAPI.Capabilities.Chat.ChatResponse.GetMessage
@@ -297,14 +252,17 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: GetMessage
     path: OAIAPI/Capabilities/Chat/ChatResponse.cs
-    startLine: 20
+    startLine: 49
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.Chat
+  summary: Extracts the main text content from the first choice of the response.
+  example: []
   syntax:
     content: public string? GetMessage()
     return:
       type: System.String
+      description: The plain text content of the first choice's message, or an empty string if unavailable.
     content.vb: Public Function GetMessage() As String
   overload: Promezio.OAIAPI.Capabilities.Chat.ChatResponse.GetMessage*
 references:
@@ -583,29 +541,12 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Promezio.OAIAPI.Capabilities.Chat.ChatResponse.Status*
-  commentId: Overload:Promezio.OAIAPI.Capabilities.Chat.ChatResponse.Status
-  href: Promezio.OAIAPI.Capabilities.Chat.ChatResponse.html#Promezio_OAIAPI_Capabilities_Chat_ChatResponse_Status
-  name: Status
-  nameWithType: ChatResponse.Status
-  fullName: Promezio.OAIAPI.Capabilities.Chat.ChatResponse.Status
-- uid: System.Boolean
-  commentId: T:System.Boolean
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean
-- uid: Promezio.OAIAPI.Capabilities.Chat.ChatResponse.Error*
-  commentId: Overload:Promezio.OAIAPI.Capabilities.Chat.ChatResponse.Error
-  href: Promezio.OAIAPI.Capabilities.Chat.ChatResponse.html#Promezio_OAIAPI_Capabilities_Chat_ChatResponse_Error
-  name: Error
-  nameWithType: ChatResponse.Error
-  fullName: Promezio.OAIAPI.Capabilities.Chat.ChatResponse.Error
+- uid: Promezio.OAIAPI.Capabilities.Chat.ChatResponse.Id*
+  commentId: Overload:Promezio.OAIAPI.Capabilities.Chat.ChatResponse.Id
+  href: Promezio.OAIAPI.Capabilities.Chat.ChatResponse.html#Promezio_OAIAPI_Capabilities_Chat_ChatResponse_Id
+  name: Id
+  nameWithType: ChatResponse.Id
+  fullName: Promezio.OAIAPI.Capabilities.Chat.ChatResponse.Id
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -617,12 +558,6 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
-- uid: Promezio.OAIAPI.Capabilities.Chat.ChatResponse.Id*
-  commentId: Overload:Promezio.OAIAPI.Capabilities.Chat.ChatResponse.Id
-  href: Promezio.OAIAPI.Capabilities.Chat.ChatResponse.html#Promezio_OAIAPI_Capabilities_Chat_ChatResponse_Id
-  name: Id
-  nameWithType: ChatResponse.Id
-  fullName: Promezio.OAIAPI.Capabilities.Chat.ChatResponse.Id
 - uid: Promezio.OAIAPI.Capabilities.Chat.ChatResponse.Created*
   commentId: Overload:Promezio.OAIAPI.Capabilities.Chat.ChatResponse.Created
   href: Promezio.OAIAPI.Capabilities.Chat.ChatResponse.html#Promezio_OAIAPI_Capabilities_Chat_ChatResponse_Created
@@ -725,13 +660,51 @@ references:
   name: Usage
   nameWithType: ChatResponse.Usage
   fullName: Promezio.OAIAPI.Capabilities.Chat.ChatResponse.Usage
-- uid: Promezio.OAIAPI.Capabilities.Chat.Usage
-  commentId: T:Promezio.OAIAPI.Capabilities.Chat.Usage
-  parent: Promezio.OAIAPI.Capabilities.Chat
-  href: Promezio.OAIAPI.Capabilities.Chat.Usage.html
+- uid: Promezio.OAIAPI.Capabilities.CommonModels.Usage
+  commentId: T:Promezio.OAIAPI.Capabilities.CommonModels.Usage
+  parent: Promezio.OAIAPI.Capabilities.CommonModels
+  href: Promezio.OAIAPI.Capabilities.CommonModels.Usage.html
   name: Usage
   nameWithType: Usage
-  fullName: Promezio.OAIAPI.Capabilities.Chat.Usage
+  fullName: Promezio.OAIAPI.Capabilities.CommonModels.Usage
+- uid: Promezio.OAIAPI.Capabilities.CommonModels
+  commentId: N:Promezio.OAIAPI.Capabilities.CommonModels
+  href: Promezio.html
+  name: Promezio.OAIAPI.Capabilities.CommonModels
+  nameWithType: Promezio.OAIAPI.Capabilities.CommonModels
+  fullName: Promezio.OAIAPI.Capabilities.CommonModels
+  spec.csharp:
+  - uid: Promezio
+    name: Promezio
+    href: Promezio.html
+  - name: .
+  - uid: Promezio.OAIAPI
+    name: OAIAPI
+    href: Promezio.OAIAPI.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities
+    name: Capabilities
+    href: Promezio.OAIAPI.Capabilities.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities.CommonModels
+    name: CommonModels
+    href: Promezio.OAIAPI.Capabilities.CommonModels.html
+  spec.vb:
+  - uid: Promezio
+    name: Promezio
+    href: Promezio.html
+  - name: .
+  - uid: Promezio.OAIAPI
+    name: OAIAPI
+    href: Promezio.OAIAPI.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities
+    name: Capabilities
+    href: Promezio.OAIAPI.Capabilities.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities.CommonModels
+    name: CommonModels
+    href: Promezio.OAIAPI.Capabilities.CommonModels.html
 - uid: Promezio.OAIAPI.Capabilities.Chat.ChatResponse.GetMessage*
   commentId: Overload:Promezio.OAIAPI.Capabilities.Chat.ChatResponse.GetMessage
   href: Promezio.OAIAPI.Capabilities.Chat.ChatResponse.html#Promezio_OAIAPI_Capabilities_Chat_ChatResponse_GetMessage

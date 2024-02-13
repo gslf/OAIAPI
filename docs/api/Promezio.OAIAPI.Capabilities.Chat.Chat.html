@@ -170,10 +170,10 @@
 
   <h3 id="Promezio_OAIAPI_Capabilities_Chat_Chat__ctor_System_String_Promezio_OAIAPI_Utils_Logger_" data-uid="Promezio.OAIAPI.Capabilities.Chat.Chat.#ctor(System.String,Promezio.OAIAPI.Utils.Logger)">
   Chat(string, Logger)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gslf/OAIAPI/blob/main/OAIAPI/Capabilities/Chat/Chat.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gslf/OAIAPI/blob/main/OAIAPI/Capabilities/Chat/Chat.cs/#L23"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Create a new instance of the Chat class with the specified API key.</p>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the Chat class with the specified API key.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -187,7 +187,8 @@
     <dd><p>The API key for authentication.</p>
 </dd>
     <dt><code>logger</code> <a class="xref" href="Promezio.OAIAPI.Utils.Logger.html">Logger</a></dt>
-    <dd>Represents a chat client for interacting with OpenAI completition chat model API.</dd>
+    <dd><p>An instance of a logging object to record actions and errors.</p>
+</dd>
   </dl>
 
 
@@ -207,30 +208,33 @@
 
   <a id="Promezio_OAIAPI_Capabilities_Chat_Chat_Dispatch_" data-uid="Promezio.OAIAPI.Capabilities.Chat.Chat.Dispatch*"></a>
 
-  <h3 id="Promezio_OAIAPI_Capabilities_Chat_Chat_Dispatch_System_String_" data-uid="Promezio.OAIAPI.Capabilities.Chat.Chat.Dispatch(System.String)">
-  Dispatch(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gslf/OAIAPI/blob/main/OAIAPI/Capabilities/Chat/Chat.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Promezio_OAIAPI_Capabilities_Chat_Chat_Dispatch_System_String_Promezio_OAIAPI_Capabilities_Chat_Config_" data-uid="Promezio.OAIAPI.Capabilities.Chat.Chat.Dispatch(System.String,Promezio.OAIAPI.Capabilities.Chat.Config)">
+  Dispatch(string, Config)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gslf/OAIAPI/blob/main/OAIAPI/Capabilities/Chat/Chat.cs/#L34"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Sends a message to the chat model and receives a response.</p>
+  <div class="markdown level1 summary"><p>Sends a single prompt to the OpenAI chat API and returns the complete response.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;ChatResponse?&gt; Dispatch(string prompt)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;ChatResponse?&gt; Dispatch(string prompt, Config config)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>prompt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The message to send to the model.</p>
+    <dd><p>The text prompt to send to the chat model.</p>
+</dd>
+    <dt><code>config</code> <a class="xref" href="Promezio.OAIAPI.Capabilities.Chat.Config.html">Config</a></dt>
+    <dd><p>Configuration options for the OpenAI API request.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Promezio.OAIAPI.Capabilities.Chat.ChatResponse.html">ChatResponse</a>&gt;</dt>
-    <dd><p>A task that represents the asynchronous operation, containing the chat response.</p>
+    <dd><p>A ChatResponse object containing the API's response and details.</p>
 </dd>
   </dl>
 
@@ -241,33 +245,45 @@
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httprequestexception">HttpRequestException</a></dt>
+    <dd><p>Thrown if the HTTP request to the API fails.</p>
+</dd>
+  </dl>
 
 
 
   <a id="Promezio_OAIAPI_Capabilities_Chat_Chat_DispatchStream_" data-uid="Promezio.OAIAPI.Capabilities.Chat.Chat.DispatchStream*"></a>
 
-  <h3 id="Promezio_OAIAPI_Capabilities_Chat_Chat_DispatchStream_System_String_" data-uid="Promezio.OAIAPI.Capabilities.Chat.Chat.DispatchStream(System.String)">
-  DispatchStream(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gslf/OAIAPI/blob/main/OAIAPI/Capabilities/Chat/Chat.cs/#L102"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Promezio_OAIAPI_Capabilities_Chat_Chat_DispatchStream_System_String_Promezio_OAIAPI_Capabilities_Chat_Config_" data-uid="Promezio.OAIAPI.Capabilities.Chat.Chat.DispatchStream(System.String,Promezio.OAIAPI.Capabilities.Chat.Config)">
+  DispatchStream(string, Config)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gslf/OAIAPI/blob/main/OAIAPI/Capabilities/Chat/Chat.cs/#L99"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Opens a stream to the OpenAI chat API and sends a prompt, receiving responses in real-time.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IAsyncEnumerable&lt;ChatStreamResponse?&gt; DispatchStream(string prompt)</code></pre>
+    <pre><code class="lang-csharp hljs">public IAsyncEnumerable&lt;ChatStreamResponse?&gt; DispatchStream(string prompt, Config config)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>prompt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd>Represents a chat client for interacting with OpenAI completition chat model API.</dd>
+    <dd><p>The text prompt to send to the chat model.</p>
+</dd>
+    <dt><code>config</code> <a class="xref" href="Promezio.OAIAPI.Capabilities.Chat.Config.html">Config</a></dt>
+    <dd><p>Configuration options for the OpenAI API request.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerable-1">IAsyncEnumerable</a>&lt;<a class="xref" href="Promezio.OAIAPI.Capabilities.Chat.ChatStreamResponse.html">ChatStreamResponse</a>&gt;</dt>
-    <dd>Represents a chat client for interacting with OpenAI completition chat model API.</dd>
+    <dd><p>An IAsyncEnumerable of ChatStreamResponse objects containing partial responses.</p>
+</dd>
   </dl>
 
 
@@ -277,38 +293,12 @@
 
 
 
-
-
-
-  <a id="Promezio_OAIAPI_Capabilities_Chat_Chat_Init_" data-uid="Promezio.OAIAPI.Capabilities.Chat.Chat.Init*"></a>
-
-  <h3 id="Promezio_OAIAPI_Capabilities_Chat_Chat_Init_Promezio_OAIAPI_Capabilities_Chat_Config_" data-uid="Promezio.OAIAPI.Capabilities.Chat.Chat.Init(Promezio.OAIAPI.Capabilities.Chat.Config)">
-  Init(Config)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gslf/OAIAPI/blob/main/OAIAPI/Capabilities/Chat/Chat.cs/#L34"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Init the instance of the Chat class with the configuration.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Init(Config config)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
+  <h4 class="section">Exceptions</h4>
   <dl class="parameters">
-    <dt><code>config</code> <a class="xref" href="Promezio.OAIAPI.Capabilities.Chat.Config.html">Config</a></dt>
-    <dd>Represents a chat client for interacting with OpenAI completition chat model API.</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httprequestexception">HttpRequestException</a></dt>
+    <dd><p>Thrown if the HTTP request to the API fails.</p>
+</dd>
   </dl>
-
-
-
-
-
-
-
-
-
 
 
 

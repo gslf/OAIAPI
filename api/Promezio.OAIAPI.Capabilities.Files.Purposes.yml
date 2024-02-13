@@ -189,7 +189,7 @@ items:
       description: The name of the purpose to validate.
     return:
       type: System.Boolean
-      description: True if the purpos name exists in the predefined purposes; otherwise, false.
+      description: True if the purpose name exists in the predefined purposes; otherwise, false.
     content.vb: Public Shared Function IsValid(purpose As String) As Boolean
   overload: Promezio.OAIAPI.Capabilities.Files.Purposes.IsValid*
   nameWithType.vb: Purposes.IsValid(String)

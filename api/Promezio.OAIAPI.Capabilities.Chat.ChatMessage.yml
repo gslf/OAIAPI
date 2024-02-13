@@ -25,7 +25,7 @@ items:
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.Chat
-  summary: Represents a chat message sent and received from the API.
+  summary: Represents a single chat message sent or received through the OpenAI chat API.
   example: []
   syntax:
     content: public struct ChatMessage
@@ -55,10 +55,12 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: Role
     path: OAIAPI/Capabilities/Chat/ChatMessage.cs
-    startLine: 6
+    startLine: 9
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.Chat
+  summary: Gets or sets the role of the message sender (e.g., "user", "assistant").
+  example: []
   syntax:
     content: public string? Role { readonly get; set; }
     parameters: []
@@ -84,10 +86,12 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: Content
     path: OAIAPI/Capabilities/Chat/ChatMessage.cs
-    startLine: 7
+    startLine: 14
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.Chat
+  summary: Gets or sets the content of the message, which can be plain text or other supported formats.
+  example: []
   syntax:
     content: public string? Content { readonly get; set; }
     parameters: []

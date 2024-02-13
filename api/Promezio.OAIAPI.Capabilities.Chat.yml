@@ -4,17 +4,19 @@ items:
   commentId: N:Promezio.OAIAPI.Capabilities.Chat
   id: Promezio.OAIAPI.Capabilities.Chat
   children:
+  - Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels
+  - Promezio.OAIAPI.Capabilities.Chat.AvailableResponseFormat
+  - Promezio.OAIAPI.Capabilities.Chat.AvailableRoles
   - Promezio.OAIAPI.Capabilities.Chat.Chat
   - Promezio.OAIAPI.Capabilities.Chat.ChatMessage
+  - Promezio.OAIAPI.Capabilities.Chat.ChatModel
   - Promezio.OAIAPI.Capabilities.Chat.ChatResponse
   - Promezio.OAIAPI.Capabilities.Chat.ChatStreamResponse
   - Promezio.OAIAPI.Capabilities.Chat.Choice
   - Promezio.OAIAPI.Capabilities.Chat.Config
   - Promezio.OAIAPI.Capabilities.Chat.ResponseFormat
-  - Promezio.OAIAPI.Capabilities.Chat.ResponseFormatTypes
   - Promezio.OAIAPI.Capabilities.Chat.Role
   - Promezio.OAIAPI.Capabilities.Chat.StreamChoice
-  - Promezio.OAIAPI.Capabilities.Chat.Usage
   langs:
   - csharp
   - vb
@@ -38,6 +40,20 @@ references:
   name: ChatMessage
   nameWithType: ChatMessage
   fullName: Promezio.OAIAPI.Capabilities.Chat.ChatMessage
+- uid: Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels
+  commentId: T:Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels
+  parent: Promezio.OAIAPI.Capabilities.Chat
+  href: Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels.html
+  name: AvailableChatModels
+  nameWithType: AvailableChatModels
+  fullName: Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels
+- uid: Promezio.OAIAPI.Capabilities.Chat.ChatModel
+  commentId: T:Promezio.OAIAPI.Capabilities.Chat.ChatModel
+  parent: Promezio.OAIAPI.Capabilities.Chat
+  href: Promezio.OAIAPI.Capabilities.Chat.ChatModel.html
+  name: ChatModel
+  nameWithType: ChatModel
+  fullName: Promezio.OAIAPI.Capabilities.Chat.ChatModel
 - uid: Promezio.OAIAPI.Capabilities.Chat.ChatResponse
   commentId: T:Promezio.OAIAPI.Capabilities.Chat.ChatResponse
   href: Promezio.OAIAPI.Capabilities.Chat.ChatResponse.html
@@ -63,18 +79,27 @@ references:
   name: Config
   nameWithType: Config
   fullName: Promezio.OAIAPI.Capabilities.Chat.Config
+- uid: Promezio.OAIAPI.Capabilities.Chat.AvailableResponseFormat
+  commentId: T:Promezio.OAIAPI.Capabilities.Chat.AvailableResponseFormat
+  parent: Promezio.OAIAPI.Capabilities.Chat
+  href: Promezio.OAIAPI.Capabilities.Chat.AvailableResponseFormat.html
+  name: AvailableResponseFormat
+  nameWithType: AvailableResponseFormat
+  fullName: Promezio.OAIAPI.Capabilities.Chat.AvailableResponseFormat
 - uid: Promezio.OAIAPI.Capabilities.Chat.ResponseFormat
   commentId: T:Promezio.OAIAPI.Capabilities.Chat.ResponseFormat
+  parent: Promezio.OAIAPI.Capabilities.Chat
   href: Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.html
   name: ResponseFormat
   nameWithType: ResponseFormat
   fullName: Promezio.OAIAPI.Capabilities.Chat.ResponseFormat
-- uid: Promezio.OAIAPI.Capabilities.Chat.ResponseFormatTypes
-  commentId: T:Promezio.OAIAPI.Capabilities.Chat.ResponseFormatTypes
-  href: Promezio.OAIAPI.Capabilities.Chat.ResponseFormatTypes.html
-  name: ResponseFormatTypes
-  nameWithType: ResponseFormatTypes
-  fullName: Promezio.OAIAPI.Capabilities.Chat.ResponseFormatTypes
+- uid: Promezio.OAIAPI.Capabilities.Chat.AvailableRoles
+  commentId: T:Promezio.OAIAPI.Capabilities.Chat.AvailableRoles
+  parent: Promezio.OAIAPI.Capabilities.Chat
+  href: Promezio.OAIAPI.Capabilities.Chat.AvailableRoles.html
+  name: AvailableRoles
+  nameWithType: AvailableRoles
+  fullName: Promezio.OAIAPI.Capabilities.Chat.AvailableRoles
 - uid: Promezio.OAIAPI.Capabilities.Chat.Role
   commentId: T:Promezio.OAIAPI.Capabilities.Chat.Role
   href: Promezio.OAIAPI.Capabilities.Chat.Role.html
@@ -87,13 +112,6 @@ references:
   name: StreamChoice
   nameWithType: StreamChoice
   fullName: Promezio.OAIAPI.Capabilities.Chat.StreamChoice
-- uid: Promezio.OAIAPI.Capabilities.Chat.Usage
-  commentId: T:Promezio.OAIAPI.Capabilities.Chat.Usage
-  parent: Promezio.OAIAPI.Capabilities.Chat
-  href: Promezio.OAIAPI.Capabilities.Chat.Usage.html
-  name: Usage
-  nameWithType: Usage
-  fullName: Promezio.OAIAPI.Capabilities.Chat.Usage
 - uid: Promezio.OAIAPI.Capabilities.Chat
   commentId: N:Promezio.OAIAPI.Capabilities.Chat
   href: Promezio.html

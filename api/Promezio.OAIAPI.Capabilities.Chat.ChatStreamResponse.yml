@@ -70,10 +70,12 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: Id
     path: OAIAPI/Capabilities/Chat/ChatStreamResponse.cs
-    startLine: 13
+    startLine: 17
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.Chat
+  summary: A unique identifier for the response.
+  example: []
   syntax:
     content: public string? Id { get; set; }
     parameters: []
@@ -99,10 +101,12 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: Created
     path: OAIAPI/Capabilities/Chat/ChatStreamResponse.cs
-    startLine: 14
+    startLine: 21
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.Chat
+  summary: Unix timestamp indicating when the response was created.
+  example: []
   syntax:
     content: public int? Created { get; set; }
     parameters: []
@@ -128,10 +132,12 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: Model
     path: OAIAPI/Capabilities/Chat/ChatStreamResponse.cs
-    startLine: 15
+    startLine: 25
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.Chat
+  summary: The OpenAI chat model used to generate the response.
+  example: []
   syntax:
     content: public string? Model { get; set; }
     parameters: []
@@ -157,10 +163,12 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: System_fingerprint
     path: OAIAPI/Capabilities/Chat/ChatStreamResponse.cs
-    startLine: 17
+    startLine: 29
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.Chat
+  summary: A security fingerprint associated with the response.
+  example: []
   syntax:
     content: public string? System_fingerprint { get; set; }
     parameters: []
@@ -186,10 +194,15 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: Choices
     path: OAIAPI/Capabilities/Chat/ChatStreamResponse.cs
-    startLine: 18
+    startLine: 35
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.Chat
+  summary: >-
+    An array of potential message updates within the response stream.
+
+    Each element contains a `Delta` object with the updated text content.
+  example: []
   syntax:
     content: public StreamChoice[]? Choices { get; set; }
     parameters: []
@@ -215,17 +228,17 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: GetMessage
     path: OAIAPI/Capabilities/Chat/ChatStreamResponse.cs
-    startLine: 25
+    startLine: 42
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.Chat
-  summary: Retrieves the content of the message from the first choice in the response.
+  summary: Extracts the updated message content from the first choice of the response, if available.
   example: []
   syntax:
     content: public string? GetMessage()
     return:
       type: System.String
-      description: A string containing the message content, or an empty string if no content is available.
+      description: The updated message content string, or an empty string if unavailable.
     content.vb: Public Function GetMessage() As String
   overload: Promezio.OAIAPI.Capabilities.Chat.ChatStreamResponse.GetMessage*
 references:

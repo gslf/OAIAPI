@@ -166,10 +166,12 @@ to retrieve the message content from the first choice, if available.</p>
 
   <h3 id="Promezio_OAIAPI_Capabilities_Chat_ChatStreamResponse_Choices" data-uid="Promezio.OAIAPI.Capabilities.Chat.ChatStreamResponse.Choices">
   Choices
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gslf/OAIAPI/blob/main/OAIAPI/Capabilities/Chat/ChatStreamResponse.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gslf/OAIAPI/blob/main/OAIAPI/Capabilities/Chat/ChatStreamResponse.cs/#L36"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>An array of potential message updates within the response stream.
+Each element contains a <code>Delta</code> object with the updated text content.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -197,10 +199,11 @@ to retrieve the message content from the first choice, if available.</p>
 
   <h3 id="Promezio_OAIAPI_Capabilities_Chat_ChatStreamResponse_Created" data-uid="Promezio.OAIAPI.Capabilities.Chat.ChatStreamResponse.Created">
   Created
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gslf/OAIAPI/blob/main/OAIAPI/Capabilities/Chat/ChatStreamResponse.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gslf/OAIAPI/blob/main/OAIAPI/Capabilities/Chat/ChatStreamResponse.cs/#L22"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Unix timestamp indicating when the response was created.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -228,10 +231,11 @@ to retrieve the message content from the first choice, if available.</p>
 
   <h3 id="Promezio_OAIAPI_Capabilities_Chat_ChatStreamResponse_Id" data-uid="Promezio.OAIAPI.Capabilities.Chat.ChatStreamResponse.Id">
   Id
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gslf/OAIAPI/blob/main/OAIAPI/Capabilities/Chat/ChatStreamResponse.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gslf/OAIAPI/blob/main/OAIAPI/Capabilities/Chat/ChatStreamResponse.cs/#L18"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>A unique identifier for the response.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -259,10 +263,11 @@ to retrieve the message content from the first choice, if available.</p>
 
   <h3 id="Promezio_OAIAPI_Capabilities_Chat_ChatStreamResponse_Model" data-uid="Promezio.OAIAPI.Capabilities.Chat.ChatStreamResponse.Model">
   Model
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gslf/OAIAPI/blob/main/OAIAPI/Capabilities/Chat/ChatStreamResponse.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gslf/OAIAPI/blob/main/OAIAPI/Capabilities/Chat/ChatStreamResponse.cs/#L26"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The OpenAI chat model used to generate the response.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -290,10 +295,11 @@ to retrieve the message content from the first choice, if available.</p>
 
   <h3 id="Promezio_OAIAPI_Capabilities_Chat_ChatStreamResponse_System_fingerprint" data-uid="Promezio.OAIAPI.Capabilities.Chat.ChatStreamResponse.System_fingerprint">
   System_fingerprint
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gslf/OAIAPI/blob/main/OAIAPI/Capabilities/Chat/ChatStreamResponse.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gslf/OAIAPI/blob/main/OAIAPI/Capabilities/Chat/ChatStreamResponse.cs/#L30"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>A security fingerprint associated with the response.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -325,10 +331,10 @@ to retrieve the message content from the first choice, if available.</p>
 
   <h3 id="Promezio_OAIAPI_Capabilities_Chat_ChatStreamResponse_GetMessage" data-uid="Promezio.OAIAPI.Capabilities.Chat.ChatStreamResponse.GetMessage">
   GetMessage()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gslf/OAIAPI/blob/main/OAIAPI/Capabilities/Chat/ChatStreamResponse.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gslf/OAIAPI/blob/main/OAIAPI/Capabilities/Chat/ChatStreamResponse.cs/#L43"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Retrieves the content of the message from the first choice in the response.</p>
+  <div class="markdown level1 summary"><p>Extracts the updated message content from the first choice of the response, if available.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -340,7 +346,7 @@ to retrieve the message content from the first choice, if available.</p>
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>A string containing the message content, or an empty string if no content is available.</p>
+    <dd><p>The updated message content string, or an empty string if unavailable.</p>
 </dd>
   </dl>
 

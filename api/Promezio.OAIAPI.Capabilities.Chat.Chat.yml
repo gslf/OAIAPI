@@ -6,9 +6,8 @@ items:
   parent: Promezio.OAIAPI.Capabilities.Chat
   children:
   - Promezio.OAIAPI.Capabilities.Chat.Chat.#ctor(System.String,Promezio.OAIAPI.Utils.Logger)
-  - Promezio.OAIAPI.Capabilities.Chat.Chat.Dispatch(System.String)
-  - Promezio.OAIAPI.Capabilities.Chat.Chat.DispatchStream(System.String)
-  - Promezio.OAIAPI.Capabilities.Chat.Chat.Init(Promezio.OAIAPI.Capabilities.Chat.Config)
+  - Promezio.OAIAPI.Capabilities.Chat.Chat.Dispatch(System.String,Promezio.OAIAPI.Capabilities.Chat.Config)
+  - Promezio.OAIAPI.Capabilities.Chat.Chat.DispatchStream(System.String,Promezio.OAIAPI.Capabilities.Chat.Config)
   langs:
   - csharp
   - vb
@@ -64,11 +63,11 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: .ctor
     path: OAIAPI/Capabilities/Chat/Chat.cs
-    startLine: 25
+    startLine: 22
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.Chat
-  summary: Create a new instance of the Chat class with the specified API key.
+  summary: Initializes a new instance of the Chat class with the specified API key.
   example: []
   syntax:
     content: public Chat(string apikey, Logger logger)
@@ -78,52 +77,22 @@ items:
       description: The API key for authentication.
     - id: logger
       type: Promezio.OAIAPI.Utils.Logger
+      description: An instance of a logging object to record actions and errors.
     content.vb: Public Sub New(apikey As String, logger As Logger)
   overload: Promezio.OAIAPI.Capabilities.Chat.Chat.#ctor*
   nameWithType.vb: Chat.New(String, Logger)
   fullName.vb: Promezio.OAIAPI.Capabilities.Chat.Chat.New(String, Promezio.OAIAPI.Utils.Logger)
   name.vb: New(String, Logger)
-- uid: Promezio.OAIAPI.Capabilities.Chat.Chat.Init(Promezio.OAIAPI.Capabilities.Chat.Config)
-  commentId: M:Promezio.OAIAPI.Capabilities.Chat.Chat.Init(Promezio.OAIAPI.Capabilities.Chat.Config)
-  id: Init(Promezio.OAIAPI.Capabilities.Chat.Config)
+- uid: Promezio.OAIAPI.Capabilities.Chat.Chat.Dispatch(System.String,Promezio.OAIAPI.Capabilities.Chat.Config)
+  commentId: M:Promezio.OAIAPI.Capabilities.Chat.Chat.Dispatch(System.String,Promezio.OAIAPI.Capabilities.Chat.Config)
+  id: Dispatch(System.String,Promezio.OAIAPI.Capabilities.Chat.Config)
   parent: Promezio.OAIAPI.Capabilities.Chat.Chat
   langs:
   - csharp
   - vb
-  name: Init(Config)
-  nameWithType: Chat.Init(Config)
-  fullName: Promezio.OAIAPI.Capabilities.Chat.Chat.Init(Promezio.OAIAPI.Capabilities.Chat.Config)
-  type: Method
-  source:
-    remote:
-      path: OAIAPI/Capabilities/Chat/Chat.cs
-      branch: main
-      repo: https://github.com/gslf/OAIAPI.git
-    id: Init
-    path: OAIAPI/Capabilities/Chat/Chat.cs
-    startLine: 33
-  assemblies:
-  - OAIAPI
-  namespace: Promezio.OAIAPI.Capabilities.Chat
-  summary: Init the instance of the Chat class with the configuration.
-  example: []
-  syntax:
-    content: public void Init(Config config)
-    parameters:
-    - id: config
-      type: Promezio.OAIAPI.Capabilities.Chat.Config
-    content.vb: Public Sub Init(config As Config)
-  overload: Promezio.OAIAPI.Capabilities.Chat.Chat.Init*
-- uid: Promezio.OAIAPI.Capabilities.Chat.Chat.Dispatch(System.String)
-  commentId: M:Promezio.OAIAPI.Capabilities.Chat.Chat.Dispatch(System.String)
-  id: Dispatch(System.String)
-  parent: Promezio.OAIAPI.Capabilities.Chat.Chat
-  langs:
-  - csharp
-  - vb
-  name: Dispatch(string)
-  nameWithType: Chat.Dispatch(string)
-  fullName: Promezio.OAIAPI.Capabilities.Chat.Chat.Dispatch(string)
+  name: Dispatch(string, Config)
+  nameWithType: Chat.Dispatch(string, Config)
+  fullName: Promezio.OAIAPI.Capabilities.Chat.Chat.Dispatch(string, Promezio.OAIAPI.Capabilities.Chat.Config)
   type: Method
   source:
     remote:
@@ -132,36 +101,43 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: Dispatch
     path: OAIAPI/Capabilities/Chat/Chat.cs
-    startLine: 42
+    startLine: 33
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.Chat
-  summary: Sends a message to the chat model and receives a response.
+  summary: Sends a single prompt to the OpenAI chat API and returns the complete response.
   example: []
   syntax:
-    content: public Task<ChatResponse?> Dispatch(string prompt)
+    content: public Task<ChatResponse?> Dispatch(string prompt, Config config)
     parameters:
     - id: prompt
       type: System.String
-      description: The message to send to the model.
+      description: The text prompt to send to the chat model.
+    - id: config
+      type: Promezio.OAIAPI.Capabilities.Chat.Config
+      description: Configuration options for the OpenAI API request.
     return:
       type: System.Threading.Tasks.Task{Promezio.OAIAPI.Capabilities.Chat.ChatResponse}
-      description: A task that represents the asynchronous operation, containing the chat response.
-    content.vb: Public Function Dispatch(prompt As String) As Task(Of ChatResponse)
+      description: A ChatResponse object containing the API's response and details.
+    content.vb: Public Function Dispatch(prompt As String, config As Config) As Task(Of ChatResponse)
   overload: Promezio.OAIAPI.Capabilities.Chat.Chat.Dispatch*
-  nameWithType.vb: Chat.Dispatch(String)
-  fullName.vb: Promezio.OAIAPI.Capabilities.Chat.Chat.Dispatch(String)
-  name.vb: Dispatch(String)
-- uid: Promezio.OAIAPI.Capabilities.Chat.Chat.DispatchStream(System.String)
-  commentId: M:Promezio.OAIAPI.Capabilities.Chat.Chat.DispatchStream(System.String)
-  id: DispatchStream(System.String)
+  exceptions:
+  - type: System.Net.Http.HttpRequestException
+    commentId: T:System.Net.Http.HttpRequestException
+    description: Thrown if the HTTP request to the API fails.
+  nameWithType.vb: Chat.Dispatch(String, Config)
+  fullName.vb: Promezio.OAIAPI.Capabilities.Chat.Chat.Dispatch(String, Promezio.OAIAPI.Capabilities.Chat.Config)
+  name.vb: Dispatch(String, Config)
+- uid: Promezio.OAIAPI.Capabilities.Chat.Chat.DispatchStream(System.String,Promezio.OAIAPI.Capabilities.Chat.Config)
+  commentId: M:Promezio.OAIAPI.Capabilities.Chat.Chat.DispatchStream(System.String,Promezio.OAIAPI.Capabilities.Chat.Config)
+  id: DispatchStream(System.String,Promezio.OAIAPI.Capabilities.Chat.Config)
   parent: Promezio.OAIAPI.Capabilities.Chat.Chat
   langs:
   - csharp
   - vb
-  name: DispatchStream(string)
-  nameWithType: Chat.DispatchStream(string)
-  fullName: Promezio.OAIAPI.Capabilities.Chat.Chat.DispatchStream(string)
+  name: DispatchStream(string, Config)
+  nameWithType: Chat.DispatchStream(string, Config)
+  fullName: Promezio.OAIAPI.Capabilities.Chat.Chat.DispatchStream(string, Promezio.OAIAPI.Capabilities.Chat.Config)
   type: Method
   source:
     remote:
@@ -170,22 +146,33 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: DispatchStream
     path: OAIAPI/Capabilities/Chat/Chat.cs
-    startLine: 101
+    startLine: 98
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.Chat
+  summary: Opens a stream to the OpenAI chat API and sends a prompt, receiving responses in real-time.
+  example: []
   syntax:
-    content: public IAsyncEnumerable<ChatStreamResponse?> DispatchStream(string prompt)
+    content: public IAsyncEnumerable<ChatStreamResponse?> DispatchStream(string prompt, Config config)
     parameters:
     - id: prompt
       type: System.String
+      description: The text prompt to send to the chat model.
+    - id: config
+      type: Promezio.OAIAPI.Capabilities.Chat.Config
+      description: Configuration options for the OpenAI API request.
     return:
       type: System.Collections.Generic.IAsyncEnumerable{Promezio.OAIAPI.Capabilities.Chat.ChatStreamResponse}
-    content.vb: Public Function DispatchStream(prompt As String) As IAsyncEnumerable(Of ChatStreamResponse)
+      description: An IAsyncEnumerable of ChatStreamResponse objects containing partial responses.
+    content.vb: Public Function DispatchStream(prompt As String, config As Config) As IAsyncEnumerable(Of ChatStreamResponse)
   overload: Promezio.OAIAPI.Capabilities.Chat.Chat.DispatchStream*
-  nameWithType.vb: Chat.DispatchStream(String)
-  fullName.vb: Promezio.OAIAPI.Capabilities.Chat.Chat.DispatchStream(String)
-  name.vb: DispatchStream(String)
+  exceptions:
+  - type: System.Net.Http.HttpRequestException
+    commentId: T:System.Net.Http.HttpRequestException
+    description: Thrown if the HTTP request to the API fails.
+  nameWithType.vb: Chat.DispatchStream(String, Config)
+  fullName.vb: Promezio.OAIAPI.Capabilities.Chat.Chat.DispatchStream(String, Promezio.OAIAPI.Capabilities.Chat.Config)
+  name.vb: DispatchStream(String, Config)
 references:
 - uid: Promezio.OAIAPI.Capabilities.Chat
   commentId: N:Promezio.OAIAPI.Capabilities.Chat
@@ -577,12 +564,19 @@ references:
   - uid: Promezio.OAIAPI.Utils
     name: Utils
     href: Promezio.OAIAPI.Utils.html
-- uid: Promezio.OAIAPI.Capabilities.Chat.Chat.Init*
-  commentId: Overload:Promezio.OAIAPI.Capabilities.Chat.Chat.Init
-  href: Promezio.OAIAPI.Capabilities.Chat.Chat.html#Promezio_OAIAPI_Capabilities_Chat_Chat_Init_Promezio_OAIAPI_Capabilities_Chat_Config_
-  name: Init
-  nameWithType: Chat.Init
-  fullName: Promezio.OAIAPI.Capabilities.Chat.Chat.Init
+- uid: System.Net.Http.HttpRequestException
+  commentId: T:System.Net.Http.HttpRequestException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.net.http.httprequestexception
+  name: HttpRequestException
+  nameWithType: HttpRequestException
+  fullName: System.Net.Http.HttpRequestException
+- uid: Promezio.OAIAPI.Capabilities.Chat.Chat.Dispatch*
+  commentId: Overload:Promezio.OAIAPI.Capabilities.Chat.Chat.Dispatch
+  href: Promezio.OAIAPI.Capabilities.Chat.Chat.html#Promezio_OAIAPI_Capabilities_Chat_Chat_Dispatch_System_String_Promezio_OAIAPI_Capabilities_Chat_Config_
+  name: Dispatch
+  nameWithType: Chat.Dispatch
+  fullName: Promezio.OAIAPI.Capabilities.Chat.Chat.Dispatch
 - uid: Promezio.OAIAPI.Capabilities.Chat.Config
   commentId: T:Promezio.OAIAPI.Capabilities.Chat.Config
   parent: Promezio.OAIAPI.Capabilities.Chat
@@ -590,12 +584,6 @@ references:
   name: Config
   nameWithType: Config
   fullName: Promezio.OAIAPI.Capabilities.Chat.Config
-- uid: Promezio.OAIAPI.Capabilities.Chat.Chat.Dispatch*
-  commentId: Overload:Promezio.OAIAPI.Capabilities.Chat.Chat.Dispatch
-  href: Promezio.OAIAPI.Capabilities.Chat.Chat.html#Promezio_OAIAPI_Capabilities_Chat_Chat_Dispatch_System_String_
-  name: Dispatch
-  nameWithType: Chat.Dispatch
-  fullName: Promezio.OAIAPI.Capabilities.Chat.Chat.Dispatch
 - uid: System.Threading.Tasks.Task{Promezio.OAIAPI.Capabilities.Chat.ChatResponse}
   commentId: T:System.Threading.Tasks.Task{Promezio.OAIAPI.Capabilities.Chat.ChatResponse}
   parent: System.Threading.Tasks
@@ -696,7 +684,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
 - uid: Promezio.OAIAPI.Capabilities.Chat.Chat.DispatchStream*
   commentId: Overload:Promezio.OAIAPI.Capabilities.Chat.Chat.DispatchStream
-  href: Promezio.OAIAPI.Capabilities.Chat.Chat.html#Promezio_OAIAPI_Capabilities_Chat_Chat_DispatchStream_System_String_
+  href: Promezio.OAIAPI.Capabilities.Chat.Chat.html#Promezio_OAIAPI_Capabilities_Chat_Chat_DispatchStream_System_String_Promezio_OAIAPI_Capabilities_Chat_Config_
   name: DispatchStream
   nameWithType: Chat.DispatchStream
   fullName: Promezio.OAIAPI.Capabilities.Chat.Chat.DispatchStream

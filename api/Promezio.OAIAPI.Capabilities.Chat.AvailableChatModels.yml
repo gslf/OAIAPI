@@ -1,0 +1,265 @@
+### YamlMime:ManagedReference
+items:
+- uid: Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels
+  commentId: T:Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels
+  id: AvailableChatModels
+  parent: Promezio.OAIAPI.Capabilities.Chat
+  children:
+  - Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels.GPT4
+  - Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels.GPT4_32K
+  - Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels.GPT4_TURBO_0125
+  - Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels.GPT4_VISION_PREVIEW
+  - Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels.GPT_3_5_TURBO
+  - Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels.GPT_3_5_TURBO_0125
+  - Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels.GPT_3_5_TURBO_1106
+  langs:
+  - csharp
+  - vb
+  name: AvailableChatModels
+  nameWithType: AvailableChatModels
+  fullName: Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels
+  type: Enum
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Chat/ChatModel.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: AvailableChatModels
+    path: OAIAPI/Capabilities/Chat/ChatModel.cs
+    startLine: 11
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Chat
+  summary: Enumerates the available chat models that can be used with the OpenAI API.
+  example: []
+  syntax:
+    content: public enum AvailableChatModels
+    content.vb: Public Enum AvailableChatModels
+- uid: Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels.GPT_3_5_TURBO_0125
+  commentId: F:Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels.GPT_3_5_TURBO_0125
+  id: GPT_3_5_TURBO_0125
+  parent: Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels
+  langs:
+  - csharp
+  - vb
+  name: GPT_3_5_TURBO_0125
+  nameWithType: AvailableChatModels.GPT_3_5_TURBO_0125
+  fullName: Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels.GPT_3_5_TURBO_0125
+  type: Field
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Chat/ChatModel.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: GPT_3_5_TURBO_0125
+    path: OAIAPI/Capabilities/Chat/ChatModel.cs
+    startLine: 12
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Chat
+  syntax:
+    content: GPT_3_5_TURBO_0125 = 0
+    return:
+      type: Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels
+- uid: Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels.GPT_3_5_TURBO
+  commentId: F:Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels.GPT_3_5_TURBO
+  id: GPT_3_5_TURBO
+  parent: Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels
+  langs:
+  - csharp
+  - vb
+  name: GPT_3_5_TURBO
+  nameWithType: AvailableChatModels.GPT_3_5_TURBO
+  fullName: Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels.GPT_3_5_TURBO
+  type: Field
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Chat/ChatModel.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: GPT_3_5_TURBO
+    path: OAIAPI/Capabilities/Chat/ChatModel.cs
+    startLine: 13
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Chat
+  syntax:
+    content: GPT_3_5_TURBO = 1
+    return:
+      type: Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels
+- uid: Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels.GPT_3_5_TURBO_1106
+  commentId: F:Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels.GPT_3_5_TURBO_1106
+  id: GPT_3_5_TURBO_1106
+  parent: Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels
+  langs:
+  - csharp
+  - vb
+  name: GPT_3_5_TURBO_1106
+  nameWithType: AvailableChatModels.GPT_3_5_TURBO_1106
+  fullName: Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels.GPT_3_5_TURBO_1106
+  type: Field
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Chat/ChatModel.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: GPT_3_5_TURBO_1106
+    path: OAIAPI/Capabilities/Chat/ChatModel.cs
+    startLine: 14
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Chat
+  syntax:
+    content: GPT_3_5_TURBO_1106 = 2
+    return:
+      type: Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels
+- uid: Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels.GPT4
+  commentId: F:Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels.GPT4
+  id: GPT4
+  parent: Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels
+  langs:
+  - csharp
+  - vb
+  name: GPT4
+  nameWithType: AvailableChatModels.GPT4
+  fullName: Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels.GPT4
+  type: Field
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Chat/ChatModel.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: GPT4
+    path: OAIAPI/Capabilities/Chat/ChatModel.cs
+    startLine: 15
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Chat
+  syntax:
+    content: GPT4 = 3
+    return:
+      type: Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels
+- uid: Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels.GPT4_TURBO_0125
+  commentId: F:Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels.GPT4_TURBO_0125
+  id: GPT4_TURBO_0125
+  parent: Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels
+  langs:
+  - csharp
+  - vb
+  name: GPT4_TURBO_0125
+  nameWithType: AvailableChatModels.GPT4_TURBO_0125
+  fullName: Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels.GPT4_TURBO_0125
+  type: Field
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Chat/ChatModel.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: GPT4_TURBO_0125
+    path: OAIAPI/Capabilities/Chat/ChatModel.cs
+    startLine: 16
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Chat
+  syntax:
+    content: GPT4_TURBO_0125 = 4
+    return:
+      type: Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels
+- uid: Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels.GPT4_VISION_PREVIEW
+  commentId: F:Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels.GPT4_VISION_PREVIEW
+  id: GPT4_VISION_PREVIEW
+  parent: Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels
+  langs:
+  - csharp
+  - vb
+  name: GPT4_VISION_PREVIEW
+  nameWithType: AvailableChatModels.GPT4_VISION_PREVIEW
+  fullName: Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels.GPT4_VISION_PREVIEW
+  type: Field
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Chat/ChatModel.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: GPT4_VISION_PREVIEW
+    path: OAIAPI/Capabilities/Chat/ChatModel.cs
+    startLine: 17
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Chat
+  syntax:
+    content: GPT4_VISION_PREVIEW = 5
+    return:
+      type: Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels
+- uid: Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels.GPT4_32K
+  commentId: F:Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels.GPT4_32K
+  id: GPT4_32K
+  parent: Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels
+  langs:
+  - csharp
+  - vb
+  name: GPT4_32K
+  nameWithType: AvailableChatModels.GPT4_32K
+  fullName: Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels.GPT4_32K
+  type: Field
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Chat/ChatModel.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: GPT4_32K
+    path: OAIAPI/Capabilities/Chat/ChatModel.cs
+    startLine: 18
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Chat
+  syntax:
+    content: GPT4_32K = 6
+    return:
+      type: Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels
+references:
+- uid: Promezio.OAIAPI.Capabilities.Chat
+  commentId: N:Promezio.OAIAPI.Capabilities.Chat
+  href: Promezio.html
+  name: Promezio.OAIAPI.Capabilities.Chat
+  nameWithType: Promezio.OAIAPI.Capabilities.Chat
+  fullName: Promezio.OAIAPI.Capabilities.Chat
+  spec.csharp:
+  - uid: Promezio
+    name: Promezio
+    href: Promezio.html
+  - name: .
+  - uid: Promezio.OAIAPI
+    name: OAIAPI
+    href: Promezio.OAIAPI.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities
+    name: Capabilities
+    href: Promezio.OAIAPI.Capabilities.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities.Chat
+    name: Chat
+    href: Promezio.OAIAPI.Capabilities.Chat.html
+  spec.vb:
+  - uid: Promezio
+    name: Promezio
+    href: Promezio.html
+  - name: .
+  - uid: Promezio.OAIAPI
+    name: OAIAPI
+    href: Promezio.OAIAPI.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities
+    name: Capabilities
+    href: Promezio.OAIAPI.Capabilities.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities.Chat
+    name: Chat
+    href: Promezio.OAIAPI.Capabilities.Chat.html
+- uid: Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels
+  commentId: T:Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels
+  parent: Promezio.OAIAPI.Capabilities.Chat
+  href: Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels.html
+  name: AvailableChatModels
+  nameWithType: AvailableChatModels
+  fullName: Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels

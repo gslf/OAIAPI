@@ -5,93 +5,110 @@ items:
   id: ResponseFormat
   parent: Promezio.OAIAPI.Capabilities.Chat
   children:
-  - Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.ToAnonymousType
-  - Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.Type
+  - Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.#ctor(Promezio.OAIAPI.Capabilities.Chat.AvailableResponseFormat)
+  - Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.ToString
   langs:
   - csharp
   - vb
   name: ResponseFormat
   nameWithType: ResponseFormat
   fullName: Promezio.OAIAPI.Capabilities.Chat.ResponseFormat
-  type: Struct
+  type: Class
   source:
     remote:
-      path: OAIAPI/Capabilities/Chat/ResponseFormat.cs
+      path: OAIAPI/Capabilities/Chat/ResponseFormatTypes.cs
       branch: main
       repo: https://github.com/gslf/OAIAPI.git
     id: ResponseFormat
-    path: OAIAPI/Capabilities/Chat/ResponseFormat.cs
-    startLine: 3
+    path: OAIAPI/Capabilities/Chat/ResponseFormatTypes.cs
+    startLine: 17
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.Chat
+  summary: Represents the desired format for the OpenAI chat API response.
+  example: []
   syntax:
-    content: public struct ResponseFormat
-    content.vb: Public Structure ResponseFormat
+    content: public class ResponseFormat
+    content.vb: Public Class ResponseFormat
+  inheritance:
+  - System.Object
   inheritedMembers:
-  - System.ValueType.Equals(System.Object)
-  - System.ValueType.GetHashCode
-  - System.ValueType.ToString
+  - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
   - System.Object.GetType
+  - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
-- uid: Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.Type
-  commentId: P:Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.Type
-  id: Type
+- uid: Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.#ctor(Promezio.OAIAPI.Capabilities.Chat.AvailableResponseFormat)
+  commentId: M:Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.#ctor(Promezio.OAIAPI.Capabilities.Chat.AvailableResponseFormat)
+  id: '#ctor(Promezio.OAIAPI.Capabilities.Chat.AvailableResponseFormat)'
   parent: Promezio.OAIAPI.Capabilities.Chat.ResponseFormat
   langs:
   - csharp
   - vb
-  name: Type
-  nameWithType: ResponseFormat.Type
-  fullName: Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.Type
-  type: Property
+  name: ResponseFormat(AvailableResponseFormat)
+  nameWithType: ResponseFormat.ResponseFormat(AvailableResponseFormat)
+  fullName: Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.ResponseFormat(Promezio.OAIAPI.Capabilities.Chat.AvailableResponseFormat)
+  type: Constructor
   source:
     remote:
-      path: OAIAPI/Capabilities/Chat/ResponseFormat.cs
+      path: OAIAPI/Capabilities/Chat/ResponseFormatTypes.cs
       branch: main
       repo: https://github.com/gslf/OAIAPI.git
-    id: Type
-    path: OAIAPI/Capabilities/Chat/ResponseFormat.cs
-    startLine: 4
+    id: .ctor
+    path: OAIAPI/Capabilities/Chat/ResponseFormatTypes.cs
+    startLine: 28
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.Chat
+  summary: >-
+    Initializes a new instance of the ResponseFormat class with the specified format.
+
+    Defaults to TEXT format.
+  example: []
   syntax:
-    content: public string Type { readonly get; set; }
-    parameters: []
-    return:
-      type: System.String
-    content.vb: Public Property Type As String
-  overload: Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.Type*
-- uid: Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.ToAnonymousType
-  commentId: M:Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.ToAnonymousType
-  id: ToAnonymousType
+    content: public ResponseFormat(AvailableResponseFormat type = AvailableResponseFormat.TEXT)
+    parameters:
+    - id: type
+      type: Promezio.OAIAPI.Capabilities.Chat.AvailableResponseFormat
+      description: The desired response format.
+    content.vb: Public Sub New(type As AvailableResponseFormat = AvailableResponseFormat.TEXT)
+  overload: Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.#ctor*
+  nameWithType.vb: ResponseFormat.New(AvailableResponseFormat)
+  fullName.vb: Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.New(Promezio.OAIAPI.Capabilities.Chat.AvailableResponseFormat)
+  name.vb: New(AvailableResponseFormat)
+- uid: Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.ToString
+  commentId: M:Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.ToString
+  id: ToString
   parent: Promezio.OAIAPI.Capabilities.Chat.ResponseFormat
   langs:
   - csharp
   - vb
-  name: ToAnonymousType()
-  nameWithType: ResponseFormat.ToAnonymousType()
-  fullName: Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.ToAnonymousType()
+  name: ToString()
+  nameWithType: ResponseFormat.ToString()
+  fullName: Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.ToString()
   type: Method
   source:
     remote:
-      path: OAIAPI/Capabilities/Chat/ResponseFormat.cs
+      path: OAIAPI/Capabilities/Chat/ResponseFormatTypes.cs
       branch: main
       repo: https://github.com/gslf/OAIAPI.git
-    id: ToAnonymousType
-    path: OAIAPI/Capabilities/Chat/ResponseFormat.cs
-    startLine: 6
+    id: ToString
+    path: OAIAPI/Capabilities/Chat/ResponseFormatTypes.cs
+    startLine: 36
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.Chat
+  summary: Returns a string representation of the chosen response format.
+  example: []
   syntax:
-    content: public object ToAnonymousType()
+    content: public override string ToString()
     return:
-      type: System.Object
-    content.vb: Public Function ToAnonymousType() As Object
-  overload: Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.ToAnonymousType*
+      type: System.String
+      description: A string indicating either "json_object" or "text" based on the chosen format.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.ToString*
 references:
 - uid: Promezio.OAIAPI.Capabilities.Chat
   commentId: N:Promezio.OAIAPI.Capabilities.Chat
@@ -131,22 +148,33 @@ references:
   - uid: Promezio.OAIAPI.Capabilities.Chat
     name: Chat
     href: Promezio.OAIAPI.Capabilities.Chat.html
-- uid: System.ValueType.Equals(System.Object)
-  commentId: M:System.ValueType.Equals(System.Object)
-  parent: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
   name: Equals(object)
-  nameWithType: ValueType.Equals(object)
-  fullName: System.ValueType.Equals(object)
-  nameWithType.vb: ValueType.Equals(Object)
-  fullName.vb: System.ValueType.Equals(Object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
   name.vb: Equals(Object)
   spec.csharp:
-  - uid: System.ValueType.Equals(System.Object)
+  - uid: System.Object.Equals(System.Object)
     name: Equals
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
   - name: (
   - uid: System.Object
     name: object
@@ -154,59 +182,15 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
   spec.vb:
-  - uid: System.ValueType.Equals(System.Object)
+  - uid: System.Object.Equals(System.Object)
     name: Equals
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
   - name: (
   - uid: System.Object
     name: Object
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: )
-- uid: System.ValueType.GetHashCode
-  commentId: M:System.ValueType.GetHashCode
-  parent: System.ValueType
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
-  name: GetHashCode()
-  nameWithType: ValueType.GetHashCode()
-  fullName: System.ValueType.GetHashCode()
-  spec.csharp:
-  - uid: System.ValueType.GetHashCode
-    name: GetHashCode
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: System.ValueType.GetHashCode
-    name: GetHashCode
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
-  - name: (
-  - name: )
-- uid: System.ValueType.ToString
-  commentId: M:System.ValueType.ToString
-  parent: System.ValueType
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
-  name: ToString()
-  nameWithType: ValueType.ToString()
-  fullName: System.ValueType.ToString()
-  spec.csharp:
-  - uid: System.ValueType.ToString
-    name: ToString
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: System.ValueType.ToString
-    name: ToString
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
-  - name: (
   - name: )
 - uid: System.Object.Equals(System.Object,System.Object)
   commentId: M:System.Object.Equals(System.Object,System.Object)
@@ -253,6 +237,30 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
 - uid: System.Object.GetType
   commentId: M:System.Object.GetType
   parent: System.Object
@@ -275,6 +283,30 @@ references:
     name: GetType
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
   - name: (
   - name: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
@@ -322,25 +354,6 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-- uid: System.ValueType
-  commentId: T:System.ValueType
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.valuetype
-  name: ValueType
-  nameWithType: ValueType
-  fullName: System.ValueType
-- uid: System.Object
-  commentId: T:System.Object
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
 - uid: System
   commentId: N:System
   isExternal: true
@@ -348,12 +361,52 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.Type*
-  commentId: Overload:Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.Type
-  href: Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.html#Promezio_OAIAPI_Capabilities_Chat_ResponseFormat_Type
-  name: Type
-  nameWithType: ResponseFormat.Type
-  fullName: Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.Type
+- uid: Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.#ctor*
+  commentId: Overload:Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.#ctor
+  href: Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.html#Promezio_OAIAPI_Capabilities_Chat_ResponseFormat__ctor_Promezio_OAIAPI_Capabilities_Chat_AvailableResponseFormat_
+  name: ResponseFormat
+  nameWithType: ResponseFormat.ResponseFormat
+  fullName: Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.ResponseFormat
+  nameWithType.vb: ResponseFormat.New
+  fullName.vb: Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.New
+  name.vb: New
+- uid: Promezio.OAIAPI.Capabilities.Chat.AvailableResponseFormat
+  commentId: T:Promezio.OAIAPI.Capabilities.Chat.AvailableResponseFormat
+  parent: Promezio.OAIAPI.Capabilities.Chat
+  href: Promezio.OAIAPI.Capabilities.Chat.AvailableResponseFormat.html
+  name: AvailableResponseFormat
+  nameWithType: AvailableResponseFormat
+  fullName: Promezio.OAIAPI.Capabilities.Chat.AvailableResponseFormat
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.ToString*
+  commentId: Overload:Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.ToString
+  href: Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.html#Promezio_OAIAPI_Capabilities_Chat_ResponseFormat_ToString
+  name: ToString
+  nameWithType: ResponseFormat.ToString
+  fullName: Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.ToString
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -365,9 +418,3 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
-- uid: Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.ToAnonymousType*
-  commentId: Overload:Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.ToAnonymousType
-  href: Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.html#Promezio_OAIAPI_Capabilities_Chat_ResponseFormat_ToAnonymousType
-  name: ToAnonymousType
-  nameWithType: ResponseFormat.ToAnonymousType
-  fullName: Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.ToAnonymousType

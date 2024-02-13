@@ -1,0 +1,499 @@
+### YamlMime:ManagedReference
+items:
+- uid: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse
+  commentId: T:Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse
+  id: EmbeddingResponse
+  parent: Promezio.OAIAPI.Capabilities.Embedding
+  children:
+  - Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse.Data
+  - Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse.Model
+  - Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse.Usage
+  langs:
+  - csharp
+  - vb
+  name: EmbeddingResponse
+  nameWithType: EmbeddingResponse
+  fullName: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse
+  type: Class
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Embedding/EmbeddingResponse.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: EmbeddingResponse
+    path: OAIAPI/Capabilities/Embedding/EmbeddingResponse.cs
+    startLine: 4
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Embedding
+  syntax:
+    content: public class EmbeddingResponse
+    content.vb: Public Class EmbeddingResponse
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse.Data
+  commentId: P:Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse.Data
+  id: Data
+  parent: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse
+  langs:
+  - csharp
+  - vb
+  name: Data
+  nameWithType: EmbeddingResponse.Data
+  fullName: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse.Data
+  type: Property
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Embedding/EmbeddingResponse.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: Data
+    path: OAIAPI/Capabilities/Embedding/EmbeddingResponse.cs
+    startLine: 5
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Embedding
+  syntax:
+    content: public EmbeddingObject[]? Data { get; set; }
+    parameters: []
+    return:
+      type: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingObject[]
+    content.vb: Public Property Data As EmbeddingObject()
+  overload: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse.Data*
+- uid: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse.Model
+  commentId: P:Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse.Model
+  id: Model
+  parent: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse
+  langs:
+  - csharp
+  - vb
+  name: Model
+  nameWithType: EmbeddingResponse.Model
+  fullName: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse.Model
+  type: Property
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Embedding/EmbeddingResponse.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: Model
+    path: OAIAPI/Capabilities/Embedding/EmbeddingResponse.cs
+    startLine: 6
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Embedding
+  syntax:
+    content: public string? Model { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Model As String
+  overload: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse.Model*
+- uid: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse.Usage
+  commentId: P:Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse.Usage
+  id: Usage
+  parent: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse
+  langs:
+  - csharp
+  - vb
+  name: Usage
+  nameWithType: EmbeddingResponse.Usage
+  fullName: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse.Usage
+  type: Property
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Embedding/EmbeddingResponse.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: Usage
+    path: OAIAPI/Capabilities/Embedding/EmbeddingResponse.cs
+    startLine: 7
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Embedding
+  syntax:
+    content: public Usage? Usage { get; set; }
+    parameters: []
+    return:
+      type: Promezio.OAIAPI.Capabilities.CommonModels.Usage
+    content.vb: Public Property Usage As Usage
+  overload: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse.Usage*
+references:
+- uid: Promezio.OAIAPI.Capabilities.Embedding
+  commentId: N:Promezio.OAIAPI.Capabilities.Embedding
+  href: Promezio.html
+  name: Promezio.OAIAPI.Capabilities.Embedding
+  nameWithType: Promezio.OAIAPI.Capabilities.Embedding
+  fullName: Promezio.OAIAPI.Capabilities.Embedding
+  spec.csharp:
+  - uid: Promezio
+    name: Promezio
+    href: Promezio.html
+  - name: .
+  - uid: Promezio.OAIAPI
+    name: OAIAPI
+    href: Promezio.OAIAPI.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities
+    name: Capabilities
+    href: Promezio.OAIAPI.Capabilities.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities.Embedding
+    name: Embedding
+    href: Promezio.OAIAPI.Capabilities.Embedding.html
+  spec.vb:
+  - uid: Promezio
+    name: Promezio
+    href: Promezio.html
+  - name: .
+  - uid: Promezio.OAIAPI
+    name: OAIAPI
+    href: Promezio.OAIAPI.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities
+    name: Capabilities
+    href: Promezio.OAIAPI.Capabilities.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities.Embedding
+    name: Embedding
+    href: Promezio.OAIAPI.Capabilities.Embedding.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse.Data*
+  commentId: Overload:Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse.Data
+  href: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse.html#Promezio_OAIAPI_Capabilities_Embedding_EmbeddingResponse_Data
+  name: Data
+  nameWithType: EmbeddingResponse.Data
+  fullName: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse.Data
+- uid: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingObject[]
+  isExternal: true
+  href: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingObject.html
+  name: EmbeddingObject[]
+  nameWithType: EmbeddingObject[]
+  fullName: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingObject[]
+  nameWithType.vb: EmbeddingObject()
+  fullName.vb: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingObject()
+  name.vb: EmbeddingObject()
+  spec.csharp:
+  - uid: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingObject
+    name: EmbeddingObject
+    href: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingObject.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingObject
+    name: EmbeddingObject
+    href: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingObject.html
+  - name: (
+  - name: )
+- uid: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse.Model*
+  commentId: Overload:Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse.Model
+  href: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse.html#Promezio_OAIAPI_Capabilities_Embedding_EmbeddingResponse_Model
+  name: Model
+  nameWithType: EmbeddingResponse.Model
+  fullName: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse.Model
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse.Usage*
+  commentId: Overload:Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse.Usage
+  href: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse.html#Promezio_OAIAPI_Capabilities_Embedding_EmbeddingResponse_Usage
+  name: Usage
+  nameWithType: EmbeddingResponse.Usage
+  fullName: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse.Usage
+- uid: Promezio.OAIAPI.Capabilities.CommonModels.Usage
+  commentId: T:Promezio.OAIAPI.Capabilities.CommonModels.Usage
+  parent: Promezio.OAIAPI.Capabilities.CommonModels
+  href: Promezio.OAIAPI.Capabilities.CommonModels.Usage.html
+  name: Usage
+  nameWithType: Usage
+  fullName: Promezio.OAIAPI.Capabilities.CommonModels.Usage
+- uid: Promezio.OAIAPI.Capabilities.CommonModels
+  commentId: N:Promezio.OAIAPI.Capabilities.CommonModels
+  href: Promezio.html
+  name: Promezio.OAIAPI.Capabilities.CommonModels
+  nameWithType: Promezio.OAIAPI.Capabilities.CommonModels
+  fullName: Promezio.OAIAPI.Capabilities.CommonModels
+  spec.csharp:
+  - uid: Promezio
+    name: Promezio
+    href: Promezio.html
+  - name: .
+  - uid: Promezio.OAIAPI
+    name: OAIAPI
+    href: Promezio.OAIAPI.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities
+    name: Capabilities
+    href: Promezio.OAIAPI.Capabilities.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities.CommonModels
+    name: CommonModels
+    href: Promezio.OAIAPI.Capabilities.CommonModels.html
+  spec.vb:
+  - uid: Promezio
+    name: Promezio
+    href: Promezio.html
+  - name: .
+  - uid: Promezio.OAIAPI
+    name: OAIAPI
+    href: Promezio.OAIAPI.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities
+    name: Capabilities
+    href: Promezio.OAIAPI.Capabilities.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities.CommonModels
+    name: CommonModels
+    href: Promezio.OAIAPI.Capabilities.CommonModels.html

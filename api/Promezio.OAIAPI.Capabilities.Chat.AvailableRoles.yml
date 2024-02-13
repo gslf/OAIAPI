@@ -1,0 +1,157 @@
+### YamlMime:ManagedReference
+items:
+- uid: Promezio.OAIAPI.Capabilities.Chat.AvailableRoles
+  commentId: T:Promezio.OAIAPI.Capabilities.Chat.AvailableRoles
+  id: AvailableRoles
+  parent: Promezio.OAIAPI.Capabilities.Chat
+  children:
+  - Promezio.OAIAPI.Capabilities.Chat.AvailableRoles.ASSISTANT
+  - Promezio.OAIAPI.Capabilities.Chat.AvailableRoles.SYSTEM
+  - Promezio.OAIAPI.Capabilities.Chat.AvailableRoles.USER
+  langs:
+  - csharp
+  - vb
+  name: AvailableRoles
+  nameWithType: AvailableRoles
+  fullName: Promezio.OAIAPI.Capabilities.Chat.AvailableRoles
+  type: Enum
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Chat/Role.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: AvailableRoles
+    path: OAIAPI/Capabilities/Chat/Role.cs
+    startLine: 7
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Chat
+  summary: Enumerates the possible roles associated with messages in OpenAI chat responses.
+  example: []
+  syntax:
+    content: public enum AvailableRoles
+    content.vb: Public Enum AvailableRoles
+- uid: Promezio.OAIAPI.Capabilities.Chat.AvailableRoles.SYSTEM
+  commentId: F:Promezio.OAIAPI.Capabilities.Chat.AvailableRoles.SYSTEM
+  id: SYSTEM
+  parent: Promezio.OAIAPI.Capabilities.Chat.AvailableRoles
+  langs:
+  - csharp
+  - vb
+  name: SYSTEM
+  nameWithType: AvailableRoles.SYSTEM
+  fullName: Promezio.OAIAPI.Capabilities.Chat.AvailableRoles.SYSTEM
+  type: Field
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Chat/Role.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: SYSTEM
+    path: OAIAPI/Capabilities/Chat/Role.cs
+    startLine: 8
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Chat
+  syntax:
+    content: SYSTEM = 0
+    return:
+      type: Promezio.OAIAPI.Capabilities.Chat.AvailableRoles
+- uid: Promezio.OAIAPI.Capabilities.Chat.AvailableRoles.USER
+  commentId: F:Promezio.OAIAPI.Capabilities.Chat.AvailableRoles.USER
+  id: USER
+  parent: Promezio.OAIAPI.Capabilities.Chat.AvailableRoles
+  langs:
+  - csharp
+  - vb
+  name: USER
+  nameWithType: AvailableRoles.USER
+  fullName: Promezio.OAIAPI.Capabilities.Chat.AvailableRoles.USER
+  type: Field
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Chat/Role.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: USER
+    path: OAIAPI/Capabilities/Chat/Role.cs
+    startLine: 9
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Chat
+  syntax:
+    content: USER = 1
+    return:
+      type: Promezio.OAIAPI.Capabilities.Chat.AvailableRoles
+- uid: Promezio.OAIAPI.Capabilities.Chat.AvailableRoles.ASSISTANT
+  commentId: F:Promezio.OAIAPI.Capabilities.Chat.AvailableRoles.ASSISTANT
+  id: ASSISTANT
+  parent: Promezio.OAIAPI.Capabilities.Chat.AvailableRoles
+  langs:
+  - csharp
+  - vb
+  name: ASSISTANT
+  nameWithType: AvailableRoles.ASSISTANT
+  fullName: Promezio.OAIAPI.Capabilities.Chat.AvailableRoles.ASSISTANT
+  type: Field
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Chat/Role.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: ASSISTANT
+    path: OAIAPI/Capabilities/Chat/Role.cs
+    startLine: 10
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Chat
+  syntax:
+    content: ASSISTANT = 2
+    return:
+      type: Promezio.OAIAPI.Capabilities.Chat.AvailableRoles
+references:
+- uid: Promezio.OAIAPI.Capabilities.Chat
+  commentId: N:Promezio.OAIAPI.Capabilities.Chat
+  href: Promezio.html
+  name: Promezio.OAIAPI.Capabilities.Chat
+  nameWithType: Promezio.OAIAPI.Capabilities.Chat
+  fullName: Promezio.OAIAPI.Capabilities.Chat
+  spec.csharp:
+  - uid: Promezio
+    name: Promezio
+    href: Promezio.html
+  - name: .
+  - uid: Promezio.OAIAPI
+    name: OAIAPI
+    href: Promezio.OAIAPI.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities
+    name: Capabilities
+    href: Promezio.OAIAPI.Capabilities.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities.Chat
+    name: Chat
+    href: Promezio.OAIAPI.Capabilities.Chat.html
+  spec.vb:
+  - uid: Promezio
+    name: Promezio
+    href: Promezio.html
+  - name: .
+  - uid: Promezio.OAIAPI
+    name: OAIAPI
+    href: Promezio.OAIAPI.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities
+    name: Capabilities
+    href: Promezio.OAIAPI.Capabilities.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities.Chat
+    name: Chat
+    href: Promezio.OAIAPI.Capabilities.Chat.html
+- uid: Promezio.OAIAPI.Capabilities.Chat.AvailableRoles
+  commentId: T:Promezio.OAIAPI.Capabilities.Chat.AvailableRoles
+  parent: Promezio.OAIAPI.Capabilities.Chat
+  href: Promezio.OAIAPI.Capabilities.Chat.AvailableRoles.html
+  name: AvailableRoles
+  nameWithType: AvailableRoles
+  fullName: Promezio.OAIAPI.Capabilities.Chat.AvailableRoles

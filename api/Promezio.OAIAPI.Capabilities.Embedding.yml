@@ -4,7 +4,12 @@ items:
   commentId: N:Promezio.OAIAPI.Capabilities.Embedding
   id: Promezio.OAIAPI.Capabilities.Embedding
   children:
-  - Promezio.OAIAPI.Capabilities.Embedding.Embedding
+  - Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels
+  - Promezio.OAIAPI.Capabilities.Embedding.EmbeddingModel
+  - Promezio.OAIAPI.Capabilities.Embedding.EmbeddingObject
+  - Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse
+  - Promezio.OAIAPI.Capabilities.Embedding.Embeddings
+  - Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig
   langs:
   - csharp
   - vb
@@ -15,9 +20,81 @@ items:
   assemblies:
   - OAIAPI
 references:
-- uid: Promezio.OAIAPI.Capabilities.Embedding.Embedding
-  commentId: T:Promezio.OAIAPI.Capabilities.Embedding.Embedding
-  href: Promezio.OAIAPI.Capabilities.Embedding.Embedding.html
-  name: Embedding
-  nameWithType: Embedding
-  fullName: Promezio.OAIAPI.Capabilities.Embedding.Embedding
+- uid: Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels
+  commentId: T:Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels
+  parent: Promezio.OAIAPI.Capabilities.Embedding
+  href: Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels.html
+  name: AvailableEmbeddingsModels
+  nameWithType: AvailableEmbeddingsModels
+  fullName: Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels
+- uid: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingModel
+  commentId: T:Promezio.OAIAPI.Capabilities.Embedding.EmbeddingModel
+  parent: Promezio.OAIAPI.Capabilities.Embedding
+  href: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingModel.html
+  name: EmbeddingModel
+  nameWithType: EmbeddingModel
+  fullName: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingModel
+- uid: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingObject
+  commentId: T:Promezio.OAIAPI.Capabilities.Embedding.EmbeddingObject
+  href: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingObject.html
+  name: EmbeddingObject
+  nameWithType: EmbeddingObject
+  fullName: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingObject
+- uid: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse
+  commentId: T:Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse
+  href: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse.html
+  name: EmbeddingResponse
+  nameWithType: EmbeddingResponse
+  fullName: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse
+- uid: Promezio.OAIAPI.Capabilities.Embedding.Embeddings
+  commentId: T:Promezio.OAIAPI.Capabilities.Embedding.Embeddings
+  parent: Promezio.OAIAPI.Capabilities.Embedding
+  href: Promezio.OAIAPI.Capabilities.Embedding.Embeddings.html
+  name: Embeddings
+  nameWithType: Embeddings
+  fullName: Promezio.OAIAPI.Capabilities.Embedding.Embeddings
+- uid: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig
+  commentId: T:Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig
+  parent: Promezio.OAIAPI.Capabilities.Embedding
+  href: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig.html
+  name: EmbeddingsConfig
+  nameWithType: EmbeddingsConfig
+  fullName: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig
+- uid: Promezio.OAIAPI.Capabilities.Embedding
+  commentId: N:Promezio.OAIAPI.Capabilities.Embedding
+  href: Promezio.html
+  name: Promezio.OAIAPI.Capabilities.Embedding
+  nameWithType: Promezio.OAIAPI.Capabilities.Embedding
+  fullName: Promezio.OAIAPI.Capabilities.Embedding
+  spec.csharp:
+  - uid: Promezio
+    name: Promezio
+    href: Promezio.html
+  - name: .
+  - uid: Promezio.OAIAPI
+    name: OAIAPI
+    href: Promezio.OAIAPI.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities
+    name: Capabilities
+    href: Promezio.OAIAPI.Capabilities.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities.Embedding
+    name: Embedding
+    href: Promezio.OAIAPI.Capabilities.Embedding.html
+  spec.vb:
+  - uid: Promezio
+    name: Promezio
+    href: Promezio.html
+  - name: .
+  - uid: Promezio.OAIAPI
+    name: OAIAPI
+    href: Promezio.OAIAPI.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities
+    name: Capabilities
+    href: Promezio.OAIAPI.Capabilities.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities.Embedding
+    name: Embedding
+    href: Promezio.OAIAPI.Capabilities.Embedding.html

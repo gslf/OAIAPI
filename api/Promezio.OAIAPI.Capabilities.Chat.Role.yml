@@ -5,10 +5,8 @@ items:
   id: Role
   parent: Promezio.OAIAPI.Capabilities.Chat
   children:
-  - Promezio.OAIAPI.Capabilities.Chat.Role.ASSISTANT
-  - Promezio.OAIAPI.Capabilities.Chat.Role.IsValid(System.String)
-  - Promezio.OAIAPI.Capabilities.Chat.Role.SYSTEM
-  - Promezio.OAIAPI.Capabilities.Chat.Role.USER
+  - Promezio.OAIAPI.Capabilities.Chat.Role.#ctor(Promezio.OAIAPI.Capabilities.Chat.AvailableRoles)
+  - Promezio.OAIAPI.Capabilities.Chat.Role.ToString
   langs:
   - csharp
   - vb
@@ -23,11 +21,11 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: Role
     path: OAIAPI/Capabilities/Chat/Role.cs
-    startLine: 7
+    startLine: 16
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.Chat
-  summary: Represents the role of the author of a specific message.
+  summary: Represents the role associated with a message in the OpenAI chat API response.
   example: []
   syntax:
     content: public class Role
@@ -41,132 +39,76 @@ items:
   - System.Object.GetType
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
-  - System.Object.ToString
-- uid: Promezio.OAIAPI.Capabilities.Chat.Role.SYSTEM
-  commentId: P:Promezio.OAIAPI.Capabilities.Chat.Role.SYSTEM
-  id: SYSTEM
+- uid: Promezio.OAIAPI.Capabilities.Chat.Role.#ctor(Promezio.OAIAPI.Capabilities.Chat.AvailableRoles)
+  commentId: M:Promezio.OAIAPI.Capabilities.Chat.Role.#ctor(Promezio.OAIAPI.Capabilities.Chat.AvailableRoles)
+  id: '#ctor(Promezio.OAIAPI.Capabilities.Chat.AvailableRoles)'
   parent: Promezio.OAIAPI.Capabilities.Chat.Role
   langs:
   - csharp
   - vb
-  name: SYSTEM
-  nameWithType: Role.SYSTEM
-  fullName: Promezio.OAIAPI.Capabilities.Chat.Role.SYSTEM
-  type: Property
+  name: Role(AvailableRoles)
+  nameWithType: Role.Role(AvailableRoles)
+  fullName: Promezio.OAIAPI.Capabilities.Chat.Role.Role(Promezio.OAIAPI.Capabilities.Chat.AvailableRoles)
+  type: Constructor
   source:
     remote:
       path: OAIAPI/Capabilities/Chat/Role.cs
       branch: main
       repo: https://github.com/gslf/OAIAPI.git
-    id: SYSTEM
+    id: .ctor
     path: OAIAPI/Capabilities/Chat/Role.cs
-    startLine: 8
+    startLine: 27
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.Chat
+  summary: >-
+    Initializes a new instance of the Role class with the specified role.
+
+    Defaults to USER role.
+  example: []
   syntax:
-    content: public static string SYSTEM { get; }
-    parameters: []
-    return:
-      type: System.String
-    content.vb: Public Shared ReadOnly Property SYSTEM As String
-  overload: Promezio.OAIAPI.Capabilities.Chat.Role.SYSTEM*
-- uid: Promezio.OAIAPI.Capabilities.Chat.Role.USER
-  commentId: P:Promezio.OAIAPI.Capabilities.Chat.Role.USER
-  id: USER
+    content: public Role(AvailableRoles role = AvailableRoles.USER)
+    parameters:
+    - id: role
+      type: Promezio.OAIAPI.Capabilities.Chat.AvailableRoles
+      description: The role associated with the message.
+    content.vb: Public Sub New(role As AvailableRoles = AvailableRoles.USER)
+  overload: Promezio.OAIAPI.Capabilities.Chat.Role.#ctor*
+  nameWithType.vb: Role.New(AvailableRoles)
+  fullName.vb: Promezio.OAIAPI.Capabilities.Chat.Role.New(Promezio.OAIAPI.Capabilities.Chat.AvailableRoles)
+  name.vb: New(AvailableRoles)
+- uid: Promezio.OAIAPI.Capabilities.Chat.Role.ToString
+  commentId: M:Promezio.OAIAPI.Capabilities.Chat.Role.ToString
+  id: ToString
   parent: Promezio.OAIAPI.Capabilities.Chat.Role
   langs:
   - csharp
   - vb
-  name: USER
-  nameWithType: Role.USER
-  fullName: Promezio.OAIAPI.Capabilities.Chat.Role.USER
-  type: Property
-  source:
-    remote:
-      path: OAIAPI/Capabilities/Chat/Role.cs
-      branch: main
-      repo: https://github.com/gslf/OAIAPI.git
-    id: USER
-    path: OAIAPI/Capabilities/Chat/Role.cs
-    startLine: 9
-  assemblies:
-  - OAIAPI
-  namespace: Promezio.OAIAPI.Capabilities.Chat
-  syntax:
-    content: public static string USER { get; }
-    parameters: []
-    return:
-      type: System.String
-    content.vb: Public Shared ReadOnly Property USER As String
-  overload: Promezio.OAIAPI.Capabilities.Chat.Role.USER*
-- uid: Promezio.OAIAPI.Capabilities.Chat.Role.ASSISTANT
-  commentId: P:Promezio.OAIAPI.Capabilities.Chat.Role.ASSISTANT
-  id: ASSISTANT
-  parent: Promezio.OAIAPI.Capabilities.Chat.Role
-  langs:
-  - csharp
-  - vb
-  name: ASSISTANT
-  nameWithType: Role.ASSISTANT
-  fullName: Promezio.OAIAPI.Capabilities.Chat.Role.ASSISTANT
-  type: Property
-  source:
-    remote:
-      path: OAIAPI/Capabilities/Chat/Role.cs
-      branch: main
-      repo: https://github.com/gslf/OAIAPI.git
-    id: ASSISTANT
-    path: OAIAPI/Capabilities/Chat/Role.cs
-    startLine: 10
-  assemblies:
-  - OAIAPI
-  namespace: Promezio.OAIAPI.Capabilities.Chat
-  syntax:
-    content: public static string ASSISTANT { get; }
-    parameters: []
-    return:
-      type: System.String
-    content.vb: Public Shared ReadOnly Property ASSISTANT As String
-  overload: Promezio.OAIAPI.Capabilities.Chat.Role.ASSISTANT*
-- uid: Promezio.OAIAPI.Capabilities.Chat.Role.IsValid(System.String)
-  commentId: M:Promezio.OAIAPI.Capabilities.Chat.Role.IsValid(System.String)
-  id: IsValid(System.String)
-  parent: Promezio.OAIAPI.Capabilities.Chat.Role
-  langs:
-  - csharp
-  - vb
-  name: IsValid(string)
-  nameWithType: Role.IsValid(string)
-  fullName: Promezio.OAIAPI.Capabilities.Chat.Role.IsValid(string)
+  name: ToString()
+  nameWithType: Role.ToString()
+  fullName: Promezio.OAIAPI.Capabilities.Chat.Role.ToString()
   type: Method
   source:
     remote:
       path: OAIAPI/Capabilities/Chat/Role.cs
       branch: main
       repo: https://github.com/gslf/OAIAPI.git
-    id: IsValid
+    id: ToString
     path: OAIAPI/Capabilities/Chat/Role.cs
-    startLine: 17
+    startLine: 35
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.Chat
-  summary: Validates whether a given role name corresponds to any of the predefined role names in this class.
+  summary: Returns a string representation of the role.
   example: []
   syntax:
-    content: public static bool IsValid(string role)
-    parameters:
-    - id: role
-      type: System.String
-      description: The name of the role to validate.
+    content: public override string ToString()
     return:
-      type: System.Boolean
-      description: True if the role name exists in the predefined roles; otherwise, false.
-    content.vb: Public Shared Function IsValid(role As String) As Boolean
-  overload: Promezio.OAIAPI.Capabilities.Chat.Role.IsValid*
-  nameWithType.vb: Role.IsValid(String)
-  fullName.vb: Promezio.OAIAPI.Capabilities.Chat.Role.IsValid(String)
-  name.vb: IsValid(String)
+      type: System.String
+      description: A string indicating either "system", "user", or "assistant" based on the chosen role.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: Promezio.OAIAPI.Capabilities.Chat.Role.ToString*
 references:
 - uid: Promezio.OAIAPI.Capabilities.Chat
   commentId: N:Promezio.OAIAPI.Capabilities.Chat
@@ -412,6 +354,29 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Promezio.OAIAPI.Capabilities.Chat.Role.#ctor*
+  commentId: Overload:Promezio.OAIAPI.Capabilities.Chat.Role.#ctor
+  href: Promezio.OAIAPI.Capabilities.Chat.Role.html#Promezio_OAIAPI_Capabilities_Chat_Role__ctor_Promezio_OAIAPI_Capabilities_Chat_AvailableRoles_
+  name: Role
+  nameWithType: Role.Role
+  fullName: Promezio.OAIAPI.Capabilities.Chat.Role.Role
+  nameWithType.vb: Role.New
+  fullName.vb: Promezio.OAIAPI.Capabilities.Chat.Role.New
+  name.vb: New
+- uid: Promezio.OAIAPI.Capabilities.Chat.AvailableRoles
+  commentId: T:Promezio.OAIAPI.Capabilities.Chat.AvailableRoles
+  parent: Promezio.OAIAPI.Capabilities.Chat
+  href: Promezio.OAIAPI.Capabilities.Chat.AvailableRoles.html
+  name: AvailableRoles
+  nameWithType: AvailableRoles
+  fullName: Promezio.OAIAPI.Capabilities.Chat.AvailableRoles
 - uid: System.Object.ToString
   commentId: M:System.Object.ToString
   parent: System.Object
@@ -436,19 +401,12 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.object.tostring
   - name: (
   - name: )
-- uid: System
-  commentId: N:System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system
-  name: System
-  nameWithType: System
-  fullName: System
-- uid: Promezio.OAIAPI.Capabilities.Chat.Role.SYSTEM*
-  commentId: Overload:Promezio.OAIAPI.Capabilities.Chat.Role.SYSTEM
-  href: Promezio.OAIAPI.Capabilities.Chat.Role.html#Promezio_OAIAPI_Capabilities_Chat_Role_SYSTEM
-  name: SYSTEM
-  nameWithType: Role.SYSTEM
-  fullName: Promezio.OAIAPI.Capabilities.Chat.Role.SYSTEM
+- uid: Promezio.OAIAPI.Capabilities.Chat.Role.ToString*
+  commentId: Overload:Promezio.OAIAPI.Capabilities.Chat.Role.ToString
+  href: Promezio.OAIAPI.Capabilities.Chat.Role.html#Promezio_OAIAPI_Capabilities_Chat_Role_ToString
+  name: ToString
+  nameWithType: Role.ToString
+  fullName: Promezio.OAIAPI.Capabilities.Chat.Role.ToString
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -460,32 +418,3 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
-- uid: Promezio.OAIAPI.Capabilities.Chat.Role.USER*
-  commentId: Overload:Promezio.OAIAPI.Capabilities.Chat.Role.USER
-  href: Promezio.OAIAPI.Capabilities.Chat.Role.html#Promezio_OAIAPI_Capabilities_Chat_Role_USER
-  name: USER
-  nameWithType: Role.USER
-  fullName: Promezio.OAIAPI.Capabilities.Chat.Role.USER
-- uid: Promezio.OAIAPI.Capabilities.Chat.Role.ASSISTANT*
-  commentId: Overload:Promezio.OAIAPI.Capabilities.Chat.Role.ASSISTANT
-  href: Promezio.OAIAPI.Capabilities.Chat.Role.html#Promezio_OAIAPI_Capabilities_Chat_Role_ASSISTANT
-  name: ASSISTANT
-  nameWithType: Role.ASSISTANT
-  fullName: Promezio.OAIAPI.Capabilities.Chat.Role.ASSISTANT
-- uid: Promezio.OAIAPI.Capabilities.Chat.Role.IsValid*
-  commentId: Overload:Promezio.OAIAPI.Capabilities.Chat.Role.IsValid
-  href: Promezio.OAIAPI.Capabilities.Chat.Role.html#Promezio_OAIAPI_Capabilities_Chat_Role_IsValid_System_String_
-  name: IsValid
-  nameWithType: Role.IsValid
-  fullName: Promezio.OAIAPI.Capabilities.Chat.Role.IsValid
-- uid: System.Boolean
-  commentId: T:System.Boolean
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean

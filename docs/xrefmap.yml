@@ -62,6 +62,96 @@ references:
   commentId: N:Promezio.OAIAPI.Capabilities.Chat
   fullName: Promezio.OAIAPI.Capabilities.Chat
   nameWithType: Promezio.OAIAPI.Capabilities.Chat
+- uid: Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels
+  name: AvailableChatModels
+  href: api/Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels.html
+  commentId: T:Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels
+  fullName: Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels
+  nameWithType: AvailableChatModels
+- uid: Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels.GPT4
+  name: GPT4
+  href: api/Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels.html#Promezio_OAIAPI_Capabilities_Chat_AvailableChatModels_GPT4
+  commentId: F:Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels.GPT4
+  fullName: Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels.GPT4
+  nameWithType: AvailableChatModels.GPT4
+- uid: Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels.GPT4_32K
+  name: GPT4_32K
+  href: api/Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels.html#Promezio_OAIAPI_Capabilities_Chat_AvailableChatModels_GPT4_32K
+  commentId: F:Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels.GPT4_32K
+  fullName: Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels.GPT4_32K
+  nameWithType: AvailableChatModels.GPT4_32K
+- uid: Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels.GPT4_TURBO_0125
+  name: GPT4_TURBO_0125
+  href: api/Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels.html#Promezio_OAIAPI_Capabilities_Chat_AvailableChatModels_GPT4_TURBO_0125
+  commentId: F:Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels.GPT4_TURBO_0125
+  fullName: Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels.GPT4_TURBO_0125
+  nameWithType: AvailableChatModels.GPT4_TURBO_0125
+- uid: Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels.GPT4_VISION_PREVIEW
+  name: GPT4_VISION_PREVIEW
+  href: api/Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels.html#Promezio_OAIAPI_Capabilities_Chat_AvailableChatModels_GPT4_VISION_PREVIEW
+  commentId: F:Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels.GPT4_VISION_PREVIEW
+  fullName: Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels.GPT4_VISION_PREVIEW
+  nameWithType: AvailableChatModels.GPT4_VISION_PREVIEW
+- uid: Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels.GPT_3_5_TURBO
+  name: GPT_3_5_TURBO
+  href: api/Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels.html#Promezio_OAIAPI_Capabilities_Chat_AvailableChatModels_GPT_3_5_TURBO
+  commentId: F:Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels.GPT_3_5_TURBO
+  fullName: Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels.GPT_3_5_TURBO
+  nameWithType: AvailableChatModels.GPT_3_5_TURBO
+- uid: Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels.GPT_3_5_TURBO_0125
+  name: GPT_3_5_TURBO_0125
+  href: api/Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels.html#Promezio_OAIAPI_Capabilities_Chat_AvailableChatModels_GPT_3_5_TURBO_0125
+  commentId: F:Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels.GPT_3_5_TURBO_0125
+  fullName: Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels.GPT_3_5_TURBO_0125
+  nameWithType: AvailableChatModels.GPT_3_5_TURBO_0125
+- uid: Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels.GPT_3_5_TURBO_1106
+  name: GPT_3_5_TURBO_1106
+  href: api/Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels.html#Promezio_OAIAPI_Capabilities_Chat_AvailableChatModels_GPT_3_5_TURBO_1106
+  commentId: F:Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels.GPT_3_5_TURBO_1106
+  fullName: Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels.GPT_3_5_TURBO_1106
+  nameWithType: AvailableChatModels.GPT_3_5_TURBO_1106
+- uid: Promezio.OAIAPI.Capabilities.Chat.AvailableResponseFormat
+  name: AvailableResponseFormat
+  href: api/Promezio.OAIAPI.Capabilities.Chat.AvailableResponseFormat.html
+  commentId: T:Promezio.OAIAPI.Capabilities.Chat.AvailableResponseFormat
+  fullName: Promezio.OAIAPI.Capabilities.Chat.AvailableResponseFormat
+  nameWithType: AvailableResponseFormat
+- uid: Promezio.OAIAPI.Capabilities.Chat.AvailableResponseFormat.JSON
+  name: JSON
+  href: api/Promezio.OAIAPI.Capabilities.Chat.AvailableResponseFormat.html#Promezio_OAIAPI_Capabilities_Chat_AvailableResponseFormat_JSON
+  commentId: F:Promezio.OAIAPI.Capabilities.Chat.AvailableResponseFormat.JSON
+  fullName: Promezio.OAIAPI.Capabilities.Chat.AvailableResponseFormat.JSON
+  nameWithType: AvailableResponseFormat.JSON
+- uid: Promezio.OAIAPI.Capabilities.Chat.AvailableResponseFormat.TEXT
+  name: TEXT
+  href: api/Promezio.OAIAPI.Capabilities.Chat.AvailableResponseFormat.html#Promezio_OAIAPI_Capabilities_Chat_AvailableResponseFormat_TEXT
+  commentId: F:Promezio.OAIAPI.Capabilities.Chat.AvailableResponseFormat.TEXT
+  fullName: Promezio.OAIAPI.Capabilities.Chat.AvailableResponseFormat.TEXT
+  nameWithType: AvailableResponseFormat.TEXT
+- uid: Promezio.OAIAPI.Capabilities.Chat.AvailableRoles
+  name: AvailableRoles
+  href: api/Promezio.OAIAPI.Capabilities.Chat.AvailableRoles.html
+  commentId: T:Promezio.OAIAPI.Capabilities.Chat.AvailableRoles
+  fullName: Promezio.OAIAPI.Capabilities.Chat.AvailableRoles
+  nameWithType: AvailableRoles
+- uid: Promezio.OAIAPI.Capabilities.Chat.AvailableRoles.ASSISTANT
+  name: ASSISTANT
+  href: api/Promezio.OAIAPI.Capabilities.Chat.AvailableRoles.html#Promezio_OAIAPI_Capabilities_Chat_AvailableRoles_ASSISTANT
+  commentId: F:Promezio.OAIAPI.Capabilities.Chat.AvailableRoles.ASSISTANT
+  fullName: Promezio.OAIAPI.Capabilities.Chat.AvailableRoles.ASSISTANT
+  nameWithType: AvailableRoles.ASSISTANT
+- uid: Promezio.OAIAPI.Capabilities.Chat.AvailableRoles.SYSTEM
+  name: SYSTEM
+  href: api/Promezio.OAIAPI.Capabilities.Chat.AvailableRoles.html#Promezio_OAIAPI_Capabilities_Chat_AvailableRoles_SYSTEM
+  commentId: F:Promezio.OAIAPI.Capabilities.Chat.AvailableRoles.SYSTEM
+  fullName: Promezio.OAIAPI.Capabilities.Chat.AvailableRoles.SYSTEM
+  nameWithType: AvailableRoles.SYSTEM
+- uid: Promezio.OAIAPI.Capabilities.Chat.AvailableRoles.USER
+  name: USER
+  href: api/Promezio.OAIAPI.Capabilities.Chat.AvailableRoles.html#Promezio_OAIAPI_Capabilities_Chat_AvailableRoles_USER
+  commentId: F:Promezio.OAIAPI.Capabilities.Chat.AvailableRoles.USER
+  fullName: Promezio.OAIAPI.Capabilities.Chat.AvailableRoles.USER
+  nameWithType: AvailableRoles.USER
 - uid: Promezio.OAIAPI.Capabilities.Chat.Chat
   name: Chat
   href: api/Promezio.OAIAPI.Capabilities.Chat.Chat.html
@@ -87,15 +177,15 @@ references:
   fullName.vb: Promezio.OAIAPI.Capabilities.Chat.Chat.New
   nameWithType: Chat.Chat
   nameWithType.vb: Chat.New
-- uid: Promezio.OAIAPI.Capabilities.Chat.Chat.Dispatch(System.String)
-  name: Dispatch(string)
-  href: api/Promezio.OAIAPI.Capabilities.Chat.Chat.html#Promezio_OAIAPI_Capabilities_Chat_Chat_Dispatch_System_String_
-  commentId: M:Promezio.OAIAPI.Capabilities.Chat.Chat.Dispatch(System.String)
-  name.vb: Dispatch(String)
-  fullName: Promezio.OAIAPI.Capabilities.Chat.Chat.Dispatch(string)
-  fullName.vb: Promezio.OAIAPI.Capabilities.Chat.Chat.Dispatch(String)
-  nameWithType: Chat.Dispatch(string)
-  nameWithType.vb: Chat.Dispatch(String)
+- uid: Promezio.OAIAPI.Capabilities.Chat.Chat.Dispatch(System.String,Promezio.OAIAPI.Capabilities.Chat.Config)
+  name: Dispatch(string, Config)
+  href: api/Promezio.OAIAPI.Capabilities.Chat.Chat.html#Promezio_OAIAPI_Capabilities_Chat_Chat_Dispatch_System_String_Promezio_OAIAPI_Capabilities_Chat_Config_
+  commentId: M:Promezio.OAIAPI.Capabilities.Chat.Chat.Dispatch(System.String,Promezio.OAIAPI.Capabilities.Chat.Config)
+  name.vb: Dispatch(String, Config)
+  fullName: Promezio.OAIAPI.Capabilities.Chat.Chat.Dispatch(string, Promezio.OAIAPI.Capabilities.Chat.Config)
+  fullName.vb: Promezio.OAIAPI.Capabilities.Chat.Chat.Dispatch(String, Promezio.OAIAPI.Capabilities.Chat.Config)
+  nameWithType: Chat.Dispatch(string, Config)
+  nameWithType.vb: Chat.Dispatch(String, Config)
 - uid: Promezio.OAIAPI.Capabilities.Chat.Chat.Dispatch*
   name: Dispatch
   href: api/Promezio.OAIAPI.Capabilities.Chat.Chat.html#Promezio_OAIAPI_Capabilities_Chat_Chat_Dispatch_
@@ -103,15 +193,15 @@ references:
   isSpec: "True"
   fullName: Promezio.OAIAPI.Capabilities.Chat.Chat.Dispatch
   nameWithType: Chat.Dispatch
-- uid: Promezio.OAIAPI.Capabilities.Chat.Chat.DispatchStream(System.String)
-  name: DispatchStream(string)
-  href: api/Promezio.OAIAPI.Capabilities.Chat.Chat.html#Promezio_OAIAPI_Capabilities_Chat_Chat_DispatchStream_System_String_
-  commentId: M:Promezio.OAIAPI.Capabilities.Chat.Chat.DispatchStream(System.String)
-  name.vb: DispatchStream(String)
-  fullName: Promezio.OAIAPI.Capabilities.Chat.Chat.DispatchStream(string)
-  fullName.vb: Promezio.OAIAPI.Capabilities.Chat.Chat.DispatchStream(String)
-  nameWithType: Chat.DispatchStream(string)
-  nameWithType.vb: Chat.DispatchStream(String)
+- uid: Promezio.OAIAPI.Capabilities.Chat.Chat.DispatchStream(System.String,Promezio.OAIAPI.Capabilities.Chat.Config)
+  name: DispatchStream(string, Config)
+  href: api/Promezio.OAIAPI.Capabilities.Chat.Chat.html#Promezio_OAIAPI_Capabilities_Chat_Chat_DispatchStream_System_String_Promezio_OAIAPI_Capabilities_Chat_Config_
+  commentId: M:Promezio.OAIAPI.Capabilities.Chat.Chat.DispatchStream(System.String,Promezio.OAIAPI.Capabilities.Chat.Config)
+  name.vb: DispatchStream(String, Config)
+  fullName: Promezio.OAIAPI.Capabilities.Chat.Chat.DispatchStream(string, Promezio.OAIAPI.Capabilities.Chat.Config)
+  fullName.vb: Promezio.OAIAPI.Capabilities.Chat.Chat.DispatchStream(String, Promezio.OAIAPI.Capabilities.Chat.Config)
+  nameWithType: Chat.DispatchStream(string, Config)
+  nameWithType.vb: Chat.DispatchStream(String, Config)
 - uid: Promezio.OAIAPI.Capabilities.Chat.Chat.DispatchStream*
   name: DispatchStream
   href: api/Promezio.OAIAPI.Capabilities.Chat.Chat.html#Promezio_OAIAPI_Capabilities_Chat_Chat_DispatchStream_
@@ -119,19 +209,6 @@ references:
   isSpec: "True"
   fullName: Promezio.OAIAPI.Capabilities.Chat.Chat.DispatchStream
   nameWithType: Chat.DispatchStream
-- uid: Promezio.OAIAPI.Capabilities.Chat.Chat.Init(Promezio.OAIAPI.Capabilities.Chat.Config)
-  name: Init(Config)
-  href: api/Promezio.OAIAPI.Capabilities.Chat.Chat.html#Promezio_OAIAPI_Capabilities_Chat_Chat_Init_Promezio_OAIAPI_Capabilities_Chat_Config_
-  commentId: M:Promezio.OAIAPI.Capabilities.Chat.Chat.Init(Promezio.OAIAPI.Capabilities.Chat.Config)
-  fullName: Promezio.OAIAPI.Capabilities.Chat.Chat.Init(Promezio.OAIAPI.Capabilities.Chat.Config)
-  nameWithType: Chat.Init(Config)
-- uid: Promezio.OAIAPI.Capabilities.Chat.Chat.Init*
-  name: Init
-  href: api/Promezio.OAIAPI.Capabilities.Chat.Chat.html#Promezio_OAIAPI_Capabilities_Chat_Chat_Init_
-  commentId: Overload:Promezio.OAIAPI.Capabilities.Chat.Chat.Init
-  isSpec: "True"
-  fullName: Promezio.OAIAPI.Capabilities.Chat.Chat.Init
-  nameWithType: Chat.Init
 - uid: Promezio.OAIAPI.Capabilities.Chat.ChatMessage
   name: ChatMessage
   href: api/Promezio.OAIAPI.Capabilities.Chat.ChatMessage.html
@@ -164,6 +241,44 @@ references:
   isSpec: "True"
   fullName: Promezio.OAIAPI.Capabilities.Chat.ChatMessage.Role
   nameWithType: ChatMessage.Role
+- uid: Promezio.OAIAPI.Capabilities.Chat.ChatModel
+  name: ChatModel
+  href: api/Promezio.OAIAPI.Capabilities.Chat.ChatModel.html
+  commentId: T:Promezio.OAIAPI.Capabilities.Chat.ChatModel
+  fullName: Promezio.OAIAPI.Capabilities.Chat.ChatModel
+  nameWithType: ChatModel
+- uid: Promezio.OAIAPI.Capabilities.Chat.ChatModel.#ctor(Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels)
+  name: ChatModel(AvailableChatModels)
+  href: api/Promezio.OAIAPI.Capabilities.Chat.ChatModel.html#Promezio_OAIAPI_Capabilities_Chat_ChatModel__ctor_Promezio_OAIAPI_Capabilities_Chat_AvailableChatModels_
+  commentId: M:Promezio.OAIAPI.Capabilities.Chat.ChatModel.#ctor(Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels)
+  name.vb: New(AvailableChatModels)
+  fullName: Promezio.OAIAPI.Capabilities.Chat.ChatModel.ChatModel(Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels)
+  fullName.vb: Promezio.OAIAPI.Capabilities.Chat.ChatModel.New(Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels)
+  nameWithType: ChatModel.ChatModel(AvailableChatModels)
+  nameWithType.vb: ChatModel.New(AvailableChatModels)
+- uid: Promezio.OAIAPI.Capabilities.Chat.ChatModel.#ctor*
+  name: ChatModel
+  href: api/Promezio.OAIAPI.Capabilities.Chat.ChatModel.html#Promezio_OAIAPI_Capabilities_Chat_ChatModel__ctor_
+  commentId: Overload:Promezio.OAIAPI.Capabilities.Chat.ChatModel.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Promezio.OAIAPI.Capabilities.Chat.ChatModel.ChatModel
+  fullName.vb: Promezio.OAIAPI.Capabilities.Chat.ChatModel.New
+  nameWithType: ChatModel.ChatModel
+  nameWithType.vb: ChatModel.New
+- uid: Promezio.OAIAPI.Capabilities.Chat.ChatModel.ToString
+  name: ToString()
+  href: api/Promezio.OAIAPI.Capabilities.Chat.ChatModel.html#Promezio_OAIAPI_Capabilities_Chat_ChatModel_ToString
+  commentId: M:Promezio.OAIAPI.Capabilities.Chat.ChatModel.ToString
+  fullName: Promezio.OAIAPI.Capabilities.Chat.ChatModel.ToString()
+  nameWithType: ChatModel.ToString()
+- uid: Promezio.OAIAPI.Capabilities.Chat.ChatModel.ToString*
+  name: ToString
+  href: api/Promezio.OAIAPI.Capabilities.Chat.ChatModel.html#Promezio_OAIAPI_Capabilities_Chat_ChatModel_ToString_
+  commentId: Overload:Promezio.OAIAPI.Capabilities.Chat.ChatModel.ToString
+  isSpec: "True"
+  fullName: Promezio.OAIAPI.Capabilities.Chat.ChatModel.ToString
+  nameWithType: ChatModel.ToString
 - uid: Promezio.OAIAPI.Capabilities.Chat.ChatResponse
   name: ChatResponse
   href: api/Promezio.OAIAPI.Capabilities.Chat.ChatResponse.html
@@ -196,19 +311,6 @@ references:
   isSpec: "True"
   fullName: Promezio.OAIAPI.Capabilities.Chat.ChatResponse.Created
   nameWithType: ChatResponse.Created
-- uid: Promezio.OAIAPI.Capabilities.Chat.ChatResponse.Error
-  name: Error
-  href: api/Promezio.OAIAPI.Capabilities.Chat.ChatResponse.html#Promezio_OAIAPI_Capabilities_Chat_ChatResponse_Error
-  commentId: P:Promezio.OAIAPI.Capabilities.Chat.ChatResponse.Error
-  fullName: Promezio.OAIAPI.Capabilities.Chat.ChatResponse.Error
-  nameWithType: ChatResponse.Error
-- uid: Promezio.OAIAPI.Capabilities.Chat.ChatResponse.Error*
-  name: Error
-  href: api/Promezio.OAIAPI.Capabilities.Chat.ChatResponse.html#Promezio_OAIAPI_Capabilities_Chat_ChatResponse_Error_
-  commentId: Overload:Promezio.OAIAPI.Capabilities.Chat.ChatResponse.Error
-  isSpec: "True"
-  fullName: Promezio.OAIAPI.Capabilities.Chat.ChatResponse.Error
-  nameWithType: ChatResponse.Error
 - uid: Promezio.OAIAPI.Capabilities.Chat.ChatResponse.GetMessage
   name: GetMessage()
   href: api/Promezio.OAIAPI.Capabilities.Chat.ChatResponse.html#Promezio_OAIAPI_Capabilities_Chat_ChatResponse_GetMessage
@@ -248,19 +350,6 @@ references:
   isSpec: "True"
   fullName: Promezio.OAIAPI.Capabilities.Chat.ChatResponse.Model
   nameWithType: ChatResponse.Model
-- uid: Promezio.OAIAPI.Capabilities.Chat.ChatResponse.Status
-  name: Status
-  href: api/Promezio.OAIAPI.Capabilities.Chat.ChatResponse.html#Promezio_OAIAPI_Capabilities_Chat_ChatResponse_Status
-  commentId: P:Promezio.OAIAPI.Capabilities.Chat.ChatResponse.Status
-  fullName: Promezio.OAIAPI.Capabilities.Chat.ChatResponse.Status
-  nameWithType: ChatResponse.Status
-- uid: Promezio.OAIAPI.Capabilities.Chat.ChatResponse.Status*
-  name: Status
-  href: api/Promezio.OAIAPI.Capabilities.Chat.ChatResponse.html#Promezio_OAIAPI_Capabilities_Chat_ChatResponse_Status_
-  commentId: Overload:Promezio.OAIAPI.Capabilities.Chat.ChatResponse.Status
-  isSpec: "True"
-  fullName: Promezio.OAIAPI.Capabilities.Chat.ChatResponse.Status
-  nameWithType: ChatResponse.Status
 - uid: Promezio.OAIAPI.Capabilities.Chat.ChatResponse.System_fingerprint
   name: System_fingerprint
   href: api/Promezio.OAIAPI.Capabilities.Chat.ChatResponse.html#Promezio_OAIAPI_Capabilities_Chat_ChatResponse_System_fingerprint
@@ -422,15 +511,15 @@ references:
   commentId: T:Promezio.OAIAPI.Capabilities.Chat.Config
   fullName: Promezio.OAIAPI.Capabilities.Chat.Config
   nameWithType: Config
-- uid: Promezio.OAIAPI.Capabilities.Chat.Config.#ctor(System.String,System.Int32,System.Boolean,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Int32,System.Decimal,System.Nullable{Promezio.OAIAPI.Capabilities.Chat.ResponseFormat},System.Nullable{System.Int32},System.Decimal,System.Decimal,System.String)
-  name: Config(string, int, bool, int?, int?, int, decimal, ResponseFormat?, int?, decimal, decimal, string?)
-  href: api/Promezio.OAIAPI.Capabilities.Chat.Config.html#Promezio_OAIAPI_Capabilities_Chat_Config__ctor_System_String_System_Int32_System_Boolean_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Int32_System_Decimal_System_Nullable_Promezio_OAIAPI_Capabilities_Chat_ResponseFormat__System_Nullable_System_Int32__System_Decimal_System_Decimal_System_String_
-  commentId: M:Promezio.OAIAPI.Capabilities.Chat.Config.#ctor(System.String,System.Int32,System.Boolean,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Int32,System.Decimal,System.Nullable{Promezio.OAIAPI.Capabilities.Chat.ResponseFormat},System.Nullable{System.Int32},System.Decimal,System.Decimal,System.String)
-  name.vb: New(String, Integer, Boolean, Integer?, Integer?, Integer, Decimal, ResponseFormat?, Integer?, Decimal, Decimal, String)
-  fullName: Promezio.OAIAPI.Capabilities.Chat.Config.Config(string, int, bool, int?, int?, int, decimal, Promezio.OAIAPI.Capabilities.Chat.ResponseFormat?, int?, decimal, decimal, string?)
-  fullName.vb: Promezio.OAIAPI.Capabilities.Chat.Config.New(String, Integer, Boolean, Integer?, Integer?, Integer, Decimal, Promezio.OAIAPI.Capabilities.Chat.ResponseFormat?, Integer?, Decimal, Decimal, String)
-  nameWithType: Config.Config(string, int, bool, int?, int?, int, decimal, ResponseFormat?, int?, decimal, decimal, string?)
-  nameWithType.vb: Config.New(String, Integer, Boolean, Integer?, Integer?, Integer, Decimal, ResponseFormat?, Integer?, Decimal, Decimal, String)
+- uid: Promezio.OAIAPI.Capabilities.Chat.Config.#ctor(Promezio.OAIAPI.Capabilities.Chat.ChatModel,System.Int32,System.Boolean,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Int32,System.Decimal,Promezio.OAIAPI.Capabilities.Chat.ResponseFormat,System.Nullable{System.Int32},System.Decimal,System.Decimal,System.String)
+  name: Config(ChatModel, int, bool, int?, int?, int, decimal, ResponseFormat?, int?, decimal, decimal, string?)
+  href: api/Promezio.OAIAPI.Capabilities.Chat.Config.html#Promezio_OAIAPI_Capabilities_Chat_Config__ctor_Promezio_OAIAPI_Capabilities_Chat_ChatModel_System_Int32_System_Boolean_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Int32_System_Decimal_Promezio_OAIAPI_Capabilities_Chat_ResponseFormat_System_Nullable_System_Int32__System_Decimal_System_Decimal_System_String_
+  commentId: M:Promezio.OAIAPI.Capabilities.Chat.Config.#ctor(Promezio.OAIAPI.Capabilities.Chat.ChatModel,System.Int32,System.Boolean,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Int32,System.Decimal,Promezio.OAIAPI.Capabilities.Chat.ResponseFormat,System.Nullable{System.Int32},System.Decimal,System.Decimal,System.String)
+  name.vb: New(ChatModel, Integer, Boolean, Integer?, Integer?, Integer, Decimal, ResponseFormat, Integer?, Decimal, Decimal, String)
+  fullName: Promezio.OAIAPI.Capabilities.Chat.Config.Config(Promezio.OAIAPI.Capabilities.Chat.ChatModel, int, bool, int?, int?, int, decimal, Promezio.OAIAPI.Capabilities.Chat.ResponseFormat?, int?, decimal, decimal, string?)
+  fullName.vb: Promezio.OAIAPI.Capabilities.Chat.Config.New(Promezio.OAIAPI.Capabilities.Chat.ChatModel, Integer, Boolean, Integer?, Integer?, Integer, Decimal, Promezio.OAIAPI.Capabilities.Chat.ResponseFormat, Integer?, Decimal, Decimal, String)
+  nameWithType: Config.Config(ChatModel, int, bool, int?, int?, int, decimal, ResponseFormat?, int?, decimal, decimal, string?)
+  nameWithType.vb: Config.New(ChatModel, Integer, Boolean, Integer?, Integer?, Integer, Decimal, ResponseFormat, Integer?, Decimal, Decimal, String)
 - uid: Promezio.OAIAPI.Capabilities.Chat.Config.#ctor*
   name: Config
   href: api/Promezio.OAIAPI.Capabilities.Chat.Config.html#Promezio_OAIAPI_Capabilities_Chat_Config__ctor_
@@ -629,32 +718,38 @@ references:
   commentId: T:Promezio.OAIAPI.Capabilities.Chat.ResponseFormat
   fullName: Promezio.OAIAPI.Capabilities.Chat.ResponseFormat
   nameWithType: ResponseFormat
-- uid: Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.ToAnonymousType
-  name: ToAnonymousType()
-  href: api/Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.html#Promezio_OAIAPI_Capabilities_Chat_ResponseFormat_ToAnonymousType
-  commentId: M:Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.ToAnonymousType
-  fullName: Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.ToAnonymousType()
-  nameWithType: ResponseFormat.ToAnonymousType()
-- uid: Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.ToAnonymousType*
-  name: ToAnonymousType
-  href: api/Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.html#Promezio_OAIAPI_Capabilities_Chat_ResponseFormat_ToAnonymousType_
-  commentId: Overload:Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.ToAnonymousType
+- uid: Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.#ctor(Promezio.OAIAPI.Capabilities.Chat.AvailableResponseFormat)
+  name: ResponseFormat(AvailableResponseFormat)
+  href: api/Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.html#Promezio_OAIAPI_Capabilities_Chat_ResponseFormat__ctor_Promezio_OAIAPI_Capabilities_Chat_AvailableResponseFormat_
+  commentId: M:Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.#ctor(Promezio.OAIAPI.Capabilities.Chat.AvailableResponseFormat)
+  name.vb: New(AvailableResponseFormat)
+  fullName: Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.ResponseFormat(Promezio.OAIAPI.Capabilities.Chat.AvailableResponseFormat)
+  fullName.vb: Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.New(Promezio.OAIAPI.Capabilities.Chat.AvailableResponseFormat)
+  nameWithType: ResponseFormat.ResponseFormat(AvailableResponseFormat)
+  nameWithType.vb: ResponseFormat.New(AvailableResponseFormat)
+- uid: Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.#ctor*
+  name: ResponseFormat
+  href: api/Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.html#Promezio_OAIAPI_Capabilities_Chat_ResponseFormat__ctor_
+  commentId: Overload:Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.#ctor
   isSpec: "True"
-  fullName: Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.ToAnonymousType
-  nameWithType: ResponseFormat.ToAnonymousType
-- uid: Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.Type
-  name: Type
-  href: api/Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.html#Promezio_OAIAPI_Capabilities_Chat_ResponseFormat_Type
-  commentId: P:Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.Type
-  fullName: Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.Type
-  nameWithType: ResponseFormat.Type
-- uid: Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.Type*
-  name: Type
-  href: api/Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.html#Promezio_OAIAPI_Capabilities_Chat_ResponseFormat_Type_
-  commentId: Overload:Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.Type
+  name.vb: New
+  fullName: Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.ResponseFormat
+  fullName.vb: Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.New
+  nameWithType: ResponseFormat.ResponseFormat
+  nameWithType.vb: ResponseFormat.New
+- uid: Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.ToString
+  name: ToString()
+  href: api/Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.html#Promezio_OAIAPI_Capabilities_Chat_ResponseFormat_ToString
+  commentId: M:Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.ToString
+  fullName: Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.ToString()
+  nameWithType: ResponseFormat.ToString()
+- uid: Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.ToString*
+  name: ToString
+  href: api/Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.html#Promezio_OAIAPI_Capabilities_Chat_ResponseFormat_ToString_
+  commentId: Overload:Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.ToString
   isSpec: "True"
-  fullName: Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.Type
-  nameWithType: ResponseFormat.Type
+  fullName: Promezio.OAIAPI.Capabilities.Chat.ResponseFormat.ToString
+  nameWithType: ResponseFormat.ToString
 - uid: Promezio.OAIAPI.Capabilities.Chat.ResponseFormatTypes
   name: ResponseFormatTypes
   href: api/Promezio.OAIAPI.Capabilities.Chat.ResponseFormatTypes.html
@@ -709,61 +804,38 @@ references:
   commentId: T:Promezio.OAIAPI.Capabilities.Chat.Role
   fullName: Promezio.OAIAPI.Capabilities.Chat.Role
   nameWithType: Role
-- uid: Promezio.OAIAPI.Capabilities.Chat.Role.ASSISTANT
-  name: ASSISTANT
-  href: api/Promezio.OAIAPI.Capabilities.Chat.Role.html#Promezio_OAIAPI_Capabilities_Chat_Role_ASSISTANT
-  commentId: P:Promezio.OAIAPI.Capabilities.Chat.Role.ASSISTANT
-  fullName: Promezio.OAIAPI.Capabilities.Chat.Role.ASSISTANT
-  nameWithType: Role.ASSISTANT
-- uid: Promezio.OAIAPI.Capabilities.Chat.Role.ASSISTANT*
-  name: ASSISTANT
-  href: api/Promezio.OAIAPI.Capabilities.Chat.Role.html#Promezio_OAIAPI_Capabilities_Chat_Role_ASSISTANT_
-  commentId: Overload:Promezio.OAIAPI.Capabilities.Chat.Role.ASSISTANT
+- uid: Promezio.OAIAPI.Capabilities.Chat.Role.#ctor(Promezio.OAIAPI.Capabilities.Chat.AvailableRoles)
+  name: Role(AvailableRoles)
+  href: api/Promezio.OAIAPI.Capabilities.Chat.Role.html#Promezio_OAIAPI_Capabilities_Chat_Role__ctor_Promezio_OAIAPI_Capabilities_Chat_AvailableRoles_
+  commentId: M:Promezio.OAIAPI.Capabilities.Chat.Role.#ctor(Promezio.OAIAPI.Capabilities.Chat.AvailableRoles)
+  name.vb: New(AvailableRoles)
+  fullName: Promezio.OAIAPI.Capabilities.Chat.Role.Role(Promezio.OAIAPI.Capabilities.Chat.AvailableRoles)
+  fullName.vb: Promezio.OAIAPI.Capabilities.Chat.Role.New(Promezio.OAIAPI.Capabilities.Chat.AvailableRoles)
+  nameWithType: Role.Role(AvailableRoles)
+  nameWithType.vb: Role.New(AvailableRoles)
+- uid: Promezio.OAIAPI.Capabilities.Chat.Role.#ctor*
+  name: Role
+  href: api/Promezio.OAIAPI.Capabilities.Chat.Role.html#Promezio_OAIAPI_Capabilities_Chat_Role__ctor_
+  commentId: Overload:Promezio.OAIAPI.Capabilities.Chat.Role.#ctor
   isSpec: "True"
-  fullName: Promezio.OAIAPI.Capabilities.Chat.Role.ASSISTANT
-  nameWithType: Role.ASSISTANT
-- uid: Promezio.OAIAPI.Capabilities.Chat.Role.IsValid(System.String)
-  name: IsValid(string)
-  href: api/Promezio.OAIAPI.Capabilities.Chat.Role.html#Promezio_OAIAPI_Capabilities_Chat_Role_IsValid_System_String_
-  commentId: M:Promezio.OAIAPI.Capabilities.Chat.Role.IsValid(System.String)
-  name.vb: IsValid(String)
-  fullName: Promezio.OAIAPI.Capabilities.Chat.Role.IsValid(string)
-  fullName.vb: Promezio.OAIAPI.Capabilities.Chat.Role.IsValid(String)
-  nameWithType: Role.IsValid(string)
-  nameWithType.vb: Role.IsValid(String)
-- uid: Promezio.OAIAPI.Capabilities.Chat.Role.IsValid*
-  name: IsValid
-  href: api/Promezio.OAIAPI.Capabilities.Chat.Role.html#Promezio_OAIAPI_Capabilities_Chat_Role_IsValid_
-  commentId: Overload:Promezio.OAIAPI.Capabilities.Chat.Role.IsValid
+  name.vb: New
+  fullName: Promezio.OAIAPI.Capabilities.Chat.Role.Role
+  fullName.vb: Promezio.OAIAPI.Capabilities.Chat.Role.New
+  nameWithType: Role.Role
+  nameWithType.vb: Role.New
+- uid: Promezio.OAIAPI.Capabilities.Chat.Role.ToString
+  name: ToString()
+  href: api/Promezio.OAIAPI.Capabilities.Chat.Role.html#Promezio_OAIAPI_Capabilities_Chat_Role_ToString
+  commentId: M:Promezio.OAIAPI.Capabilities.Chat.Role.ToString
+  fullName: Promezio.OAIAPI.Capabilities.Chat.Role.ToString()
+  nameWithType: Role.ToString()
+- uid: Promezio.OAIAPI.Capabilities.Chat.Role.ToString*
+  name: ToString
+  href: api/Promezio.OAIAPI.Capabilities.Chat.Role.html#Promezio_OAIAPI_Capabilities_Chat_Role_ToString_
+  commentId: Overload:Promezio.OAIAPI.Capabilities.Chat.Role.ToString
   isSpec: "True"
-  fullName: Promezio.OAIAPI.Capabilities.Chat.Role.IsValid
-  nameWithType: Role.IsValid
-- uid: Promezio.OAIAPI.Capabilities.Chat.Role.SYSTEM
-  name: SYSTEM
-  href: api/Promezio.OAIAPI.Capabilities.Chat.Role.html#Promezio_OAIAPI_Capabilities_Chat_Role_SYSTEM
-  commentId: P:Promezio.OAIAPI.Capabilities.Chat.Role.SYSTEM
-  fullName: Promezio.OAIAPI.Capabilities.Chat.Role.SYSTEM
-  nameWithType: Role.SYSTEM
-- uid: Promezio.OAIAPI.Capabilities.Chat.Role.SYSTEM*
-  name: SYSTEM
-  href: api/Promezio.OAIAPI.Capabilities.Chat.Role.html#Promezio_OAIAPI_Capabilities_Chat_Role_SYSTEM_
-  commentId: Overload:Promezio.OAIAPI.Capabilities.Chat.Role.SYSTEM
-  isSpec: "True"
-  fullName: Promezio.OAIAPI.Capabilities.Chat.Role.SYSTEM
-  nameWithType: Role.SYSTEM
-- uid: Promezio.OAIAPI.Capabilities.Chat.Role.USER
-  name: USER
-  href: api/Promezio.OAIAPI.Capabilities.Chat.Role.html#Promezio_OAIAPI_Capabilities_Chat_Role_USER
-  commentId: P:Promezio.OAIAPI.Capabilities.Chat.Role.USER
-  fullName: Promezio.OAIAPI.Capabilities.Chat.Role.USER
-  nameWithType: Role.USER
-- uid: Promezio.OAIAPI.Capabilities.Chat.Role.USER*
-  name: USER
-  href: api/Promezio.OAIAPI.Capabilities.Chat.Role.html#Promezio_OAIAPI_Capabilities_Chat_Role_USER_
-  commentId: Overload:Promezio.OAIAPI.Capabilities.Chat.Role.USER
-  isSpec: "True"
-  fullName: Promezio.OAIAPI.Capabilities.Chat.Role.USER
-  nameWithType: Role.USER
+  fullName: Promezio.OAIAPI.Capabilities.Chat.Role.ToString
+  nameWithType: Role.ToString
 - uid: Promezio.OAIAPI.Capabilities.Chat.StreamChoice
   name: StreamChoice
   href: api/Promezio.OAIAPI.Capabilities.Chat.StreamChoice.html
@@ -854,12 +926,87 @@ references:
   isSpec: "True"
   fullName: Promezio.OAIAPI.Capabilities.Chat.Usage.Total_tokens
   nameWithType: Usage.Total_tokens
+- uid: Promezio.OAIAPI.Capabilities.CommonModels
+  name: Promezio.OAIAPI.Capabilities.CommonModels
+  href: api/Promezio.OAIAPI.Capabilities.CommonModels.html
+  commentId: N:Promezio.OAIAPI.Capabilities.CommonModels
+  fullName: Promezio.OAIAPI.Capabilities.CommonModels
+  nameWithType: Promezio.OAIAPI.Capabilities.CommonModels
+- uid: Promezio.OAIAPI.Capabilities.CommonModels.Usage
+  name: Usage
+  href: api/Promezio.OAIAPI.Capabilities.CommonModels.Usage.html
+  commentId: T:Promezio.OAIAPI.Capabilities.CommonModels.Usage
+  fullName: Promezio.OAIAPI.Capabilities.CommonModels.Usage
+  nameWithType: Usage
+- uid: Promezio.OAIAPI.Capabilities.CommonModels.Usage.Completition_tokens
+  name: Completition_tokens
+  href: api/Promezio.OAIAPI.Capabilities.CommonModels.Usage.html#Promezio_OAIAPI_Capabilities_CommonModels_Usage_Completition_tokens
+  commentId: P:Promezio.OAIAPI.Capabilities.CommonModels.Usage.Completition_tokens
+  fullName: Promezio.OAIAPI.Capabilities.CommonModels.Usage.Completition_tokens
+  nameWithType: Usage.Completition_tokens
+- uid: Promezio.OAIAPI.Capabilities.CommonModels.Usage.Completition_tokens*
+  name: Completition_tokens
+  href: api/Promezio.OAIAPI.Capabilities.CommonModels.Usage.html#Promezio_OAIAPI_Capabilities_CommonModels_Usage_Completition_tokens_
+  commentId: Overload:Promezio.OAIAPI.Capabilities.CommonModels.Usage.Completition_tokens
+  isSpec: "True"
+  fullName: Promezio.OAIAPI.Capabilities.CommonModels.Usage.Completition_tokens
+  nameWithType: Usage.Completition_tokens
+- uid: Promezio.OAIAPI.Capabilities.CommonModels.Usage.Prompt_tokens
+  name: Prompt_tokens
+  href: api/Promezio.OAIAPI.Capabilities.CommonModels.Usage.html#Promezio_OAIAPI_Capabilities_CommonModels_Usage_Prompt_tokens
+  commentId: P:Promezio.OAIAPI.Capabilities.CommonModels.Usage.Prompt_tokens
+  fullName: Promezio.OAIAPI.Capabilities.CommonModels.Usage.Prompt_tokens
+  nameWithType: Usage.Prompt_tokens
+- uid: Promezio.OAIAPI.Capabilities.CommonModels.Usage.Prompt_tokens*
+  name: Prompt_tokens
+  href: api/Promezio.OAIAPI.Capabilities.CommonModels.Usage.html#Promezio_OAIAPI_Capabilities_CommonModels_Usage_Prompt_tokens_
+  commentId: Overload:Promezio.OAIAPI.Capabilities.CommonModels.Usage.Prompt_tokens
+  isSpec: "True"
+  fullName: Promezio.OAIAPI.Capabilities.CommonModels.Usage.Prompt_tokens
+  nameWithType: Usage.Prompt_tokens
+- uid: Promezio.OAIAPI.Capabilities.CommonModels.Usage.Total_tokens
+  name: Total_tokens
+  href: api/Promezio.OAIAPI.Capabilities.CommonModels.Usage.html#Promezio_OAIAPI_Capabilities_CommonModels_Usage_Total_tokens
+  commentId: P:Promezio.OAIAPI.Capabilities.CommonModels.Usage.Total_tokens
+  fullName: Promezio.OAIAPI.Capabilities.CommonModels.Usage.Total_tokens
+  nameWithType: Usage.Total_tokens
+- uid: Promezio.OAIAPI.Capabilities.CommonModels.Usage.Total_tokens*
+  name: Total_tokens
+  href: api/Promezio.OAIAPI.Capabilities.CommonModels.Usage.html#Promezio_OAIAPI_Capabilities_CommonModels_Usage_Total_tokens_
+  commentId: Overload:Promezio.OAIAPI.Capabilities.CommonModels.Usage.Total_tokens
+  isSpec: "True"
+  fullName: Promezio.OAIAPI.Capabilities.CommonModels.Usage.Total_tokens
+  nameWithType: Usage.Total_tokens
 - uid: Promezio.OAIAPI.Capabilities.Embedding
   name: Promezio.OAIAPI.Capabilities.Embedding
   href: api/Promezio.OAIAPI.Capabilities.Embedding.html
   commentId: N:Promezio.OAIAPI.Capabilities.Embedding
   fullName: Promezio.OAIAPI.Capabilities.Embedding
   nameWithType: Promezio.OAIAPI.Capabilities.Embedding
+- uid: Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels
+  name: AvailableEmbeddingsModels
+  href: api/Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels.html
+  commentId: T:Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels
+  fullName: Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels
+  nameWithType: AvailableEmbeddingsModels
+- uid: Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels.EMBEDDING_ADA
+  name: EMBEDDING_ADA
+  href: api/Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels.html#Promezio_OAIAPI_Capabilities_Embedding_AvailableEmbeddingsModels_EMBEDDING_ADA
+  commentId: F:Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels.EMBEDDING_ADA
+  fullName: Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels.EMBEDDING_ADA
+  nameWithType: AvailableEmbeddingsModels.EMBEDDING_ADA
+- uid: Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels.EMBEDDING_V3_LARGE
+  name: EMBEDDING_V3_LARGE
+  href: api/Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels.html#Promezio_OAIAPI_Capabilities_Embedding_AvailableEmbeddingsModels_EMBEDDING_V3_LARGE
+  commentId: F:Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels.EMBEDDING_V3_LARGE
+  fullName: Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels.EMBEDDING_V3_LARGE
+  nameWithType: AvailableEmbeddingsModels.EMBEDDING_V3_LARGE
+- uid: Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels.EMBEDDING_V3_SMALL
+  name: EMBEDDING_V3_SMALL
+  href: api/Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels.html#Promezio_OAIAPI_Capabilities_Embedding_AvailableEmbeddingsModels_EMBEDDING_V3_SMALL
+  commentId: F:Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels.EMBEDDING_V3_SMALL
+  fullName: Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels.EMBEDDING_V3_SMALL
+  nameWithType: AvailableEmbeddingsModels.EMBEDDING_V3_SMALL
 - uid: Promezio.OAIAPI.Capabilities.Embedding.Embedding
   name: Embedding
   href: api/Promezio.OAIAPI.Capabilities.Embedding.Embedding.html
@@ -924,6 +1071,252 @@ references:
   isSpec: "True"
   fullName: Promezio.OAIAPI.Capabilities.Embedding.Embedding.CreateFromJSON
   nameWithType: Embedding.CreateFromJSON
+- uid: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingModel
+  name: EmbeddingModel
+  href: api/Promezio.OAIAPI.Capabilities.Embedding.EmbeddingModel.html
+  commentId: T:Promezio.OAIAPI.Capabilities.Embedding.EmbeddingModel
+  fullName: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingModel
+  nameWithType: EmbeddingModel
+- uid: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingModel.#ctor(Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels)
+  name: EmbeddingModel(AvailableEmbeddingsModels)
+  href: api/Promezio.OAIAPI.Capabilities.Embedding.EmbeddingModel.html#Promezio_OAIAPI_Capabilities_Embedding_EmbeddingModel__ctor_Promezio_OAIAPI_Capabilities_Embedding_AvailableEmbeddingsModels_
+  commentId: M:Promezio.OAIAPI.Capabilities.Embedding.EmbeddingModel.#ctor(Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels)
+  name.vb: New(AvailableEmbeddingsModels)
+  fullName: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingModel.EmbeddingModel(Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels)
+  fullName.vb: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingModel.New(Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels)
+  nameWithType: EmbeddingModel.EmbeddingModel(AvailableEmbeddingsModels)
+  nameWithType.vb: EmbeddingModel.New(AvailableEmbeddingsModels)
+- uid: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingModel.#ctor*
+  name: EmbeddingModel
+  href: api/Promezio.OAIAPI.Capabilities.Embedding.EmbeddingModel.html#Promezio_OAIAPI_Capabilities_Embedding_EmbeddingModel__ctor_
+  commentId: Overload:Promezio.OAIAPI.Capabilities.Embedding.EmbeddingModel.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingModel.EmbeddingModel
+  fullName.vb: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingModel.New
+  nameWithType: EmbeddingModel.EmbeddingModel
+  nameWithType.vb: EmbeddingModel.New
+- uid: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingModel.ToString
+  name: ToString()
+  href: api/Promezio.OAIAPI.Capabilities.Embedding.EmbeddingModel.html#Promezio_OAIAPI_Capabilities_Embedding_EmbeddingModel_ToString
+  commentId: M:Promezio.OAIAPI.Capabilities.Embedding.EmbeddingModel.ToString
+  fullName: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingModel.ToString()
+  nameWithType: EmbeddingModel.ToString()
+- uid: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingModel.ToString*
+  name: ToString
+  href: api/Promezio.OAIAPI.Capabilities.Embedding.EmbeddingModel.html#Promezio_OAIAPI_Capabilities_Embedding_EmbeddingModel_ToString_
+  commentId: Overload:Promezio.OAIAPI.Capabilities.Embedding.EmbeddingModel.ToString
+  isSpec: "True"
+  fullName: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingModel.ToString
+  nameWithType: EmbeddingModel.ToString
+- uid: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingObject
+  name: EmbeddingObject
+  href: api/Promezio.OAIAPI.Capabilities.Embedding.EmbeddingObject.html
+  commentId: T:Promezio.OAIAPI.Capabilities.Embedding.EmbeddingObject
+  fullName: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingObject
+  nameWithType: EmbeddingObject
+- uid: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingObject.Embedding
+  name: Embedding
+  href: api/Promezio.OAIAPI.Capabilities.Embedding.EmbeddingObject.html#Promezio_OAIAPI_Capabilities_Embedding_EmbeddingObject_Embedding
+  commentId: P:Promezio.OAIAPI.Capabilities.Embedding.EmbeddingObject.Embedding
+  fullName: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingObject.Embedding
+  nameWithType: EmbeddingObject.Embedding
+- uid: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingObject.Embedding*
+  name: Embedding
+  href: api/Promezio.OAIAPI.Capabilities.Embedding.EmbeddingObject.html#Promezio_OAIAPI_Capabilities_Embedding_EmbeddingObject_Embedding_
+  commentId: Overload:Promezio.OAIAPI.Capabilities.Embedding.EmbeddingObject.Embedding
+  isSpec: "True"
+  fullName: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingObject.Embedding
+  nameWithType: EmbeddingObject.Embedding
+- uid: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingObject.Index
+  name: Index
+  href: api/Promezio.OAIAPI.Capabilities.Embedding.EmbeddingObject.html#Promezio_OAIAPI_Capabilities_Embedding_EmbeddingObject_Index
+  commentId: P:Promezio.OAIAPI.Capabilities.Embedding.EmbeddingObject.Index
+  fullName: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingObject.Index
+  nameWithType: EmbeddingObject.Index
+- uid: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingObject.Index*
+  name: Index
+  href: api/Promezio.OAIAPI.Capabilities.Embedding.EmbeddingObject.html#Promezio_OAIAPI_Capabilities_Embedding_EmbeddingObject_Index_
+  commentId: Overload:Promezio.OAIAPI.Capabilities.Embedding.EmbeddingObject.Index
+  isSpec: "True"
+  fullName: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingObject.Index
+  nameWithType: EmbeddingObject.Index
+- uid: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingObject.Object
+  name: Object
+  href: api/Promezio.OAIAPI.Capabilities.Embedding.EmbeddingObject.html#Promezio_OAIAPI_Capabilities_Embedding_EmbeddingObject_Object
+  commentId: P:Promezio.OAIAPI.Capabilities.Embedding.EmbeddingObject.Object
+  fullName: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingObject.Object
+  nameWithType: EmbeddingObject.Object
+- uid: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingObject.Object*
+  name: Object
+  href: api/Promezio.OAIAPI.Capabilities.Embedding.EmbeddingObject.html#Promezio_OAIAPI_Capabilities_Embedding_EmbeddingObject_Object_
+  commentId: Overload:Promezio.OAIAPI.Capabilities.Embedding.EmbeddingObject.Object
+  isSpec: "True"
+  fullName: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingObject.Object
+  nameWithType: EmbeddingObject.Object
+- uid: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse
+  name: EmbeddingResponse
+  href: api/Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse.html
+  commentId: T:Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse
+  fullName: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse
+  nameWithType: EmbeddingResponse
+- uid: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse.Data
+  name: Data
+  href: api/Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse.html#Promezio_OAIAPI_Capabilities_Embedding_EmbeddingResponse_Data
+  commentId: P:Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse.Data
+  fullName: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse.Data
+  nameWithType: EmbeddingResponse.Data
+- uid: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse.Data*
+  name: Data
+  href: api/Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse.html#Promezio_OAIAPI_Capabilities_Embedding_EmbeddingResponse_Data_
+  commentId: Overload:Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse.Data
+  isSpec: "True"
+  fullName: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse.Data
+  nameWithType: EmbeddingResponse.Data
+- uid: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse.Model
+  name: Model
+  href: api/Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse.html#Promezio_OAIAPI_Capabilities_Embedding_EmbeddingResponse_Model
+  commentId: P:Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse.Model
+  fullName: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse.Model
+  nameWithType: EmbeddingResponse.Model
+- uid: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse.Model*
+  name: Model
+  href: api/Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse.html#Promezio_OAIAPI_Capabilities_Embedding_EmbeddingResponse_Model_
+  commentId: Overload:Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse.Model
+  isSpec: "True"
+  fullName: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse.Model
+  nameWithType: EmbeddingResponse.Model
+- uid: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse.Usage
+  name: Usage
+  href: api/Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse.html#Promezio_OAIAPI_Capabilities_Embedding_EmbeddingResponse_Usage
+  commentId: P:Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse.Usage
+  fullName: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse.Usage
+  nameWithType: EmbeddingResponse.Usage
+- uid: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse.Usage*
+  name: Usage
+  href: api/Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse.html#Promezio_OAIAPI_Capabilities_Embedding_EmbeddingResponse_Usage_
+  commentId: Overload:Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse.Usage
+  isSpec: "True"
+  fullName: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse.Usage
+  nameWithType: EmbeddingResponse.Usage
+- uid: Promezio.OAIAPI.Capabilities.Embedding.Embeddings
+  name: Embeddings
+  href: api/Promezio.OAIAPI.Capabilities.Embedding.Embeddings.html
+  commentId: T:Promezio.OAIAPI.Capabilities.Embedding.Embeddings
+  fullName: Promezio.OAIAPI.Capabilities.Embedding.Embeddings
+  nameWithType: Embeddings
+- uid: Promezio.OAIAPI.Capabilities.Embedding.Embeddings.#ctor(System.String,Promezio.OAIAPI.Utils.Logger)
+  name: Embeddings(string, Logger)
+  href: api/Promezio.OAIAPI.Capabilities.Embedding.Embeddings.html#Promezio_OAIAPI_Capabilities_Embedding_Embeddings__ctor_System_String_Promezio_OAIAPI_Utils_Logger_
+  commentId: M:Promezio.OAIAPI.Capabilities.Embedding.Embeddings.#ctor(System.String,Promezio.OAIAPI.Utils.Logger)
+  name.vb: New(String, Logger)
+  fullName: Promezio.OAIAPI.Capabilities.Embedding.Embeddings.Embeddings(string, Promezio.OAIAPI.Utils.Logger)
+  fullName.vb: Promezio.OAIAPI.Capabilities.Embedding.Embeddings.New(String, Promezio.OAIAPI.Utils.Logger)
+  nameWithType: Embeddings.Embeddings(string, Logger)
+  nameWithType.vb: Embeddings.New(String, Logger)
+- uid: Promezio.OAIAPI.Capabilities.Embedding.Embeddings.#ctor*
+  name: Embeddings
+  href: api/Promezio.OAIAPI.Capabilities.Embedding.Embeddings.html#Promezio_OAIAPI_Capabilities_Embedding_Embeddings__ctor_
+  commentId: Overload:Promezio.OAIAPI.Capabilities.Embedding.Embeddings.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Promezio.OAIAPI.Capabilities.Embedding.Embeddings.Embeddings
+  fullName.vb: Promezio.OAIAPI.Capabilities.Embedding.Embeddings.New
+  nameWithType: Embeddings.Embeddings
+  nameWithType.vb: Embeddings.New
+- uid: Promezio.OAIAPI.Capabilities.Embedding.Embeddings.Create(System.String[],Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig)
+  name: Create(string[], EmbeddingsConfig)
+  href: api/Promezio.OAIAPI.Capabilities.Embedding.Embeddings.html#Promezio_OAIAPI_Capabilities_Embedding_Embeddings_Create_System_String___Promezio_OAIAPI_Capabilities_Embedding_EmbeddingsConfig_
+  commentId: M:Promezio.OAIAPI.Capabilities.Embedding.Embeddings.Create(System.String[],Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig)
+  name.vb: Create(String(), EmbeddingsConfig)
+  fullName: Promezio.OAIAPI.Capabilities.Embedding.Embeddings.Create(string[], Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig)
+  fullName.vb: Promezio.OAIAPI.Capabilities.Embedding.Embeddings.Create(String(), Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig)
+  nameWithType: Embeddings.Create(string[], EmbeddingsConfig)
+  nameWithType.vb: Embeddings.Create(String(), EmbeddingsConfig)
+- uid: Promezio.OAIAPI.Capabilities.Embedding.Embeddings.Create*
+  name: Create
+  href: api/Promezio.OAIAPI.Capabilities.Embedding.Embeddings.html#Promezio_OAIAPI_Capabilities_Embedding_Embeddings_Create_
+  commentId: Overload:Promezio.OAIAPI.Capabilities.Embedding.Embeddings.Create
+  isSpec: "True"
+  fullName: Promezio.OAIAPI.Capabilities.Embedding.Embeddings.Create
+  nameWithType: Embeddings.Create
+- uid: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig
+  name: EmbeddingsConfig
+  href: api/Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig.html
+  commentId: T:Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig
+  fullName: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig
+  nameWithType: EmbeddingsConfig
+- uid: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig.#ctor(Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels,System.String,System.Nullable{System.Int32},System.String)
+  name: EmbeddingsConfig(AvailableEmbeddingsModels, string, int?, string?)
+  href: api/Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig.html#Promezio_OAIAPI_Capabilities_Embedding_EmbeddingsConfig__ctor_Promezio_OAIAPI_Capabilities_Embedding_AvailableEmbeddingsModels_System_String_System_Nullable_System_Int32__System_String_
+  commentId: M:Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig.#ctor(Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels,System.String,System.Nullable{System.Int32},System.String)
+  name.vb: New(AvailableEmbeddingsModels, String, Integer?, String)
+  fullName: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig.EmbeddingsConfig(Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels, string, int?, string?)
+  fullName.vb: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig.New(Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels, String, Integer?, String)
+  nameWithType: EmbeddingsConfig.EmbeddingsConfig(AvailableEmbeddingsModels, string, int?, string?)
+  nameWithType.vb: EmbeddingsConfig.New(AvailableEmbeddingsModels, String, Integer?, String)
+- uid: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig.#ctor*
+  name: EmbeddingsConfig
+  href: api/Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig.html#Promezio_OAIAPI_Capabilities_Embedding_EmbeddingsConfig__ctor_
+  commentId: Overload:Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig.EmbeddingsConfig
+  fullName.vb: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig.New
+  nameWithType: EmbeddingsConfig.EmbeddingsConfig
+  nameWithType.vb: EmbeddingsConfig.New
+- uid: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig.Dimensions
+  name: Dimensions
+  href: api/Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig.html#Promezio_OAIAPI_Capabilities_Embedding_EmbeddingsConfig_Dimensions
+  commentId: P:Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig.Dimensions
+  fullName: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig.Dimensions
+  nameWithType: EmbeddingsConfig.Dimensions
+- uid: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig.Dimensions*
+  name: Dimensions
+  href: api/Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig.html#Promezio_OAIAPI_Capabilities_Embedding_EmbeddingsConfig_Dimensions_
+  commentId: Overload:Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig.Dimensions
+  isSpec: "True"
+  fullName: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig.Dimensions
+  nameWithType: EmbeddingsConfig.Dimensions
+- uid: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig.EncodingFormat
+  name: EncodingFormat
+  href: api/Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig.html#Promezio_OAIAPI_Capabilities_Embedding_EmbeddingsConfig_EncodingFormat
+  commentId: P:Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig.EncodingFormat
+  fullName: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig.EncodingFormat
+  nameWithType: EmbeddingsConfig.EncodingFormat
+- uid: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig.EncodingFormat*
+  name: EncodingFormat
+  href: api/Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig.html#Promezio_OAIAPI_Capabilities_Embedding_EmbeddingsConfig_EncodingFormat_
+  commentId: Overload:Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig.EncodingFormat
+  isSpec: "True"
+  fullName: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig.EncodingFormat
+  nameWithType: EmbeddingsConfig.EncodingFormat
+- uid: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig.Model
+  name: Model
+  href: api/Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig.html#Promezio_OAIAPI_Capabilities_Embedding_EmbeddingsConfig_Model
+  commentId: P:Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig.Model
+  fullName: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig.Model
+  nameWithType: EmbeddingsConfig.Model
+- uid: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig.Model*
+  name: Model
+  href: api/Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig.html#Promezio_OAIAPI_Capabilities_Embedding_EmbeddingsConfig_Model_
+  commentId: Overload:Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig.Model
+  isSpec: "True"
+  fullName: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig.Model
+  nameWithType: EmbeddingsConfig.Model
+- uid: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig.User
+  name: User
+  href: api/Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig.html#Promezio_OAIAPI_Capabilities_Embedding_EmbeddingsConfig_User
+  commentId: P:Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig.User
+  fullName: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig.User
+  nameWithType: EmbeddingsConfig.User
+- uid: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig.User*
+  name: User
+  href: api/Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig.html#Promezio_OAIAPI_Capabilities_Embedding_EmbeddingsConfig_User_
+  commentId: Overload:Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig.User
+  isSpec: "True"
+  fullName: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig.User
+  nameWithType: EmbeddingsConfig.User
 - uid: Promezio.OAIAPI.Capabilities.Files
   name: Promezio.OAIAPI.Capabilities.Files
   href: api/Promezio.OAIAPI.Capabilities.Files.html
@@ -2085,6 +2478,19 @@ references:
   isSpec: "True"
   fullName: Promezio.OAIAPI.OAIAPI.Chat
   nameWithType: OAIAPI.Chat
+- uid: Promezio.OAIAPI.OAIAPI.Embeddings
+  name: Embeddings
+  href: api/Promezio.OAIAPI.OAIAPI.html#Promezio_OAIAPI_OAIAPI_Embeddings
+  commentId: P:Promezio.OAIAPI.OAIAPI.Embeddings
+  fullName: Promezio.OAIAPI.OAIAPI.Embeddings
+  nameWithType: OAIAPI.Embeddings
+- uid: Promezio.OAIAPI.OAIAPI.Embeddings*
+  name: Embeddings
+  href: api/Promezio.OAIAPI.OAIAPI.html#Promezio_OAIAPI_OAIAPI_Embeddings_
+  commentId: Overload:Promezio.OAIAPI.OAIAPI.Embeddings
+  isSpec: "True"
+  fullName: Promezio.OAIAPI.OAIAPI.Embeddings
+  nameWithType: OAIAPI.Embeddings
 - uid: Promezio.OAIAPI.OAIAPI.Files
   name: Files
   href: api/Promezio.OAIAPI.OAIAPI.html#Promezio_OAIAPI_OAIAPI_Files

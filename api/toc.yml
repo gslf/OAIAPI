@@ -13,10 +13,18 @@ items:
 - uid: Promezio.OAIAPI.Capabilities.Chat
   name: Promezio.OAIAPI.Capabilities.Chat
   items:
+  - uid: Promezio.OAIAPI.Capabilities.Chat.AvailableChatModels
+    name: AvailableChatModels
+  - uid: Promezio.OAIAPI.Capabilities.Chat.AvailableResponseFormat
+    name: AvailableResponseFormat
+  - uid: Promezio.OAIAPI.Capabilities.Chat.AvailableRoles
+    name: AvailableRoles
   - uid: Promezio.OAIAPI.Capabilities.Chat.Chat
     name: Chat
   - uid: Promezio.OAIAPI.Capabilities.Chat.ChatMessage
     name: ChatMessage
+  - uid: Promezio.OAIAPI.Capabilities.Chat.ChatModel
+    name: ChatModel
   - uid: Promezio.OAIAPI.Capabilities.Chat.ChatResponse
     name: ChatResponse
   - uid: Promezio.OAIAPI.Capabilities.Chat.ChatStreamResponse
@@ -27,19 +35,30 @@ items:
     name: Config
   - uid: Promezio.OAIAPI.Capabilities.Chat.ResponseFormat
     name: ResponseFormat
-  - uid: Promezio.OAIAPI.Capabilities.Chat.ResponseFormatTypes
-    name: ResponseFormatTypes
   - uid: Promezio.OAIAPI.Capabilities.Chat.Role
     name: Role
   - uid: Promezio.OAIAPI.Capabilities.Chat.StreamChoice
     name: StreamChoice
-  - uid: Promezio.OAIAPI.Capabilities.Chat.Usage
+- uid: Promezio.OAIAPI.Capabilities.CommonModels
+  name: Promezio.OAIAPI.Capabilities.CommonModels
+  items:
+  - uid: Promezio.OAIAPI.Capabilities.CommonModels.Usage
     name: Usage
 - uid: Promezio.OAIAPI.Capabilities.Embedding
   name: Promezio.OAIAPI.Capabilities.Embedding
   items:
-  - uid: Promezio.OAIAPI.Capabilities.Embedding.Embedding
-    name: Embedding
+  - uid: Promezio.OAIAPI.Capabilities.Embedding.AvailableEmbeddingsModels
+    name: AvailableEmbeddingsModels
+  - uid: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingModel
+    name: EmbeddingModel
+  - uid: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingObject
+    name: EmbeddingObject
+  - uid: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingResponse
+    name: EmbeddingResponse
+  - uid: Promezio.OAIAPI.Capabilities.Embedding.Embeddings
+    name: Embeddings
+  - uid: Promezio.OAIAPI.Capabilities.Embedding.EmbeddingsConfig
+    name: EmbeddingsConfig
 - uid: Promezio.OAIAPI.Capabilities.Files
   name: Promezio.OAIAPI.Capabilities.Files
   items:
