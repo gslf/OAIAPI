@@ -12,7 +12,7 @@ public class EmbeddingModel {
         _model = model;
     }
 
-    public string Value() {
+    public override string ToString() {
         switch (_model) {
             case AvailableEmbeddingsModels.EMBEDDING_ADA:
                 return "text-embedding-ada-002";

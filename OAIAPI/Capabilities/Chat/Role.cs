@@ -3,32 +3,49 @@
 namespace Promezio.OAIAPI.Capabilities.Chat;
 
 /// <summary>
-/// Represents the role of the author of a specific message.
+/// Enumerates the possible roles associated with messages in OpenAI chat responses.
+/// </summary>
+public enum AvailableRoles {
+    SYSTEM,
+    USER,
+    ASSISTANT
+}
+
+/// <summary>
+/// Represents the role associated with a message in the OpenAI chat API response.
 /// </summary>
 public class Role {
-    public static string SYSTEM { get; } = "system";
-    public static string USER { get; } = "user";
-    public static string ASSISTANT { get; } = "assistant";
+    /// <summary>
+    /// The underlying role.
+    /// </summary>
+    private AvailableRoles _role;
 
     /// <summary>
-    /// Validates whether a given role name corresponds to any of the predefined role names in this class.
+    /// Initializes a new instance of the Role class with the specified role.
+    /// Defaults to USER role.
     /// </summary>
-    /// <param name="role">The name of the role to validate.</param>
-    /// <returns>True if the role name exists in the predefined roles; otherwise, false.</returns>
-    public static bool IsValid(string role) {
-        Type selfType = typeof(Role);
-        PropertyInfo[] selfProperties = selfType.GetProperties();
+    /// <param name="role">The role associated with the message.</param>
+    public Role(AvailableRoles role = AvailableRoles.USER) {
+        _role = role;
+    }
 
-        foreach (PropertyInfo propertyInfo in selfProperties) {
-            string? propertyValue = (string?)propertyInfo.GetValue(null);
-
-            if (propertyValue != null && propertyValue == role) {
-                return true;
-            }
+    /// <summary>
+    /// Returns a string representation of the role.
+    /// </summary>
+    /// <returns>A string indicating either "system", "user", or "assistant" based on the chosen role.</returns>
+    public override string ToString() {
+        switch (_role) {
+            case AvailableRoles.SYSTEM:
+                return "system";
+            case AvailableRoles.USER:
+                return "user";
+            case AvailableRoles.ASSISTANT:
+                return "assistant";
         }
 
-        return false;
+        return "";
     }
+
 }
 
 

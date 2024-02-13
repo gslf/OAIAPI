@@ -11,18 +11,35 @@
 /// </remarks>
 
 public class ChatStreamResponse {
-    public string? Id { get; set; }
-    public int? Created { get; set; }
-    public string? Model { get; set; }
 
+    /// <summary>
+    /// A unique identifier for the response.
+    /// </summary>
+    public string? Id { get; set; }
+    /// <summary>
+    /// Unix timestamp indicating when the response was created.
+    /// </summary>
+    public int? Created { get; set; }
+    /// <summary>
+    /// The OpenAI chat model used to generate the response.
+    /// </summary>
+    public string? Model { get; set; }
+    /// <summary>
+    /// A security fingerprint associated with the response.
+    /// </summary>
     public string? System_fingerprint { get; set; }
+
+    /// <summary>
+    /// An array of potential message updates within the response stream.
+    /// Each element contains a `Delta` object with the updated text content.
+    /// </summary>
     public StreamChoice[]? Choices { get; set; }
 
 
     /// <summary>
-    /// Retrieves the content of the message from the first choice in the response.
+    /// Extracts the updated message content from the first choice of the response, if available.
     /// </summary>
-    /// <returns>A string containing the message content, or an empty string if no content is available.</returns>
+    /// <returns>The updated message content string, or an empty string if unavailable.</returns>
     public string? GetMessage() {
         if (Choices != null && Choices.Length > 0) {
             if (Choices[0].Delta != null) {

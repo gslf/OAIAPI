@@ -15,47 +15,29 @@ namespace Promezio.OAIAPI.Test;
 [TestClass]
 public class ChatTest : Test {
 
-
-    [TestMethod]
-    public async Task TestClassUninitialized() {
-        OAIAPI api = new OAIAPI(_apikey);
-        ChatResponse? result = await api.Chat.Dispatch("HELLO");
-        Assert.IsFalse(result?.Status);
-    }
-
     [TestMethod]
     public async Task TestWrongConfigParameters() {
         Config config;
         // Test Out of Range exception
         Assert.ThrowsException<ArgumentOutOfRangeException>(() =>
-                config = new Config("gpt-3.5-turbo", frequencyPenalty: 100));
+                config = new Config(new ChatModel(), frequencyPenalty: 100));
         Assert.ThrowsException<ArgumentOutOfRangeException>(() =>
-                config = new Config("gpt-3.5-turbo", topLogprobs: 100));
+                config = new Config(new ChatModel(), topLogprobs: 100));
         Assert.ThrowsException<ArgumentOutOfRangeException>(() =>
-                config = new Config("gpt-3.5-turbo", presencePenalty: 100));
+                config = new Config(new ChatModel(), presencePenalty: 100));
         Assert.ThrowsException<ArgumentOutOfRangeException>(() =>
-                config = new Config("gpt-3.5-turbo", responseFormat: new ResponseFormat { Type = "not-exist" }));
+                config = new Config(new ChatModel(), temperature: 100));
         Assert.ThrowsException<ArgumentOutOfRangeException>(() =>
-                config = new Config("gpt-3.5-turbo", temperature: 100));
-        Assert.ThrowsException<ArgumentOutOfRangeException>(() =>
-               config = new Config("gpt-3.5-turbo", topP: 100));
-
-        // Test a model that not exist
-        config = new Config("not-exist");
-        OAIAPI api = new OAIAPI(_apikey);
-        api.Chat.Init(config);
-        ChatResponse? result = await api.Chat.Dispatch("HELLO");
-        Assert.IsFalse(result?.Status);
+               config = new Config(new ChatModel(), topP: 100));
     }
 
     [TestMethod]
     public async Task TestResponse() {
         OAIAPI api = new OAIAPI(_apikey);
-        Config config = new Config("gpt-3.5-turbo");
-        api.Chat.Init(config);
+        Config config = new Config(new ChatModel());
 
         // Check single message
-        ChatResponse? result = await api.Chat.Dispatch("Hello, I'm Luke.");
+        ChatResponse? result = await api.Chat.Dispatch("Hello, I'm Luke.", config);
         Assert.IsFalse(String.IsNullOrEmpty(result?.GetMessage()));
 
         // Check token counter
@@ -67,10 +49,9 @@ public class ChatTest : Test {
     [TestMethod]
     public async Task TestJSONResponse() {
         OAIAPI api = new OAIAPI(_apikey);
-        Config config = new Config("gpt-3.5-turbo-1106", responseFormat: new ResponseFormat { Type = ResponseFormatTypes.JSON });
-        api.Chat.Init(config);
+        Config config = new Config(new ChatModel(), responseFormat: new ResponseFormat(AvailableResponseFormat.JSON));
 
-        ChatResponse? result = await api.Chat.Dispatch("Who won the world series in 2020? Output a JSON.");
+        ChatResponse? result = await api.Chat.Dispatch("Who won the world series in 2020? Output a JSON.", config);
         string? response = result?.GetMessage();
         Assert.IsNotNull(response);
         Assert.IsTrue(JSONTools.IsValidJSON(response));
@@ -79,11 +60,10 @@ public class ChatTest : Test {
     [TestMethod]
     public async Task TestStreamResponse() {
         OAIAPI api = new OAIAPI(_apikey);
-        Config config = new Config("gpt-3.5-turbo");
-        api.Chat.Init(config);
+        Config config = new Config(new ChatModel());
 
         int stream_count = 0;
-        await foreach (var res in api.Chat.DispatchStream("Hello, write numbers from 1 to 10.")) {
+        await foreach (var res in api.Chat.DispatchStream("Hello, write numbers from 1 to 10.", config)) {
             stream_count++;
         }
 

@@ -15,99 +15,92 @@ public class Chat : Capability {
 
     private List<ChatMessage> _messages;
 
-    // Request params
-    private Config? _config;
-
-
     /// <summary>
-    /// Create a new instance of the Chat class with the specified API key.
+    /// Initializes a new instance of the Chat class with the specified API key.
     /// </summary>
     /// <param name="apikey">The API key for authentication.</param>
+    /// <param name="logger">An instance of a logging object to record actions and errors.</param>
     public Chat(string apikey, Logger logger) : base(apikey, logger) {
         _messages = new List<ChatMessage>();
     }
 
     /// <summary>
-    /// Init the instance of the Chat class with the configuration.
+    /// Sends a single prompt to the OpenAI chat API and returns the complete response.
     /// </summary>
-    /// <param name="apikey">The API key for authentication.</param>
-    public void Init(Config config) {
-        _config = config;
+    /// <param name="prompt">The text prompt to send to the chat model.</param>
+    /// <param name="config">Configuration options for the OpenAI API request.</param>
+    /// <returns>A ChatResponse object containing the API's response and details.</returns>
+    /// <exception cref="HttpRequestException">Thrown if the HTTP request to the API fails.</exception>
+    public async Task<ChatResponse?> Dispatch(string prompt, Config config) {
+
+        _logger.Info("[Chat.Dispatch] New request.");
+
+        _messages.Add(new ChatMessage { Role = new Role(AvailableRoles.USER).ToString(), Content = prompt });
+
+        var messages_array = _messages.Select(x => new {
+            role = x.Role,
+            content = x.Content,
+        }).ToArray();
+
+        using (var client = new HttpClient()) {
+            var requestBody = new {
+                model = config.Model.ToString(),
+                messages = messages_array,
+                frequency_penalty = config.FrequencyPenalty,
+                logprobs = config.Logprobs,
+                top_logprobs = config.TopLogprobs,
+                max_tokens = config.MaxTokens,
+                n = config.N,
+                presence_penalty = config.PresencePenalty,
+                response_format = new {
+                    type = config.ResponseFormat?.ToString()
+                },
+                seed = config.Seed,
+                stream = false,
+                temperature = config.Temperature,
+                top_p = config.TopP,
+                user = config.User
+            };
+
+            var content = new StringContent(JsonSerializer.Serialize(requestBody), Encoding.UTF8, "application/json");
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", _apikey);
+
+            var response = await client.PostAsync(Endpoints.CHAT, content);
+
+            if (!response.IsSuccessStatusCode) {
+                string message = await response.Content.ReadAsStringAsync();
+                string errorMessage = $"[[Chat.Dispatch] An HTTP request failed - {message}";
+                _logger.Error(errorMessage);
+                throw new HttpRequestException(errorMessage);
+            }
+
+            var responseContent = await response.Content.ReadAsStringAsync();
+            ChatResponse? parsed_response = JsonSerializer.Deserialize<ChatResponse>(responseContent, _serializerOptions);
+
+            if (parsed_response is null) {
+                string errorMessage = $"[[Chat.Dispatch] The server response is empty";
+                _logger.Error(errorMessage);
+            }else {
+                _messages.Add(new ChatMessage { Role = new Role(AvailableRoles.USER).ToString(), Content = parsed_response.GetMessage() });
+            }
+           
+            _logger.Info("[Chat.Dispatch] Request Completed.");
+            return parsed_response;   
+        }
     }
 
     /// <summary>
-    /// Sends a message to the chat model and receives a response.
+    /// Opens a stream to the OpenAI chat API and sends a prompt, receiving responses in real-time.
     /// </summary>
-    /// <param name="prompt">The message to send to the model.</param>
-    /// <returns>A task that represents the asynchronous operation, containing the chat response.</returns>
-    public async Task<ChatResponse?> Dispatch(string prompt) {
-
-        if (_config == null) {
-            _logger.Error("[Chat.Dispatch] Function called without class initialization.");
-            return new ChatResponse { Status = false, Error = "The chat class has not been initialized." };
-        }
-
-        _logger.Info("[Chat.Dispatch] New request.");
-        _messages.Add(new ChatMessage { Role = Role.USER, Content = prompt });
-
-        var messages_array = _messages.Select(x => new {
-            role = x.Role,
-            content = x.Content,
-        }).ToArray();
-
-        using (var client = new HttpClient()) {
-            var requestBody = new {
-                model = _config.Model,
-                messages = messages_array,
-                frequency_penalty = _config.FrequencyPenalty,
-                logprobs = _config.Logprobs,
-                top_logprobs = _config.TopLogprobs,
-                max_tokens = _config.MaxTokens,
-                n = _config.N,
-                presence_penalty = _config.PresencePenalty,
-                response_format = _config.ResponseFormat?.ToAnonymousType(),
-                seed = _config.Seed,
-                stream = false,
-                temperature = _config.Temperature,
-                top_p = _config.TopP,
-                user = _config.User
-            };
-
-            var content = new StringContent(JsonSerializer.Serialize(requestBody), Encoding.UTF8, "application/json");
-            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", _apikey);
-
-            var response = await client.PostAsync(Endpoints.CHAT, content);
-
-            if (response.IsSuccessStatusCode) {
-                var responseContent = await response.Content.ReadAsStringAsync();
-                ChatResponse? parsed_response = JsonSerializer.Deserialize<ChatResponse>(responseContent, _serializerOptions);
-
-                if (parsed_response != null) {
-                    parsed_response.Status = true;
-                    _messages.Add(new ChatMessage { Role = Role.SYSTEM, Content = parsed_response.GetMessage() });
-                } else {
-                    _logger.Warning("[Chat.Dispatch] Response parsing return a null value.");
-                }
-
-                _logger.Info("[Chat.Dispatch] Request Completed.");
-                return parsed_response;
-            } else {
-                _logger.Error("[Chat.Dispatch] An HTTP request failed");
-                string message = await response.Content.ReadAsStringAsync();
-                return new ChatResponse { Status = false, Error = $"Error: {message}" };
-            }
-        }
-    }
-
-    public async IAsyncEnumerable<ChatStreamResponse?> DispatchStream(string prompt) {
-        if (_config?.Model == null) {
-            _logger.Error("[Chat.DispatchStream] Function called without class initialization.");
-            yield break;
-        }
+    /// <param name="prompt">The text prompt to send to the chat model.</param>
+    /// <param name="config">Configuration options for the OpenAI API request.</param>
+    /// <returns>An IAsyncEnumerable of ChatStreamResponse objects containing partial responses.</returns>
+    /// <exception cref="HttpRequestException">Thrown if the HTTP request to the API fails.</exception>
+    public async IAsyncEnumerable<ChatStreamResponse?> DispatchStream(string prompt, Config config) {
 
         _logger.Info("[Chat.DispatchStream] New request.");
 
-        _messages.Add(new ChatMessage { Role = Role.USER, Content = prompt });
+        _messages.Add(new ChatMessage { Role = new Role(AvailableRoles.USER).ToString(), Content = prompt });
 
         var messages_array = _messages.Select(x => new {
             role = x.Role,
@@ -116,30 +109,41 @@ public class Chat : Capability {
 
         using (var client = new HttpClient()) {
             var requestBody = new {
-                model = _config.Model,
+                model = config.Model.ToString(),
                 messages = messages_array,
-                frequency_penalty = _config.FrequencyPenalty,
-                logprobs = _config.Logprobs,
-                top_logprobs = _config.TopLogprobs,
-                max_tokens = _config.MaxTokens,
-                n = _config.N,
-                presence_penalty = _config.PresencePenalty,
-                response_format = _config.ResponseFormat?.ToAnonymousType(),
-                seed = _config.Seed,
+                frequency_penalty = config.FrequencyPenalty,
+                logprobs = config.Logprobs,
+                top_logprobs = config.TopLogprobs,
+                max_tokens = config.MaxTokens,
+                n = config.N,
+                presence_penalty = config.PresencePenalty,
+                response_format = new {
+                    type = config.ResponseFormat?.ToString()
+                },
+                seed = config.Seed,
                 stream = true,
-                temperature = _config.Temperature,
-                top_p = _config.TopP,
-                user = _config.User
+                temperature = config.Temperature,
+                top_p = config.TopP,
+                user = config.User
             };
 
             var content = new StringContent(JsonSerializer.Serialize(requestBody), Encoding.UTF8, "application/json");
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", _apikey);
 
             var response = await client.PostAsync(Endpoints.CHAT, content);
+
+            if (!response.IsSuccessStatusCode) {
+                string message = await response.Content.ReadAsStringAsync();
+                string errorMessage = $"[Chat.DispatchStream] An HTTP request failed - {message}";
+                _logger.Error(errorMessage);
+                throw new HttpRequestException(errorMessage);
+            }
 
             using (var stream = await response.Content.ReadAsStreamAsync())
             using (StreamReader reader = new StreamReader(stream)) {
                 string? line;
+                string fullMessage = "";
+
                 while ((line = await reader.ReadLineAsync()) != null) {
 
                     if (line == null) {
@@ -149,6 +153,7 @@ public class Chat : Capability {
 
                     if (line == END_STREAM) {
                         _logger.Info("[Chat.DispatchStream] Stream Ended.");
+                        _messages.Add(new ChatMessage { Role = new Role(AvailableRoles.USER).ToString(), Content = fullMessage });
                         yield break;
                     }
 
@@ -156,12 +161,16 @@ public class Chat : Capability {
                         string parsableLine = line.Replace(PRE_STREAM, "");
                         ChatStreamResponse? parsed_response = JsonSerializer.Deserialize<ChatStreamResponse>(parsableLine, _serializerOptions);
 
-                        if (parsed_response != null) {
-                            yield return parsed_response;
-                        } else {
-                            _logger.Warning("[Chat.DispatchStream] Response parsing return a null value.");
+                        if (parsed_response is null) {
+                            string errorMessage = $"[[Chat.DispatchStream] The server response is empty";
+                            _logger.Error(errorMessage);
                             continue;
                         }
+
+                        fullMessage += parsed_response.GetMessage();
+          
+                        yield return parsed_response;
+                        
                     } else {
                         _logger.Warning("[Chat.DispatchStream] The stream reader read an empty line.");
                         continue;

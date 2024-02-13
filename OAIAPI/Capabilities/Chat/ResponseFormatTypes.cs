@@ -1,32 +1,47 @@
-﻿using System.Reflection;
+﻿using Promezio.OAIAPI.Capabilities.Embedding;
+using Promezio.OAIAPI.Utils;
+using System.Reflection;
 
 namespace Promezio.OAIAPI.Capabilities.Chat;
 
-public class ResponseFormatTypes {
-    public static string JSON { get; } = "json_object";
-    public static string TEXT { get; } = "text";
+/// <summary>
+/// Enumerates the available response formats for OpenAI chat API responses.
+/// </summary>
+public enum AvailableResponseFormat {
+    JSON,
+    TEXT
+}
+
+/// <summary>
+/// Represents the desired format for the OpenAI chat API response.
+/// </summary>
+public class ResponseFormat {
+    /// <summary>
+    /// The underlying response format.
+    /// </summary>
+    private AvailableResponseFormat _type;
 
     /// <summary>
-    /// Validates whether a given format name corresponds to any of the predefined format names in this class.
+    /// Initializes a new instance of the ResponseFormat class with the specified format.
+    /// Defaults to TEXT format.
     /// </summary>
-    /// <param name="format">The name of the response format to validate.</param>
-    /// <returns>True if the format name exists in the predefined formats; otherwise, false.</returns>
-    public static bool IsValid(string? format) {
+    /// <param name="type">The desired response format.</param>
+    public ResponseFormat(AvailableResponseFormat type = AvailableResponseFormat.TEXT) {
+        _type = type;
+    }
 
-        if (format == null)
-            return false;
-
-        Type selfType = typeof(ResponseFormatTypes);
-        PropertyInfo[] selfProperties = selfType.GetProperties();
-
-        foreach (PropertyInfo propertyInfo in selfProperties) {
-            string? propertyValue = (string?)propertyInfo.GetValue(null);
-
-            if (propertyValue != null && propertyValue == format) {
-                return true;
-            }
+    /// <summary>
+    /// Returns a string representation of the chosen response format.
+    /// </summary>
+    /// <returns>A string indicating either "json_object" or "text" based on the chosen format.</returns>
+    public override string ToString() {
+        switch (_type) {
+            case AvailableResponseFormat.JSON:
+                return "json_object";
+            case AvailableResponseFormat.TEXT:
+                return "text";
         }
 
-        return false;
+        return "";
     }
 }

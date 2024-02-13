@@ -24,7 +24,7 @@ public class Embeddings : Capability{
         // HTTP request
         using (var client = new HttpClient()) {
             var requestBody = new {
-                model = config.Model.Value(),
+                model = config.Model.ToString(),
                 input = input,
                 encoding_format = config.EncodingFormat,
                 user = config.User ?? ""
