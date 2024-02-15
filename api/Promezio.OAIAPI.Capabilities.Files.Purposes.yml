@@ -5,11 +5,8 @@ items:
   id: Purposes
   parent: Promezio.OAIAPI.Capabilities.Files
   children:
-  - Promezio.OAIAPI.Capabilities.Files.Purposes.ASSISTANTS
-  - Promezio.OAIAPI.Capabilities.Files.Purposes.ASSISTANTS_OUTPUT
-  - Promezio.OAIAPI.Capabilities.Files.Purposes.FINE_TUNE
-  - Promezio.OAIAPI.Capabilities.Files.Purposes.FINE_TUNE_RESULTS
-  - Promezio.OAIAPI.Capabilities.Files.Purposes.IsValid(System.String)
+  - Promezio.OAIAPI.Capabilities.Files.Purposes.#ctor(Promezio.OAIAPI.Capabilities.Files.AvailablePurposes)
+  - Promezio.OAIAPI.Capabilities.Files.Purposes.ToString
   langs:
   - csharp
   - vb
@@ -24,10 +21,12 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: Purposes
     path: OAIAPI/Capabilities/Files/Purposes.cs
-    startLine: 4
+    startLine: 15
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.Files
+  summary: Represents the purpose of an OpenAI API file with user-friendly, customizable text representations.
+  example: []
   syntax:
     content: public class Purposes
     content.vb: Public Class Purposes
@@ -40,161 +39,73 @@ items:
   - System.Object.GetType
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
-  - System.Object.ToString
-- uid: Promezio.OAIAPI.Capabilities.Files.Purposes.FINE_TUNE
-  commentId: P:Promezio.OAIAPI.Capabilities.Files.Purposes.FINE_TUNE
-  id: FINE_TUNE
+- uid: Promezio.OAIAPI.Capabilities.Files.Purposes.#ctor(Promezio.OAIAPI.Capabilities.Files.AvailablePurposes)
+  commentId: M:Promezio.OAIAPI.Capabilities.Files.Purposes.#ctor(Promezio.OAIAPI.Capabilities.Files.AvailablePurposes)
+  id: '#ctor(Promezio.OAIAPI.Capabilities.Files.AvailablePurposes)'
   parent: Promezio.OAIAPI.Capabilities.Files.Purposes
   langs:
   - csharp
   - vb
-  name: FINE_TUNE
-  nameWithType: Purposes.FINE_TUNE
-  fullName: Promezio.OAIAPI.Capabilities.Files.Purposes.FINE_TUNE
-  type: Property
+  name: Purposes(AvailablePurposes)
+  nameWithType: Purposes.Purposes(AvailablePurposes)
+  fullName: Promezio.OAIAPI.Capabilities.Files.Purposes.Purposes(Promezio.OAIAPI.Capabilities.Files.AvailablePurposes)
+  type: Constructor
   source:
     remote:
       path: OAIAPI/Capabilities/Files/Purposes.cs
       branch: main
       repo: https://github.com/gslf/OAIAPI.git
-    id: FINE_TUNE
+    id: .ctor
     path: OAIAPI/Capabilities/Files/Purposes.cs
-    startLine: 5
+    startLine: 23
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.Files
+  summary: Initializes a new instance of the <xref href="Promezio.OAIAPI.Capabilities.Files.Purposes" data-throw-if-not-resolved="false"></xref> class.
+  example: []
   syntax:
-    content: public static string FINE_TUNE { get; }
-    parameters: []
-    return:
-      type: System.String
-    content.vb: Public Shared ReadOnly Property FINE_TUNE As String
-  overload: Promezio.OAIAPI.Capabilities.Files.Purposes.FINE_TUNE*
-- uid: Promezio.OAIAPI.Capabilities.Files.Purposes.FINE_TUNE_RESULTS
-  commentId: P:Promezio.OAIAPI.Capabilities.Files.Purposes.FINE_TUNE_RESULTS
-  id: FINE_TUNE_RESULTS
+    content: public Purposes(AvailablePurposes purpose = AvailablePurposes.FINE_TUNE)
+    parameters:
+    - id: purpose
+      type: Promezio.OAIAPI.Capabilities.Files.AvailablePurposes
+      description: The purpose of the file, defaults to FINE_TUNE.
+    content.vb: Public Sub New(purpose As AvailablePurposes = AvailablePurposes.FINE_TUNE)
+  overload: Promezio.OAIAPI.Capabilities.Files.Purposes.#ctor*
+  nameWithType.vb: Purposes.New(AvailablePurposes)
+  fullName.vb: Promezio.OAIAPI.Capabilities.Files.Purposes.New(Promezio.OAIAPI.Capabilities.Files.AvailablePurposes)
+  name.vb: New(AvailablePurposes)
+- uid: Promezio.OAIAPI.Capabilities.Files.Purposes.ToString
+  commentId: M:Promezio.OAIAPI.Capabilities.Files.Purposes.ToString
+  id: ToString
   parent: Promezio.OAIAPI.Capabilities.Files.Purposes
   langs:
   - csharp
   - vb
-  name: FINE_TUNE_RESULTS
-  nameWithType: Purposes.FINE_TUNE_RESULTS
-  fullName: Promezio.OAIAPI.Capabilities.Files.Purposes.FINE_TUNE_RESULTS
-  type: Property
-  source:
-    remote:
-      path: OAIAPI/Capabilities/Files/Purposes.cs
-      branch: main
-      repo: https://github.com/gslf/OAIAPI.git
-    id: FINE_TUNE_RESULTS
-    path: OAIAPI/Capabilities/Files/Purposes.cs
-    startLine: 6
-  assemblies:
-  - OAIAPI
-  namespace: Promezio.OAIAPI.Capabilities.Files
-  syntax:
-    content: public static string FINE_TUNE_RESULTS { get; }
-    parameters: []
-    return:
-      type: System.String
-    content.vb: Public Shared ReadOnly Property FINE_TUNE_RESULTS As String
-  overload: Promezio.OAIAPI.Capabilities.Files.Purposes.FINE_TUNE_RESULTS*
-- uid: Promezio.OAIAPI.Capabilities.Files.Purposes.ASSISTANTS
-  commentId: P:Promezio.OAIAPI.Capabilities.Files.Purposes.ASSISTANTS
-  id: ASSISTANTS
-  parent: Promezio.OAIAPI.Capabilities.Files.Purposes
-  langs:
-  - csharp
-  - vb
-  name: ASSISTANTS
-  nameWithType: Purposes.ASSISTANTS
-  fullName: Promezio.OAIAPI.Capabilities.Files.Purposes.ASSISTANTS
-  type: Property
-  source:
-    remote:
-      path: OAIAPI/Capabilities/Files/Purposes.cs
-      branch: main
-      repo: https://github.com/gslf/OAIAPI.git
-    id: ASSISTANTS
-    path: OAIAPI/Capabilities/Files/Purposes.cs
-    startLine: 7
-  assemblies:
-  - OAIAPI
-  namespace: Promezio.OAIAPI.Capabilities.Files
-  syntax:
-    content: public static string ASSISTANTS { get; }
-    parameters: []
-    return:
-      type: System.String
-    content.vb: Public Shared ReadOnly Property ASSISTANTS As String
-  overload: Promezio.OAIAPI.Capabilities.Files.Purposes.ASSISTANTS*
-- uid: Promezio.OAIAPI.Capabilities.Files.Purposes.ASSISTANTS_OUTPUT
-  commentId: P:Promezio.OAIAPI.Capabilities.Files.Purposes.ASSISTANTS_OUTPUT
-  id: ASSISTANTS_OUTPUT
-  parent: Promezio.OAIAPI.Capabilities.Files.Purposes
-  langs:
-  - csharp
-  - vb
-  name: ASSISTANTS_OUTPUT
-  nameWithType: Purposes.ASSISTANTS_OUTPUT
-  fullName: Promezio.OAIAPI.Capabilities.Files.Purposes.ASSISTANTS_OUTPUT
-  type: Property
-  source:
-    remote:
-      path: OAIAPI/Capabilities/Files/Purposes.cs
-      branch: main
-      repo: https://github.com/gslf/OAIAPI.git
-    id: ASSISTANTS_OUTPUT
-    path: OAIAPI/Capabilities/Files/Purposes.cs
-    startLine: 8
-  assemblies:
-  - OAIAPI
-  namespace: Promezio.OAIAPI.Capabilities.Files
-  syntax:
-    content: public static string ASSISTANTS_OUTPUT { get; }
-    parameters: []
-    return:
-      type: System.String
-    content.vb: Public Shared ReadOnly Property ASSISTANTS_OUTPUT As String
-  overload: Promezio.OAIAPI.Capabilities.Files.Purposes.ASSISTANTS_OUTPUT*
-- uid: Promezio.OAIAPI.Capabilities.Files.Purposes.IsValid(System.String)
-  commentId: M:Promezio.OAIAPI.Capabilities.Files.Purposes.IsValid(System.String)
-  id: IsValid(System.String)
-  parent: Promezio.OAIAPI.Capabilities.Files.Purposes
-  langs:
-  - csharp
-  - vb
-  name: IsValid(string)
-  nameWithType: Purposes.IsValid(string)
-  fullName: Promezio.OAIAPI.Capabilities.Files.Purposes.IsValid(string)
+  name: ToString()
+  nameWithType: Purposes.ToString()
+  fullName: Promezio.OAIAPI.Capabilities.Files.Purposes.ToString()
   type: Method
   source:
     remote:
       path: OAIAPI/Capabilities/Files/Purposes.cs
       branch: main
       repo: https://github.com/gslf/OAIAPI.git
-    id: IsValid
+    id: ToString
     path: OAIAPI/Capabilities/Files/Purposes.cs
-    startLine: 15
+    startLine: 31
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.Files
-  summary: Validates whether a given purpose name corresponds to any of the predefined purpose names in this class.
+  summary: Gets a string representation of the purpose, designed for interaction with the OpenAI API.
   example: []
   syntax:
-    content: public static bool IsValid(string purpose)
-    parameters:
-    - id: purpose
-      type: System.String
-      description: The name of the purpose to validate.
+    content: public override string ToString()
     return:
-      type: System.Boolean
-      description: True if the purpose name exists in the predefined purposes; otherwise, false.
-    content.vb: Public Shared Function IsValid(purpose As String) As Boolean
-  overload: Promezio.OAIAPI.Capabilities.Files.Purposes.IsValid*
-  nameWithType.vb: Purposes.IsValid(String)
-  fullName.vb: Promezio.OAIAPI.Capabilities.Files.Purposes.IsValid(String)
-  name.vb: IsValid(String)
+      type: System.String
+      description: A string representing the purpose.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: Promezio.OAIAPI.Capabilities.Files.Purposes.ToString*
 references:
 - uid: Promezio.OAIAPI.Capabilities.Files
   commentId: N:Promezio.OAIAPI.Capabilities.Files
@@ -440,6 +351,36 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Promezio.OAIAPI.Capabilities.Files.Purposes
+  commentId: T:Promezio.OAIAPI.Capabilities.Files.Purposes
+  parent: Promezio.OAIAPI.Capabilities.Files
+  href: Promezio.OAIAPI.Capabilities.Files.Purposes.html
+  name: Purposes
+  nameWithType: Purposes
+  fullName: Promezio.OAIAPI.Capabilities.Files.Purposes
+- uid: Promezio.OAIAPI.Capabilities.Files.Purposes.#ctor*
+  commentId: Overload:Promezio.OAIAPI.Capabilities.Files.Purposes.#ctor
+  href: Promezio.OAIAPI.Capabilities.Files.Purposes.html#Promezio_OAIAPI_Capabilities_Files_Purposes__ctor_Promezio_OAIAPI_Capabilities_Files_AvailablePurposes_
+  name: Purposes
+  nameWithType: Purposes.Purposes
+  fullName: Promezio.OAIAPI.Capabilities.Files.Purposes.Purposes
+  nameWithType.vb: Purposes.New
+  fullName.vb: Promezio.OAIAPI.Capabilities.Files.Purposes.New
+  name.vb: New
+- uid: Promezio.OAIAPI.Capabilities.Files.AvailablePurposes
+  commentId: T:Promezio.OAIAPI.Capabilities.Files.AvailablePurposes
+  parent: Promezio.OAIAPI.Capabilities.Files
+  href: Promezio.OAIAPI.Capabilities.Files.AvailablePurposes.html
+  name: AvailablePurposes
+  nameWithType: AvailablePurposes
+  fullName: Promezio.OAIAPI.Capabilities.Files.AvailablePurposes
 - uid: System.Object.ToString
   commentId: M:System.Object.ToString
   parent: System.Object
@@ -464,19 +405,12 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.object.tostring
   - name: (
   - name: )
-- uid: System
-  commentId: N:System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system
-  name: System
-  nameWithType: System
-  fullName: System
-- uid: Promezio.OAIAPI.Capabilities.Files.Purposes.FINE_TUNE*
-  commentId: Overload:Promezio.OAIAPI.Capabilities.Files.Purposes.FINE_TUNE
-  href: Promezio.OAIAPI.Capabilities.Files.Purposes.html#Promezio_OAIAPI_Capabilities_Files_Purposes_FINE_TUNE
-  name: FINE_TUNE
-  nameWithType: Purposes.FINE_TUNE
-  fullName: Promezio.OAIAPI.Capabilities.Files.Purposes.FINE_TUNE
+- uid: Promezio.OAIAPI.Capabilities.Files.Purposes.ToString*
+  commentId: Overload:Promezio.OAIAPI.Capabilities.Files.Purposes.ToString
+  href: Promezio.OAIAPI.Capabilities.Files.Purposes.html#Promezio_OAIAPI_Capabilities_Files_Purposes_ToString
+  name: ToString
+  nameWithType: Purposes.ToString
+  fullName: Promezio.OAIAPI.Capabilities.Files.Purposes.ToString
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -488,38 +422,3 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
-- uid: Promezio.OAIAPI.Capabilities.Files.Purposes.FINE_TUNE_RESULTS*
-  commentId: Overload:Promezio.OAIAPI.Capabilities.Files.Purposes.FINE_TUNE_RESULTS
-  href: Promezio.OAIAPI.Capabilities.Files.Purposes.html#Promezio_OAIAPI_Capabilities_Files_Purposes_FINE_TUNE_RESULTS
-  name: FINE_TUNE_RESULTS
-  nameWithType: Purposes.FINE_TUNE_RESULTS
-  fullName: Promezio.OAIAPI.Capabilities.Files.Purposes.FINE_TUNE_RESULTS
-- uid: Promezio.OAIAPI.Capabilities.Files.Purposes.ASSISTANTS*
-  commentId: Overload:Promezio.OAIAPI.Capabilities.Files.Purposes.ASSISTANTS
-  href: Promezio.OAIAPI.Capabilities.Files.Purposes.html#Promezio_OAIAPI_Capabilities_Files_Purposes_ASSISTANTS
-  name: ASSISTANTS
-  nameWithType: Purposes.ASSISTANTS
-  fullName: Promezio.OAIAPI.Capabilities.Files.Purposes.ASSISTANTS
-- uid: Promezio.OAIAPI.Capabilities.Files.Purposes.ASSISTANTS_OUTPUT*
-  commentId: Overload:Promezio.OAIAPI.Capabilities.Files.Purposes.ASSISTANTS_OUTPUT
-  href: Promezio.OAIAPI.Capabilities.Files.Purposes.html#Promezio_OAIAPI_Capabilities_Files_Purposes_ASSISTANTS_OUTPUT
-  name: ASSISTANTS_OUTPUT
-  nameWithType: Purposes.ASSISTANTS_OUTPUT
-  fullName: Promezio.OAIAPI.Capabilities.Files.Purposes.ASSISTANTS_OUTPUT
-- uid: Promezio.OAIAPI.Capabilities.Files.Purposes.IsValid*
-  commentId: Overload:Promezio.OAIAPI.Capabilities.Files.Purposes.IsValid
-  href: Promezio.OAIAPI.Capabilities.Files.Purposes.html#Promezio_OAIAPI_Capabilities_Files_Purposes_IsValid_System_String_
-  name: IsValid
-  nameWithType: Purposes.IsValid
-  fullName: Promezio.OAIAPI.Capabilities.Files.Purposes.IsValid
-- uid: System.Boolean
-  commentId: T:System.Boolean
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean

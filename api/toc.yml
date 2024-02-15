@@ -62,6 +62,8 @@ items:
 - uid: Promezio.OAIAPI.Capabilities.Files
   name: Promezio.OAIAPI.Capabilities.Files
   items:
+  - uid: Promezio.OAIAPI.Capabilities.Files.AvailablePurposes
+    name: AvailablePurposes
   - uid: Promezio.OAIAPI.Capabilities.Files.FileObject
     name: FileObject
   - uid: Promezio.OAIAPI.Capabilities.Files.Files

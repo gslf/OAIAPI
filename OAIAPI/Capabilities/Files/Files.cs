@@ -32,15 +32,10 @@ public class Files : Capability {
     /// <exception cref="ArgumentException">Thrown when the provided file purpose is not valid.</exception>
     /// <exception cref="HttpRequestException">Thrown when the HTTP request to the OpenAI API fails.</exception>
     /// <exception cref="JsonException">Thrown when parsing the API response fails.</exception>
-    public async Task<FileObject> Upload(string fileURI, string filePurpose) {
+    public async Task<FileObject> Upload(string fileURI, Purposes filePurpose) {
 
         _logger.Info("[File.Upload] New request.");
 
-        // Validate filePurpose
-        if (!Purposes.IsValid(filePurpose)) {
-            _logger.Info($"[File.Upload] The parameter {nameof(filePurpose)} is invalid");
-            throw new ArgumentException("The parameter is invalid", nameof(filePurpose));
-        }
 
         using (var client = new HttpClient()) {
             // Read audio file
@@ -49,7 +44,7 @@ public class Files : Capability {
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", _apikey);
             MultipartFormDataContent content = new(){
                     { new ByteArrayContent(fileBytes), "file", Path.GetFileName(fileURI) },
-                    { new StringContent(filePurpose), "purpose" }
+                    { new StringContent(filePurpose.ToString()), "purpose" }
             };
 
             HttpResponseMessage response = await client.PostAsync(Endpoints.FILES, content);
@@ -57,8 +52,9 @@ public class Files : Capability {
 
             if (!response.IsSuccessStatusCode) {
                 string message = await response.Content.ReadAsStringAsync();
-                _logger.Error($"[File.Upload] The HTTP request failed with status code: {message}.");
-                throw new HttpRequestException($"The HTTP request failed with status code: {message}.");
+                string errorMessage = $"[Files.Upload] The HTTP request failed. \n {message}.";
+               _logger.Error(errorMessage);
+                throw new HttpRequestException(errorMessage);
             }
 
             var responseContent = await response.Content.ReadAsStringAsync();
@@ -90,8 +86,9 @@ public class Files : Capability {
             var response = await client.GetAsync(Endpoints.FILES);
             if (!response.IsSuccessStatusCode) {
                 string message = await response.Content.ReadAsStringAsync();
-                _logger.Error($"[Files.List] The HTTP request failed with status code: {message}.");
-                throw new HttpRequestException($"The HTTP request failed with status code: {message}.");
+                string errorMessage = $"[Files.List] The HTTP request failed. \n {message}.";
+                _logger.Error(errorMessage);
+                throw new HttpRequestException(errorMessage);
             }
 
             var responseContent = await response.Content.ReadAsStringAsync();
@@ -129,8 +126,9 @@ public class Files : Capability {
             var response = await client.GetAsync(fullEndpoint);
             if (!response.IsSuccessStatusCode) {
                 string message = await response.Content.ReadAsStringAsync();
-                _logger.Error($"[Files.Retrieve] The HTTP request failed with status code: {message}.");
-                throw new HttpRequestException($"The HTTP request failed with status code: {message}.");
+                string errorMessage = $"[Files.Retrieve] The HTTP request failed. \n {message}.";
+                _logger.Error(errorMessage);
+                throw new HttpRequestException(errorMessage);
             }
 
             var responseContent = await response.Content.ReadAsStringAsync();
@@ -196,8 +194,9 @@ public class Files : Capability {
             var response = await client.GetAsync(fullEndpoint);
             if (!response.IsSuccessStatusCode) {
                 string message = await response.Content.ReadAsStringAsync();
-                _logger.Error($"[Files.Content] The HTTP request failed with status code: {message}.");
-                throw new HttpRequestException($"The HTTP request failed with status code: {message}.");
+                string errorMessage = $"[Files.Content] The HTTP request failed. \n {message}.";
+                _logger.Error(errorMessage);
+                throw new HttpRequestException(errorMessage);
             }
 
             string responseContent = await response.Content.ReadAsStringAsync();

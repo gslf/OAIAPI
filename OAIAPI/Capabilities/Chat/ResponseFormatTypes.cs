@@ -42,6 +42,6 @@ public class ResponseFormat {
                 return "text";
         }
 
-        return "";
+        return "INVALID";
     }
 }

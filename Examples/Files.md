@@ -25,7 +25,7 @@ string myapikey = Configuration["OpenAIApiKey"] ?? throw new InvalidOperationExc
 OAIAPI api = new OAIAPI(myapikey);
 
 // File upload
-FileObject? uploadResult = await api.Files.Upload("path/file.jsonl", Purposes.FINE_TUNE);
+FileObject? uploadResult = await api.Files.Upload("path/file.jsonl", new Purposes());
 
 // List available files
 FileObject[]? listResults = await api.Files.List();

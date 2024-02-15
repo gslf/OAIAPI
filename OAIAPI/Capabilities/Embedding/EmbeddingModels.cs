@@ -40,6 +40,6 @@ public class EmbeddingModel {
                 return "text-embedding-3-small";
         }
 
-        return "";
+        return "INVALID";
     }
 }

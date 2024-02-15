@@ -10,7 +10,7 @@ items:
   - Promezio.OAIAPI.Capabilities.Files.Files.Delete(System.String)
   - Promezio.OAIAPI.Capabilities.Files.Files.List
   - Promezio.OAIAPI.Capabilities.Files.Files.Retrieve(System.String)
-  - Promezio.OAIAPI.Capabilities.Files.Files.Upload(System.String,System.String)
+  - Promezio.OAIAPI.Capabilities.Files.Files.Upload(System.String,Promezio.OAIAPI.Capabilities.Files.Purposes)
   langs:
   - csharp
   - vb
@@ -93,16 +93,16 @@ items:
   nameWithType.vb: Files.New(String, Logger)
   fullName.vb: Promezio.OAIAPI.Capabilities.Files.Files.New(String, Promezio.OAIAPI.Utils.Logger)
   name.vb: New(String, Logger)
-- uid: Promezio.OAIAPI.Capabilities.Files.Files.Upload(System.String,System.String)
-  commentId: M:Promezio.OAIAPI.Capabilities.Files.Files.Upload(System.String,System.String)
-  id: Upload(System.String,System.String)
+- uid: Promezio.OAIAPI.Capabilities.Files.Files.Upload(System.String,Promezio.OAIAPI.Capabilities.Files.Purposes)
+  commentId: M:Promezio.OAIAPI.Capabilities.Files.Files.Upload(System.String,Promezio.OAIAPI.Capabilities.Files.Purposes)
+  id: Upload(System.String,Promezio.OAIAPI.Capabilities.Files.Purposes)
   parent: Promezio.OAIAPI.Capabilities.Files.Files
   langs:
   - csharp
   - vb
-  name: Upload(string, string)
-  nameWithType: Files.Upload(string, string)
-  fullName: Promezio.OAIAPI.Capabilities.Files.Files.Upload(string, string)
+  name: Upload(string, Purposes)
+  nameWithType: Files.Upload(string, Purposes)
+  fullName: Promezio.OAIAPI.Capabilities.Files.Files.Upload(string, Promezio.OAIAPI.Capabilities.Files.Purposes)
   type: Method
   source:
     remote:
@@ -118,18 +118,18 @@ items:
   summary: Uploads a file to the OpenAI API for processing.
   example: []
   syntax:
-    content: public Task<FileObject> Upload(string fileURI, string filePurpose)
+    content: public Task<FileObject> Upload(string fileURI, Purposes filePurpose)
     parameters:
     - id: fileURI
       type: System.String
       description: The URI of the file to be uploaded.
     - id: filePurpose
-      type: System.String
+      type: Promezio.OAIAPI.Capabilities.Files.Purposes
       description: The purpose of the file upload, which must be a valid purpose as defined by OpenAI.
     return:
       type: System.Threading.Tasks.Task{Promezio.OAIAPI.Capabilities.Files.FileObject}
       description: A FileObject representing the uploaded file.
-    content.vb: Public Function Upload(fileURI As String, filePurpose As String) As Task(Of FileObject)
+    content.vb: Public Function Upload(fileURI As String, filePurpose As Purposes) As Task(Of FileObject)
   overload: Promezio.OAIAPI.Capabilities.Files.Files.Upload*
   exceptions:
   - type: System.ArgumentException
@@ -141,9 +141,9 @@ items:
   - type: System.Text.Json.JsonException
     commentId: T:System.Text.Json.JsonException
     description: Thrown when parsing the API response fails.
-  nameWithType.vb: Files.Upload(String, String)
-  fullName.vb: Promezio.OAIAPI.Capabilities.Files.Files.Upload(String, String)
-  name.vb: Upload(String, String)
+  nameWithType.vb: Files.Upload(String, Purposes)
+  fullName.vb: Promezio.OAIAPI.Capabilities.Files.Files.Upload(String, Promezio.OAIAPI.Capabilities.Files.Purposes)
+  name.vb: Upload(String, Purposes)
 - uid: Promezio.OAIAPI.Capabilities.Files.Files.List
   commentId: M:Promezio.OAIAPI.Capabilities.Files.Files.List
   id: List
@@ -162,7 +162,7 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: List
     path: OAIAPI/Capabilities/Files/Files.cs
-    startLine: 81
+    startLine: 77
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.Files
@@ -197,7 +197,7 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: Retrieve
     path: OAIAPI/Capabilities/Files/Files.cs
-    startLine: 114
+    startLine: 111
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.Files
@@ -245,7 +245,7 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: Delete
     path: OAIAPI/Capabilities/Files/Files.cs
-    startLine: 155
+    startLine: 153
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.Files
@@ -290,7 +290,7 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: Content
     path: OAIAPI/Capabilities/Files/Files.cs
-    startLine: 182
+    startLine: 180
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.Files
@@ -731,10 +731,17 @@ references:
   fullName: System.Text.Json.JsonException
 - uid: Promezio.OAIAPI.Capabilities.Files.Files.Upload*
   commentId: Overload:Promezio.OAIAPI.Capabilities.Files.Files.Upload
-  href: Promezio.OAIAPI.Capabilities.Files.Files.html#Promezio_OAIAPI_Capabilities_Files_Files_Upload_System_String_System_String_
+  href: Promezio.OAIAPI.Capabilities.Files.Files.html#Promezio_OAIAPI_Capabilities_Files_Files_Upload_System_String_Promezio_OAIAPI_Capabilities_Files_Purposes_
   name: Upload
   nameWithType: Files.Upload
   fullName: Promezio.OAIAPI.Capabilities.Files.Files.Upload
+- uid: Promezio.OAIAPI.Capabilities.Files.Purposes
+  commentId: T:Promezio.OAIAPI.Capabilities.Files.Purposes
+  parent: Promezio.OAIAPI.Capabilities.Files
+  href: Promezio.OAIAPI.Capabilities.Files.Purposes.html
+  name: Purposes
+  nameWithType: Purposes
+  fullName: Promezio.OAIAPI.Capabilities.Files.Purposes
 - uid: System.Threading.Tasks.Task{Promezio.OAIAPI.Capabilities.Files.FileObject}
   commentId: T:System.Threading.Tasks.Task{Promezio.OAIAPI.Capabilities.Files.FileObject}
   parent: System.Threading.Tasks

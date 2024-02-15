@@ -43,7 +43,7 @@ public class Role {
                 return "assistant";
         }
 
-        return "";
+        return "INVALID";
     }
 
 }

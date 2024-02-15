@@ -1,30 +1,46 @@
-﻿using System.Reflection;
+﻿namespace Promezio.OAIAPI.Capabilities.Files;
 
-namespace Promezio.OAIAPI.Capabilities.Files;
+/// <summary>
+/// Enumerates the different purposes available for an OpenAI API file.
+/// </summary>
+public enum AvailablePurposes {
+    FINE_TUNE,
+    FINE_TUNE_RESULTS,
+    ASSISTANTS,
+    ASSISTANTS_OUTPUT
+}
 
+/// <summary>
+/// Represents the purpose of an OpenAI API file with user-friendly, customizable text representations.
+/// </summary>
 public class Purposes {
-    public static string FINE_TUNE { get; } = "fine-tune";
-    public static string FINE_TUNE_RESULTS { get; } = "fine-tune-results";
-    public static string ASSISTANTS { get; } = "assistants";
-    public static string ASSISTANTS_OUTPUT { get; } = "assistants_output";
+
+    private AvailablePurposes _purpose;
 
     /// <summary>
-    /// Validates whether a given purpose name corresponds to any of the predefined purpose names in this class.
+    /// Initializes a new instance of the <see cref="Purposes"/> class.
     /// </summary>
-    /// <param name="purpose">The name of the purpose to validate.</param>
-    /// <returns>True if the purpose name exists in the predefined purposes; otherwise, false.</returns>
-    public static bool IsValid(string purpose) {
-        Type selfType = typeof(Purposes);
-        PropertyInfo[] selfProperties = selfType.GetProperties();
+    /// <param name="purpose">The purpose of the file, defaults to FINE_TUNE.</param>
+    public Purposes(AvailablePurposes purpose = AvailablePurposes.FINE_TUNE) {
+        _purpose = purpose;
+    }
 
-        foreach (PropertyInfo propertyInfo in selfProperties) {
-            string? propertyValue = (string?)propertyInfo.GetValue(null);
-
-            if (propertyValue != null && propertyValue == purpose) {
-                return true;
-            }
+    /// <summary>
+    /// Gets a string representation of the purpose, designed for interaction with the OpenAI API.
+    /// </summary>
+    /// <returns>A string representing the purpose.</returns>
+    public override string ToString() {
+        switch(_purpose) {
+            case AvailablePurposes.FINE_TUNE:
+                return "fine-tune";
+            case AvailablePurposes.FINE_TUNE_RESULTS:
+                return "fine-tune-results";
+            case AvailablePurposes.ASSISTANTS:
+                return "assistants";
+            case AvailablePurposes.ASSISTANTS_OUTPUT:
+                return "assistants_output";
         }
 
-        return false;
+        return "INVALID";
     }
 }

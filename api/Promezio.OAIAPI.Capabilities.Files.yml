@@ -4,6 +4,7 @@ items:
   commentId: N:Promezio.OAIAPI.Capabilities.Files
   id: Promezio.OAIAPI.Capabilities.Files
   children:
+  - Promezio.OAIAPI.Capabilities.Files.AvailablePurposes
   - Promezio.OAIAPI.Capabilities.Files.FileObject
   - Promezio.OAIAPI.Capabilities.Files.Files
   - Promezio.OAIAPI.Capabilities.Files.Purposes
@@ -30,8 +31,16 @@ references:
   name: Files
   nameWithType: Files
   fullName: Promezio.OAIAPI.Capabilities.Files.Files
+- uid: Promezio.OAIAPI.Capabilities.Files.AvailablePurposes
+  commentId: T:Promezio.OAIAPI.Capabilities.Files.AvailablePurposes
+  parent: Promezio.OAIAPI.Capabilities.Files
+  href: Promezio.OAIAPI.Capabilities.Files.AvailablePurposes.html
+  name: AvailablePurposes
+  nameWithType: AvailablePurposes
+  fullName: Promezio.OAIAPI.Capabilities.Files.AvailablePurposes
 - uid: Promezio.OAIAPI.Capabilities.Files.Purposes
   commentId: T:Promezio.OAIAPI.Capabilities.Files.Purposes
+  parent: Promezio.OAIAPI.Capabilities.Files
   href: Promezio.OAIAPI.Capabilities.Files.Purposes.html
   name: Purposes
   nameWithType: Purposes

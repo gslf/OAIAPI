@@ -16,39 +16,33 @@ public class FilesTest : Test {
     [TestMethod]
     public async Task TestFileUploadDelete() {
         OAIAPI api = new OAIAPI(_apikey);
-        FileObject? uploadResult = await api.Files.Upload("../../../TestResources/SarcasticTuning.jsonl", Purposes.FINE_TUNE);
+        FileObject? uploadResult = await api.Files.Upload("../../../TestResources/SarcasticTuning.jsonl", new Purposes());
         Assert.IsFalse(string.IsNullOrEmpty(uploadResult.Id));
 
         bool deleteResult = await api.Files.Delete(uploadResult.Id);
         Assert.IsTrue(deleteResult);
     }
 
-    [TestMethod]
-    [ExpectedException(typeof(ArgumentException))]
-    public async Task TestFileUploadWrongParameter() {
-        OAIAPI api = new OAIAPI(_apikey);
-        FileObject? result = await api.Files.Upload("../../../TestResources/SarcasticTuning.jsonl", "NOT_EXIST");
-    }
 
     [TestMethod]
     [ExpectedException(typeof(FileNotFoundException))]
     public async Task TestFileUploadInexistentFile() {
         OAIAPI api = new OAIAPI(_apikey);
-        FileObject? result = await api.Files.Upload("NOT-EXIST", Purposes.FINE_TUNE);
+        FileObject? result = await api.Files.Upload("NOT-EXIST", new Purposes());
     }
 
     [TestMethod]
     [ExpectedException(typeof(HttpRequestException))]
     public async Task TestFileUploadWrongFile() {
         OAIAPI api = new OAIAPI(_apikey);
-        FileObject? result = await api.Files.Upload("../../../TestResources/Config.json", Purposes.FINE_TUNE);
+        FileObject? result = await api.Files.Upload("../../../TestResources/Config.json", new Purposes());
     }
 
     [TestMethod]
     public async Task TestFileListRetrieveContentDelete() {
         OAIAPI api = new OAIAPI(_apikey);
 
-        FileObject? uploadResult = await api.Files.Upload("../../../TestResources/SarcasticTuning.jsonl", Purposes.FINE_TUNE);
+        FileObject? uploadResult = await api.Files.Upload("../../../TestResources/SarcasticTuning.jsonl", new Purposes());
         Assert.IsFalse(string.IsNullOrEmpty(uploadResult.Id));
 
         FileObject[]? listResults = await api.Files.List();

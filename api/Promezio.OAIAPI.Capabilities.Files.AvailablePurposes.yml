@@ -1,0 +1,184 @@
+### YamlMime:ManagedReference
+items:
+- uid: Promezio.OAIAPI.Capabilities.Files.AvailablePurposes
+  commentId: T:Promezio.OAIAPI.Capabilities.Files.AvailablePurposes
+  id: AvailablePurposes
+  parent: Promezio.OAIAPI.Capabilities.Files
+  children:
+  - Promezio.OAIAPI.Capabilities.Files.AvailablePurposes.ASSISTANTS
+  - Promezio.OAIAPI.Capabilities.Files.AvailablePurposes.ASSISTANTS_OUTPUT
+  - Promezio.OAIAPI.Capabilities.Files.AvailablePurposes.FINE_TUNE
+  - Promezio.OAIAPI.Capabilities.Files.AvailablePurposes.FINE_TUNE_RESULTS
+  langs:
+  - csharp
+  - vb
+  name: AvailablePurposes
+  nameWithType: AvailablePurposes
+  fullName: Promezio.OAIAPI.Capabilities.Files.AvailablePurposes
+  type: Enum
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Files/Purposes.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: AvailablePurposes
+    path: OAIAPI/Capabilities/Files/Purposes.cs
+    startLine: 5
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Files
+  summary: Enumerates the different purposes available for an OpenAI API file.
+  example: []
+  syntax:
+    content: public enum AvailablePurposes
+    content.vb: Public Enum AvailablePurposes
+- uid: Promezio.OAIAPI.Capabilities.Files.AvailablePurposes.FINE_TUNE
+  commentId: F:Promezio.OAIAPI.Capabilities.Files.AvailablePurposes.FINE_TUNE
+  id: FINE_TUNE
+  parent: Promezio.OAIAPI.Capabilities.Files.AvailablePurposes
+  langs:
+  - csharp
+  - vb
+  name: FINE_TUNE
+  nameWithType: AvailablePurposes.FINE_TUNE
+  fullName: Promezio.OAIAPI.Capabilities.Files.AvailablePurposes.FINE_TUNE
+  type: Field
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Files/Purposes.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: FINE_TUNE
+    path: OAIAPI/Capabilities/Files/Purposes.cs
+    startLine: 6
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Files
+  syntax:
+    content: FINE_TUNE = 0
+    return:
+      type: Promezio.OAIAPI.Capabilities.Files.AvailablePurposes
+- uid: Promezio.OAIAPI.Capabilities.Files.AvailablePurposes.FINE_TUNE_RESULTS
+  commentId: F:Promezio.OAIAPI.Capabilities.Files.AvailablePurposes.FINE_TUNE_RESULTS
+  id: FINE_TUNE_RESULTS
+  parent: Promezio.OAIAPI.Capabilities.Files.AvailablePurposes
+  langs:
+  - csharp
+  - vb
+  name: FINE_TUNE_RESULTS
+  nameWithType: AvailablePurposes.FINE_TUNE_RESULTS
+  fullName: Promezio.OAIAPI.Capabilities.Files.AvailablePurposes.FINE_TUNE_RESULTS
+  type: Field
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Files/Purposes.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: FINE_TUNE_RESULTS
+    path: OAIAPI/Capabilities/Files/Purposes.cs
+    startLine: 7
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Files
+  syntax:
+    content: FINE_TUNE_RESULTS = 1
+    return:
+      type: Promezio.OAIAPI.Capabilities.Files.AvailablePurposes
+- uid: Promezio.OAIAPI.Capabilities.Files.AvailablePurposes.ASSISTANTS
+  commentId: F:Promezio.OAIAPI.Capabilities.Files.AvailablePurposes.ASSISTANTS
+  id: ASSISTANTS
+  parent: Promezio.OAIAPI.Capabilities.Files.AvailablePurposes
+  langs:
+  - csharp
+  - vb
+  name: ASSISTANTS
+  nameWithType: AvailablePurposes.ASSISTANTS
+  fullName: Promezio.OAIAPI.Capabilities.Files.AvailablePurposes.ASSISTANTS
+  type: Field
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Files/Purposes.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: ASSISTANTS
+    path: OAIAPI/Capabilities/Files/Purposes.cs
+    startLine: 8
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Files
+  syntax:
+    content: ASSISTANTS = 2
+    return:
+      type: Promezio.OAIAPI.Capabilities.Files.AvailablePurposes
+- uid: Promezio.OAIAPI.Capabilities.Files.AvailablePurposes.ASSISTANTS_OUTPUT
+  commentId: F:Promezio.OAIAPI.Capabilities.Files.AvailablePurposes.ASSISTANTS_OUTPUT
+  id: ASSISTANTS_OUTPUT
+  parent: Promezio.OAIAPI.Capabilities.Files.AvailablePurposes
+  langs:
+  - csharp
+  - vb
+  name: ASSISTANTS_OUTPUT
+  nameWithType: AvailablePurposes.ASSISTANTS_OUTPUT
+  fullName: Promezio.OAIAPI.Capabilities.Files.AvailablePurposes.ASSISTANTS_OUTPUT
+  type: Field
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Files/Purposes.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: ASSISTANTS_OUTPUT
+    path: OAIAPI/Capabilities/Files/Purposes.cs
+    startLine: 9
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Files
+  syntax:
+    content: ASSISTANTS_OUTPUT = 3
+    return:
+      type: Promezio.OAIAPI.Capabilities.Files.AvailablePurposes
+references:
+- uid: Promezio.OAIAPI.Capabilities.Files
+  commentId: N:Promezio.OAIAPI.Capabilities.Files
+  href: Promezio.html
+  name: Promezio.OAIAPI.Capabilities.Files
+  nameWithType: Promezio.OAIAPI.Capabilities.Files
+  fullName: Promezio.OAIAPI.Capabilities.Files
+  spec.csharp:
+  - uid: Promezio
+    name: Promezio
+    href: Promezio.html
+  - name: .
+  - uid: Promezio.OAIAPI
+    name: OAIAPI
+    href: Promezio.OAIAPI.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities
+    name: Capabilities
+    href: Promezio.OAIAPI.Capabilities.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities.Files
+    name: Files
+    href: Promezio.OAIAPI.Capabilities.Files.html
+  spec.vb:
+  - uid: Promezio
+    name: Promezio
+    href: Promezio.html
+  - name: .
+  - uid: Promezio.OAIAPI
+    name: OAIAPI
+    href: Promezio.OAIAPI.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities
+    name: Capabilities
+    href: Promezio.OAIAPI.Capabilities.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities.Files
+    name: Files
+    href: Promezio.OAIAPI.Capabilities.Files.html
+- uid: Promezio.OAIAPI.Capabilities.Files.AvailablePurposes
+  commentId: T:Promezio.OAIAPI.Capabilities.Files.AvailablePurposes
+  parent: Promezio.OAIAPI.Capabilities.Files
+  href: Promezio.OAIAPI.Capabilities.Files.AvailablePurposes.html
+  name: AvailablePurposes
+  nameWithType: AvailablePurposes
+  fullName: Promezio.OAIAPI.Capabilities.Files.AvailablePurposes

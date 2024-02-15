@@ -60,6 +60,6 @@ public class ChatModel {
                 return "gpt-4-32k";
         }
 
-        return "";
+        return "INVALID";
     }
 }

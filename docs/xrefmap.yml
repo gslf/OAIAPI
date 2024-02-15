@@ -1323,6 +1323,36 @@ references:
   commentId: N:Promezio.OAIAPI.Capabilities.Files
   fullName: Promezio.OAIAPI.Capabilities.Files
   nameWithType: Promezio.OAIAPI.Capabilities.Files
+- uid: Promezio.OAIAPI.Capabilities.Files.AvailablePurposes
+  name: AvailablePurposes
+  href: api/Promezio.OAIAPI.Capabilities.Files.AvailablePurposes.html
+  commentId: T:Promezio.OAIAPI.Capabilities.Files.AvailablePurposes
+  fullName: Promezio.OAIAPI.Capabilities.Files.AvailablePurposes
+  nameWithType: AvailablePurposes
+- uid: Promezio.OAIAPI.Capabilities.Files.AvailablePurposes.ASSISTANTS
+  name: ASSISTANTS
+  href: api/Promezio.OAIAPI.Capabilities.Files.AvailablePurposes.html#Promezio_OAIAPI_Capabilities_Files_AvailablePurposes_ASSISTANTS
+  commentId: F:Promezio.OAIAPI.Capabilities.Files.AvailablePurposes.ASSISTANTS
+  fullName: Promezio.OAIAPI.Capabilities.Files.AvailablePurposes.ASSISTANTS
+  nameWithType: AvailablePurposes.ASSISTANTS
+- uid: Promezio.OAIAPI.Capabilities.Files.AvailablePurposes.ASSISTANTS_OUTPUT
+  name: ASSISTANTS_OUTPUT
+  href: api/Promezio.OAIAPI.Capabilities.Files.AvailablePurposes.html#Promezio_OAIAPI_Capabilities_Files_AvailablePurposes_ASSISTANTS_OUTPUT
+  commentId: F:Promezio.OAIAPI.Capabilities.Files.AvailablePurposes.ASSISTANTS_OUTPUT
+  fullName: Promezio.OAIAPI.Capabilities.Files.AvailablePurposes.ASSISTANTS_OUTPUT
+  nameWithType: AvailablePurposes.ASSISTANTS_OUTPUT
+- uid: Promezio.OAIAPI.Capabilities.Files.AvailablePurposes.FINE_TUNE
+  name: FINE_TUNE
+  href: api/Promezio.OAIAPI.Capabilities.Files.AvailablePurposes.html#Promezio_OAIAPI_Capabilities_Files_AvailablePurposes_FINE_TUNE
+  commentId: F:Promezio.OAIAPI.Capabilities.Files.AvailablePurposes.FINE_TUNE
+  fullName: Promezio.OAIAPI.Capabilities.Files.AvailablePurposes.FINE_TUNE
+  nameWithType: AvailablePurposes.FINE_TUNE
+- uid: Promezio.OAIAPI.Capabilities.Files.AvailablePurposes.FINE_TUNE_RESULTS
+  name: FINE_TUNE_RESULTS
+  href: api/Promezio.OAIAPI.Capabilities.Files.AvailablePurposes.html#Promezio_OAIAPI_Capabilities_Files_AvailablePurposes_FINE_TUNE_RESULTS
+  commentId: F:Promezio.OAIAPI.Capabilities.Files.AvailablePurposes.FINE_TUNE_RESULTS
+  fullName: Promezio.OAIAPI.Capabilities.Files.AvailablePurposes.FINE_TUNE_RESULTS
+  nameWithType: AvailablePurposes.FINE_TUNE_RESULTS
 - uid: Promezio.OAIAPI.Capabilities.Files.FileObject
   name: FileObject
   href: api/Promezio.OAIAPI.Capabilities.Files.FileObject.html
@@ -1480,15 +1510,15 @@ references:
   isSpec: "True"
   fullName: Promezio.OAIAPI.Capabilities.Files.Files.Retrieve
   nameWithType: Files.Retrieve
-- uid: Promezio.OAIAPI.Capabilities.Files.Files.Upload(System.String,System.String)
-  name: Upload(string, string)
-  href: api/Promezio.OAIAPI.Capabilities.Files.Files.html#Promezio_OAIAPI_Capabilities_Files_Files_Upload_System_String_System_String_
-  commentId: M:Promezio.OAIAPI.Capabilities.Files.Files.Upload(System.String,System.String)
-  name.vb: Upload(String, String)
-  fullName: Promezio.OAIAPI.Capabilities.Files.Files.Upload(string, string)
-  fullName.vb: Promezio.OAIAPI.Capabilities.Files.Files.Upload(String, String)
-  nameWithType: Files.Upload(string, string)
-  nameWithType.vb: Files.Upload(String, String)
+- uid: Promezio.OAIAPI.Capabilities.Files.Files.Upload(System.String,Promezio.OAIAPI.Capabilities.Files.Purposes)
+  name: Upload(string, Purposes)
+  href: api/Promezio.OAIAPI.Capabilities.Files.Files.html#Promezio_OAIAPI_Capabilities_Files_Files_Upload_System_String_Promezio_OAIAPI_Capabilities_Files_Purposes_
+  commentId: M:Promezio.OAIAPI.Capabilities.Files.Files.Upload(System.String,Promezio.OAIAPI.Capabilities.Files.Purposes)
+  name.vb: Upload(String, Purposes)
+  fullName: Promezio.OAIAPI.Capabilities.Files.Files.Upload(string, Promezio.OAIAPI.Capabilities.Files.Purposes)
+  fullName.vb: Promezio.OAIAPI.Capabilities.Files.Files.Upload(String, Promezio.OAIAPI.Capabilities.Files.Purposes)
+  nameWithType: Files.Upload(string, Purposes)
+  nameWithType.vb: Files.Upload(String, Purposes)
 - uid: Promezio.OAIAPI.Capabilities.Files.Files.Upload*
   name: Upload
   href: api/Promezio.OAIAPI.Capabilities.Files.Files.html#Promezio_OAIAPI_Capabilities_Files_Files_Upload_
@@ -1502,74 +1532,38 @@ references:
   commentId: T:Promezio.OAIAPI.Capabilities.Files.Purposes
   fullName: Promezio.OAIAPI.Capabilities.Files.Purposes
   nameWithType: Purposes
-- uid: Promezio.OAIAPI.Capabilities.Files.Purposes.ASSISTANTS
-  name: ASSISTANTS
-  href: api/Promezio.OAIAPI.Capabilities.Files.Purposes.html#Promezio_OAIAPI_Capabilities_Files_Purposes_ASSISTANTS
-  commentId: P:Promezio.OAIAPI.Capabilities.Files.Purposes.ASSISTANTS
-  fullName: Promezio.OAIAPI.Capabilities.Files.Purposes.ASSISTANTS
-  nameWithType: Purposes.ASSISTANTS
-- uid: Promezio.OAIAPI.Capabilities.Files.Purposes.ASSISTANTS*
-  name: ASSISTANTS
-  href: api/Promezio.OAIAPI.Capabilities.Files.Purposes.html#Promezio_OAIAPI_Capabilities_Files_Purposes_ASSISTANTS_
-  commentId: Overload:Promezio.OAIAPI.Capabilities.Files.Purposes.ASSISTANTS
+- uid: Promezio.OAIAPI.Capabilities.Files.Purposes.#ctor(Promezio.OAIAPI.Capabilities.Files.AvailablePurposes)
+  name: Purposes(AvailablePurposes)
+  href: api/Promezio.OAIAPI.Capabilities.Files.Purposes.html#Promezio_OAIAPI_Capabilities_Files_Purposes__ctor_Promezio_OAIAPI_Capabilities_Files_AvailablePurposes_
+  commentId: M:Promezio.OAIAPI.Capabilities.Files.Purposes.#ctor(Promezio.OAIAPI.Capabilities.Files.AvailablePurposes)
+  name.vb: New(AvailablePurposes)
+  fullName: Promezio.OAIAPI.Capabilities.Files.Purposes.Purposes(Promezio.OAIAPI.Capabilities.Files.AvailablePurposes)
+  fullName.vb: Promezio.OAIAPI.Capabilities.Files.Purposes.New(Promezio.OAIAPI.Capabilities.Files.AvailablePurposes)
+  nameWithType: Purposes.Purposes(AvailablePurposes)
+  nameWithType.vb: Purposes.New(AvailablePurposes)
+- uid: Promezio.OAIAPI.Capabilities.Files.Purposes.#ctor*
+  name: Purposes
+  href: api/Promezio.OAIAPI.Capabilities.Files.Purposes.html#Promezio_OAIAPI_Capabilities_Files_Purposes__ctor_
+  commentId: Overload:Promezio.OAIAPI.Capabilities.Files.Purposes.#ctor
   isSpec: "True"
-  fullName: Promezio.OAIAPI.Capabilities.Files.Purposes.ASSISTANTS
-  nameWithType: Purposes.ASSISTANTS
-- uid: Promezio.OAIAPI.Capabilities.Files.Purposes.ASSISTANTS_OUTPUT
-  name: ASSISTANTS_OUTPUT
-  href: api/Promezio.OAIAPI.Capabilities.Files.Purposes.html#Promezio_OAIAPI_Capabilities_Files_Purposes_ASSISTANTS_OUTPUT
-  commentId: P:Promezio.OAIAPI.Capabilities.Files.Purposes.ASSISTANTS_OUTPUT
-  fullName: Promezio.OAIAPI.Capabilities.Files.Purposes.ASSISTANTS_OUTPUT
-  nameWithType: Purposes.ASSISTANTS_OUTPUT
-- uid: Promezio.OAIAPI.Capabilities.Files.Purposes.ASSISTANTS_OUTPUT*
-  name: ASSISTANTS_OUTPUT
-  href: api/Promezio.OAIAPI.Capabilities.Files.Purposes.html#Promezio_OAIAPI_Capabilities_Files_Purposes_ASSISTANTS_OUTPUT_
-  commentId: Overload:Promezio.OAIAPI.Capabilities.Files.Purposes.ASSISTANTS_OUTPUT
+  name.vb: New
+  fullName: Promezio.OAIAPI.Capabilities.Files.Purposes.Purposes
+  fullName.vb: Promezio.OAIAPI.Capabilities.Files.Purposes.New
+  nameWithType: Purposes.Purposes
+  nameWithType.vb: Purposes.New
+- uid: Promezio.OAIAPI.Capabilities.Files.Purposes.ToString
+  name: ToString()
+  href: api/Promezio.OAIAPI.Capabilities.Files.Purposes.html#Promezio_OAIAPI_Capabilities_Files_Purposes_ToString
+  commentId: M:Promezio.OAIAPI.Capabilities.Files.Purposes.ToString
+  fullName: Promezio.OAIAPI.Capabilities.Files.Purposes.ToString()
+  nameWithType: Purposes.ToString()
+- uid: Promezio.OAIAPI.Capabilities.Files.Purposes.ToString*
+  name: ToString
+  href: api/Promezio.OAIAPI.Capabilities.Files.Purposes.html#Promezio_OAIAPI_Capabilities_Files_Purposes_ToString_
+  commentId: Overload:Promezio.OAIAPI.Capabilities.Files.Purposes.ToString
   isSpec: "True"
-  fullName: Promezio.OAIAPI.Capabilities.Files.Purposes.ASSISTANTS_OUTPUT
-  nameWithType: Purposes.ASSISTANTS_OUTPUT
-- uid: Promezio.OAIAPI.Capabilities.Files.Purposes.FINE_TUNE
-  name: FINE_TUNE
-  href: api/Promezio.OAIAPI.Capabilities.Files.Purposes.html#Promezio_OAIAPI_Capabilities_Files_Purposes_FINE_TUNE
-  commentId: P:Promezio.OAIAPI.Capabilities.Files.Purposes.FINE_TUNE
-  fullName: Promezio.OAIAPI.Capabilities.Files.Purposes.FINE_TUNE
-  nameWithType: Purposes.FINE_TUNE
-- uid: Promezio.OAIAPI.Capabilities.Files.Purposes.FINE_TUNE*
-  name: FINE_TUNE
-  href: api/Promezio.OAIAPI.Capabilities.Files.Purposes.html#Promezio_OAIAPI_Capabilities_Files_Purposes_FINE_TUNE_
-  commentId: Overload:Promezio.OAIAPI.Capabilities.Files.Purposes.FINE_TUNE
-  isSpec: "True"
-  fullName: Promezio.OAIAPI.Capabilities.Files.Purposes.FINE_TUNE
-  nameWithType: Purposes.FINE_TUNE
-- uid: Promezio.OAIAPI.Capabilities.Files.Purposes.FINE_TUNE_RESULTS
-  name: FINE_TUNE_RESULTS
-  href: api/Promezio.OAIAPI.Capabilities.Files.Purposes.html#Promezio_OAIAPI_Capabilities_Files_Purposes_FINE_TUNE_RESULTS
-  commentId: P:Promezio.OAIAPI.Capabilities.Files.Purposes.FINE_TUNE_RESULTS
-  fullName: Promezio.OAIAPI.Capabilities.Files.Purposes.FINE_TUNE_RESULTS
-  nameWithType: Purposes.FINE_TUNE_RESULTS
-- uid: Promezio.OAIAPI.Capabilities.Files.Purposes.FINE_TUNE_RESULTS*
-  name: FINE_TUNE_RESULTS
-  href: api/Promezio.OAIAPI.Capabilities.Files.Purposes.html#Promezio_OAIAPI_Capabilities_Files_Purposes_FINE_TUNE_RESULTS_
-  commentId: Overload:Promezio.OAIAPI.Capabilities.Files.Purposes.FINE_TUNE_RESULTS
-  isSpec: "True"
-  fullName: Promezio.OAIAPI.Capabilities.Files.Purposes.FINE_TUNE_RESULTS
-  nameWithType: Purposes.FINE_TUNE_RESULTS
-- uid: Promezio.OAIAPI.Capabilities.Files.Purposes.IsValid(System.String)
-  name: IsValid(string)
-  href: api/Promezio.OAIAPI.Capabilities.Files.Purposes.html#Promezio_OAIAPI_Capabilities_Files_Purposes_IsValid_System_String_
-  commentId: M:Promezio.OAIAPI.Capabilities.Files.Purposes.IsValid(System.String)
-  name.vb: IsValid(String)
-  fullName: Promezio.OAIAPI.Capabilities.Files.Purposes.IsValid(string)
-  fullName.vb: Promezio.OAIAPI.Capabilities.Files.Purposes.IsValid(String)
-  nameWithType: Purposes.IsValid(string)
-  nameWithType.vb: Purposes.IsValid(String)
-- uid: Promezio.OAIAPI.Capabilities.Files.Purposes.IsValid*
-  name: IsValid
-  href: api/Promezio.OAIAPI.Capabilities.Files.Purposes.html#Promezio_OAIAPI_Capabilities_Files_Purposes_IsValid_
-  commentId: Overload:Promezio.OAIAPI.Capabilities.Files.Purposes.IsValid
-  isSpec: "True"
-  fullName: Promezio.OAIAPI.Capabilities.Files.Purposes.IsValid
-  nameWithType: Purposes.IsValid
+  fullName: Promezio.OAIAPI.Capabilities.Files.Purposes.ToString
+  nameWithType: Purposes.ToString
 - uid: Promezio.OAIAPI.Capabilities.FineTuning
   name: Promezio.OAIAPI.Capabilities.FineTuning
   href: api/Promezio.OAIAPI.Capabilities.FineTuning.html

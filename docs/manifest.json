@@ -342,6 +342,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.Files.AvailablePurposes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.Files.AvailablePurposes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Promezio.OAIAPI.Capabilities.Files.FileObject.yml",
       "output": {
         ".html": {
