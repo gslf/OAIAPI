@@ -1,0 +1,211 @@
+### YamlMime:ManagedReference
+items:
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels
+  commentId: T:Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels
+  id: AvailableModels
+  parent: Promezio.OAIAPI.Capabilities.FineTuning
+  children:
+  - Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels.BABBAGE_002
+  - Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels.DAVINCI_002
+  - Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels.GPT_3_5_TURBO_0613
+  - Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels.GPT_3_5_TURBO_1106
+  - Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels.GPT_4_0613
+  langs:
+  - csharp
+  - vb
+  name: AvailableModels
+  nameWithType: AvailableModels
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels
+  type: Enum
+  source:
+    remote:
+      path: OAIAPI/Capabilities/FineTuning/Models.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: AvailableModels
+    path: OAIAPI/Capabilities/FineTuning/Models.cs
+    startLine: 5
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.FineTuning
+  summary: Represents the different OpenAI fine-tuning models that can be selected.
+  example: []
+  syntax:
+    content: public enum AvailableModels
+    content.vb: Public Enum AvailableModels
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels.GPT_3_5_TURBO_1106
+  commentId: F:Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels.GPT_3_5_TURBO_1106
+  id: GPT_3_5_TURBO_1106
+  parent: Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels
+  langs:
+  - csharp
+  - vb
+  name: GPT_3_5_TURBO_1106
+  nameWithType: AvailableModels.GPT_3_5_TURBO_1106
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels.GPT_3_5_TURBO_1106
+  type: Field
+  source:
+    remote:
+      path: OAIAPI/Capabilities/FineTuning/Models.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: GPT_3_5_TURBO_1106
+    path: OAIAPI/Capabilities/FineTuning/Models.cs
+    startLine: 6
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.FineTuning
+  syntax:
+    content: GPT_3_5_TURBO_1106 = 0
+    return:
+      type: Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels.GPT_3_5_TURBO_0613
+  commentId: F:Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels.GPT_3_5_TURBO_0613
+  id: GPT_3_5_TURBO_0613
+  parent: Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels
+  langs:
+  - csharp
+  - vb
+  name: GPT_3_5_TURBO_0613
+  nameWithType: AvailableModels.GPT_3_5_TURBO_0613
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels.GPT_3_5_TURBO_0613
+  type: Field
+  source:
+    remote:
+      path: OAIAPI/Capabilities/FineTuning/Models.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: GPT_3_5_TURBO_0613
+    path: OAIAPI/Capabilities/FineTuning/Models.cs
+    startLine: 7
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.FineTuning
+  syntax:
+    content: GPT_3_5_TURBO_0613 = 1
+    return:
+      type: Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels.BABBAGE_002
+  commentId: F:Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels.BABBAGE_002
+  id: BABBAGE_002
+  parent: Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels
+  langs:
+  - csharp
+  - vb
+  name: BABBAGE_002
+  nameWithType: AvailableModels.BABBAGE_002
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels.BABBAGE_002
+  type: Field
+  source:
+    remote:
+      path: OAIAPI/Capabilities/FineTuning/Models.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: BABBAGE_002
+    path: OAIAPI/Capabilities/FineTuning/Models.cs
+    startLine: 8
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.FineTuning
+  syntax:
+    content: BABBAGE_002 = 2
+    return:
+      type: Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels.DAVINCI_002
+  commentId: F:Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels.DAVINCI_002
+  id: DAVINCI_002
+  parent: Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels
+  langs:
+  - csharp
+  - vb
+  name: DAVINCI_002
+  nameWithType: AvailableModels.DAVINCI_002
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels.DAVINCI_002
+  type: Field
+  source:
+    remote:
+      path: OAIAPI/Capabilities/FineTuning/Models.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: DAVINCI_002
+    path: OAIAPI/Capabilities/FineTuning/Models.cs
+    startLine: 9
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.FineTuning
+  syntax:
+    content: DAVINCI_002 = 3
+    return:
+      type: Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels.GPT_4_0613
+  commentId: F:Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels.GPT_4_0613
+  id: GPT_4_0613
+  parent: Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels
+  langs:
+  - csharp
+  - vb
+  name: GPT_4_0613
+  nameWithType: AvailableModels.GPT_4_0613
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels.GPT_4_0613
+  type: Field
+  source:
+    remote:
+      path: OAIAPI/Capabilities/FineTuning/Models.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: GPT_4_0613
+    path: OAIAPI/Capabilities/FineTuning/Models.cs
+    startLine: 10
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.FineTuning
+  syntax:
+    content: GPT_4_0613 = 4
+    return:
+      type: Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels
+references:
+- uid: Promezio.OAIAPI.Capabilities.FineTuning
+  commentId: N:Promezio.OAIAPI.Capabilities.FineTuning
+  href: Promezio.html
+  name: Promezio.OAIAPI.Capabilities.FineTuning
+  nameWithType: Promezio.OAIAPI.Capabilities.FineTuning
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning
+  spec.csharp:
+  - uid: Promezio
+    name: Promezio
+    href: Promezio.html
+  - name: .
+  - uid: Promezio.OAIAPI
+    name: OAIAPI
+    href: Promezio.OAIAPI.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities
+    name: Capabilities
+    href: Promezio.OAIAPI.Capabilities.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities.FineTuning
+    name: FineTuning
+    href: Promezio.OAIAPI.Capabilities.FineTuning.html
+  spec.vb:
+  - uid: Promezio
+    name: Promezio
+    href: Promezio.html
+  - name: .
+  - uid: Promezio.OAIAPI
+    name: OAIAPI
+    href: Promezio.OAIAPI.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities
+    name: Capabilities
+    href: Promezio.OAIAPI.Capabilities.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities.FineTuning
+    name: FineTuning
+    href: Promezio.OAIAPI.Capabilities.FineTuning.html
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels
+  commentId: T:Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels
+  parent: Promezio.OAIAPI.Capabilities.FineTuning
+  href: Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels.html
+  name: AvailableModels
+  nameWithType: AvailableModels
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels

@@ -4,6 +4,7 @@ items:
   commentId: N:Promezio.OAIAPI.Capabilities.FineTuning
   id: Promezio.OAIAPI.Capabilities.FineTuning
   children:
+  - Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels
   - Promezio.OAIAPI.Capabilities.FineTuning.DecimalFromStringConverter
   - Promezio.OAIAPI.Capabilities.FineTuning.FineTuning
   - Promezio.OAIAPI.Capabilities.FineTuning.FineTuningEvent
@@ -54,8 +55,16 @@ references:
   name: Hyperparameters
   nameWithType: Hyperparameters
   fullName: Promezio.OAIAPI.Capabilities.FineTuning.Hyperparameters
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels
+  commentId: T:Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels
+  parent: Promezio.OAIAPI.Capabilities.FineTuning
+  href: Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels.html
+  name: AvailableModels
+  nameWithType: AvailableModels
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels
 - uid: Promezio.OAIAPI.Capabilities.FineTuning.Models
   commentId: T:Promezio.OAIAPI.Capabilities.FineTuning.Models
+  parent: Promezio.OAIAPI.Capabilities.FineTuning
   href: Promezio.OAIAPI.Capabilities.FineTuning.Models.html
   name: Models
   nameWithType: Models

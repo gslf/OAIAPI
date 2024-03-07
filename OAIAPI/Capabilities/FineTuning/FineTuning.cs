@@ -30,7 +30,7 @@ public class FineTuning : Capability {
     /// <param name="validationFileID">Optional. The ID of the validation file.</param>
     /// <returns>A <see cref="FineTuningObject"/> representing the created fine-tuning job.</returns>
     public async Task<FineTuningObject> Create(string trainingFileID,
-                                            string modelName,
+                                            Models model,
                                             decimal? batch_size = null,
                                             decimal? learning_rate_multiplier = null,
                                             decimal? n_epochs = null,
@@ -39,18 +39,12 @@ public class FineTuning : Capability {
 
         _logger.Info("[FineTuning.Create] New request.");
 
-        // Vallidation
-        if (!Models.IsValid(modelName)) {
-            _logger.Error($"[FineTuning.Create] The parameter {nameof(modelName)} is not valid");
-            throw new ArgumentException($"The parameter {nameof(modelName)} is not valid");
-        }
-
         // Request
         using (var client = new HttpClient()) {
 
             var requestBody = new {
                 training_file = trainingFileID,
-                model = modelName,
+                model = model.ToString(),
                 hyperparameters = new {
                     batch_size = batch_size,
                     learning_rate_multiplier = learning_rate_multiplier,

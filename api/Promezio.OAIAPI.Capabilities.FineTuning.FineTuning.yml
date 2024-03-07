@@ -7,7 +7,7 @@ items:
   children:
   - Promezio.OAIAPI.Capabilities.FineTuning.FineTuning.#ctor(System.String,Promezio.OAIAPI.Utils.Logger)
   - Promezio.OAIAPI.Capabilities.FineTuning.FineTuning.Cancel(System.String)
-  - Promezio.OAIAPI.Capabilities.FineTuning.FineTuning.Create(System.String,System.String,System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.String,System.String)
+  - Promezio.OAIAPI.Capabilities.FineTuning.FineTuning.Create(System.String,Promezio.OAIAPI.Capabilities.FineTuning.Models,System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.String,System.String)
   - Promezio.OAIAPI.Capabilities.FineTuning.FineTuning.ListEvents(System.String)
   - Promezio.OAIAPI.Capabilities.FineTuning.FineTuning.ListJobs
   - Promezio.OAIAPI.Capabilities.FineTuning.FineTuning.Retrieve(System.String)
@@ -89,16 +89,16 @@ items:
   nameWithType.vb: FineTuning.New(String, Logger)
   fullName.vb: Promezio.OAIAPI.Capabilities.FineTuning.FineTuning.New(String, Promezio.OAIAPI.Utils.Logger)
   name.vb: New(String, Logger)
-- uid: Promezio.OAIAPI.Capabilities.FineTuning.FineTuning.Create(System.String,System.String,System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.String,System.String)
-  commentId: M:Promezio.OAIAPI.Capabilities.FineTuning.FineTuning.Create(System.String,System.String,System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.String,System.String)
-  id: Create(System.String,System.String,System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.String,System.String)
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.FineTuning.Create(System.String,Promezio.OAIAPI.Capabilities.FineTuning.Models,System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.String,System.String)
+  commentId: M:Promezio.OAIAPI.Capabilities.FineTuning.FineTuning.Create(System.String,Promezio.OAIAPI.Capabilities.FineTuning.Models,System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.String,System.String)
+  id: Create(System.String,Promezio.OAIAPI.Capabilities.FineTuning.Models,System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.String,System.String)
   parent: Promezio.OAIAPI.Capabilities.FineTuning.FineTuning
   langs:
   - csharp
   - vb
-  name: Create(string, string, decimal?, decimal?, decimal?, string?, string?)
-  nameWithType: FineTuning.Create(string, string, decimal?, decimal?, decimal?, string?, string?)
-  fullName: Promezio.OAIAPI.Capabilities.FineTuning.FineTuning.Create(string, string, decimal?, decimal?, decimal?, string?, string?)
+  name: Create(string, Models, decimal?, decimal?, decimal?, string?, string?)
+  nameWithType: FineTuning.Create(string, Models, decimal?, decimal?, decimal?, string?, string?)
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.FineTuning.Create(string, Promezio.OAIAPI.Capabilities.FineTuning.Models, decimal?, decimal?, decimal?, string?, string?)
   type: Method
   source:
     remote:
@@ -114,14 +114,13 @@ items:
   summary: Creates a fine-tuning job for a machine learning model with the specified parameters.
   example: []
   syntax:
-    content: public Task<FineTuningObject> Create(string trainingFileID, string modelName, decimal? batch_size = null, decimal? learning_rate_multiplier = null, decimal? n_epochs = null, string? suffix = null, string? validationFileID = null)
+    content: public Task<FineTuningObject> Create(string trainingFileID, Models model, decimal? batch_size = null, decimal? learning_rate_multiplier = null, decimal? n_epochs = null, string? suffix = null, string? validationFileID = null)
     parameters:
     - id: trainingFileID
       type: System.String
       description: The ID of the training file.
-    - id: modelName
-      type: System.String
-      description: The name of the model to be fine-tuned.
+    - id: model
+      type: Promezio.OAIAPI.Capabilities.FineTuning.Models
     - id: batch_size
       type: System.Nullable{System.Decimal}
       description: Optional. The batch size for training.
@@ -140,11 +139,11 @@ items:
     return:
       type: System.Threading.Tasks.Task{Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject}
       description: A <xref href="Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject" data-throw-if-not-resolved="false"></xref> representing the created fine-tuning job.
-    content.vb: Public Function Create(trainingFileID As String, modelName As String, batch_size As Decimal? = Nothing, learning_rate_multiplier As Decimal? = Nothing, n_epochs As Decimal? = Nothing, suffix As String = Nothing, validationFileID As String = Nothing) As Task(Of FineTuningObject)
+    content.vb: Public Function Create(trainingFileID As String, model As Models, batch_size As Decimal? = Nothing, learning_rate_multiplier As Decimal? = Nothing, n_epochs As Decimal? = Nothing, suffix As String = Nothing, validationFileID As String = Nothing) As Task(Of FineTuningObject)
   overload: Promezio.OAIAPI.Capabilities.FineTuning.FineTuning.Create*
-  nameWithType.vb: FineTuning.Create(String, String, Decimal?, Decimal?, Decimal?, String, String)
-  fullName.vb: Promezio.OAIAPI.Capabilities.FineTuning.FineTuning.Create(String, String, Decimal?, Decimal?, Decimal?, String, String)
-  name.vb: Create(String, String, Decimal?, Decimal?, Decimal?, String, String)
+  nameWithType.vb: FineTuning.Create(String, Models, Decimal?, Decimal?, Decimal?, String, String)
+  fullName.vb: Promezio.OAIAPI.Capabilities.FineTuning.FineTuning.Create(String, Promezio.OAIAPI.Capabilities.FineTuning.Models, Decimal?, Decimal?, Decimal?, String, String)
+  name.vb: Create(String, Models, Decimal?, Decimal?, Decimal?, String, String)
 - uid: Promezio.OAIAPI.Capabilities.FineTuning.FineTuning.ListJobs
   commentId: M:Promezio.OAIAPI.Capabilities.FineTuning.FineTuning.ListJobs
   id: ListJobs
@@ -163,7 +162,7 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: ListJobs
     path: OAIAPI/Capabilities/FineTuning/FineTuning.cs
-    startLine: 89
+    startLine: 83
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.FineTuning
@@ -194,7 +193,7 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: ListEvents
     path: OAIAPI/Capabilities/FineTuning/FineTuning.cs
-    startLine: 119
+    startLine: 113
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.FineTuning
@@ -232,7 +231,7 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: Retrieve
     path: OAIAPI/Capabilities/FineTuning/FineTuning.cs
-    startLine: 156
+    startLine: 150
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.FineTuning
@@ -270,7 +269,7 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: Cancel
     path: OAIAPI/Capabilities/FineTuning/FineTuning.cs
-    startLine: 190
+    startLine: 184
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.FineTuning
@@ -689,10 +688,17 @@ references:
   fullName: Promezio.OAIAPI.Capabilities.FineTuning.FineTuningObject
 - uid: Promezio.OAIAPI.Capabilities.FineTuning.FineTuning.Create*
   commentId: Overload:Promezio.OAIAPI.Capabilities.FineTuning.FineTuning.Create
-  href: Promezio.OAIAPI.Capabilities.FineTuning.FineTuning.html#Promezio_OAIAPI_Capabilities_FineTuning_FineTuning_Create_System_String_System_String_System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_String_System_String_
+  href: Promezio.OAIAPI.Capabilities.FineTuning.FineTuning.html#Promezio_OAIAPI_Capabilities_FineTuning_FineTuning_Create_System_String_Promezio_OAIAPI_Capabilities_FineTuning_Models_System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_String_System_String_
   name: Create
   nameWithType: FineTuning.Create
   fullName: Promezio.OAIAPI.Capabilities.FineTuning.FineTuning.Create
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.Models
+  commentId: T:Promezio.OAIAPI.Capabilities.FineTuning.Models
+  parent: Promezio.OAIAPI.Capabilities.FineTuning
+  href: Promezio.OAIAPI.Capabilities.FineTuning.Models.html
+  name: Models
+  nameWithType: Models
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.Models
 - uid: System.Nullable{System.Decimal}
   commentId: T:System.Nullable{System.Decimal}
   parent: System

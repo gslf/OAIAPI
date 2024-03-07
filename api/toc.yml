@@ -73,6 +73,8 @@ items:
 - uid: Promezio.OAIAPI.Capabilities.FineTuning
   name: Promezio.OAIAPI.Capabilities.FineTuning
   items:
+  - uid: Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels
+    name: AvailableModels
   - uid: Promezio.OAIAPI.Capabilities.FineTuning.DecimalFromStringConverter
     name: DecimalFromStringConverter
   - uid: Promezio.OAIAPI.Capabilities.FineTuning.FineTuning

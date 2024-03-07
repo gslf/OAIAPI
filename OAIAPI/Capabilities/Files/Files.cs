@@ -106,7 +106,6 @@ public class Files : Capability {
     /// </summary>
     /// <param name="fileID">The ID of the file to retrieve.</param>
     /// <returns>A FileObject representing the retrieved file.</returns>
-    /// <exception cref="ArgumentException">Thrown when the provided file ID is not in a valid format.</exception>
     /// <exception cref="HttpRequestException">Thrown when the HTTP request to the OpenAI API fails.</exception>
     /// <exception cref="JsonException">Thrown when parsing the API response fails.</exception>
     public async Task<FileObject> Retrieve(string fileID) {

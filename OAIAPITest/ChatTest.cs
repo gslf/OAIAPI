@@ -16,7 +16,7 @@ namespace Promezio.OAIAPI.Test;
 public class ChatTest : Test {
 
     [TestMethod]
-    public async Task TestWrongConfigParameters() {
+    public void TestWrongConfigParameters() {
         Config config;
         // Test Out of Range exception
         Assert.ThrowsException<ArgumentOutOfRangeException>(() =>

@@ -28,7 +28,7 @@ OAIAPI api = new OAIAPI(myapikey);
 // Create a fine tuning job
 FineTuningObject? fineTuningResult = await api.FineTuning.Create(
             "theTrainigFileID",
-            Models.GPT_3_5_TURBO_1106,
+            new Models(),
             batch_size: 5, //optional
             learning_rate_multiplier: 2, //optional
             n_epochs: 10, //optional
@@ -73,7 +73,7 @@ if( ! string.IsNullOrEmpty(uploadResult.Id) ){
     // Create a fine tuning job
     FineTuningObject? fineTuningResult = await api.FineTuning.Create(
                 uploadResult.Id,
-                Models.GPT_3_5_TURBO_1106);
+                new Models());
 }
 ```
 

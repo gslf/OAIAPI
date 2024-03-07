@@ -1570,6 +1570,42 @@ references:
   commentId: N:Promezio.OAIAPI.Capabilities.FineTuning
   fullName: Promezio.OAIAPI.Capabilities.FineTuning
   nameWithType: Promezio.OAIAPI.Capabilities.FineTuning
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels
+  name: AvailableModels
+  href: api/Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels.html
+  commentId: T:Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels
+  nameWithType: AvailableModels
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels.BABBAGE_002
+  name: BABBAGE_002
+  href: api/Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels.html#Promezio_OAIAPI_Capabilities_FineTuning_AvailableModels_BABBAGE_002
+  commentId: F:Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels.BABBAGE_002
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels.BABBAGE_002
+  nameWithType: AvailableModels.BABBAGE_002
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels.DAVINCI_002
+  name: DAVINCI_002
+  href: api/Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels.html#Promezio_OAIAPI_Capabilities_FineTuning_AvailableModels_DAVINCI_002
+  commentId: F:Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels.DAVINCI_002
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels.DAVINCI_002
+  nameWithType: AvailableModels.DAVINCI_002
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels.GPT_3_5_TURBO_0613
+  name: GPT_3_5_TURBO_0613
+  href: api/Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels.html#Promezio_OAIAPI_Capabilities_FineTuning_AvailableModels_GPT_3_5_TURBO_0613
+  commentId: F:Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels.GPT_3_5_TURBO_0613
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels.GPT_3_5_TURBO_0613
+  nameWithType: AvailableModels.GPT_3_5_TURBO_0613
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels.GPT_3_5_TURBO_1106
+  name: GPT_3_5_TURBO_1106
+  href: api/Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels.html#Promezio_OAIAPI_Capabilities_FineTuning_AvailableModels_GPT_3_5_TURBO_1106
+  commentId: F:Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels.GPT_3_5_TURBO_1106
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels.GPT_3_5_TURBO_1106
+  nameWithType: AvailableModels.GPT_3_5_TURBO_1106
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels.GPT_4_0613
+  name: GPT_4_0613
+  href: api/Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels.html#Promezio_OAIAPI_Capabilities_FineTuning_AvailableModels_GPT_4_0613
+  commentId: F:Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels.GPT_4_0613
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels.GPT_4_0613
+  nameWithType: AvailableModels.GPT_4_0613
 - uid: Promezio.OAIAPI.Capabilities.FineTuning.DecimalFromStringConverter
   name: DecimalFromStringConverter
   href: api/Promezio.OAIAPI.Capabilities.FineTuning.DecimalFromStringConverter.html
@@ -1649,15 +1685,15 @@ references:
   isSpec: "True"
   fullName: Promezio.OAIAPI.Capabilities.FineTuning.FineTuning.Cancel
   nameWithType: FineTuning.Cancel
-- uid: Promezio.OAIAPI.Capabilities.FineTuning.FineTuning.Create(System.String,System.String,System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.String,System.String)
-  name: Create(string, string, decimal?, decimal?, decimal?, string?, string?)
-  href: api/Promezio.OAIAPI.Capabilities.FineTuning.FineTuning.html#Promezio_OAIAPI_Capabilities_FineTuning_FineTuning_Create_System_String_System_String_System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_String_System_String_
-  commentId: M:Promezio.OAIAPI.Capabilities.FineTuning.FineTuning.Create(System.String,System.String,System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.String,System.String)
-  name.vb: Create(String, String, Decimal?, Decimal?, Decimal?, String, String)
-  fullName: Promezio.OAIAPI.Capabilities.FineTuning.FineTuning.Create(string, string, decimal?, decimal?, decimal?, string?, string?)
-  fullName.vb: Promezio.OAIAPI.Capabilities.FineTuning.FineTuning.Create(String, String, Decimal?, Decimal?, Decimal?, String, String)
-  nameWithType: FineTuning.Create(string, string, decimal?, decimal?, decimal?, string?, string?)
-  nameWithType.vb: FineTuning.Create(String, String, Decimal?, Decimal?, Decimal?, String, String)
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.FineTuning.Create(System.String,Promezio.OAIAPI.Capabilities.FineTuning.Models,System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.String,System.String)
+  name: Create(string, Models, decimal?, decimal?, decimal?, string?, string?)
+  href: api/Promezio.OAIAPI.Capabilities.FineTuning.FineTuning.html#Promezio_OAIAPI_Capabilities_FineTuning_FineTuning_Create_System_String_Promezio_OAIAPI_Capabilities_FineTuning_Models_System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_String_System_String_
+  commentId: M:Promezio.OAIAPI.Capabilities.FineTuning.FineTuning.Create(System.String,Promezio.OAIAPI.Capabilities.FineTuning.Models,System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.String,System.String)
+  name.vb: Create(String, Models, Decimal?, Decimal?, Decimal?, String, String)
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.FineTuning.Create(string, Promezio.OAIAPI.Capabilities.FineTuning.Models, decimal?, decimal?, decimal?, string?, string?)
+  fullName.vb: Promezio.OAIAPI.Capabilities.FineTuning.FineTuning.Create(String, Promezio.OAIAPI.Capabilities.FineTuning.Models, Decimal?, Decimal?, Decimal?, String, String)
+  nameWithType: FineTuning.Create(string, Models, decimal?, decimal?, decimal?, string?, string?)
+  nameWithType.vb: FineTuning.Create(String, Models, Decimal?, Decimal?, Decimal?, String, String)
 - uid: Promezio.OAIAPI.Capabilities.FineTuning.FineTuning.Create*
   name: Create
   href: api/Promezio.OAIAPI.Capabilities.FineTuning.FineTuning.html#Promezio_OAIAPI_Capabilities_FineTuning_FineTuning_Create_
@@ -2020,87 +2056,38 @@ references:
   commentId: T:Promezio.OAIAPI.Capabilities.FineTuning.Models
   fullName: Promezio.OAIAPI.Capabilities.FineTuning.Models
   nameWithType: Models
-- uid: Promezio.OAIAPI.Capabilities.FineTuning.Models.BABBAGE_002
-  name: BABBAGE_002
-  href: api/Promezio.OAIAPI.Capabilities.FineTuning.Models.html#Promezio_OAIAPI_Capabilities_FineTuning_Models_BABBAGE_002
-  commentId: P:Promezio.OAIAPI.Capabilities.FineTuning.Models.BABBAGE_002
-  fullName: Promezio.OAIAPI.Capabilities.FineTuning.Models.BABBAGE_002
-  nameWithType: Models.BABBAGE_002
-- uid: Promezio.OAIAPI.Capabilities.FineTuning.Models.BABBAGE_002*
-  name: BABBAGE_002
-  href: api/Promezio.OAIAPI.Capabilities.FineTuning.Models.html#Promezio_OAIAPI_Capabilities_FineTuning_Models_BABBAGE_002_
-  commentId: Overload:Promezio.OAIAPI.Capabilities.FineTuning.Models.BABBAGE_002
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.Models.#ctor(Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels)
+  name: Models(AvailableModels)
+  href: api/Promezio.OAIAPI.Capabilities.FineTuning.Models.html#Promezio_OAIAPI_Capabilities_FineTuning_Models__ctor_Promezio_OAIAPI_Capabilities_FineTuning_AvailableModels_
+  commentId: M:Promezio.OAIAPI.Capabilities.FineTuning.Models.#ctor(Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels)
+  name.vb: New(AvailableModels)
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.Models.Models(Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels)
+  fullName.vb: Promezio.OAIAPI.Capabilities.FineTuning.Models.New(Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels)
+  nameWithType: Models.Models(AvailableModels)
+  nameWithType.vb: Models.New(AvailableModels)
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.Models.#ctor*
+  name: Models
+  href: api/Promezio.OAIAPI.Capabilities.FineTuning.Models.html#Promezio_OAIAPI_Capabilities_FineTuning_Models__ctor_
+  commentId: Overload:Promezio.OAIAPI.Capabilities.FineTuning.Models.#ctor
   isSpec: "True"
-  fullName: Promezio.OAIAPI.Capabilities.FineTuning.Models.BABBAGE_002
-  nameWithType: Models.BABBAGE_002
-- uid: Promezio.OAIAPI.Capabilities.FineTuning.Models.DAVINCI_002
-  name: DAVINCI_002
-  href: api/Promezio.OAIAPI.Capabilities.FineTuning.Models.html#Promezio_OAIAPI_Capabilities_FineTuning_Models_DAVINCI_002
-  commentId: P:Promezio.OAIAPI.Capabilities.FineTuning.Models.DAVINCI_002
-  fullName: Promezio.OAIAPI.Capabilities.FineTuning.Models.DAVINCI_002
-  nameWithType: Models.DAVINCI_002
-- uid: Promezio.OAIAPI.Capabilities.FineTuning.Models.DAVINCI_002*
-  name: DAVINCI_002
-  href: api/Promezio.OAIAPI.Capabilities.FineTuning.Models.html#Promezio_OAIAPI_Capabilities_FineTuning_Models_DAVINCI_002_
-  commentId: Overload:Promezio.OAIAPI.Capabilities.FineTuning.Models.DAVINCI_002
+  name.vb: New
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.Models.Models
+  fullName.vb: Promezio.OAIAPI.Capabilities.FineTuning.Models.New
+  nameWithType: Models.Models
+  nameWithType.vb: Models.New
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.Models.ToString
+  name: ToString()
+  href: api/Promezio.OAIAPI.Capabilities.FineTuning.Models.html#Promezio_OAIAPI_Capabilities_FineTuning_Models_ToString
+  commentId: M:Promezio.OAIAPI.Capabilities.FineTuning.Models.ToString
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.Models.ToString()
+  nameWithType: Models.ToString()
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.Models.ToString*
+  name: ToString
+  href: api/Promezio.OAIAPI.Capabilities.FineTuning.Models.html#Promezio_OAIAPI_Capabilities_FineTuning_Models_ToString_
+  commentId: Overload:Promezio.OAIAPI.Capabilities.FineTuning.Models.ToString
   isSpec: "True"
-  fullName: Promezio.OAIAPI.Capabilities.FineTuning.Models.DAVINCI_002
-  nameWithType: Models.DAVINCI_002
-- uid: Promezio.OAIAPI.Capabilities.FineTuning.Models.GPT_3_5_TURBO_0613
-  name: GPT_3_5_TURBO_0613
-  href: api/Promezio.OAIAPI.Capabilities.FineTuning.Models.html#Promezio_OAIAPI_Capabilities_FineTuning_Models_GPT_3_5_TURBO_0613
-  commentId: P:Promezio.OAIAPI.Capabilities.FineTuning.Models.GPT_3_5_TURBO_0613
-  fullName: Promezio.OAIAPI.Capabilities.FineTuning.Models.GPT_3_5_TURBO_0613
-  nameWithType: Models.GPT_3_5_TURBO_0613
-- uid: Promezio.OAIAPI.Capabilities.FineTuning.Models.GPT_3_5_TURBO_0613*
-  name: GPT_3_5_TURBO_0613
-  href: api/Promezio.OAIAPI.Capabilities.FineTuning.Models.html#Promezio_OAIAPI_Capabilities_FineTuning_Models_GPT_3_5_TURBO_0613_
-  commentId: Overload:Promezio.OAIAPI.Capabilities.FineTuning.Models.GPT_3_5_TURBO_0613
-  isSpec: "True"
-  fullName: Promezio.OAIAPI.Capabilities.FineTuning.Models.GPT_3_5_TURBO_0613
-  nameWithType: Models.GPT_3_5_TURBO_0613
-- uid: Promezio.OAIAPI.Capabilities.FineTuning.Models.GPT_3_5_TURBO_1106
-  name: GPT_3_5_TURBO_1106
-  href: api/Promezio.OAIAPI.Capabilities.FineTuning.Models.html#Promezio_OAIAPI_Capabilities_FineTuning_Models_GPT_3_5_TURBO_1106
-  commentId: P:Promezio.OAIAPI.Capabilities.FineTuning.Models.GPT_3_5_TURBO_1106
-  fullName: Promezio.OAIAPI.Capabilities.FineTuning.Models.GPT_3_5_TURBO_1106
-  nameWithType: Models.GPT_3_5_TURBO_1106
-- uid: Promezio.OAIAPI.Capabilities.FineTuning.Models.GPT_3_5_TURBO_1106*
-  name: GPT_3_5_TURBO_1106
-  href: api/Promezio.OAIAPI.Capabilities.FineTuning.Models.html#Promezio_OAIAPI_Capabilities_FineTuning_Models_GPT_3_5_TURBO_1106_
-  commentId: Overload:Promezio.OAIAPI.Capabilities.FineTuning.Models.GPT_3_5_TURBO_1106
-  isSpec: "True"
-  fullName: Promezio.OAIAPI.Capabilities.FineTuning.Models.GPT_3_5_TURBO_1106
-  nameWithType: Models.GPT_3_5_TURBO_1106
-- uid: Promezio.OAIAPI.Capabilities.FineTuning.Models.GPT_4_0613
-  name: GPT_4_0613
-  href: api/Promezio.OAIAPI.Capabilities.FineTuning.Models.html#Promezio_OAIAPI_Capabilities_FineTuning_Models_GPT_4_0613
-  commentId: P:Promezio.OAIAPI.Capabilities.FineTuning.Models.GPT_4_0613
-  fullName: Promezio.OAIAPI.Capabilities.FineTuning.Models.GPT_4_0613
-  nameWithType: Models.GPT_4_0613
-- uid: Promezio.OAIAPI.Capabilities.FineTuning.Models.GPT_4_0613*
-  name: GPT_4_0613
-  href: api/Promezio.OAIAPI.Capabilities.FineTuning.Models.html#Promezio_OAIAPI_Capabilities_FineTuning_Models_GPT_4_0613_
-  commentId: Overload:Promezio.OAIAPI.Capabilities.FineTuning.Models.GPT_4_0613
-  isSpec: "True"
-  fullName: Promezio.OAIAPI.Capabilities.FineTuning.Models.GPT_4_0613
-  nameWithType: Models.GPT_4_0613
-- uid: Promezio.OAIAPI.Capabilities.FineTuning.Models.IsValid(System.String)
-  name: IsValid(string)
-  href: api/Promezio.OAIAPI.Capabilities.FineTuning.Models.html#Promezio_OAIAPI_Capabilities_FineTuning_Models_IsValid_System_String_
-  commentId: M:Promezio.OAIAPI.Capabilities.FineTuning.Models.IsValid(System.String)
-  name.vb: IsValid(String)
-  fullName: Promezio.OAIAPI.Capabilities.FineTuning.Models.IsValid(string)
-  fullName.vb: Promezio.OAIAPI.Capabilities.FineTuning.Models.IsValid(String)
-  nameWithType: Models.IsValid(string)
-  nameWithType.vb: Models.IsValid(String)
-- uid: Promezio.OAIAPI.Capabilities.FineTuning.Models.IsValid*
-  name: IsValid
-  href: api/Promezio.OAIAPI.Capabilities.FineTuning.Models.html#Promezio_OAIAPI_Capabilities_FineTuning_Models_IsValid_
-  commentId: Overload:Promezio.OAIAPI.Capabilities.FineTuning.Models.IsValid
-  isSpec: "True"
-  fullName: Promezio.OAIAPI.Capabilities.FineTuning.Models.IsValid
-  nameWithType: Models.IsValid
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.Models.ToString
+  nameWithType: Models.ToString
 - uid: Promezio.OAIAPI.Capabilities.FineTuning.TuningError
   name: TuningError
   href: api/Promezio.OAIAPI.Capabilities.FineTuning.TuningError.html

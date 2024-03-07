@@ -6,6 +6,9 @@
           "src": "../OAIAPI",
           "files": [
             "OAIAPI/*.csproj"
+          ],
+          "exclude": [
+            "OAIAPI/Capabilities/Assistants/**"
           ]
         }
       ],

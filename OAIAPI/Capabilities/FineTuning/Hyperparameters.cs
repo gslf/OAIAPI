@@ -9,7 +9,8 @@ namespace Promezio.OAIAPI.Capabilities.FineTuning;
 /// </summary>
 public class DecimalFromStringConverter : JsonConverter<decimal> {
     /// <summary>
-    /// Reads a decimal value from a JSON reader.
+    /// Reads a decimal value from a JSON reader.This is needed because
+    /// OpenAI return hybrid paramenters, that can be numbers or string
     /// </summary>
     /// <param name="reader">The UTF8 JSON reader to read from.</param>
     /// <param name="typeToConvert">The type to convert.</param>
@@ -19,8 +20,9 @@ public class DecimalFromStringConverter : JsonConverter<decimal> {
     public override decimal Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options) {
         if (reader.TokenType == JsonTokenType.Number) {
             return reader.GetDecimal();
+
         } else if (reader.TokenType == JsonTokenType.String) {
-            return -1000;
+            return -1; // This case represents the case "auto" for hybrid parameters
         }
 
         throw new JsonException("Unable to convert string to decimal.");

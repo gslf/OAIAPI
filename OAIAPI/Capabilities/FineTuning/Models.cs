@@ -1,53 +1,48 @@
-﻿using System.Reflection;
+﻿namespace Promezio.OAIAPI.Capabilities.FineTuning;
 
-namespace Promezio.OAIAPI.Capabilities.FineTuning;
 /// <summary>
-/// Provides a collection of predefined AI model names and a method to validate model names.
-/// This class serves as a central repository for referencing different AI models supported by the Promezio OAIAPI.
+/// Represents the different OpenAI fine-tuning models that can be selected.
 /// </summary>
-public static class Models {
-    /// <summary>
-    /// Represents the GPT-3.5 Turbo model released in November 2023.
-    /// </summary>
-    public static string GPT_3_5_TURBO_1106 { get; } = "gpt-3.5-turbo-1106";
+public enum AvailableModels {
+    GPT_3_5_TURBO_1106,
+    GPT_3_5_TURBO_0613,
+    BABBAGE_002,
+    DAVINCI_002,
+    GPT_4_0613
+}
+
+/// <summary>
+/// Represents an OpenAI fine-tuning model and its string representation used when interacting with the API.
+/// </summary>
+public class Models {
+    private AvailableModels _model;
 
     /// <summary>
-    /// Represents the GPT-3.5 Turbo model released in June 2023.
+    /// Initializes a new instance of the <see cref="Models"/> class.
     /// </summary>
-    public static string GPT_3_5_TURBO_0613 { get; } = "gpt-3.5-turbo-0613";
+    /// <param name="model">The OpenAI model type, with gpt-3.5-turbo-1106 as the default.</param>
+    public Models(AvailableModels model = AvailableModels.GPT_3_5_TURBO_1106) {
+        _model = model;
+    }
 
     /// <summary>
-    /// Represents the Babbage model, version 002.
+    /// Gets the string representation of the OpenAI model used for API calls.
     /// </summary>
-    public static string BABBAGE_002 { get; } = "babbage-002";
-
-    /// <summary>
-    /// Represents the Davinci model, version 002.
-    /// </summary>
-    public static string DAVINCI_002 { get; } = "davinci-002";
-
-    /// <summary>
-    /// Represents the GPT-4 model released in June 2023.
-    /// </summary>
-    public static string GPT_4_0613 { get; } = "gpt-4-0613";
-
-    /// <summary>
-    /// Validates whether a given model name corresponds to any of the predefined model names in this class.
-    /// </summary>
-    /// <param name="model">The name of the model to validate.</param>
-    /// <returns>True if the model name exists in the predefined models; otherwise, false.</returns>
-    public static bool IsValid(string model) {
-        Type selfType = typeof(Models);
-        PropertyInfo[] selfProperties = selfType.GetProperties();
-
-        foreach (PropertyInfo propertyInfo in selfProperties) {
-            string? propertyValue = (string?)propertyInfo.GetValue(null);
-
-            if (propertyValue != null && propertyValue == model) {
-                return true;
-            }
+    /// <returns>A string representing the OpenAI model.</returns>
+    public override string ToString() {
+        switch (_model) {
+            case AvailableModels.GPT_3_5_TURBO_1106:
+                return "gpt-3.5-turbo-1106";
+            case AvailableModels.GPT_3_5_TURBO_0613:
+                return "gpt-3.5-turbo-0613";
+            case AvailableModels.BABBAGE_002:
+                return "babbage-002";
+            case AvailableModels.DAVINCI_002:
+                return "davinci-002";
+            case AvailableModels.GPT_4_0613:
+                return "gpt-4-0613";
         }
 
-        return false;
+        return "INVALID";
     }
 }

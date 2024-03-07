@@ -211,7 +211,7 @@ This capability allows for creating, listing, retrieving, and canceling fine-tun
 
   <h3 id="Promezio_OAIAPI_Capabilities_FineTuning_FineTuning_Cancel_System_String_" data-uid="Promezio.OAIAPI.Capabilities.FineTuning.FineTuning.Cancel(System.String)">
   Cancel(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gslf/OAIAPI/blob/main/OAIAPI/Capabilities/FineTuning/FineTuning.cs/#L191"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gslf/OAIAPI/blob/main/OAIAPI/Capabilities/FineTuning/FineTuning.cs/#L185"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Cancels a specific fine-tuning job.</p>
@@ -248,8 +248,8 @@ This capability allows for creating, listing, retrieving, and canceling fine-tun
 
   <a id="Promezio_OAIAPI_Capabilities_FineTuning_FineTuning_Create_" data-uid="Promezio.OAIAPI.Capabilities.FineTuning.FineTuning.Create*"></a>
 
-  <h3 id="Promezio_OAIAPI_Capabilities_FineTuning_FineTuning_Create_System_String_System_String_System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_String_System_String_" data-uid="Promezio.OAIAPI.Capabilities.FineTuning.FineTuning.Create(System.String,System.String,System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.String,System.String)">
-  Create(string, string, decimal?, decimal?, decimal?, string?, string?)
+  <h3 id="Promezio_OAIAPI_Capabilities_FineTuning_FineTuning_Create_System_String_Promezio_OAIAPI_Capabilities_FineTuning_Models_System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_String_System_String_" data-uid="Promezio.OAIAPI.Capabilities.FineTuning.FineTuning.Create(System.String,Promezio.OAIAPI.Capabilities.FineTuning.Models,System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.String,System.String)">
+  Create(string, Models, decimal?, decimal?, decimal?, string?, string?)
   <a class="header-action link-secondary" title="View source" href="https://github.com/gslf/OAIAPI/blob/main/OAIAPI/Capabilities/FineTuning/FineTuning.cs/#L32"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -258,7 +258,7 @@ This capability allows for creating, listing, retrieving, and canceling fine-tun
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;FineTuningObject&gt; Create(string trainingFileID, string modelName, decimal? batch_size = null, decimal? learning_rate_multiplier = null, decimal? n_epochs = null, string? suffix = null, string? validationFileID = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;FineTuningObject&gt; Create(string trainingFileID, Models model, decimal? batch_size = null, decimal? learning_rate_multiplier = null, decimal? n_epochs = null, string? suffix = null, string? validationFileID = null)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -266,9 +266,8 @@ This capability allows for creating, listing, retrieving, and canceling fine-tun
     <dt><code>trainingFileID</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd><p>The ID of the training file.</p>
 </dd>
-    <dt><code>modelName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The name of the model to be fine-tuned.</p>
-</dd>
+    <dt><code>model</code> <a class="xref" href="Promezio.OAIAPI.Capabilities.FineTuning.Models.html">Models</a></dt>
+    <dd>The FineTuning class provides methods to interact with the Fine Tuning capability of the OpenAI API. This capability allows for creating, listing, retrieving, and canceling fine-tuning jobs for machine learning models.</dd>
     <dt><code>batch_size</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>?</dt>
     <dd><p>Optional. The batch size for training.</p>
 </dd>
@@ -307,7 +306,7 @@ This capability allows for creating, listing, retrieving, and canceling fine-tun
 
   <h3 id="Promezio_OAIAPI_Capabilities_FineTuning_FineTuning_ListEvents_System_String_" data-uid="Promezio.OAIAPI.Capabilities.FineTuning.FineTuning.ListEvents(System.String)">
   ListEvents(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gslf/OAIAPI/blob/main/OAIAPI/Capabilities/FineTuning/FineTuning.cs/#L120"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gslf/OAIAPI/blob/main/OAIAPI/Capabilities/FineTuning/FineTuning.cs/#L114"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Lists events associated with a specific fine-tuning job.</p>
@@ -346,7 +345,7 @@ This capability allows for creating, listing, retrieving, and canceling fine-tun
 
   <h3 id="Promezio_OAIAPI_Capabilities_FineTuning_FineTuning_ListJobs" data-uid="Promezio.OAIAPI.Capabilities.FineTuning.FineTuning.ListJobs">
   ListJobs()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gslf/OAIAPI/blob/main/OAIAPI/Capabilities/FineTuning/FineTuning.cs/#L90"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gslf/OAIAPI/blob/main/OAIAPI/Capabilities/FineTuning/FineTuning.cs/#L84"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Lists all fine-tuning jobs.</p>
@@ -379,7 +378,7 @@ This capability allows for creating, listing, retrieving, and canceling fine-tun
 
   <h3 id="Promezio_OAIAPI_Capabilities_FineTuning_FineTuning_Retrieve_System_String_" data-uid="Promezio.OAIAPI.Capabilities.FineTuning.FineTuning.Retrieve(System.String)">
   Retrieve(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/gslf/OAIAPI/blob/main/OAIAPI/Capabilities/FineTuning/FineTuning.cs/#L157"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gslf/OAIAPI/blob/main/OAIAPI/Capabilities/FineTuning/FineTuning.cs/#L151"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Retrieves details of a specific fine-tuning job.</p>

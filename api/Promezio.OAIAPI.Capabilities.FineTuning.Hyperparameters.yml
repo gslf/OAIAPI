@@ -22,7 +22,7 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: Hyperparameters
     path: OAIAPI/Capabilities/FineTuning/Hyperparameters.cs
-    startLine: 42
+    startLine: 44
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.FineTuning
@@ -59,7 +59,7 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: N_epochs
     path: OAIAPI/Capabilities/FineTuning/Hyperparameters.cs
-    startLine: 46
+    startLine: 48
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.FineTuning
@@ -102,7 +102,7 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: Batch_size
     path: OAIAPI/Capabilities/FineTuning/Hyperparameters.cs
-    startLine: 52
+    startLine: 54
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.FineTuning
@@ -145,7 +145,7 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: Learning_rate_multiplier
     path: OAIAPI/Capabilities/FineTuning/Hyperparameters.cs
-    startLine: 58
+    startLine: 60
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.FineTuning

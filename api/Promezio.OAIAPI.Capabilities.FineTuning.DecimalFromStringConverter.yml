@@ -68,11 +68,14 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: Read
     path: OAIAPI/Capabilities/FineTuning/Hyperparameters.cs
-    startLine: 18
+    startLine: 19
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.FineTuning
-  summary: Reads a decimal value from a JSON reader.
+  summary: >-
+    Reads a decimal value from a JSON reader.This is needed because
+
+    OpenAI return hybrid paramenters, that can be numbers or string
   example: []
   syntax:
     content: public override decimal Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
@@ -117,7 +120,7 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: Write
     path: OAIAPI/Capabilities/FineTuning/Hyperparameters.cs
-    startLine: 34
+    startLine: 36
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.FineTuning

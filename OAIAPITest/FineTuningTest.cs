@@ -14,7 +14,7 @@ public class FineTuningTest : Test {
 
         FineTuningObject? fineTuningResult = await api.FineTuning.Create(
             uploadResult.Id,
-            Models.GPT_3_5_TURBO_1106,
+            new Models(),
             batch_size: 5,
             learning_rate_multiplier: 2,
             n_epochs: 10,
@@ -32,21 +32,12 @@ public class FineTuningTest : Test {
     }
 
     [TestMethod]
-    [ExpectedException(typeof(ArgumentException))]
-    public async Task TestCreateWrongParams() {
-        OAIAPI api = new OAIAPI(_apikey);
-        FineTuningObject? fineTuningResult = await api.FineTuning.Create(
-            "",
-            "NOT-EXIST");
-    }
-
-    [TestMethod]
     public async Task TestListJobs() {
         OAIAPI api = new OAIAPI(_apikey);
 
         FileObject? uploadResult = await api.Files.Upload("../../../TestResources/SarcasticTuning.jsonl", new Purposes());
         Assert.IsFalse(string.IsNullOrEmpty(uploadResult.Id));
-        FineTuningObject? fineTuningResult = await api.FineTuning.Create(uploadResult.Id, Models.GPT_3_5_TURBO_1106);
+        FineTuningObject? fineTuningResult = await api.FineTuning.Create(uploadResult.Id, new Models());
 
         FineTuningObject[]? fineTuningList = await api.FineTuning.ListJobs();
         Assert.IsNotNull(fineTuningList);
@@ -64,7 +55,7 @@ public class FineTuningTest : Test {
         FileObject? uploadResult = await api.Files.Upload("../../../TestResources/SarcasticTuning.jsonl", new Purposes());
         Assert.IsFalse(string.IsNullOrEmpty(uploadResult.Id));
 
-        FineTuningObject? fineTuningResult = await api.FineTuning.Create(uploadResult.Id, Models.GPT_3_5_TURBO_1106);
+        FineTuningObject? fineTuningResult = await api.FineTuning.Create(uploadResult.Id, new Models());
         Assert.IsNotNull(fineTuningResult.Id);
 
         FineTuningEvent[]? fineTuningEvents = await api.FineTuning.ListEvents(fineTuningResult.Id);
@@ -83,7 +74,7 @@ public class FineTuningTest : Test {
         FileObject? uploadResult = await api.Files.Upload("../../../TestResources/SarcasticTuning.jsonl", new Purposes());
         Assert.IsFalse(string.IsNullOrEmpty(uploadResult.Id));
 
-        FineTuningObject? fineTuningResult = await api.FineTuning.Create(uploadResult.Id, Models.GPT_3_5_TURBO_1106);
+        FineTuningObject? fineTuningResult = await api.FineTuning.Create(uploadResult.Id, new Models());
         Assert.IsNotNull(fineTuningResult.Id);
 
         FineTuningObject? fineTuningRetrieveResult = await api.FineTuning.Retrieve(fineTuningResult.Id);

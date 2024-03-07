@@ -5,12 +5,8 @@ items:
   id: Models
   parent: Promezio.OAIAPI.Capabilities.FineTuning
   children:
-  - Promezio.OAIAPI.Capabilities.FineTuning.Models.BABBAGE_002
-  - Promezio.OAIAPI.Capabilities.FineTuning.Models.DAVINCI_002
-  - Promezio.OAIAPI.Capabilities.FineTuning.Models.GPT_3_5_TURBO_0613
-  - Promezio.OAIAPI.Capabilities.FineTuning.Models.GPT_3_5_TURBO_1106
-  - Promezio.OAIAPI.Capabilities.FineTuning.Models.GPT_4_0613
-  - Promezio.OAIAPI.Capabilities.FineTuning.Models.IsValid(System.String)
+  - Promezio.OAIAPI.Capabilities.FineTuning.Models.#ctor(Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels)
+  - Promezio.OAIAPI.Capabilities.FineTuning.Models.ToString
   langs:
   - csharp
   - vb
@@ -25,18 +21,15 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: Models
     path: OAIAPI/Capabilities/FineTuning/Models.cs
-    startLine: 7
+    startLine: 16
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.FineTuning
-  summary: >-
-    Provides a collection of predefined AI model names and a method to validate model names.
-
-    This class serves as a central repository for referencing different AI models supported by the Promezio OAIAPI.
+  summary: Represents an OpenAI fine-tuning model and its string representation used when interacting with the API.
   example: []
   syntax:
-    content: public static class Models
-    content.vb: Public Module Models
+    content: public class Models
+    content.vb: Public Class Models
   inheritance:
   - System.Object
   inheritedMembers:
@@ -46,200 +39,73 @@ items:
   - System.Object.GetType
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
-  - System.Object.ToString
-- uid: Promezio.OAIAPI.Capabilities.FineTuning.Models.GPT_3_5_TURBO_1106
-  commentId: P:Promezio.OAIAPI.Capabilities.FineTuning.Models.GPT_3_5_TURBO_1106
-  id: GPT_3_5_TURBO_1106
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.Models.#ctor(Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels)
+  commentId: M:Promezio.OAIAPI.Capabilities.FineTuning.Models.#ctor(Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels)
+  id: '#ctor(Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels)'
   parent: Promezio.OAIAPI.Capabilities.FineTuning.Models
   langs:
   - csharp
   - vb
-  name: GPT_3_5_TURBO_1106
-  nameWithType: Models.GPT_3_5_TURBO_1106
-  fullName: Promezio.OAIAPI.Capabilities.FineTuning.Models.GPT_3_5_TURBO_1106
-  type: Property
+  name: Models(AvailableModels)
+  nameWithType: Models.Models(AvailableModels)
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.Models.Models(Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels)
+  type: Constructor
   source:
     remote:
       path: OAIAPI/Capabilities/FineTuning/Models.cs
       branch: main
       repo: https://github.com/gslf/OAIAPI.git
-    id: GPT_3_5_TURBO_1106
+    id: .ctor
     path: OAIAPI/Capabilities/FineTuning/Models.cs
-    startLine: 11
+    startLine: 23
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.FineTuning
-  summary: Represents the GPT-3.5 Turbo model released in November 2023.
+  summary: Initializes a new instance of the <xref href="Promezio.OAIAPI.Capabilities.FineTuning.Models" data-throw-if-not-resolved="false"></xref> class.
   example: []
   syntax:
-    content: public static string GPT_3_5_TURBO_1106 { get; }
-    parameters: []
-    return:
-      type: System.String
-    content.vb: Public Shared ReadOnly Property GPT_3_5_TURBO_1106 As String
-  overload: Promezio.OAIAPI.Capabilities.FineTuning.Models.GPT_3_5_TURBO_1106*
-- uid: Promezio.OAIAPI.Capabilities.FineTuning.Models.GPT_3_5_TURBO_0613
-  commentId: P:Promezio.OAIAPI.Capabilities.FineTuning.Models.GPT_3_5_TURBO_0613
-  id: GPT_3_5_TURBO_0613
+    content: public Models(AvailableModels model = AvailableModels.GPT_3_5_TURBO_1106)
+    parameters:
+    - id: model
+      type: Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels
+      description: The OpenAI model type, with gpt-3.5-turbo-1106 as the default.
+    content.vb: Public Sub New(model As AvailableModels = AvailableModels.GPT_3_5_TURBO_1106)
+  overload: Promezio.OAIAPI.Capabilities.FineTuning.Models.#ctor*
+  nameWithType.vb: Models.New(AvailableModels)
+  fullName.vb: Promezio.OAIAPI.Capabilities.FineTuning.Models.New(Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels)
+  name.vb: New(AvailableModels)
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.Models.ToString
+  commentId: M:Promezio.OAIAPI.Capabilities.FineTuning.Models.ToString
+  id: ToString
   parent: Promezio.OAIAPI.Capabilities.FineTuning.Models
   langs:
   - csharp
   - vb
-  name: GPT_3_5_TURBO_0613
-  nameWithType: Models.GPT_3_5_TURBO_0613
-  fullName: Promezio.OAIAPI.Capabilities.FineTuning.Models.GPT_3_5_TURBO_0613
-  type: Property
-  source:
-    remote:
-      path: OAIAPI/Capabilities/FineTuning/Models.cs
-      branch: main
-      repo: https://github.com/gslf/OAIAPI.git
-    id: GPT_3_5_TURBO_0613
-    path: OAIAPI/Capabilities/FineTuning/Models.cs
-    startLine: 16
-  assemblies:
-  - OAIAPI
-  namespace: Promezio.OAIAPI.Capabilities.FineTuning
-  summary: Represents the GPT-3.5 Turbo model released in June 2023.
-  example: []
-  syntax:
-    content: public static string GPT_3_5_TURBO_0613 { get; }
-    parameters: []
-    return:
-      type: System.String
-    content.vb: Public Shared ReadOnly Property GPT_3_5_TURBO_0613 As String
-  overload: Promezio.OAIAPI.Capabilities.FineTuning.Models.GPT_3_5_TURBO_0613*
-- uid: Promezio.OAIAPI.Capabilities.FineTuning.Models.BABBAGE_002
-  commentId: P:Promezio.OAIAPI.Capabilities.FineTuning.Models.BABBAGE_002
-  id: BABBAGE_002
-  parent: Promezio.OAIAPI.Capabilities.FineTuning.Models
-  langs:
-  - csharp
-  - vb
-  name: BABBAGE_002
-  nameWithType: Models.BABBAGE_002
-  fullName: Promezio.OAIAPI.Capabilities.FineTuning.Models.BABBAGE_002
-  type: Property
-  source:
-    remote:
-      path: OAIAPI/Capabilities/FineTuning/Models.cs
-      branch: main
-      repo: https://github.com/gslf/OAIAPI.git
-    id: BABBAGE_002
-    path: OAIAPI/Capabilities/FineTuning/Models.cs
-    startLine: 21
-  assemblies:
-  - OAIAPI
-  namespace: Promezio.OAIAPI.Capabilities.FineTuning
-  summary: Represents the Babbage model, version 002.
-  example: []
-  syntax:
-    content: public static string BABBAGE_002 { get; }
-    parameters: []
-    return:
-      type: System.String
-    content.vb: Public Shared ReadOnly Property BABBAGE_002 As String
-  overload: Promezio.OAIAPI.Capabilities.FineTuning.Models.BABBAGE_002*
-- uid: Promezio.OAIAPI.Capabilities.FineTuning.Models.DAVINCI_002
-  commentId: P:Promezio.OAIAPI.Capabilities.FineTuning.Models.DAVINCI_002
-  id: DAVINCI_002
-  parent: Promezio.OAIAPI.Capabilities.FineTuning.Models
-  langs:
-  - csharp
-  - vb
-  name: DAVINCI_002
-  nameWithType: Models.DAVINCI_002
-  fullName: Promezio.OAIAPI.Capabilities.FineTuning.Models.DAVINCI_002
-  type: Property
-  source:
-    remote:
-      path: OAIAPI/Capabilities/FineTuning/Models.cs
-      branch: main
-      repo: https://github.com/gslf/OAIAPI.git
-    id: DAVINCI_002
-    path: OAIAPI/Capabilities/FineTuning/Models.cs
-    startLine: 26
-  assemblies:
-  - OAIAPI
-  namespace: Promezio.OAIAPI.Capabilities.FineTuning
-  summary: Represents the Davinci model, version 002.
-  example: []
-  syntax:
-    content: public static string DAVINCI_002 { get; }
-    parameters: []
-    return:
-      type: System.String
-    content.vb: Public Shared ReadOnly Property DAVINCI_002 As String
-  overload: Promezio.OAIAPI.Capabilities.FineTuning.Models.DAVINCI_002*
-- uid: Promezio.OAIAPI.Capabilities.FineTuning.Models.GPT_4_0613
-  commentId: P:Promezio.OAIAPI.Capabilities.FineTuning.Models.GPT_4_0613
-  id: GPT_4_0613
-  parent: Promezio.OAIAPI.Capabilities.FineTuning.Models
-  langs:
-  - csharp
-  - vb
-  name: GPT_4_0613
-  nameWithType: Models.GPT_4_0613
-  fullName: Promezio.OAIAPI.Capabilities.FineTuning.Models.GPT_4_0613
-  type: Property
-  source:
-    remote:
-      path: OAIAPI/Capabilities/FineTuning/Models.cs
-      branch: main
-      repo: https://github.com/gslf/OAIAPI.git
-    id: GPT_4_0613
-    path: OAIAPI/Capabilities/FineTuning/Models.cs
-    startLine: 31
-  assemblies:
-  - OAIAPI
-  namespace: Promezio.OAIAPI.Capabilities.FineTuning
-  summary: Represents the GPT-4 model released in June 2023.
-  example: []
-  syntax:
-    content: public static string GPT_4_0613 { get; }
-    parameters: []
-    return:
-      type: System.String
-    content.vb: Public Shared ReadOnly Property GPT_4_0613 As String
-  overload: Promezio.OAIAPI.Capabilities.FineTuning.Models.GPT_4_0613*
-- uid: Promezio.OAIAPI.Capabilities.FineTuning.Models.IsValid(System.String)
-  commentId: M:Promezio.OAIAPI.Capabilities.FineTuning.Models.IsValid(System.String)
-  id: IsValid(System.String)
-  parent: Promezio.OAIAPI.Capabilities.FineTuning.Models
-  langs:
-  - csharp
-  - vb
-  name: IsValid(string)
-  nameWithType: Models.IsValid(string)
-  fullName: Promezio.OAIAPI.Capabilities.FineTuning.Models.IsValid(string)
+  name: ToString()
+  nameWithType: Models.ToString()
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.Models.ToString()
   type: Method
   source:
     remote:
       path: OAIAPI/Capabilities/FineTuning/Models.cs
       branch: main
       repo: https://github.com/gslf/OAIAPI.git
-    id: IsValid
+    id: ToString
     path: OAIAPI/Capabilities/FineTuning/Models.cs
-    startLine: 38
+    startLine: 31
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.FineTuning
-  summary: Validates whether a given model name corresponds to any of the predefined model names in this class.
+  summary: Gets the string representation of the OpenAI model used for API calls.
   example: []
   syntax:
-    content: public static bool IsValid(string model)
-    parameters:
-    - id: model
-      type: System.String
-      description: The name of the model to validate.
+    content: public override string ToString()
     return:
-      type: System.Boolean
-      description: True if the model name exists in the predefined models; otherwise, false.
-    content.vb: Public Shared Function IsValid(model As String) As Boolean
-  overload: Promezio.OAIAPI.Capabilities.FineTuning.Models.IsValid*
-  nameWithType.vb: Models.IsValid(String)
-  fullName.vb: Promezio.OAIAPI.Capabilities.FineTuning.Models.IsValid(String)
-  name.vb: IsValid(String)
+      type: System.String
+      description: A string representing the OpenAI model.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: Promezio.OAIAPI.Capabilities.FineTuning.Models.ToString*
 references:
 - uid: Promezio.OAIAPI.Capabilities.FineTuning
   commentId: N:Promezio.OAIAPI.Capabilities.FineTuning
@@ -485,6 +351,36 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.Models
+  commentId: T:Promezio.OAIAPI.Capabilities.FineTuning.Models
+  parent: Promezio.OAIAPI.Capabilities.FineTuning
+  href: Promezio.OAIAPI.Capabilities.FineTuning.Models.html
+  name: Models
+  nameWithType: Models
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.Models
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.Models.#ctor*
+  commentId: Overload:Promezio.OAIAPI.Capabilities.FineTuning.Models.#ctor
+  href: Promezio.OAIAPI.Capabilities.FineTuning.Models.html#Promezio_OAIAPI_Capabilities_FineTuning_Models__ctor_Promezio_OAIAPI_Capabilities_FineTuning_AvailableModels_
+  name: Models
+  nameWithType: Models.Models
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.Models.Models
+  nameWithType.vb: Models.New
+  fullName.vb: Promezio.OAIAPI.Capabilities.FineTuning.Models.New
+  name.vb: New
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels
+  commentId: T:Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels
+  parent: Promezio.OAIAPI.Capabilities.FineTuning
+  href: Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels.html
+  name: AvailableModels
+  nameWithType: AvailableModels
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.AvailableModels
 - uid: System.Object.ToString
   commentId: M:System.Object.ToString
   parent: System.Object
@@ -509,19 +405,12 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.object.tostring
   - name: (
   - name: )
-- uid: System
-  commentId: N:System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system
-  name: System
-  nameWithType: System
-  fullName: System
-- uid: Promezio.OAIAPI.Capabilities.FineTuning.Models.GPT_3_5_TURBO_1106*
-  commentId: Overload:Promezio.OAIAPI.Capabilities.FineTuning.Models.GPT_3_5_TURBO_1106
-  href: Promezio.OAIAPI.Capabilities.FineTuning.Models.html#Promezio_OAIAPI_Capabilities_FineTuning_Models_GPT_3_5_TURBO_1106
-  name: GPT_3_5_TURBO_1106
-  nameWithType: Models.GPT_3_5_TURBO_1106
-  fullName: Promezio.OAIAPI.Capabilities.FineTuning.Models.GPT_3_5_TURBO_1106
+- uid: Promezio.OAIAPI.Capabilities.FineTuning.Models.ToString*
+  commentId: Overload:Promezio.OAIAPI.Capabilities.FineTuning.Models.ToString
+  href: Promezio.OAIAPI.Capabilities.FineTuning.Models.html#Promezio_OAIAPI_Capabilities_FineTuning_Models_ToString
+  name: ToString
+  nameWithType: Models.ToString
+  fullName: Promezio.OAIAPI.Capabilities.FineTuning.Models.ToString
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -533,44 +422,3 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
-- uid: Promezio.OAIAPI.Capabilities.FineTuning.Models.GPT_3_5_TURBO_0613*
-  commentId: Overload:Promezio.OAIAPI.Capabilities.FineTuning.Models.GPT_3_5_TURBO_0613
-  href: Promezio.OAIAPI.Capabilities.FineTuning.Models.html#Promezio_OAIAPI_Capabilities_FineTuning_Models_GPT_3_5_TURBO_0613
-  name: GPT_3_5_TURBO_0613
-  nameWithType: Models.GPT_3_5_TURBO_0613
-  fullName: Promezio.OAIAPI.Capabilities.FineTuning.Models.GPT_3_5_TURBO_0613
-- uid: Promezio.OAIAPI.Capabilities.FineTuning.Models.BABBAGE_002*
-  commentId: Overload:Promezio.OAIAPI.Capabilities.FineTuning.Models.BABBAGE_002
-  href: Promezio.OAIAPI.Capabilities.FineTuning.Models.html#Promezio_OAIAPI_Capabilities_FineTuning_Models_BABBAGE_002
-  name: BABBAGE_002
-  nameWithType: Models.BABBAGE_002
-  fullName: Promezio.OAIAPI.Capabilities.FineTuning.Models.BABBAGE_002
-- uid: Promezio.OAIAPI.Capabilities.FineTuning.Models.DAVINCI_002*
-  commentId: Overload:Promezio.OAIAPI.Capabilities.FineTuning.Models.DAVINCI_002
-  href: Promezio.OAIAPI.Capabilities.FineTuning.Models.html#Promezio_OAIAPI_Capabilities_FineTuning_Models_DAVINCI_002
-  name: DAVINCI_002
-  nameWithType: Models.DAVINCI_002
-  fullName: Promezio.OAIAPI.Capabilities.FineTuning.Models.DAVINCI_002
-- uid: Promezio.OAIAPI.Capabilities.FineTuning.Models.GPT_4_0613*
-  commentId: Overload:Promezio.OAIAPI.Capabilities.FineTuning.Models.GPT_4_0613
-  href: Promezio.OAIAPI.Capabilities.FineTuning.Models.html#Promezio_OAIAPI_Capabilities_FineTuning_Models_GPT_4_0613
-  name: GPT_4_0613
-  nameWithType: Models.GPT_4_0613
-  fullName: Promezio.OAIAPI.Capabilities.FineTuning.Models.GPT_4_0613
-- uid: Promezio.OAIAPI.Capabilities.FineTuning.Models.IsValid*
-  commentId: Overload:Promezio.OAIAPI.Capabilities.FineTuning.Models.IsValid
-  href: Promezio.OAIAPI.Capabilities.FineTuning.Models.html#Promezio_OAIAPI_Capabilities_FineTuning_Models_IsValid_System_String_
-  name: IsValid
-  nameWithType: Models.IsValid
-  fullName: Promezio.OAIAPI.Capabilities.FineTuning.Models.IsValid
-- uid: System.Boolean
-  commentId: T:System.Boolean
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean
