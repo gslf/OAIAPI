@@ -9,13 +9,13 @@ Welcome to OAIAPI, the go-to C# library for a smooth interaction with OpenAI's A
 
 ## Available API
 - Chat Completion 
+- Audio
 - Files Management 
 - Fine Tuning 
 - Embeddings
 
 ## API integration in progress
-- Speech
-- Transcription
+- Assistants (BETA)
 
 ## Contributing
 Your input is valuable! Feel free to fork the repository, make improvements, and submit a pull request. Let's make OAIAPI even better, together.
