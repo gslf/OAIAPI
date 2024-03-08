@@ -1,0 +1,804 @@
+### YamlMime:ManagedReference
+items:
+- uid: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments
+  commentId: T:Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments
+  id: TranscriptionSegments
+  parent: Promezio.OAIAPI.Capabilities.Audio
+  children:
+  - Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.Ava_logprob
+  - Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.Compression_ratio
+  - Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.End
+  - Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.Id
+  - Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.No_speech_prob
+  - Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.Seek
+  - Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.Start
+  - Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.Temperature
+  - Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.Text
+  - Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.Tokens
+  langs:
+  - csharp
+  - vb
+  name: TranscriptionSegments
+  nameWithType: TranscriptionSegments
+  fullName: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments
+  type: Class
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Audio/TranscriptionSegments.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: TranscriptionSegments
+    path: OAIAPI/Capabilities/Audio/TranscriptionSegments.cs
+    startLine: 5
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Audio
+  summary: Class representing a segment of transcription in OpenAI's Audio API.
+  example: []
+  syntax:
+    content: public class TranscriptionSegments
+    content.vb: Public Class TranscriptionSegments
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.Id
+  commentId: P:Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.Id
+  id: Id
+  parent: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: TranscriptionSegments.Id
+  fullName: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.Id
+  type: Property
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Audio/TranscriptionSegments.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: Id
+    path: OAIAPI/Capabilities/Audio/TranscriptionSegments.cs
+    startLine: 9
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Audio
+  summary: Gets or sets the ID of the segment.
+  example: []
+  syntax:
+    content: public int? Id { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public Property Id As Integer?
+  overload: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.Id*
+- uid: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.Seek
+  commentId: P:Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.Seek
+  id: Seek
+  parent: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments
+  langs:
+  - csharp
+  - vb
+  name: Seek
+  nameWithType: TranscriptionSegments.Seek
+  fullName: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.Seek
+  type: Property
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Audio/TranscriptionSegments.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: Seek
+    path: OAIAPI/Capabilities/Audio/TranscriptionSegments.cs
+    startLine: 14
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Audio
+  summary: Gets or sets the seek position of the segment.
+  example: []
+  syntax:
+    content: public int? Seek { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public Property Seek As Integer?
+  overload: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.Seek*
+- uid: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.Start
+  commentId: P:Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.Start
+  id: Start
+  parent: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments
+  langs:
+  - csharp
+  - vb
+  name: Start
+  nameWithType: TranscriptionSegments.Start
+  fullName: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.Start
+  type: Property
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Audio/TranscriptionSegments.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: Start
+    path: OAIAPI/Capabilities/Audio/TranscriptionSegments.cs
+    startLine: 19
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Audio
+  summary: Gets or sets the start time of the segment in the audio stream.
+  example: []
+  syntax:
+    content: public double? Start { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Double}
+    content.vb: Public Property Start As Double?
+  overload: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.Start*
+- uid: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.End
+  commentId: P:Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.End
+  id: End
+  parent: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments
+  langs:
+  - csharp
+  - vb
+  name: End
+  nameWithType: TranscriptionSegments.End
+  fullName: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.End
+  type: Property
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Audio/TranscriptionSegments.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: End
+    path: OAIAPI/Capabilities/Audio/TranscriptionSegments.cs
+    startLine: 24
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Audio
+  summary: Gets or sets the end time of the segment in the audio stream.
+  example: []
+  syntax:
+    content: public double? End { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Double}
+    content.vb: Public Property [End] As Double?
+  overload: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.End*
+- uid: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.Text
+  commentId: P:Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.Text
+  id: Text
+  parent: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments
+  langs:
+  - csharp
+  - vb
+  name: Text
+  nameWithType: TranscriptionSegments.Text
+  fullName: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.Text
+  type: Property
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Audio/TranscriptionSegments.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: Text
+    path: OAIAPI/Capabilities/Audio/TranscriptionSegments.cs
+    startLine: 29
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Audio
+  summary: Gets or sets the transcribed text of the segment.
+  example: []
+  syntax:
+    content: public string? Text { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Text As String
+  overload: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.Text*
+- uid: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.Tokens
+  commentId: P:Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.Tokens
+  id: Tokens
+  parent: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments
+  langs:
+  - csharp
+  - vb
+  name: Tokens
+  nameWithType: TranscriptionSegments.Tokens
+  fullName: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.Tokens
+  type: Property
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Audio/TranscriptionSegments.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: Tokens
+    path: OAIAPI/Capabilities/Audio/TranscriptionSegments.cs
+    startLine: 34
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Audio
+  summary: Gets or sets the tokens of the segment.
+  example: []
+  syntax:
+    content: public int[]? Tokens { get; set; }
+    parameters: []
+    return:
+      type: System.Int32[]
+    content.vb: Public Property Tokens As Integer()
+  overload: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.Tokens*
+- uid: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.Temperature
+  commentId: P:Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.Temperature
+  id: Temperature
+  parent: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments
+  langs:
+  - csharp
+  - vb
+  name: Temperature
+  nameWithType: TranscriptionSegments.Temperature
+  fullName: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.Temperature
+  type: Property
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Audio/TranscriptionSegments.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: Temperature
+    path: OAIAPI/Capabilities/Audio/TranscriptionSegments.cs
+    startLine: 39
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Audio
+  summary: Gets or sets the temperature of the segment.
+  example: []
+  syntax:
+    content: public double? Temperature { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Double}
+    content.vb: Public Property Temperature As Double?
+  overload: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.Temperature*
+- uid: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.Ava_logprob
+  commentId: P:Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.Ava_logprob
+  id: Ava_logprob
+  parent: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments
+  langs:
+  - csharp
+  - vb
+  name: Ava_logprob
+  nameWithType: TranscriptionSegments.Ava_logprob
+  fullName: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.Ava_logprob
+  type: Property
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Audio/TranscriptionSegments.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: Ava_logprob
+    path: OAIAPI/Capabilities/Audio/TranscriptionSegments.cs
+    startLine: 44
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Audio
+  summary: Gets or sets the Ava log probability of the segment.
+  example: []
+  syntax:
+    content: public double? Ava_logprob { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Double}
+    content.vb: Public Property Ava_logprob As Double?
+  overload: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.Ava_logprob*
+- uid: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.Compression_ratio
+  commentId: P:Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.Compression_ratio
+  id: Compression_ratio
+  parent: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments
+  langs:
+  - csharp
+  - vb
+  name: Compression_ratio
+  nameWithType: TranscriptionSegments.Compression_ratio
+  fullName: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.Compression_ratio
+  type: Property
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Audio/TranscriptionSegments.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: Compression_ratio
+    path: OAIAPI/Capabilities/Audio/TranscriptionSegments.cs
+    startLine: 49
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Audio
+  summary: Gets or sets the compression ratio of the segment.
+  example: []
+  syntax:
+    content: public double? Compression_ratio { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Double}
+    content.vb: Public Property Compression_ratio As Double?
+  overload: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.Compression_ratio*
+- uid: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.No_speech_prob
+  commentId: P:Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.No_speech_prob
+  id: No_speech_prob
+  parent: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments
+  langs:
+  - csharp
+  - vb
+  name: No_speech_prob
+  nameWithType: TranscriptionSegments.No_speech_prob
+  fullName: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.No_speech_prob
+  type: Property
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Audio/TranscriptionSegments.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: No_speech_prob
+    path: OAIAPI/Capabilities/Audio/TranscriptionSegments.cs
+    startLine: 54
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Audio
+  summary: Gets or sets the probability of no speech in the segment.
+  example: []
+  syntax:
+    content: public double? No_speech_prob { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Double}
+    content.vb: Public Property No_speech_prob As Double?
+  overload: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.No_speech_prob*
+references:
+- uid: Promezio.OAIAPI.Capabilities.Audio
+  commentId: N:Promezio.OAIAPI.Capabilities.Audio
+  href: Promezio.html
+  name: Promezio.OAIAPI.Capabilities.Audio
+  nameWithType: Promezio.OAIAPI.Capabilities.Audio
+  fullName: Promezio.OAIAPI.Capabilities.Audio
+  spec.csharp:
+  - uid: Promezio
+    name: Promezio
+    href: Promezio.html
+  - name: .
+  - uid: Promezio.OAIAPI
+    name: OAIAPI
+    href: Promezio.OAIAPI.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities
+    name: Capabilities
+    href: Promezio.OAIAPI.Capabilities.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities.Audio
+    name: Audio
+    href: Promezio.OAIAPI.Capabilities.Audio.html
+  spec.vb:
+  - uid: Promezio
+    name: Promezio
+    href: Promezio.html
+  - name: .
+  - uid: Promezio.OAIAPI
+    name: OAIAPI
+    href: Promezio.OAIAPI.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities
+    name: Capabilities
+    href: Promezio.OAIAPI.Capabilities.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities.Audio
+    name: Audio
+    href: Promezio.OAIAPI.Capabilities.Audio.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.Id*
+  commentId: Overload:Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.Id
+  href: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.html#Promezio_OAIAPI_Capabilities_Audio_TranscriptionSegments_Id
+  name: Id
+  nameWithType: TranscriptionSegments.Id
+  fullName: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.Id
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int?
+  nameWithType: int?
+  fullName: int?
+  nameWithType.vb: Integer?
+  fullName.vb: Integer?
+  name.vb: Integer?
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.Seek*
+  commentId: Overload:Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.Seek
+  href: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.html#Promezio_OAIAPI_Capabilities_Audio_TranscriptionSegments_Seek
+  name: Seek
+  nameWithType: TranscriptionSegments.Seek
+  fullName: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.Seek
+- uid: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.Start*
+  commentId: Overload:Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.Start
+  href: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.html#Promezio_OAIAPI_Capabilities_Audio_TranscriptionSegments_Start
+  name: Start
+  nameWithType: TranscriptionSegments.Start
+  fullName: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.Start
+- uid: System.Nullable{System.Double}
+  commentId: T:System.Nullable{System.Double}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double?
+  nameWithType: double?
+  fullName: double?
+  nameWithType.vb: Double?
+  fullName.vb: Double?
+  name.vb: Double?
+  spec.csharp:
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '?'
+  spec.vb:
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '?'
+- uid: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.End*
+  commentId: Overload:Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.End
+  href: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.html#Promezio_OAIAPI_Capabilities_Audio_TranscriptionSegments_End
+  name: End
+  nameWithType: TranscriptionSegments.End
+  fullName: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.End
+- uid: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.Text*
+  commentId: Overload:Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.Text
+  href: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.html#Promezio_OAIAPI_Capabilities_Audio_TranscriptionSegments_Text
+  name: Text
+  nameWithType: TranscriptionSegments.Text
+  fullName: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.Text
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.Tokens*
+  commentId: Overload:Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.Tokens
+  href: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.html#Promezio_OAIAPI_Capabilities_Audio_TranscriptionSegments_Tokens
+  name: Tokens
+  nameWithType: TranscriptionSegments.Tokens
+  fullName: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.Tokens
+- uid: System.Int32[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int[]
+  nameWithType: int[]
+  fullName: int[]
+  nameWithType.vb: Integer()
+  fullName.vb: Integer()
+  name.vb: Integer()
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: (
+  - name: )
+- uid: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.Temperature*
+  commentId: Overload:Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.Temperature
+  href: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.html#Promezio_OAIAPI_Capabilities_Audio_TranscriptionSegments_Temperature
+  name: Temperature
+  nameWithType: TranscriptionSegments.Temperature
+  fullName: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.Temperature
+- uid: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.Ava_logprob*
+  commentId: Overload:Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.Ava_logprob
+  href: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.html#Promezio_OAIAPI_Capabilities_Audio_TranscriptionSegments_Ava_logprob
+  name: Ava_logprob
+  nameWithType: TranscriptionSegments.Ava_logprob
+  fullName: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.Ava_logprob
+- uid: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.Compression_ratio*
+  commentId: Overload:Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.Compression_ratio
+  href: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.html#Promezio_OAIAPI_Capabilities_Audio_TranscriptionSegments_Compression_ratio
+  name: Compression_ratio
+  nameWithType: TranscriptionSegments.Compression_ratio
+  fullName: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.Compression_ratio
+- uid: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.No_speech_prob*
+  commentId: Overload:Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.No_speech_prob
+  href: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.html#Promezio_OAIAPI_Capabilities_Audio_TranscriptionSegments_No_speech_prob
+  name: No_speech_prob
+  nameWithType: TranscriptionSegments.No_speech_prob
+  fullName: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.No_speech_prob

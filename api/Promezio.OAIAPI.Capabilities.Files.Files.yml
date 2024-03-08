@@ -197,7 +197,7 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: Retrieve
     path: OAIAPI/Capabilities/Files/Files.cs
-    startLine: 111
+    startLine: 110
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.Files
@@ -215,9 +215,6 @@ items:
     content.vb: Public Function Retrieve(fileID As String) As Task(Of FileObject)
   overload: Promezio.OAIAPI.Capabilities.Files.Files.Retrieve*
   exceptions:
-  - type: System.ArgumentException
-    commentId: T:System.ArgumentException
-    description: Thrown when the provided file ID is not in a valid format.
   - type: System.Net.Http.HttpRequestException
     commentId: T:System.Net.Http.HttpRequestException
     description: Thrown when the HTTP request to the OpenAI API fails.
@@ -245,7 +242,7 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: Delete
     path: OAIAPI/Capabilities/Files/Files.cs
-    startLine: 153
+    startLine: 152
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.Files
@@ -290,7 +287,7 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: Content
     path: OAIAPI/Capabilities/Files/Files.cs
-    startLine: 180
+    startLine: 179
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI.Capabilities.Files

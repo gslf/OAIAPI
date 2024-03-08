@@ -5,10 +5,29 @@ using System.Text;
 using System.Globalization;
 
 namespace Promezio.OAIAPI.Capabilities.Audio;
-public class Audio : Capability {
 
+/// <summary>
+/// Class representing the Audio capability in OpenAI's API.
+/// </summary>
+public class Audio : Capability { 
+
+    /// <summary>
+    /// Constructor that initializes a new instance of the Audio class with a specified API key and logger.
+    /// </summary>
+    /// <param name="apikey">The API key to be used.</param>
+    /// <param name="logger">The logger to be used.</param>
     public Audio(string apikey, Logger logger) : base(apikey, logger) { }
 
+    /// <summary>
+    /// Method to generate speech from text.
+    /// </summary>
+    /// <param name="model">The model to be used.</param>
+    /// <param name="text">The text to be converted to speech.</param>
+    /// <param name="outputFile">The output file where the speech will be saved.</param>
+    /// <param name="voice">The voice to be used. Default is null.</param>
+    /// <param name="responseFormat">The response format to be used. Default is null.</param>
+    /// <param name="speed">The speed of the speech. Default is 1.0.</param>
+    /// <returns>A boolean indicating the success of the operation.</returns>
     public async Task<bool> Speech(Models model, 
                                      string text, 
                                      string outputFile,
@@ -67,6 +86,13 @@ public class Audio : Capability {
         }
     }
 
+    /// <summary>
+    /// Method to transcribe audio.
+    /// </summary>
+    /// <param name="audioURL">The URL of the audio to be transcribed.</param>
+    /// <param name="prompt">The prompt to be used. Default is an empty string.</param>
+    /// <param name="temperature">The temperature to be used. Default is 0.</param>
+    /// <returns>A TranscriptionObject representing the transcription of the audio.</returns>
     public async Task<TranscriptionObject?> Transcription(
         string audioURL,
         string prompt = "",
@@ -114,6 +140,13 @@ public class Audio : Capability {
 
     }
 
+    /// <summary>
+    /// Method to translate audio.
+    /// </summary>
+    /// <param name="audioURL">The URL of the audio to be translated.</param>
+    /// <param name="prompt">The prompt to be used. Default is an empty string.</param>
+    /// <param name="temperature">The temperature to be used. Default is 0.</param>
+    /// <returns>A string representing the translation of the audio.</returns>
     public async Task<string> Translation(
         string audioURL,
         string prompt = "",

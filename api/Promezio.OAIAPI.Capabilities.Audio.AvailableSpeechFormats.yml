@@ -1,0 +1,184 @@
+### YamlMime:ManagedReference
+items:
+- uid: Promezio.OAIAPI.Capabilities.Audio.AvailableSpeechFormats
+  commentId: T:Promezio.OAIAPI.Capabilities.Audio.AvailableSpeechFormats
+  id: AvailableSpeechFormats
+  parent: Promezio.OAIAPI.Capabilities.Audio
+  children:
+  - Promezio.OAIAPI.Capabilities.Audio.AvailableSpeechFormats.AAC
+  - Promezio.OAIAPI.Capabilities.Audio.AvailableSpeechFormats.FLAC
+  - Promezio.OAIAPI.Capabilities.Audio.AvailableSpeechFormats.MP3
+  - Promezio.OAIAPI.Capabilities.Audio.AvailableSpeechFormats.OPUS
+  langs:
+  - csharp
+  - vb
+  name: AvailableSpeechFormats
+  nameWithType: AvailableSpeechFormats
+  fullName: Promezio.OAIAPI.Capabilities.Audio.AvailableSpeechFormats
+  type: Enum
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Audio/SpeechResponseFormats.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: AvailableSpeechFormats
+    path: OAIAPI/Capabilities/Audio/SpeechResponseFormats.cs
+    startLine: 5
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Audio
+  summary: Enum representing the available speech formats in OpenAI's Audio API.
+  example: []
+  syntax:
+    content: public enum AvailableSpeechFormats
+    content.vb: Public Enum AvailableSpeechFormats
+- uid: Promezio.OAIAPI.Capabilities.Audio.AvailableSpeechFormats.MP3
+  commentId: F:Promezio.OAIAPI.Capabilities.Audio.AvailableSpeechFormats.MP3
+  id: MP3
+  parent: Promezio.OAIAPI.Capabilities.Audio.AvailableSpeechFormats
+  langs:
+  - csharp
+  - vb
+  name: MP3
+  nameWithType: AvailableSpeechFormats.MP3
+  fullName: Promezio.OAIAPI.Capabilities.Audio.AvailableSpeechFormats.MP3
+  type: Field
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Audio/SpeechResponseFormats.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: MP3
+    path: OAIAPI/Capabilities/Audio/SpeechResponseFormats.cs
+    startLine: 6
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Audio
+  syntax:
+    content: MP3 = 0
+    return:
+      type: Promezio.OAIAPI.Capabilities.Audio.AvailableSpeechFormats
+- uid: Promezio.OAIAPI.Capabilities.Audio.AvailableSpeechFormats.OPUS
+  commentId: F:Promezio.OAIAPI.Capabilities.Audio.AvailableSpeechFormats.OPUS
+  id: OPUS
+  parent: Promezio.OAIAPI.Capabilities.Audio.AvailableSpeechFormats
+  langs:
+  - csharp
+  - vb
+  name: OPUS
+  nameWithType: AvailableSpeechFormats.OPUS
+  fullName: Promezio.OAIAPI.Capabilities.Audio.AvailableSpeechFormats.OPUS
+  type: Field
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Audio/SpeechResponseFormats.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: OPUS
+    path: OAIAPI/Capabilities/Audio/SpeechResponseFormats.cs
+    startLine: 7
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Audio
+  syntax:
+    content: OPUS = 1
+    return:
+      type: Promezio.OAIAPI.Capabilities.Audio.AvailableSpeechFormats
+- uid: Promezio.OAIAPI.Capabilities.Audio.AvailableSpeechFormats.AAC
+  commentId: F:Promezio.OAIAPI.Capabilities.Audio.AvailableSpeechFormats.AAC
+  id: AAC
+  parent: Promezio.OAIAPI.Capabilities.Audio.AvailableSpeechFormats
+  langs:
+  - csharp
+  - vb
+  name: AAC
+  nameWithType: AvailableSpeechFormats.AAC
+  fullName: Promezio.OAIAPI.Capabilities.Audio.AvailableSpeechFormats.AAC
+  type: Field
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Audio/SpeechResponseFormats.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: AAC
+    path: OAIAPI/Capabilities/Audio/SpeechResponseFormats.cs
+    startLine: 8
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Audio
+  syntax:
+    content: AAC = 2
+    return:
+      type: Promezio.OAIAPI.Capabilities.Audio.AvailableSpeechFormats
+- uid: Promezio.OAIAPI.Capabilities.Audio.AvailableSpeechFormats.FLAC
+  commentId: F:Promezio.OAIAPI.Capabilities.Audio.AvailableSpeechFormats.FLAC
+  id: FLAC
+  parent: Promezio.OAIAPI.Capabilities.Audio.AvailableSpeechFormats
+  langs:
+  - csharp
+  - vb
+  name: FLAC
+  nameWithType: AvailableSpeechFormats.FLAC
+  fullName: Promezio.OAIAPI.Capabilities.Audio.AvailableSpeechFormats.FLAC
+  type: Field
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Audio/SpeechResponseFormats.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: FLAC
+    path: OAIAPI/Capabilities/Audio/SpeechResponseFormats.cs
+    startLine: 9
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Audio
+  syntax:
+    content: FLAC = 3
+    return:
+      type: Promezio.OAIAPI.Capabilities.Audio.AvailableSpeechFormats
+references:
+- uid: Promezio.OAIAPI.Capabilities.Audio
+  commentId: N:Promezio.OAIAPI.Capabilities.Audio
+  href: Promezio.html
+  name: Promezio.OAIAPI.Capabilities.Audio
+  nameWithType: Promezio.OAIAPI.Capabilities.Audio
+  fullName: Promezio.OAIAPI.Capabilities.Audio
+  spec.csharp:
+  - uid: Promezio
+    name: Promezio
+    href: Promezio.html
+  - name: .
+  - uid: Promezio.OAIAPI
+    name: OAIAPI
+    href: Promezio.OAIAPI.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities
+    name: Capabilities
+    href: Promezio.OAIAPI.Capabilities.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities.Audio
+    name: Audio
+    href: Promezio.OAIAPI.Capabilities.Audio.html
+  spec.vb:
+  - uid: Promezio
+    name: Promezio
+    href: Promezio.html
+  - name: .
+  - uid: Promezio.OAIAPI
+    name: OAIAPI
+    href: Promezio.OAIAPI.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities
+    name: Capabilities
+    href: Promezio.OAIAPI.Capabilities.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities.Audio
+    name: Audio
+    href: Promezio.OAIAPI.Capabilities.Audio.html
+- uid: Promezio.OAIAPI.Capabilities.Audio.AvailableSpeechFormats
+  commentId: T:Promezio.OAIAPI.Capabilities.Audio.AvailableSpeechFormats
+  parent: Promezio.OAIAPI.Capabilities.Audio
+  href: Promezio.OAIAPI.Capabilities.Audio.AvailableSpeechFormats.html
+  name: AvailableSpeechFormats
+  nameWithType: AvailableSpeechFormats
+  fullName: Promezio.OAIAPI.Capabilities.Audio.AvailableSpeechFormats

@@ -1,0 +1,155 @@
+### YamlMime:ManagedReference
+items:
+- uid: Promezio.OAIAPI.Capabilities.Assistants.AvailableToolTypes
+  commentId: T:Promezio.OAIAPI.Capabilities.Assistants.AvailableToolTypes
+  id: AvailableToolTypes
+  parent: Promezio.OAIAPI.Capabilities.Assistants
+  children:
+  - Promezio.OAIAPI.Capabilities.Assistants.AvailableToolTypes.CODE_INTERPRETER
+  - Promezio.OAIAPI.Capabilities.Assistants.AvailableToolTypes.FUNCTION
+  - Promezio.OAIAPI.Capabilities.Assistants.AvailableToolTypes.RETRIEVAL
+  langs:
+  - csharp
+  - vb
+  name: AvailableToolTypes
+  nameWithType: AvailableToolTypes
+  fullName: Promezio.OAIAPI.Capabilities.Assistants.AvailableToolTypes
+  type: Enum
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Assistants/Tool.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: AvailableToolTypes
+    path: OAIAPI/Capabilities/Assistants/Tool.cs
+    startLine: 2
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Assistants
+  syntax:
+    content: public enum AvailableToolTypes
+    content.vb: Public Enum AvailableToolTypes
+- uid: Promezio.OAIAPI.Capabilities.Assistants.AvailableToolTypes.CODE_INTERPRETER
+  commentId: F:Promezio.OAIAPI.Capabilities.Assistants.AvailableToolTypes.CODE_INTERPRETER
+  id: CODE_INTERPRETER
+  parent: Promezio.OAIAPI.Capabilities.Assistants.AvailableToolTypes
+  langs:
+  - csharp
+  - vb
+  name: CODE_INTERPRETER
+  nameWithType: AvailableToolTypes.CODE_INTERPRETER
+  fullName: Promezio.OAIAPI.Capabilities.Assistants.AvailableToolTypes.CODE_INTERPRETER
+  type: Field
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Assistants/Tool.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: CODE_INTERPRETER
+    path: OAIAPI/Capabilities/Assistants/Tool.cs
+    startLine: 3
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Assistants
+  syntax:
+    content: CODE_INTERPRETER = 0
+    return:
+      type: Promezio.OAIAPI.Capabilities.Assistants.AvailableToolTypes
+- uid: Promezio.OAIAPI.Capabilities.Assistants.AvailableToolTypes.RETRIEVAL
+  commentId: F:Promezio.OAIAPI.Capabilities.Assistants.AvailableToolTypes.RETRIEVAL
+  id: RETRIEVAL
+  parent: Promezio.OAIAPI.Capabilities.Assistants.AvailableToolTypes
+  langs:
+  - csharp
+  - vb
+  name: RETRIEVAL
+  nameWithType: AvailableToolTypes.RETRIEVAL
+  fullName: Promezio.OAIAPI.Capabilities.Assistants.AvailableToolTypes.RETRIEVAL
+  type: Field
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Assistants/Tool.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: RETRIEVAL
+    path: OAIAPI/Capabilities/Assistants/Tool.cs
+    startLine: 4
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Assistants
+  syntax:
+    content: RETRIEVAL = 1
+    return:
+      type: Promezio.OAIAPI.Capabilities.Assistants.AvailableToolTypes
+- uid: Promezio.OAIAPI.Capabilities.Assistants.AvailableToolTypes.FUNCTION
+  commentId: F:Promezio.OAIAPI.Capabilities.Assistants.AvailableToolTypes.FUNCTION
+  id: FUNCTION
+  parent: Promezio.OAIAPI.Capabilities.Assistants.AvailableToolTypes
+  langs:
+  - csharp
+  - vb
+  name: FUNCTION
+  nameWithType: AvailableToolTypes.FUNCTION
+  fullName: Promezio.OAIAPI.Capabilities.Assistants.AvailableToolTypes.FUNCTION
+  type: Field
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Assistants/Tool.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: FUNCTION
+    path: OAIAPI/Capabilities/Assistants/Tool.cs
+    startLine: 5
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Assistants
+  syntax:
+    content: FUNCTION = 2
+    return:
+      type: Promezio.OAIAPI.Capabilities.Assistants.AvailableToolTypes
+references:
+- uid: Promezio.OAIAPI.Capabilities.Assistants
+  commentId: N:Promezio.OAIAPI.Capabilities.Assistants
+  href: Promezio.html
+  name: Promezio.OAIAPI.Capabilities.Assistants
+  nameWithType: Promezio.OAIAPI.Capabilities.Assistants
+  fullName: Promezio.OAIAPI.Capabilities.Assistants
+  spec.csharp:
+  - uid: Promezio
+    name: Promezio
+    href: Promezio.html
+  - name: .
+  - uid: Promezio.OAIAPI
+    name: OAIAPI
+    href: Promezio.OAIAPI.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities
+    name: Capabilities
+    href: Promezio.OAIAPI.Capabilities.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities.Assistants
+    name: Assistants
+    href: Promezio.OAIAPI.Capabilities.Assistants.html
+  spec.vb:
+  - uid: Promezio
+    name: Promezio
+    href: Promezio.html
+  - name: .
+  - uid: Promezio.OAIAPI
+    name: OAIAPI
+    href: Promezio.OAIAPI.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities
+    name: Capabilities
+    href: Promezio.OAIAPI.Capabilities.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities.Assistants
+    name: Assistants
+    href: Promezio.OAIAPI.Capabilities.Assistants.html
+- uid: Promezio.OAIAPI.Capabilities.Assistants.AvailableToolTypes
+  commentId: T:Promezio.OAIAPI.Capabilities.Assistants.AvailableToolTypes
+  parent: Promezio.OAIAPI.Capabilities.Assistants
+  href: Promezio.OAIAPI.Capabilities.Assistants.AvailableToolTypes.html
+  name: AvailableToolTypes
+  nameWithType: AvailableToolTypes
+  fullName: Promezio.OAIAPI.Capabilities.Assistants.AvailableToolTypes

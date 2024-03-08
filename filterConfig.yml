@@ -1,0 +1,6 @@
+apiRules:
+- include:
+    type: Interface
+- exclude:
+    uidRegex: Assistants
+    type: Class

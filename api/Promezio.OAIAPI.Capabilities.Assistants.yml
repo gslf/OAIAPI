@@ -1,0 +1,116 @@
+### YamlMime:ManagedReference
+items:
+- uid: Promezio.OAIAPI.Capabilities.Assistants
+  commentId: N:Promezio.OAIAPI.Capabilities.Assistants
+  id: Promezio.OAIAPI.Capabilities.Assistants
+  children:
+  - Promezio.OAIAPI.Capabilities.Assistants.AssistantObject
+  - Promezio.OAIAPI.Capabilities.Assistants.Assistants
+  - Promezio.OAIAPI.Capabilities.Assistants.AvailableModels
+  - Promezio.OAIAPI.Capabilities.Assistants.AvailableToolTypes
+  - Promezio.OAIAPI.Capabilities.Assistants.Models
+  - Promezio.OAIAPI.Capabilities.Assistants.Tool
+  - Promezio.OAIAPI.Capabilities.Assistants.ToolFunction
+  - Promezio.OAIAPI.Capabilities.Assistants.ToolType
+  langs:
+  - csharp
+  - vb
+  name: Promezio.OAIAPI.Capabilities.Assistants
+  nameWithType: Promezio.OAIAPI.Capabilities.Assistants
+  fullName: Promezio.OAIAPI.Capabilities.Assistants
+  type: Namespace
+  assemblies:
+  - OAIAPI
+references:
+- uid: Promezio.OAIAPI.Capabilities.Assistants.AssistantObject
+  commentId: T:Promezio.OAIAPI.Capabilities.Assistants.AssistantObject
+  href: Promezio.OAIAPI.Capabilities.Assistants.AssistantObject.html
+  name: AssistantObject
+  nameWithType: AssistantObject
+  fullName: Promezio.OAIAPI.Capabilities.Assistants.AssistantObject
+- uid: Promezio.OAIAPI.Capabilities.Assistants.Assistants
+  commentId: T:Promezio.OAIAPI.Capabilities.Assistants.Assistants
+  parent: Promezio.OAIAPI.Capabilities.Assistants
+  href: Promezio.OAIAPI.Capabilities.Assistants.Assistants.html
+  name: Assistants
+  nameWithType: Assistants
+  fullName: Promezio.OAIAPI.Capabilities.Assistants.Assistants
+- uid: Promezio.OAIAPI.Capabilities.Assistants.AvailableModels
+  commentId: T:Promezio.OAIAPI.Capabilities.Assistants.AvailableModels
+  parent: Promezio.OAIAPI.Capabilities.Assistants
+  href: Promezio.OAIAPI.Capabilities.Assistants.AvailableModels.html
+  name: AvailableModels
+  nameWithType: AvailableModels
+  fullName: Promezio.OAIAPI.Capabilities.Assistants.AvailableModels
+- uid: Promezio.OAIAPI.Capabilities.Assistants.Models
+  commentId: T:Promezio.OAIAPI.Capabilities.Assistants.Models
+  parent: Promezio.OAIAPI.Capabilities.Assistants
+  href: Promezio.OAIAPI.Capabilities.Assistants.Models.html
+  name: Models
+  nameWithType: Models
+  fullName: Promezio.OAIAPI.Capabilities.Assistants.Models
+- uid: Promezio.OAIAPI.Capabilities.Assistants.AvailableToolTypes
+  commentId: T:Promezio.OAIAPI.Capabilities.Assistants.AvailableToolTypes
+  parent: Promezio.OAIAPI.Capabilities.Assistants
+  href: Promezio.OAIAPI.Capabilities.Assistants.AvailableToolTypes.html
+  name: AvailableToolTypes
+  nameWithType: AvailableToolTypes
+  fullName: Promezio.OAIAPI.Capabilities.Assistants.AvailableToolTypes
+- uid: Promezio.OAIAPI.Capabilities.Assistants.ToolType
+  commentId: T:Promezio.OAIAPI.Capabilities.Assistants.ToolType
+  href: Promezio.OAIAPI.Capabilities.Assistants.ToolType.html
+  name: ToolType
+  nameWithType: ToolType
+  fullName: Promezio.OAIAPI.Capabilities.Assistants.ToolType
+- uid: Promezio.OAIAPI.Capabilities.Assistants.Tool
+  commentId: T:Promezio.OAIAPI.Capabilities.Assistants.Tool
+  parent: Promezio.OAIAPI.Capabilities.Assistants
+  href: Promezio.OAIAPI.Capabilities.Assistants.Tool.html
+  name: Tool
+  nameWithType: Tool
+  fullName: Promezio.OAIAPI.Capabilities.Assistants.Tool
+- uid: Promezio.OAIAPI.Capabilities.Assistants.ToolFunction
+  commentId: T:Promezio.OAIAPI.Capabilities.Assistants.ToolFunction
+  parent: Promezio.OAIAPI.Capabilities.Assistants
+  href: Promezio.OAIAPI.Capabilities.Assistants.ToolFunction.html
+  name: ToolFunction
+  nameWithType: ToolFunction
+  fullName: Promezio.OAIAPI.Capabilities.Assistants.ToolFunction
+- uid: Promezio.OAIAPI.Capabilities.Assistants
+  commentId: N:Promezio.OAIAPI.Capabilities.Assistants
+  href: Promezio.html
+  name: Promezio.OAIAPI.Capabilities.Assistants
+  nameWithType: Promezio.OAIAPI.Capabilities.Assistants
+  fullName: Promezio.OAIAPI.Capabilities.Assistants
+  spec.csharp:
+  - uid: Promezio
+    name: Promezio
+    href: Promezio.html
+  - name: .
+  - uid: Promezio.OAIAPI
+    name: OAIAPI
+    href: Promezio.OAIAPI.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities
+    name: Capabilities
+    href: Promezio.OAIAPI.Capabilities.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities.Assistants
+    name: Assistants
+    href: Promezio.OAIAPI.Capabilities.Assistants.html
+  spec.vb:
+  - uid: Promezio
+    name: Promezio
+    href: Promezio.html
+  - name: .
+  - uid: Promezio.OAIAPI
+    name: OAIAPI
+    href: Promezio.OAIAPI.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities
+    name: Capabilities
+    href: Promezio.OAIAPI.Capabilities.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities.Assistants
+    name: Assistants
+    href: Promezio.OAIAPI.Capabilities.Assistants.html

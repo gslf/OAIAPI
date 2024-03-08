@@ -1,0 +1,211 @@
+### YamlMime:ManagedReference
+items:
+- uid: Promezio.OAIAPI.Capabilities.Audio.AvailableVoices
+  commentId: T:Promezio.OAIAPI.Capabilities.Audio.AvailableVoices
+  id: AvailableVoices
+  parent: Promezio.OAIAPI.Capabilities.Audio
+  children:
+  - Promezio.OAIAPI.Capabilities.Audio.AvailableVoices.ALLOY
+  - Promezio.OAIAPI.Capabilities.Audio.AvailableVoices.ECHO
+  - Promezio.OAIAPI.Capabilities.Audio.AvailableVoices.FABLE
+  - Promezio.OAIAPI.Capabilities.Audio.AvailableVoices.ONYX
+  - Promezio.OAIAPI.Capabilities.Audio.AvailableVoices.SHIMMER
+  langs:
+  - csharp
+  - vb
+  name: AvailableVoices
+  nameWithType: AvailableVoices
+  fullName: Promezio.OAIAPI.Capabilities.Audio.AvailableVoices
+  type: Enum
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Audio/Voices.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: AvailableVoices
+    path: OAIAPI/Capabilities/Audio/Voices.cs
+    startLine: 5
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Audio
+  summary: Enum representing the available voices in OpenAI's Audio API.
+  example: []
+  syntax:
+    content: public enum AvailableVoices
+    content.vb: Public Enum AvailableVoices
+- uid: Promezio.OAIAPI.Capabilities.Audio.AvailableVoices.ALLOY
+  commentId: F:Promezio.OAIAPI.Capabilities.Audio.AvailableVoices.ALLOY
+  id: ALLOY
+  parent: Promezio.OAIAPI.Capabilities.Audio.AvailableVoices
+  langs:
+  - csharp
+  - vb
+  name: ALLOY
+  nameWithType: AvailableVoices.ALLOY
+  fullName: Promezio.OAIAPI.Capabilities.Audio.AvailableVoices.ALLOY
+  type: Field
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Audio/Voices.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: ALLOY
+    path: OAIAPI/Capabilities/Audio/Voices.cs
+    startLine: 6
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Audio
+  syntax:
+    content: ALLOY = 0
+    return:
+      type: Promezio.OAIAPI.Capabilities.Audio.AvailableVoices
+- uid: Promezio.OAIAPI.Capabilities.Audio.AvailableVoices.ECHO
+  commentId: F:Promezio.OAIAPI.Capabilities.Audio.AvailableVoices.ECHO
+  id: ECHO
+  parent: Promezio.OAIAPI.Capabilities.Audio.AvailableVoices
+  langs:
+  - csharp
+  - vb
+  name: ECHO
+  nameWithType: AvailableVoices.ECHO
+  fullName: Promezio.OAIAPI.Capabilities.Audio.AvailableVoices.ECHO
+  type: Field
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Audio/Voices.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: ECHO
+    path: OAIAPI/Capabilities/Audio/Voices.cs
+    startLine: 7
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Audio
+  syntax:
+    content: ECHO = 1
+    return:
+      type: Promezio.OAIAPI.Capabilities.Audio.AvailableVoices
+- uid: Promezio.OAIAPI.Capabilities.Audio.AvailableVoices.FABLE
+  commentId: F:Promezio.OAIAPI.Capabilities.Audio.AvailableVoices.FABLE
+  id: FABLE
+  parent: Promezio.OAIAPI.Capabilities.Audio.AvailableVoices
+  langs:
+  - csharp
+  - vb
+  name: FABLE
+  nameWithType: AvailableVoices.FABLE
+  fullName: Promezio.OAIAPI.Capabilities.Audio.AvailableVoices.FABLE
+  type: Field
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Audio/Voices.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: FABLE
+    path: OAIAPI/Capabilities/Audio/Voices.cs
+    startLine: 8
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Audio
+  syntax:
+    content: FABLE = 2
+    return:
+      type: Promezio.OAIAPI.Capabilities.Audio.AvailableVoices
+- uid: Promezio.OAIAPI.Capabilities.Audio.AvailableVoices.ONYX
+  commentId: F:Promezio.OAIAPI.Capabilities.Audio.AvailableVoices.ONYX
+  id: ONYX
+  parent: Promezio.OAIAPI.Capabilities.Audio.AvailableVoices
+  langs:
+  - csharp
+  - vb
+  name: ONYX
+  nameWithType: AvailableVoices.ONYX
+  fullName: Promezio.OAIAPI.Capabilities.Audio.AvailableVoices.ONYX
+  type: Field
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Audio/Voices.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: ONYX
+    path: OAIAPI/Capabilities/Audio/Voices.cs
+    startLine: 9
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Audio
+  syntax:
+    content: ONYX = 3
+    return:
+      type: Promezio.OAIAPI.Capabilities.Audio.AvailableVoices
+- uid: Promezio.OAIAPI.Capabilities.Audio.AvailableVoices.SHIMMER
+  commentId: F:Promezio.OAIAPI.Capabilities.Audio.AvailableVoices.SHIMMER
+  id: SHIMMER
+  parent: Promezio.OAIAPI.Capabilities.Audio.AvailableVoices
+  langs:
+  - csharp
+  - vb
+  name: SHIMMER
+  nameWithType: AvailableVoices.SHIMMER
+  fullName: Promezio.OAIAPI.Capabilities.Audio.AvailableVoices.SHIMMER
+  type: Field
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Audio/Voices.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: SHIMMER
+    path: OAIAPI/Capabilities/Audio/Voices.cs
+    startLine: 10
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Audio
+  syntax:
+    content: SHIMMER = 4
+    return:
+      type: Promezio.OAIAPI.Capabilities.Audio.AvailableVoices
+references:
+- uid: Promezio.OAIAPI.Capabilities.Audio
+  commentId: N:Promezio.OAIAPI.Capabilities.Audio
+  href: Promezio.html
+  name: Promezio.OAIAPI.Capabilities.Audio
+  nameWithType: Promezio.OAIAPI.Capabilities.Audio
+  fullName: Promezio.OAIAPI.Capabilities.Audio
+  spec.csharp:
+  - uid: Promezio
+    name: Promezio
+    href: Promezio.html
+  - name: .
+  - uid: Promezio.OAIAPI
+    name: OAIAPI
+    href: Promezio.OAIAPI.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities
+    name: Capabilities
+    href: Promezio.OAIAPI.Capabilities.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities.Audio
+    name: Audio
+    href: Promezio.OAIAPI.Capabilities.Audio.html
+  spec.vb:
+  - uid: Promezio
+    name: Promezio
+    href: Promezio.html
+  - name: .
+  - uid: Promezio.OAIAPI
+    name: OAIAPI
+    href: Promezio.OAIAPI.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities
+    name: Capabilities
+    href: Promezio.OAIAPI.Capabilities.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities.Audio
+    name: Audio
+    href: Promezio.OAIAPI.Capabilities.Audio.html
+- uid: Promezio.OAIAPI.Capabilities.Audio.AvailableVoices
+  commentId: T:Promezio.OAIAPI.Capabilities.Audio.AvailableVoices
+  parent: Promezio.OAIAPI.Capabilities.Audio
+  href: Promezio.OAIAPI.Capabilities.Audio.AvailableVoices.html
+  name: AvailableVoices
+  nameWithType: AvailableVoices
+  fullName: Promezio.OAIAPI.Capabilities.Audio.AvailableVoices

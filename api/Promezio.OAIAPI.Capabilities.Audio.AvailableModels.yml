@@ -1,0 +1,130 @@
+### YamlMime:ManagedReference
+items:
+- uid: Promezio.OAIAPI.Capabilities.Audio.AvailableModels
+  commentId: T:Promezio.OAIAPI.Capabilities.Audio.AvailableModels
+  id: AvailableModels
+  parent: Promezio.OAIAPI.Capabilities.Audio
+  children:
+  - Promezio.OAIAPI.Capabilities.Audio.AvailableModels.TTS_1
+  - Promezio.OAIAPI.Capabilities.Audio.AvailableModels.TTS_1_HD
+  langs:
+  - csharp
+  - vb
+  name: AvailableModels
+  nameWithType: AvailableModels
+  fullName: Promezio.OAIAPI.Capabilities.Audio.AvailableModels
+  type: Enum
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Audio/Models.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: AvailableModels
+    path: OAIAPI/Capabilities/Audio/Models.cs
+    startLine: 5
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Audio
+  summary: Enum representing the available models in OpenAI's Audio API.
+  example: []
+  syntax:
+    content: public enum AvailableModels
+    content.vb: Public Enum AvailableModels
+- uid: Promezio.OAIAPI.Capabilities.Audio.AvailableModels.TTS_1
+  commentId: F:Promezio.OAIAPI.Capabilities.Audio.AvailableModels.TTS_1
+  id: TTS_1
+  parent: Promezio.OAIAPI.Capabilities.Audio.AvailableModels
+  langs:
+  - csharp
+  - vb
+  name: TTS_1
+  nameWithType: AvailableModels.TTS_1
+  fullName: Promezio.OAIAPI.Capabilities.Audio.AvailableModels.TTS_1
+  type: Field
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Audio/Models.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: TTS_1
+    path: OAIAPI/Capabilities/Audio/Models.cs
+    startLine: 6
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Audio
+  syntax:
+    content: TTS_1 = 0
+    return:
+      type: Promezio.OAIAPI.Capabilities.Audio.AvailableModels
+- uid: Promezio.OAIAPI.Capabilities.Audio.AvailableModels.TTS_1_HD
+  commentId: F:Promezio.OAIAPI.Capabilities.Audio.AvailableModels.TTS_1_HD
+  id: TTS_1_HD
+  parent: Promezio.OAIAPI.Capabilities.Audio.AvailableModels
+  langs:
+  - csharp
+  - vb
+  name: TTS_1_HD
+  nameWithType: AvailableModels.TTS_1_HD
+  fullName: Promezio.OAIAPI.Capabilities.Audio.AvailableModels.TTS_1_HD
+  type: Field
+  source:
+    remote:
+      path: OAIAPI/Capabilities/Audio/Models.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: TTS_1_HD
+    path: OAIAPI/Capabilities/Audio/Models.cs
+    startLine: 7
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI.Capabilities.Audio
+  syntax:
+    content: TTS_1_HD = 1
+    return:
+      type: Promezio.OAIAPI.Capabilities.Audio.AvailableModels
+references:
+- uid: Promezio.OAIAPI.Capabilities.Audio
+  commentId: N:Promezio.OAIAPI.Capabilities.Audio
+  href: Promezio.html
+  name: Promezio.OAIAPI.Capabilities.Audio
+  nameWithType: Promezio.OAIAPI.Capabilities.Audio
+  fullName: Promezio.OAIAPI.Capabilities.Audio
+  spec.csharp:
+  - uid: Promezio
+    name: Promezio
+    href: Promezio.html
+  - name: .
+  - uid: Promezio.OAIAPI
+    name: OAIAPI
+    href: Promezio.OAIAPI.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities
+    name: Capabilities
+    href: Promezio.OAIAPI.Capabilities.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities.Audio
+    name: Audio
+    href: Promezio.OAIAPI.Capabilities.Audio.html
+  spec.vb:
+  - uid: Promezio
+    name: Promezio
+    href: Promezio.html
+  - name: .
+  - uid: Promezio.OAIAPI
+    name: OAIAPI
+    href: Promezio.OAIAPI.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities
+    name: Capabilities
+    href: Promezio.OAIAPI.Capabilities.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities.Audio
+    name: Audio
+    href: Promezio.OAIAPI.Capabilities.Audio.html
+- uid: Promezio.OAIAPI.Capabilities.Audio.AvailableModels
+  commentId: T:Promezio.OAIAPI.Capabilities.Audio.AvailableModels
+  parent: Promezio.OAIAPI.Capabilities.Audio
+  href: Promezio.OAIAPI.Capabilities.Audio.AvailableModels.html
+  name: AvailableModels
+  nameWithType: AvailableModels
+  fullName: Promezio.OAIAPI.Capabilities.Audio.AvailableModels

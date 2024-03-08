@@ -33,12 +33,11 @@ items:
   inheritance:
   - System.Object
   derivedClasses:
+  - Promezio.OAIAPI.Capabilities.Audio.Audio
   - Promezio.OAIAPI.Capabilities.Chat.Chat
   - Promezio.OAIAPI.Capabilities.Embedding.Embeddings
   - Promezio.OAIAPI.Capabilities.Files.Files
   - Promezio.OAIAPI.Capabilities.FineTuning.FineTuning
-  - Promezio.OAIAPI.Capabilities.Speech.Speech
-  - Promezio.OAIAPI.Capabilities.Transcription.Transcription
   inheritedMembers:
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)

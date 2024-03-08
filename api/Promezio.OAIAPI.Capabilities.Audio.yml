@@ -1,0 +1,133 @@
+### YamlMime:ManagedReference
+items:
+- uid: Promezio.OAIAPI.Capabilities.Audio
+  commentId: N:Promezio.OAIAPI.Capabilities.Audio
+  id: Promezio.OAIAPI.Capabilities.Audio
+  children:
+  - Promezio.OAIAPI.Capabilities.Audio.Audio
+  - Promezio.OAIAPI.Capabilities.Audio.AvailableModels
+  - Promezio.OAIAPI.Capabilities.Audio.AvailableSpeechFormats
+  - Promezio.OAIAPI.Capabilities.Audio.AvailableVoices
+  - Promezio.OAIAPI.Capabilities.Audio.Models
+  - Promezio.OAIAPI.Capabilities.Audio.SpeechResponseFormats
+  - Promezio.OAIAPI.Capabilities.Audio.TranscriptionObject
+  - Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments
+  - Promezio.OAIAPI.Capabilities.Audio.TranscriptionWords
+  - Promezio.OAIAPI.Capabilities.Audio.Voices
+  langs:
+  - csharp
+  - vb
+  name: Promezio.OAIAPI.Capabilities.Audio
+  nameWithType: Promezio.OAIAPI.Capabilities.Audio
+  fullName: Promezio.OAIAPI.Capabilities.Audio
+  type: Namespace
+  assemblies:
+  - OAIAPI
+references:
+- uid: Promezio.OAIAPI.Capabilities.Audio.Audio
+  commentId: T:Promezio.OAIAPI.Capabilities.Audio.Audio
+  parent: Promezio.OAIAPI.Capabilities.Audio
+  href: Promezio.OAIAPI.Capabilities.Audio.Audio.html
+  name: Audio
+  nameWithType: Audio
+  fullName: Promezio.OAIAPI.Capabilities.Audio.Audio
+- uid: Promezio.OAIAPI.Capabilities.Audio.AvailableModels
+  commentId: T:Promezio.OAIAPI.Capabilities.Audio.AvailableModels
+  parent: Promezio.OAIAPI.Capabilities.Audio
+  href: Promezio.OAIAPI.Capabilities.Audio.AvailableModels.html
+  name: AvailableModels
+  nameWithType: AvailableModels
+  fullName: Promezio.OAIAPI.Capabilities.Audio.AvailableModels
+- uid: Promezio.OAIAPI.Capabilities.Audio.Models
+  commentId: T:Promezio.OAIAPI.Capabilities.Audio.Models
+  parent: Promezio.OAIAPI.Capabilities.Audio
+  href: Promezio.OAIAPI.Capabilities.Audio.Models.html
+  name: Models
+  nameWithType: Models
+  fullName: Promezio.OAIAPI.Capabilities.Audio.Models
+- uid: Promezio.OAIAPI.Capabilities.Audio.AvailableSpeechFormats
+  commentId: T:Promezio.OAIAPI.Capabilities.Audio.AvailableSpeechFormats
+  parent: Promezio.OAIAPI.Capabilities.Audio
+  href: Promezio.OAIAPI.Capabilities.Audio.AvailableSpeechFormats.html
+  name: AvailableSpeechFormats
+  nameWithType: AvailableSpeechFormats
+  fullName: Promezio.OAIAPI.Capabilities.Audio.AvailableSpeechFormats
+- uid: Promezio.OAIAPI.Capabilities.Audio.SpeechResponseFormats
+  commentId: T:Promezio.OAIAPI.Capabilities.Audio.SpeechResponseFormats
+  parent: Promezio.OAIAPI.Capabilities.Audio
+  href: Promezio.OAIAPI.Capabilities.Audio.SpeechResponseFormats.html
+  name: SpeechResponseFormats
+  nameWithType: SpeechResponseFormats
+  fullName: Promezio.OAIAPI.Capabilities.Audio.SpeechResponseFormats
+- uid: Promezio.OAIAPI.Capabilities.Audio.TranscriptionObject
+  commentId: T:Promezio.OAIAPI.Capabilities.Audio.TranscriptionObject
+  href: Promezio.OAIAPI.Capabilities.Audio.TranscriptionObject.html
+  name: TranscriptionObject
+  nameWithType: TranscriptionObject
+  fullName: Promezio.OAIAPI.Capabilities.Audio.TranscriptionObject
+- uid: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments
+  commentId: T:Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments
+  parent: Promezio.OAIAPI.Capabilities.Audio
+  href: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.html
+  name: TranscriptionSegments
+  nameWithType: TranscriptionSegments
+  fullName: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments
+- uid: Promezio.OAIAPI.Capabilities.Audio.TranscriptionWords
+  commentId: T:Promezio.OAIAPI.Capabilities.Audio.TranscriptionWords
+  parent: Promezio.OAIAPI.Capabilities.Audio
+  href: Promezio.OAIAPI.Capabilities.Audio.TranscriptionWords.html
+  name: TranscriptionWords
+  nameWithType: TranscriptionWords
+  fullName: Promezio.OAIAPI.Capabilities.Audio.TranscriptionWords
+- uid: Promezio.OAIAPI.Capabilities.Audio.AvailableVoices
+  commentId: T:Promezio.OAIAPI.Capabilities.Audio.AvailableVoices
+  parent: Promezio.OAIAPI.Capabilities.Audio
+  href: Promezio.OAIAPI.Capabilities.Audio.AvailableVoices.html
+  name: AvailableVoices
+  nameWithType: AvailableVoices
+  fullName: Promezio.OAIAPI.Capabilities.Audio.AvailableVoices
+- uid: Promezio.OAIAPI.Capabilities.Audio.Voices
+  commentId: T:Promezio.OAIAPI.Capabilities.Audio.Voices
+  parent: Promezio.OAIAPI.Capabilities.Audio
+  href: Promezio.OAIAPI.Capabilities.Audio.Voices.html
+  name: Voices
+  nameWithType: Voices
+  fullName: Promezio.OAIAPI.Capabilities.Audio.Voices
+- uid: Promezio.OAIAPI.Capabilities.Audio
+  commentId: N:Promezio.OAIAPI.Capabilities.Audio
+  href: Promezio.html
+  name: Promezio.OAIAPI.Capabilities.Audio
+  nameWithType: Promezio.OAIAPI.Capabilities.Audio
+  fullName: Promezio.OAIAPI.Capabilities.Audio
+  spec.csharp:
+  - uid: Promezio
+    name: Promezio
+    href: Promezio.html
+  - name: .
+  - uid: Promezio.OAIAPI
+    name: OAIAPI
+    href: Promezio.OAIAPI.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities
+    name: Capabilities
+    href: Promezio.OAIAPI.Capabilities.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities.Audio
+    name: Audio
+    href: Promezio.OAIAPI.Capabilities.Audio.html
+  spec.vb:
+  - uid: Promezio
+    name: Promezio
+    href: Promezio.html
+  - name: .
+  - uid: Promezio.OAIAPI
+    name: OAIAPI
+    href: Promezio.OAIAPI.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities
+    name: Capabilities
+    href: Promezio.OAIAPI.Capabilities.html
+  - name: .
+  - uid: Promezio.OAIAPI.Capabilities.Audio
+    name: Audio
+    href: Promezio.OAIAPI.Capabilities.Audio.html

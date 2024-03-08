@@ -12,6 +12,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "Examples/Audio.md",
+      "output": {
+        ".html": {
+          "relative_path": "Examples/Audio.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "Examples/Chat.md",
       "output": {
         ".html": {
@@ -66,6 +76,206 @@
       "output": {
         ".html": {
           "relative_path": "README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.Assistants.AssistantObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.Assistants.AssistantObject.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.Assistants.Assistants.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.Assistants.Assistants.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.Assistants.AvailableModels.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.Assistants.AvailableModels.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.Assistants.AvailableToolTypes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.Assistants.AvailableToolTypes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.Assistants.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.Assistants.Models.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.Assistants.Tool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.Assistants.Tool.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.Assistants.ToolFunction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.Assistants.ToolFunction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.Assistants.ToolType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.Assistants.ToolType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.Assistants.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.Assistants.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.Audio.Audio.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.Audio.Audio.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.Audio.AvailableModels.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.Audio.AvailableModels.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.Audio.AvailableSpeechFormats.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.Audio.AvailableSpeechFormats.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.Audio.AvailableVoices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.Audio.AvailableVoices.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.Audio.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.Audio.Models.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.Audio.SpeechResponseFormats.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.Audio.SpeechResponseFormats.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.Audio.TranscriptionObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.Audio.TranscriptionObject.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.Audio.TranscriptionWords.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.Audio.TranscriptionWords.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.Audio.Voices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.Audio.Voices.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Promezio.OAIAPI.Capabilities.Audio.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Promezio.OAIAPI.Capabilities.Audio.html"
         }
       },
       "version": ""

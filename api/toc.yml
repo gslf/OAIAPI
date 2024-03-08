@@ -10,6 +10,29 @@ items:
   items:
   - uid: Promezio.OAIAPI.Capabilities.Capability
     name: Capability
+- uid: Promezio.OAIAPI.Capabilities.Audio
+  name: Promezio.OAIAPI.Capabilities.Audio
+  items:
+  - uid: Promezio.OAIAPI.Capabilities.Audio.Audio
+    name: Audio
+  - uid: Promezio.OAIAPI.Capabilities.Audio.AvailableModels
+    name: AvailableModels
+  - uid: Promezio.OAIAPI.Capabilities.Audio.AvailableSpeechFormats
+    name: AvailableSpeechFormats
+  - uid: Promezio.OAIAPI.Capabilities.Audio.AvailableVoices
+    name: AvailableVoices
+  - uid: Promezio.OAIAPI.Capabilities.Audio.Models
+    name: Models
+  - uid: Promezio.OAIAPI.Capabilities.Audio.SpeechResponseFormats
+    name: SpeechResponseFormats
+  - uid: Promezio.OAIAPI.Capabilities.Audio.TranscriptionObject
+    name: TranscriptionObject
+  - uid: Promezio.OAIAPI.Capabilities.Audio.TranscriptionSegments
+    name: TranscriptionSegments
+  - uid: Promezio.OAIAPI.Capabilities.Audio.TranscriptionWords
+    name: TranscriptionWords
+  - uid: Promezio.OAIAPI.Capabilities.Audio.Voices
+    name: Voices
 - uid: Promezio.OAIAPI.Capabilities.Chat
   name: Promezio.OAIAPI.Capabilities.Chat
   items:
@@ -89,24 +112,6 @@ items:
     name: Models
   - uid: Promezio.OAIAPI.Capabilities.FineTuning.TuningError
     name: TuningError
-- uid: Promezio.OAIAPI.Capabilities.Speech
-  name: Promezio.OAIAPI.Capabilities.Speech
-  items:
-  - uid: Promezio.OAIAPI.Capabilities.Speech.ResponseFormat
-    name: ResponseFormat
-  - uid: Promezio.OAIAPI.Capabilities.Speech.Speech
-    name: Speech
-  - uid: Promezio.OAIAPI.Capabilities.Speech.SpeechResponse
-    name: SpeechResponse
-  - uid: Promezio.OAIAPI.Capabilities.Speech.Voice
-    name: Voice
-- uid: Promezio.OAIAPI.Capabilities.Transcription
-  name: Promezio.OAIAPI.Capabilities.Transcription
-  items:
-  - uid: Promezio.OAIAPI.Capabilities.Transcription.Transcription
-    name: Transcription
-  - uid: Promezio.OAIAPI.Capabilities.Transcription.TranscriptionResponse
-    name: TranscriptionResponse
 - uid: Promezio.OAIAPI.Utils
   name: Promezio.OAIAPI.Utils
   items:

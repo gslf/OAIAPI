@@ -6,12 +6,12 @@ items:
   parent: Promezio.OAIAPI
   children:
   - Promezio.OAIAPI.OAIAPI.#ctor(System.String,Promezio.OAIAPI.Utils.LogLevel)
+  - Promezio.OAIAPI.OAIAPI.Assistants
+  - Promezio.OAIAPI.OAIAPI.Audio
   - Promezio.OAIAPI.OAIAPI.Chat
   - Promezio.OAIAPI.OAIAPI.Embeddings
   - Promezio.OAIAPI.OAIAPI.Files
   - Promezio.OAIAPI.OAIAPI.FineTuning
-  - Promezio.OAIAPI.OAIAPI.Speech
-  - Promezio.OAIAPI.OAIAPI.Transcription
   langs:
   - csharp
   - vb
@@ -95,7 +95,7 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: Chat
     path: OAIAPI/OAIAPI.cs
-    startLine: 29
+    startLine: 28
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI
@@ -124,7 +124,7 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: Files
     path: OAIAPI/OAIAPI.cs
-    startLine: 30
+    startLine: 29
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI
@@ -153,7 +153,7 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: FineTuning
     path: OAIAPI/OAIAPI.cs
-    startLine: 31
+    startLine: 30
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI
@@ -182,7 +182,7 @@ items:
       repo: https://github.com/gslf/OAIAPI.git
     id: Embeddings
     path: OAIAPI/OAIAPI.cs
-    startLine: 32
+    startLine: 31
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI
@@ -193,64 +193,64 @@ items:
       type: Promezio.OAIAPI.Capabilities.Embedding.Embeddings
     content.vb: Public Property Embeddings As Embeddings
   overload: Promezio.OAIAPI.OAIAPI.Embeddings*
-- uid: Promezio.OAIAPI.OAIAPI.Transcription
-  commentId: P:Promezio.OAIAPI.OAIAPI.Transcription
-  id: Transcription
+- uid: Promezio.OAIAPI.OAIAPI.Audio
+  commentId: P:Promezio.OAIAPI.OAIAPI.Audio
+  id: Audio
   parent: Promezio.OAIAPI.OAIAPI
   langs:
   - csharp
   - vb
-  name: Transcription
-  nameWithType: OAIAPI.Transcription
-  fullName: Promezio.OAIAPI.OAIAPI.Transcription
+  name: Audio
+  nameWithType: OAIAPI.Audio
+  fullName: Promezio.OAIAPI.OAIAPI.Audio
   type: Property
   source:
     remote:
       path: OAIAPI/OAIAPI.cs
       branch: main
       repo: https://github.com/gslf/OAIAPI.git
-    id: Transcription
+    id: Audio
+    path: OAIAPI/OAIAPI.cs
+    startLine: 32
+  assemblies:
+  - OAIAPI
+  namespace: Promezio.OAIAPI
+  syntax:
+    content: public Audio Audio { get; }
+    parameters: []
+    return:
+      type: Promezio.OAIAPI.Capabilities.Audio.Audio
+    content.vb: Public Property Audio As Audio
+  overload: Promezio.OAIAPI.OAIAPI.Audio*
+- uid: Promezio.OAIAPI.OAIAPI.Assistants
+  commentId: P:Promezio.OAIAPI.OAIAPI.Assistants
+  id: Assistants
+  parent: Promezio.OAIAPI.OAIAPI
+  langs:
+  - csharp
+  - vb
+  name: Assistants
+  nameWithType: OAIAPI.Assistants
+  fullName: Promezio.OAIAPI.OAIAPI.Assistants
+  type: Property
+  source:
+    remote:
+      path: OAIAPI/OAIAPI.cs
+      branch: main
+      repo: https://github.com/gslf/OAIAPI.git
+    id: Assistants
     path: OAIAPI/OAIAPI.cs
     startLine: 36
   assemblies:
   - OAIAPI
   namespace: Promezio.OAIAPI
   syntax:
-    content: public Transcription Transcription { get; }
+    content: public Assistants Assistants { get; }
     parameters: []
     return:
-      type: Promezio.OAIAPI.Capabilities.Transcription.Transcription
-    content.vb: Public Property Transcription As Transcription
-  overload: Promezio.OAIAPI.OAIAPI.Transcription*
-- uid: Promezio.OAIAPI.OAIAPI.Speech
-  commentId: P:Promezio.OAIAPI.OAIAPI.Speech
-  id: Speech
-  parent: Promezio.OAIAPI.OAIAPI
-  langs:
-  - csharp
-  - vb
-  name: Speech
-  nameWithType: OAIAPI.Speech
-  fullName: Promezio.OAIAPI.OAIAPI.Speech
-  type: Property
-  source:
-    remote:
-      path: OAIAPI/OAIAPI.cs
-      branch: main
-      repo: https://github.com/gslf/OAIAPI.git
-    id: Speech
-    path: OAIAPI/OAIAPI.cs
-    startLine: 37
-  assemblies:
-  - OAIAPI
-  namespace: Promezio.OAIAPI
-  syntax:
-    content: public Speech Speech { get; }
-    parameters: []
-    return:
-      type: Promezio.OAIAPI.Capabilities.Speech.Speech
-    content.vb: Public Property Speech As Speech
-  overload: Promezio.OAIAPI.OAIAPI.Speech*
+      type: Promezio.OAIAPI.Capabilities.Assistants.Assistants
+    content.vb: Public Property Assistants As Assistants
+  overload: Promezio.OAIAPI.OAIAPI.Assistants*
 references:
 - uid: Promezio.OAIAPI
   commentId: N:Promezio.OAIAPI
@@ -772,25 +772,25 @@ references:
   - uid: Promezio.OAIAPI.Capabilities.Embedding
     name: Embedding
     href: Promezio.OAIAPI.Capabilities.Embedding.html
-- uid: Promezio.OAIAPI.OAIAPI.Transcription*
-  commentId: Overload:Promezio.OAIAPI.OAIAPI.Transcription
-  href: Promezio.OAIAPI.OAIAPI.html#Promezio_OAIAPI_OAIAPI_Transcription
-  name: Transcription
-  nameWithType: OAIAPI.Transcription
-  fullName: Promezio.OAIAPI.OAIAPI.Transcription
-- uid: Promezio.OAIAPI.Capabilities.Transcription.Transcription
-  commentId: T:Promezio.OAIAPI.Capabilities.Transcription.Transcription
-  parent: Promezio.OAIAPI.Capabilities.Transcription
-  href: Promezio.OAIAPI.Capabilities.Transcription.Transcription.html
-  name: Transcription
-  nameWithType: Transcription
-  fullName: Promezio.OAIAPI.Capabilities.Transcription.Transcription
-- uid: Promezio.OAIAPI.Capabilities.Transcription
-  commentId: N:Promezio.OAIAPI.Capabilities.Transcription
+- uid: Promezio.OAIAPI.OAIAPI.Audio*
+  commentId: Overload:Promezio.OAIAPI.OAIAPI.Audio
+  href: Promezio.OAIAPI.OAIAPI.html#Promezio_OAIAPI_OAIAPI_Audio
+  name: Audio
+  nameWithType: OAIAPI.Audio
+  fullName: Promezio.OAIAPI.OAIAPI.Audio
+- uid: Promezio.OAIAPI.Capabilities.Audio.Audio
+  commentId: T:Promezio.OAIAPI.Capabilities.Audio.Audio
+  parent: Promezio.OAIAPI.Capabilities.Audio
+  href: Promezio.OAIAPI.Capabilities.Audio.Audio.html
+  name: Audio
+  nameWithType: Audio
+  fullName: Promezio.OAIAPI.Capabilities.Audio.Audio
+- uid: Promezio.OAIAPI.Capabilities.Audio
+  commentId: N:Promezio.OAIAPI.Capabilities.Audio
   href: Promezio.html
-  name: Promezio.OAIAPI.Capabilities.Transcription
-  nameWithType: Promezio.OAIAPI.Capabilities.Transcription
-  fullName: Promezio.OAIAPI.Capabilities.Transcription
+  name: Promezio.OAIAPI.Capabilities.Audio
+  nameWithType: Promezio.OAIAPI.Capabilities.Audio
+  fullName: Promezio.OAIAPI.Capabilities.Audio
   spec.csharp:
   - uid: Promezio
     name: Promezio
@@ -804,9 +804,9 @@ references:
     name: Capabilities
     href: Promezio.OAIAPI.Capabilities.html
   - name: .
-  - uid: Promezio.OAIAPI.Capabilities.Transcription
-    name: Transcription
-    href: Promezio.OAIAPI.Capabilities.Transcription.html
+  - uid: Promezio.OAIAPI.Capabilities.Audio
+    name: Audio
+    href: Promezio.OAIAPI.Capabilities.Audio.html
   spec.vb:
   - uid: Promezio
     name: Promezio
@@ -820,28 +820,28 @@ references:
     name: Capabilities
     href: Promezio.OAIAPI.Capabilities.html
   - name: .
-  - uid: Promezio.OAIAPI.Capabilities.Transcription
-    name: Transcription
-    href: Promezio.OAIAPI.Capabilities.Transcription.html
-- uid: Promezio.OAIAPI.OAIAPI.Speech*
-  commentId: Overload:Promezio.OAIAPI.OAIAPI.Speech
-  href: Promezio.OAIAPI.OAIAPI.html#Promezio_OAIAPI_OAIAPI_Speech
-  name: Speech
-  nameWithType: OAIAPI.Speech
-  fullName: Promezio.OAIAPI.OAIAPI.Speech
-- uid: Promezio.OAIAPI.Capabilities.Speech.Speech
-  commentId: T:Promezio.OAIAPI.Capabilities.Speech.Speech
-  parent: Promezio.OAIAPI.Capabilities.Speech
-  href: Promezio.OAIAPI.Capabilities.Speech.Speech.html
-  name: Speech
-  nameWithType: Speech
-  fullName: Promezio.OAIAPI.Capabilities.Speech.Speech
-- uid: Promezio.OAIAPI.Capabilities.Speech
-  commentId: N:Promezio.OAIAPI.Capabilities.Speech
+  - uid: Promezio.OAIAPI.Capabilities.Audio
+    name: Audio
+    href: Promezio.OAIAPI.Capabilities.Audio.html
+- uid: Promezio.OAIAPI.OAIAPI.Assistants*
+  commentId: Overload:Promezio.OAIAPI.OAIAPI.Assistants
+  href: Promezio.OAIAPI.OAIAPI.html#Promezio_OAIAPI_OAIAPI_Assistants
+  name: Assistants
+  nameWithType: OAIAPI.Assistants
+  fullName: Promezio.OAIAPI.OAIAPI.Assistants
+- uid: Promezio.OAIAPI.Capabilities.Assistants.Assistants
+  commentId: T:Promezio.OAIAPI.Capabilities.Assistants.Assistants
+  parent: Promezio.OAIAPI.Capabilities.Assistants
+  href: Promezio.OAIAPI.Capabilities.Assistants.Assistants.html
+  name: Assistants
+  nameWithType: Assistants
+  fullName: Promezio.OAIAPI.Capabilities.Assistants.Assistants
+- uid: Promezio.OAIAPI.Capabilities.Assistants
+  commentId: N:Promezio.OAIAPI.Capabilities.Assistants
   href: Promezio.html
-  name: Promezio.OAIAPI.Capabilities.Speech
-  nameWithType: Promezio.OAIAPI.Capabilities.Speech
-  fullName: Promezio.OAIAPI.Capabilities.Speech
+  name: Promezio.OAIAPI.Capabilities.Assistants
+  nameWithType: Promezio.OAIAPI.Capabilities.Assistants
+  fullName: Promezio.OAIAPI.Capabilities.Assistants
   spec.csharp:
   - uid: Promezio
     name: Promezio
@@ -855,9 +855,9 @@ references:
     name: Capabilities
     href: Promezio.OAIAPI.Capabilities.html
   - name: .
-  - uid: Promezio.OAIAPI.Capabilities.Speech
-    name: Speech
-    href: Promezio.OAIAPI.Capabilities.Speech.html
+  - uid: Promezio.OAIAPI.Capabilities.Assistants
+    name: Assistants
+    href: Promezio.OAIAPI.Capabilities.Assistants.html
   spec.vb:
   - uid: Promezio
     name: Promezio
@@ -871,6 +871,6 @@ references:
     name: Capabilities
     href: Promezio.OAIAPI.Capabilities.html
   - name: .
-  - uid: Promezio.OAIAPI.Capabilities.Speech
-    name: Speech
-    href: Promezio.OAIAPI.Capabilities.Speech.html
+  - uid: Promezio.OAIAPI.Capabilities.Assistants
+    name: Assistants
+    href: Promezio.OAIAPI.Capabilities.Assistants.html
