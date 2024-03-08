@@ -45,7 +45,7 @@ public class Audio : Capability {
             var content = new StringContent(JsonSerializer.Serialize(requestBody), Encoding.UTF8, "application/json");
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", _apikey);
 
-            var response = await client.PostAsync(Endpoints.SPEECH, content);
+            var response = await client.PostAsync(Endpoints.AUDIO + "/speech", content);
 
             if (!response.IsSuccessStatusCode) {
                 string message = await response.Content.ReadAsStringAsync();
@@ -90,7 +90,7 @@ public class Audio : Capability {
                     { new StringContent("whisper-1"), "model" },
                     { new StringContent(temperature.ToString(CultureInfo.InvariantCulture)), "temperature" }
             };
-            HttpResponseMessage response = await client.PostAsync(Endpoints.TRANSCRIPTION, content);
+            HttpResponseMessage response = await client.PostAsync(Endpoints.AUDIO + "/transcriptions", content);
 
             if (!response.IsSuccessStatusCode) {
                 string message = await response.Content.ReadAsStringAsync();
@@ -114,5 +114,45 @@ public class Audio : Capability {
 
     }
 
-    // TODO: Translation
+    public async Task<string> Translation(
+        string audioURL,
+        string prompt = "",
+        double temperature = 0) {
+
+        // Validate parameters
+        if ((temperature < 0) || (temperature > 1)) {
+            string errorMessage = $"[Audio.Translations] {nameof(temperature)} parameter is invalid";
+            _logger.Error(errorMessage);
+            throw new ArgumentException(errorMessage);
+        }
+
+        // API request
+        using (var client = new HttpClient()) {
+            // Read audio file
+            byte[] soundBytes = await File.ReadAllBytesAsync(audioURL);
+
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", _apikey);
+            MultipartFormDataContent content = new(){
+                    { new ByteArrayContent(soundBytes), "file", Path.GetFileName(audioURL) },
+                    { new StringContent("whisper-1"), "model" },
+                    { new StringContent(temperature.ToString(CultureInfo.InvariantCulture)), "temperature" }
+            };
+            HttpResponseMessage response = await client.PostAsync(Endpoints.AUDIO + "/translations", content);
+
+            if (!response.IsSuccessStatusCode) {
+                string message = await response.Content.ReadAsStringAsync();
+                string errorMessage = $"[Audio.Translations] The HTTP request failed. \n {message}.";
+                _logger.Error(errorMessage);
+                throw new HttpRequestException(errorMessage);
+            }
+
+
+            var responseContent = await response.Content.ReadAsStringAsync();
+            JsonDocument jsonDoc = JsonDocument.Parse(responseContent);
+            JsonElement dataElement = jsonDoc.RootElement.GetProperty("text");
+            string parsedString = dataElement.ToString();
+
+            return parsedString;
+        }
+    }
 }

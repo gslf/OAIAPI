@@ -8,9 +8,5 @@ internal static class Endpoints {
 
     // BETA
     internal static string ASSISTANTS = "https://api.openai.com/v1/assistants";
-
-
-    internal static string TRANSCRIPTION = "https://api.openai.com/v1/audio/transcriptions";
-    internal static string SPEECH = "https://api.openai.com/v1/audio/speech";
 }
 

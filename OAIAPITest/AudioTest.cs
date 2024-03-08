@@ -84,5 +84,36 @@ public class AudioTest : Test {
             prompt: "",
             temperature: 0);
     }
+
+    [TestMethod]
+    public async Task TestTranslation() {
+        OAIAPI api = new OAIAPI(_apikey);
+        string result = await api.Audio.Translation(
+            audioURL: "../../../TestResources/hello.mp3",
+            prompt: "",
+            temperature: 0);
+
+        Assert.IsFalse(String.IsNullOrEmpty(result));
+    }
+
+    [TestMethod]
+    [ExpectedException(typeof(ArgumentException))]
+    public async Task TestTranslationWrongParameter() {
+        OAIAPI api = new OAIAPI(_apikey);
+        string result = await api.Audio.Translation(
+            audioURL: "../../../TestResources/hello.mp3",
+            prompt: "",
+            temperature: -5);
+    }
+
+    [TestMethod]
+    [ExpectedException(typeof(DirectoryNotFoundException))]
+    public async Task TestTranslationWrongFilePath() {
+        OAIAPI api = new OAIAPI(_apikey);
+        string result = await api.Audio.Translation(
+            audioURL: "../../../TestResources/NOTEXIST/hello.mp3",
+            prompt: "",
+            temperature: 0);
+    }
 }
 
